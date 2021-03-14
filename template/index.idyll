@@ -1,116 +1,51 @@
-[meta title:"{{title}}" description:"Short description of your project" /]
+[meta title:"TK Article Title" description:"TK Article Description"
+  shareImageUrl:"https://parametric.press/issue-02/tk-article-slug/static/images/share.png"
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"tk-article-slug" /]
+
+[Nav fullWidth:true /]
 
 [Header
+  title:`["Article", "Title"]`
+  longTitle:`["The Full", "Article Title"]`
+  date:"May 15, 2020"
+  dek:"asfsddsafsd."
   fullWidth:true
-  title:"{{title}}"
-  subtitle:"Welcome to Idyll. Open index.idyll to start writing"
-  author:"Your Name Here"
-  authorLink:"https://idyll-lang.org"
-  date:"{{date}}"
-  background:"#222222"
-  color:"#ffffff"
-   /]
 
-## Introduction
+/]
 
-This is an Idyll post. It is generated via
-the file `index.idyll`. To compile this post using
-idyll, run the command `idyll` inside of this directory.
+[Aside]
+[Preview header:"Title" description:"opfsidgjidfsjsdfijfdgidsfgjdisfgjdsifgjdsigjdsigsdfjgiudjfsgoidsfjgdfoisjgdoigjsiodfjgoidjfgosdfj" media:"https://jasenlo123.github.io/jasenlo123-The-Minerva-Quest---Forex/static/images/buster.gif" url:"https://google.com" /]
+[Caption]
+Click this card to view the project!
+[/Caption]
+[/Aside]
 
 
-Idyll posts are designed to support interaction and
-data-driven graphics.
-
-[var name:"state" value:0 /]
-[CustomD3Component className:"d3-component" state:state /]
-[button onClick:`state++`]
-  Click Me.
-[/button]
-
-Configuration can be done via the `idyll` field in `package.json`.
-
-## Markup
-
-Idyll is based on Markdown.
-
-You can use familiar syntax
-to create **bold** (`**bold**` ) and *italic* (``*italic*` ) styles,
-
-* lists
-* of
-* items,
-
-```
-* lists
-* of
-* items,
-```
-
-1. and numbered
-2. lists
-3. of items,
-
-
-```
-1. and numbered
-2. lists
-3. of items,
-```
-
-in addition to [hyperlinks](https://idyll-lang.org) and images:
-
-![quill](static/images/quill.svg)
-
-```
-![quill](static/images/quill.svg)
-```
-
-## Components
-
-Components can be embedded using a bracket syntax:
-
-```
-[Range /]
-```
-
-and can contain nested content:
-
-```
-[Equation]e = mc^{2}[/Equation]
-```
-
-Components accept properties:
-
-```
-[Range value:x min:0 max:1 /]
-```
-
-that can be bound to variables to achieve interactivity (more in next section).
-
-
-A variety of components are included by default. See [all the available components](https://idyll-lang.org/docs/components/). You can also use any html tag, for example: `[div] A div! [/div]`.
-
-To create your own, add it to the `components/` folder. There are examples of how to use Idyll with React and D3 based components already included.
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tortor nunc, elementum eu ex vitae, lobortis fringilla ligula. Nunc sed nisl auctor dolor viverra dapibus sit amet et magna. Phasellus vestibulum dictum facilisis. Phasellus ut suscipit justo, ac vulputate nisi. Proin eu leo non nunc viverra egestas vitae eu augue. Vestibulum non massa in nulla interdum viverra. Vestibulum sit amet libero iaculis, maximus magna quis, dapibus lacus.
 
 
 
-## Interactivity
+ Aenean eros sem, varius quis erat sit amet, pulvinar aliquet diam. Etiam et vestibulum justo. Pellentesque commodo tristique metus at tempor. Donec cursus volutpat arcu. Etiam eget nisl mi. Cras malesuada tortor non diam auctor, vel porta tellus malesuada. Aliquam erat volutpat. Sed ut venenatis quam, sed elementum turpis. Duis bibendum consequat finibus.
 
-Here is how you can instantiate a variable and bind it to a component:
 
-[var name:"exampleVar" value:5 /]
 
-[Range min:0 max:10 value:exampleVar /]
-[Display value:exampleVar /]
 
-```
-[var name:"exampleVar" value:5 /]
+Fusce aliquam fermentum ex. Nullam mi sem, varius rutrum diam vitae, laoreet malesuada quam. Fusce sodales nibh ut finibus condimentum. Donec eget risus ut ipsum sodales commodo. Cras ullamcorper augue velit, at finibus diam mattis vel. Ut lobortis velit eget dolor dictum tincidunt. Morbi rhoncus vehicula sapien sit amet tempor. Aliquam blandit nisi eu enim fermentum, ac varius neque venenatis. Nullam in nisi at ante mollis tempus. Nullam congue finibus nisl eu finibus. Donec porttitor non ipsum et scelerisque. In in turpis elementum justo rhoncus varius at in metus. Aliquam eget dui mi. Donec non tortor sit amet massa porttitor aliquam tristique ut metus.
 
-[Range min:0 max:10 value:exampleVar /]
-[Display value:exampleVar /]
-```
+[var name:"updateCount" value:0 /]
+[Button onClick:`updateCount += 1`]
+  Update
+[/Button]
 
-## Learn More
+Integer viverra neque ut tristique laoreet. Vestibulum malesuada molestie sapien, sed auctor magna pellentesque nec. Nunc cursus tristique nisl. Donec aliquet felis nec mollis commodo. Ut dapibus blandit quam. Fusce tellus neque, ullamcorper quis magna ac, posuere pretium leo. Sed quam augue, porttitor eget pharetra non, tincidunt in mi. Suspendisse orci dui, vehicula ac aliquam non, iaculis a lacus. Fusce a nisi gravida, vulputate nibh quis, blandit ante. Nunc fringilla risus vitae ornare convallis. Sed rhoncus dolor risus, et pulvinar neque maximus non. Nullam tempor porta risus, et sagittis felis luctus at. Vestibulum a mi eget sapien auctor malesuada egestas vitae orci.
 
-To learn more see the documentation at [https://idyll-lang.org/docs/](https://idyll-lang.org/docs/),
-join our [chatroom](https://gitter.im/idyll-lang/Lobby), or see the project on [GitHub](https://github.com/idyll-lang/idyll).
+Quisque non laoreet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod consectetur odio, at facilisis leo congue at. Nam vitae est nunc. Ut consequat molestie erat id interdum. Quisque rhoncus, tortor a accumsan aliquet, augue odio porta lorem, vulputate egestas felis ante vitae neque. Proin nulla sapien, interdum et lorem quis, semper facilisis sapien. Donec erat sem, interdum id efficitur eget, efficitur sit amet eros. Aenean at nisl eu dui maximus convallis. Etiam varius odio vel laoreet maximus. Duis ac lacus lorem. Aliquam rutrum dapibus sapien non porttitor.
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+ [Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]

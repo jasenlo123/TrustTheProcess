@@ -5,6 +5,7 @@
   "idyll": {
     "theme": "default",
     "layout": "centered",
+    "context": "./context.js",
     "css": "styles.css",
     "authorView": false,
     "output": "../../docs/[slug]/",
@@ -14,9 +15,10 @@
     ]
   },
   "dependencies": {
+    "d3": "^4.0.0",
     "idyll": "^5.0.0",
     "idyll-d3-component": "^2.0.0",
-    "d3": "^4.0.0"
+    "react-tiny-link": "^3.6.1"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
