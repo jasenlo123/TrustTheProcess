@@ -77,24 +77,20 @@ button {
   margin: 0 auto;
 }
 
-.hed {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 400;
-}
-
-.dek {
+.idyll-pub-date {
   font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 }
 
 .article-header {
-  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
   width: 600px;
   width: 100%;
   text-align: center;
   padding: auto 2em;
   margin-bottom: 45px;
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 
 .inset {
@@ -522,5 +518,12 @@ input {
   box-shadow: inset 0 10em 0 silver;
 }
 
+.idyll-step-graphic {
+  background: none;
+}
 
-
+.idyll-step-content {
+  background: none;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+}

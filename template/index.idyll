@@ -11,7 +11,7 @@
   title:`["Article", "Title"]`
   longTitle:`["The Full", "Article Title"]`
   date:"May 15, 2020"
-  dek:"asfsddsafsd."
+  subtitle:"The subtitle of my article"
   fullWidth:true
 
 /]
