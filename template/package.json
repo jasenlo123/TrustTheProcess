@@ -5,7 +5,6 @@
   "idyll": {
     "theme": "default",
     "layout": "centered",
-    "context": "./context.js",
     "css": "styles.css",
     "authorView": false,
     "output": "../../docs/[slug]/",

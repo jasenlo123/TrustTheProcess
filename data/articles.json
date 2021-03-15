@@ -1,7 +1,7 @@
 [
     {
     "title": "Project 3 | 77 Nationalities & 66 Currencies",
-    "titleBreaks": ["Project 3 |, 77 Nationalities & 66 Currencies"],
+    "titleBreaks": ["Project 3 |", "77 Nationalities & 66 Currencies"],
     "author": "December 2020",
     "slug": "forex",
     "image": "forex.gif",
@@ -21,7 +21,7 @@
     "image": "capstone.gif",
     "description": "a project combining natural language processing, machine learning, and data visualisation."
   }, {
-    "title": "Project 0 | A Simple Portfolio and Map",
+    "title": "Project 0 | Finding my Bearings in Data Viz",
     "titleBreaks": ["Project 0 |", "Finding my Bearings in Data Viz"],
     "author": "May 2020",
     "slug": "portfolio",

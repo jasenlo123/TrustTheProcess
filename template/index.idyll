@@ -1,5 +1,5 @@
-[meta title:"TK Article Title" description:"TK Article Description"
-  shareImageUrl:"https://parametric.press/issue-02/tk-article-slug/static/images/share.png"
+[meta title:"Portfolio Piece Template!" description:"Portfolio Piece Description."
+  shareImageUrl:".........."
   shareImageWidth:"880"
   shareImageHeight:"440" /]
 
@@ -24,13 +24,20 @@ Click this card to view the project!
 [/Aside]
 
 
+#### This is a header. Double line? What happens?
+
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tortor nunc, elementum eu ex vitae, lobortis fringilla ligula. Nunc sed nisl auctor dolor viverra dapibus sit amet et magna. Phasellus vestibulum dictum facilisis. Phasellus ut suscipit justo, ac vulputate nisi. Proin eu leo non nunc viverra egestas vitae eu augue. Vestibulum non massa in nulla interdum viverra. Vestibulum sit amet libero iaculis, maximus magna quis, dapibus lacus.
 
 
 
  Aenean eros sem, varius quis erat sit amet, pulvinar aliquet diam. Etiam et vestibulum justo. Pellentesque commodo tristique metus at tempor. Donec cursus volutpat arcu. Etiam eget nisl mi. Cras malesuada tortor non diam auctor, vel porta tellus malesuada. Aliquam erat volutpat. Sed ut venenatis quam, sed elementum turpis. Duis bibendum consequat finibus.
 
-
+[Aside]
+[CustomD3Component /]
+[Caption]
+Click this card to view the project!
+[/Caption]
+[/Aside]
 
 
 Fusce aliquam fermentum ex. Nullam mi sem, varius rutrum diam vitae, laoreet malesuada quam. Fusce sodales nibh ut finibus condimentum. Donec eget risus ut ipsum sodales commodo. Cras ullamcorper augue velit, at finibus diam mattis vel. Ut lobortis velit eget dolor dictum tincidunt. Morbi rhoncus vehicula sapien sit amet tempor. Aliquam blandit nisi eu enim fermentum, ac varius neque venenatis. Nullam in nisi at ante mollis tempus. Nullam congue finibus nisl eu finibus. Donec porttitor non ipsum et scelerisque. In in turpis elementum justo rhoncus varius at in metus. Aliquam eget dui mi. Donec non tortor sit amet massa porttitor aliquam tristique ut metus.
@@ -40,7 +47,22 @@ Fusce aliquam fermentum ex. Nullam mi sem, varius rutrum diam vitae, laoreet mal
   Update
 [/Button]
 
-Integer viverra neque ut tristique laoreet. Vestibulum malesuada molestie sapien, sed auctor magna pellentesque nec. Nunc cursus tristique nisl. Donec aliquet felis nec mollis commodo. Ut dapibus blandit quam. Fusce tellus neque, ullamcorper quis magna ac, posuere pretium leo. Sed quam augue, porttitor eget pharetra non, tincidunt in mi. Suspendisse orci dui, vehicula ac aliquam non, iaculis a lacus. Fusce a nisi gravida, vulputate nibh quis, blandit ante. Nunc fringilla risus vitae ornare convallis. Sed rhoncus dolor risus, et pulvinar neque maximus non. Nullam tempor porta risus, et sagittis felis luctus at. Vestibulum a mi eget sapien auctor malesuada egestas vitae orci.
+Integer viverra neque ut tristique laoreet. Vestibulum malesuada molestie sapien, sed auctor magna pellentesque nec. Nunc cursus tristique nisl. Donec aliquet felis nec mollis commodo. Ut dapibus blandit quam. Fusce tellus neque, ullamcorper quis magna ac, posuere pretium leo. Sed quam augue, porttitor eget pharetra non, tincidunt in mi. Suspendisse orci dui, vehicula ac aliquam non, iaculis a lacus. Fusce a nisi gravida, vulputate nibh quis, blandit ante. [Annotation annotationText:"highlight text"] This is an annotaton! [/Annotation]!!!! Nunc fringilla risus vitae ornare convallis. Sed rhoncus dolor risus, et pulvinar neque maximus non. Nullam tempor porta risus, et sagittis felis luctus at. Vestibulum a mi eget sapien auctor malesuada egestas vitae orci. [link text:"This is a link" url:"https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png" target:"_blank"/]
+
+
+
+Quisque non laoreet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod consectetur odio, at facilisis leo congue at. Nam vitae est nunc. Ut consequat molestie erat id interdum. Quisque rhoncus, tortor a accumsan aliquet, augue odio porta lorem, vulputate egestas felis ante vitae neque. Proin nulla sapien, interdum et lorem quis, semper facilisis sapien. Donec erat sem, interdum id efficitur eget, efficitur sit amet eros. Aenean at nisl eu dui maximus convallis. Etiam varius odio vel laoreet maximus. Duis ac lacus lorem. Aliquam rutrum dapibus sapien non porttitor.
+
+[Aside]
+[img src:"https://www.sciencenewsforstudents.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png" alt:"placeholder" width:`100%` height:"auto"/]
+[Caption]
+Click this card to view the project!
+[/Caption]
+[/Aside]
+
+Quisque non laoreet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod consectetur odio, at facilisis leo congue at. Nam vitae est nunc. Ut consequat molestie erat id interdum. Quisque rhoncus, tortor a accumsan aliquet, augue odio porta lorem, vulputate egestas felis ante vitae neque. Proin nulla sapien, interdum et lorem quis, semper facilisis sapien. Donec erat sem, interdum id efficitur eget, efficitur sit amet eros. Aenean at nisl eu dui maximus convallis. Etiam varius odio vel laoreet maximus. Duis ac lacus lorem. Aliquam rutrum dapibus sapien non porttitor.
+
+
 
 Quisque non laoreet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc euismod consectetur odio, at facilisis leo congue at. Nam vitae est nunc. Ut consequat molestie erat id interdum. Quisque rhoncus, tortor a accumsan aliquet, augue odio porta lorem, vulputate egestas felis ante vitae neque. Proin nulla sapien, interdum et lorem quis, semper facilisis sapien. Donec erat sem, interdum id efficitur eget, efficitur sit amet eros. Aenean at nisl eu dui maximus convallis. Etiam varius odio vel laoreet maximus. Duis ac lacus lorem. Aliquam rutrum dapibus sapien non porttitor.
 
@@ -48,4 +70,4 @@ Quisque non laoreet dui. Vestibulum ante ipsum primis in faucibus orci luctus et
 [NextArticle slug:parametricSlug fullWidth:true /]
 
 // Uncomment before pub
- [Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]

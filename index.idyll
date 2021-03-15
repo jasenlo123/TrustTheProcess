@@ -18,7 +18,7 @@
 
       [div className:"information-container"]
         [div className:"information"]
-          [a href:"./editors-note"]An Introduction[/a]
+          [a href:"./introduction"]An Introduction[/a]
         [/div]
 
         [div className:"information"]
