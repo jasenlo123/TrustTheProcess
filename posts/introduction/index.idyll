@@ -1,0 +1,56 @@
+[meta title:"Portfolio Piece Template!" description:"Portfolio Piece Description."
+  shareImageUrl:".........."
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"tk-article-slug" /]
+
+[Nav fullWidth:true /]
+
+[Header
+  title:`["An Introduction"]`
+  subtitle:"What is this interactive portfolio and why?"
+  date:"May 15, 2020"
+  fullWidth:true
+/]
+
+
+#### “But what we enjoy the most is wielding data as a tool to explore our curiosities about the world around us.” 
+[Caption]
+- Nadie Bremer & Shirley Wu in Data Sketches
+[/Caption]
+
+[br/]
+
+
+Hi! I'm Jasen, a computer science student at Minerva Schools at KGI. This interactive portfolio outlines my year-long learning journey to of making data visualisations (data viz) and tell data-driven visual stories. Around this time last year, I was not a data viz practitioner at all. I was very much sitting on the bleachers, wide-eyed at and astonished by the incredible data viz work made by the likes of Mike Bostock, Nadie Bremer, Shirley Wu, and Moritz Stefaner. Their visualisations captured my imagination because they were the least chart-like charts - so precise and yet whimsical, unlike anything I had ever seen before.
+
+[Aside]
+  [var name:"stepperIndex" value:0 /]
+
+  [Stepper currentStep:stepperIndex]
+    [Graphic]
+      [img src:`"static/images/" + stepperIndex + ".png"` /]
+    [/Graphic]
+
+    [Step]
+      [Inspiring Data Viz Examples: The Rhythm of Food, Analyzing food seasonality by Moritz Stefaner](https://truth-and-beauty.net/projects/the-rhythm-of-food)
+    [/Step]
+    [Step]
+      [Inspiring Data Viz Examples: Why do cats & dogs ...? by Nadie Bremer](https://whydocatsanddogs.com/)
+    [/Step]
+
+    [StepperControl /]
+[/Stepper]
+[/Aside]
+
+Despite my enthusiasm for visual data stories, however, it wasn't easy to imagine myself imitating my data viz heroes. From my perspective, it seemed like my favourite data viz people were experts in everything data viz, ranging from code to design and art. At this point, I could only passably code in Python (matplotlib?), put colourful things together in Canva, and occasionally add a watercolour into my journal. The prospect of creating a data viz, all while telling a coherent and engaging story seemed incredibly daunting.
+
+Fast forward a year later, and I have somehow completed three independently produced data viz projects! Thus, I write this reflection + process piece for all people interested in data viz, whether they be established practitioners or educators who are curious how a data viz skillset can be (and has been sort of!) acquired. Most of all, I really hope that eager but intimidated data viz enthusiasts, as I once was and perhaps still am, can observe what is possible only after a relatively brief learning curve!
+
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]
