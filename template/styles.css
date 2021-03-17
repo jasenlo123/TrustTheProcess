@@ -34,6 +34,12 @@ h4 {
   }
 }
 
+h5 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.1em;
+  margin: 1.5em 0em;
+}
 
 
 button {
@@ -55,6 +61,11 @@ button {
   box-shadow: 3px 3px 2px silver;
 }
 
+a:hover.react_tinylink_card {
+  /*background: #EAE7D6;*/
+  box-shadow: none !important;
+  text-decoration: none
+}
 
 .idyll-root {
   box-sizing: border-box;

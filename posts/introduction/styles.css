@@ -389,6 +389,7 @@ input {
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2em;
   border-top:3px solid purple;
+  border-bottom:3px solid purple;
   padding-left: calc((100vw - 1440px) / 2);
   padding-right: calc((100vw - 1440px) / 2);
 }

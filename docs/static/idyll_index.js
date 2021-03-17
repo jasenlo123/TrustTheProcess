@@ -66558,7 +66558,7 @@ module.exports = { "articles": [{ "title": "Project 3 | 77 Nationalities & 66 Cu
 },{}],"__IDYLL_OPTS__":[function(require,module,exports){
 "use strict";
 
-var out = { "ssr": true, "theme": "default", "layout": "centered", "authorView": false };
+var out = { "ssr": false, "theme": "default", "layout": "centered", "authorView": false };
 out.context = function () {};
 module.exports = out;
 
