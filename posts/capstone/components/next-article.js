@@ -1,5 +1,6 @@
 import React from 'react';
 import ARTICLES from './articles';
+const Preview = require('./preview');
 
 class CustomComponent extends React.Component {
 
@@ -16,7 +17,7 @@ class CustomComponent extends React.Component {
     const article = this.getNextArticle();
     return (
       <div className="parametric-recirc-next-article">
-        <a href={`/${article.slug}/`}>
+        <a href={`/TrustTheProcess/${article.slug}/`}>
           <div>
             <div>Read about another project!</div>
             <div className="highlight-hover">{article.title.slice(11)}</div>

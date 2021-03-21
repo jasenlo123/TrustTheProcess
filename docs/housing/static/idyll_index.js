@@ -391,7 +391,7 @@ var CustomComponent = function (_React$Component) {
         { className: 'parametric-recirc-next-article' },
         _react2.default.createElement(
           'a',
-          { href: '/' + article.slug + '/' },
+          { href: '/TrustTheProcess/' + article.slug + '/' },
           _react2.default.createElement(
             'div',
             null,
