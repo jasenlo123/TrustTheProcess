@@ -40,8 +40,8 @@ class Nav extends React.PureComponent {
             textDecoration: 'none',
             color: 'purple'
           }}>
-            <a href="/" >
-              Jasen's Interactive Data Viz Portfolio
+            <a href="/TrustTheProcess" >
+            Jasen's Interactive Data Viz Portfolio
             </a>
             <div className='parametric-nav-toc' style={{cursor: 'pointer', textDecoration: 'none', fontSize: 48, position: 'relative', top: -8}} onClick={this.handleContents}>
               ☰
@@ -74,7 +74,7 @@ class Nav extends React.PureComponent {
                   <div style={{marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                     <div>
                       <div style={{fontFamily: 'Courier New', fontWeight: 500}}>
-                        <a style={{color: '#222'}} href={`/${slug}/`}>{formatTitle(titleBreaks)}</a>
+                        <a style={{color: '#222'}} href={`/TrustTheProcess/${slug}/`}>{formatTitle(titleBreaks)}</a>
                       </div>
                       <div style={{fontStyle: 'italic', fontWeight: 400, fontFamily: 'Courier New'}}>
                         {author}
@@ -91,12 +91,12 @@ class Nav extends React.PureComponent {
             <div style={{textAlign: 'right'}}>
               <div style={{marginTop: '3em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                 <div style={{fontFamily: 'Courier New', fontWeight: 500}}>
-                <a style={{color: '#222'}} href={`/introduction/`}>Introduction</a>
+                <a style={{color: '#222'}} href={`/TrustTheProcess/introduction/`}>Introduction</a>
                 </div>
               </div>
               <div style={{ marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                 <div style={{fontFamily: 'Courier New', fontWeight: 500}}>
-                  <a style={{color: '#222'}} href={`/aboutMe/`}>About Me</a>
+                  <a style={{color: '#222'}} href={`/TrustTheProcess/aboutMe/`}>About Me</a>
                 </div>
               </div>
             </div>
