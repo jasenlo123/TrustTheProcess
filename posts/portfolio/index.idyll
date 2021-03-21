@@ -1,0 +1,153 @@
+[meta title:"Trust The Process - Finding my Bearings in Data Viz" description:"Jasen's tart in data viz, front-end web dev and d3."
+  shareImageUrl:"../portfolio/static/images/portfolio.gif"
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"portfolio" /]
+
+[Nav fullWidth:true /]
+
+[Header
+  title:`["Finding my Bearings in Data Viz"]`
+  longTitle:`["Finding my Bearings","in Data Viz"]`
+  date:"May, 2020"
+  subtitle:"my start in data viz, front-end web dev and d3."
+  fullWidth:true
+
+/]
+
+[Aside]
+  (Click [link text:"underlines" url:"https://heliotrope-swift-petalite.glitch.me/visuals.`html`" target:"_blank"/] to visit links. Hover over [Annotation annotationText:"This is an annotation!"] highlights [/Annotation] for inline annotations. ```Code or frameworks``` are denoted by this style.)
+[/Aside]
+
+#### Finding My Bearings
+
+[Aside]
+[Preview header:"My First Portfolio" description:"My first web project, aided by the teaching grace of the incredible Traversy Media." media:"../portfolio/static/images/portfolio.gif" url:"https://jasenlo123.`github'.io/portfolio" /]
+[Caption]
+Click this card to view my first portfolio.
+[/Caption]
+[/Aside]
+
+  Imitation is the sincerest form of flattery, but I decided to imitate my data viz idols not just out of admiration but also out of necessity. Data visualisers start from various backgrounds, and because of this diversity, the data viz field has tons of different tools and frameworks for constructing certain visualisations for specific contexts. For a beginner wandering cluelessly into the data viz world, the number of options available can be overwhelming. I had to find my bearings, so I naturally investigated my favourite visual data designers and storytellers' tools.
+
+  It wasn’t long before I found the common language that allowed for producing these imaginative data viz: `D3`. Short-hand for **[link text:"Data-Driven Documents" url:"https://d3js.org/" target:"_blank"/]**, I learned that `D3` is a `JavaScript` library created for web-based visualisations based on data. `D3` was intentionally designed to be a low-level library, so potential data viz are not confined to specific types such as bar charts and line graphs. Literally, any data viz that can be imagined can be created, which explains the seemingly magical origins of the imaginative and extraordinary visualisations that had enraptured me.
+
+[Aside]
+  [Preview header:"Interactive Data Visualization for the Web" description:"Written by Scott Murray, this book taught my the basics of D3." media:"https://alignedleft.com/content/02-work/300-d3-book/1.jpg" url:"https://alignedleft.com/work/d3-book" /]
+  [Caption]
+  Click this card to view Murray's *Interactive Data Visualization for the Web*. There's a free online version.
+  [/Caption]
+[/Aside]
+
+	I resolved to learn the magic powers of `D3`. After a few Google searches, I found that many blog posts and data viz practitioners pointed to Interactive Data Visualization for the Web as a resource for their `D3` initiation. I also read about how `D3` was challenging to learn. Thus, with much trepidation, I opened an online copy of *[link text:"Interactive Data Visualization for the Web" url:"https://alignedleft.com/work/d3-book" target:"_blank"/]* and began to read.
+
+	A few pages later, it was clear that I had no idea what was happening. The book hadn’t even introduced `D3`. Even though the first chapters were dedicated to introducing basic concepts such as `HTML` and `CSS`, once `Javascript` and `SVG` came into the picture, my lack of any web development experience doomed me to confusion. Thus, even before any `D3`, I realised that web development was a stepping stone to data viz, which made sense since most of the data viz I had seen mostly lived in internet browsers.
+
+#### Web Development First
+
+  [Aside]
+  [Youtube
+    id:"gYzHS-n2gqU"
+    play:false
+    audio:true
+    width: 500
+    height: 300
+    options:`{ controls: 1 }`
+    /]
+  [Caption]
+  The first of Traversy Media's 7-episode *Responsive Portfolio Website* tutorial. This tutorial imparted onto me, my basic web development foundations.[/Caption]
+  [/Aside]
+
+  I figured that if I was going to learn web development, I might as well build something useful. At the time, I didn’t have a portfolio website to showcase my non-data viz work, so I searched Youtube and found Traversy Media’s tutorial on creating a *[link text:"Responsive Portfolio Website" url:"https://www.youtube.com/watch?v=gYzHS-n2gqU" target:"_blank"/]* with `HTML`, `CSS` and `Javascript`.
+
+	I followed along with the 7-episode tutorial and managed to deploy a simple website with a home, about me, work, and contact pages in approximately two days. Thanks to Traversy’s step-by-step guidance, I managed to figure out foundational `HTML`, `CSS` and `Javascript`. I also learned how to set up a development environment in Visual Studio Code, deploy a website with `Github Pages`, and use `Github` repositories to keep track of changes.
+
+  [img  src:"../portfolio/static/images/commits.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  My very first Github commits! I’ve gotten better at naming my commits, I promise.  [/Caption]
+
+  Although I’m planning to revamp my portfolio website very soon because ultimately I didn’t design the website and I would like a portfolio I designed myself, I am still really proud of this website. This portfolio was the very first tangible internet thing that I created from scratch and paved the way for my explorations in the data viz world.
+
+[Aside]
+  [img  src:"../portfolio/static/images/barHighlight.gif" alt:"placeholder" width:"400px" height:"auto"/]
+  [br/]
+  [Caption]
+  The very first `D3` things that I made. I took these videos with my smartphone because I was too excited to record my screen properly, and wanted to share these things with my friends.[/Caption]
+  [img  src:"../portfolio/static/images/scatterTransition.gif" alt:"placeholder" width:"400px" height:"auto"/]
+[/Aside]
+
+#### Back to D3
+
+  Equipped with my newfound novice web development experience, I dived back into *Interactive Data Visualization for the Web* and found myself absorbing much more than before. The vocabulary seemed less foreign, the progression between concepts less jarring. `SVG`s made sense now, and because of Scott Murray’s outstanding examples and guidance, I was making my very first `D3` charts!
+
+	It might be difficult for non-data viz enthusiasts to empathise with the amount of satisfaction I felt from making these charts from dummy data. Still, I remember feeling an excessive sense of newfound creative power. The low-level design of `D3` forced me to specify everything in a data viz, from the thickness of axes to the opacity of the bars. While that might seem annoying to some who want a simple graph, I found the control I had over this browser-based incredibly liberating. No longer was I confined to the predetermined charts. I wondered what I could make on my own with real data with my new' D'3 powers. The possibilities with `D3` seemed truly endless.
+
+
+#### A D3 Map of my Own
+
+  I decided to test out my `D3` capabilities by adding a small map of the places that I’ve lived in and visited in the past five years of my life to my portfolio’s about me page. So I compiled a small spreadsheet of the places I’ve been to, a short description of my time there, how many months I stayed there, and their longitudes and latitudes.
+
+
+[data name:"locationData" source:"location_viz.csv"  /]
+  [br/]
+[Table data:locationData defaultPageSize:5 /]
+  [Caption]
+  The manually compiled dataset of places I've been to in the past 5 years.[/Caption]
+  [br/]
+
+  The idea was to create a map with circle markers that would expand on-hover if the viewer hovered their mouse over any particular circle. The expansion size would depend on the amount of time I spent there, and a tooltip with the accompanying description would appear close to the marker. Thanks to *Interactive Data Visualization for the Web*’s excellent tutorial on `D3`'s methods for working with geo-mapping projections and his introduction into how `D3` handles interactive events like mouse hovers, I was able to create what I had conceptualised initially pretty quickly.
+
+  [img  src:"../portfolio/static/images/protoLarge.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  A early stage D3 map prototype. Note how the blue circle are way too small relative to the rest of the graphic.[/Caption]
+  [br/]
+
+	Hurray right? Not so fast. Web developers place a lot of emphasis on responsive design so that websites and the content on websites can be assessable on different devices. The map in its current form only worked well in browser windows of big screens, but smaller screens? More than half the map was completely missing.
+
+  [Aside]
+  ```
+  d3.select("div#container")
+          .append("svg")
+          .attr("preserveAspectRatio", "xMinYMin meet")
+          ...
+  ```
+    [Caption ]
+  `CSS` code using `preserveAspectRatio`'s `xMinYMin meet` attribute, which solved the problem somewhat?[/Caption]
+  [br/]
+[/Aside]
+
+
+  [img  src:"../portfolio/static/images/protoSmall.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  The same prototype in a smaller screen setting. The map breaks, as much of it lies outside of the screen view.[/Caption]
+  [br/]
+
+
+
+	I managed to hack a half-way solution with `CSS` attributes such that the aspect ratio of the `SVG` would be preserved as the `SVG` is resized, such that the entire map would stay within the bounds of the map.
+
+	However, this solution wasn't the ideal mobile responsive way to solve the problem because the map would shrink as the screen size shrank. Contrast the size of the text relative to the size of the map in each view!
+	But I figured that not too many people would view my portfolio on mobile and that the map didn't break the entire page. Thus, I was okay with this imperfect solution.
+
+[Aside]
+  [img  src:"../portfolio/static/images/prodLarge.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption ]
+   Large screen setting of my About Me page.[/Caption]
+[/Aside]
+
+  [br/]
+
+  [img  src:"../portfolio/static/images/prodSmall.png" alt:"placeholder" width:"400px" height:"auto"/]
+  [Caption]
+   Small screen setting of my About Me page.[/Caption]
+  [br/]
+
+	My `D3` struggles with mobile responsive design will be a reoccurring theme in many of my early projects, which shows that mastery over `D3` and data viz goes hand-in-hand with expertise in front-end web development.
+
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]

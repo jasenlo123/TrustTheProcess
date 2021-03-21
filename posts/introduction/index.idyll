@@ -1,9 +1,9 @@
-[meta title:"Introducing Trust The Process!" description:"An introduction to Jasen's interactive portfolio."
+[meta title:"Trust The Process - An Intoduction" description:"An introduction to Jasen's interactive portfolio."
   shareImageUrl:".........."
   shareImageWidth:"880"
   shareImageHeight:"440" /]
 
-[var name:"parametricSlug" value:"tk-article-slug" /]
+[var name:"parametricSlug" value:"capstone" /]
 
 [Nav fullWidth:true /]
 
@@ -13,6 +13,11 @@
   date:"May 15, 2020"
   fullWidth:true
 /]
+
+
+[Aside]
+  (Click [link text:"underlines" url:"https://heliotrope-swift-petalite.glitch.me/visuals.html" target:"_blank"/] to visit links. Hover over [Annotation annotationText:"This is an annotation!"] highlights [/Annotation] for inline annotations. ```Code or frameworks``` are denoted by this style.)
+[/Aside]
 
 #### They tell us every game, every day: **Trust the Process. Just continue to build.**
 [Caption]

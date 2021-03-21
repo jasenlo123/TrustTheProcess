@@ -30,7 +30,7 @@ class Nav extends React.PureComponent {
     return (
       <div className="parametric-article-nav">
           <div>
-            <div style={{fontFamily:'Courier New', textDecoration: 'none', color: 'silver'}}>A Capstone Project</div>
+            <div style={{fontFamily:'Courier New', textDecoration: 'none', color: 'silver'}}>Trust The Process | A Capstone Project</div>
           </div>
           <div className="parametric-nav-links" style={{
             display: 'flex',

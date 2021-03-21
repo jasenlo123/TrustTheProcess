@@ -1,0 +1,196 @@
+[meta title:"Trust The Process - Capstone Interactive Data Viz" description:"Portfolio Piece Description."
+  shareImageUrl:".........."
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"capstone" /]
+
+[Nav fullWidth:true /]
+
+[Header
+  title:`["Capstone Interactive Data Viz"]`
+  longTitle:`["Capstone Interactive", "Data Visualisation"]`
+  date:"June, 2020"
+  subtitle:"a project combining natural language processing, machine learning, and data visualisation."
+  fullWidth:true
+
+/]
+
+[Aside]
+  (Click [link text:"underlines" url:"https://heliotrope-swift-petalite.glitch.me/visuals.html" target:"_blank"/] to visit links. Hover over [Annotation annotationText:"This is an annotation!"] highlights [/Annotation] for inline annotations. ```Code or frameworks``` are denoted by this style.)
+[/Aside]
+
+
+#### Applying D3 Practically
+
+[Aside]
+[Preview header:"Capstone Interactive Data Viz" description:"An interactive data viz tool intended to help Minerva students locate collaborators." media:"https://capstonedataviz-280216.web.app/assets/shani.png" url:"https://heliotrope-swift-petalite.glitch.me/visuals.html" /]
+[Caption]
+Click this card to view the project! Note that this version of the Capstone Interactive Data Viz has redacted names due to FERPA restrictions.
+[/Caption]
+[/Aside]
+
+
+  Newly equipped with some novice `D3` skills and still wholly infatuated with the possibilities of `D3`, I was pinning to make a data viz that was quintessentially `D3`, something that otherwise wouldn't have been possible in with any other tool or skill I had at the time.
+ 
+
+  During this time, my classmates and I had also recently submitted our capstone project (undergraduate thesis) proposals. Something that kept coming up in my university's social media groups was the community's widespread curiosity about the completed capstone of graduated upperclassmen and the ongoing capstones of fellow classmates.
+ 
+
+  This information was difficult to access because information about students' capstones were stored in Google Sheets, which are difficult to use effectively because Google Sheets' user interface is not intended as a searchable text database. Thus, students were not motivated to find out more about other projects or enabled to search for collaborators using these sheets, but opted for asking others in social media forums.
+
+  [Aside]
+  [img src:"../capstone/static/images/gSheets.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Screenshot of the Shared M21 Capstone Information Google Sheet. Can you imagine reading through this database? Ugh. [/Caption]
+  [/Aside]
+
+  Given that all students capstone proposals were available in the form of text data, and I imagined that a `D3` data viz might be able to not only elegantly communicate all this data in a coherent way. I went ahead and started sketching what this might look like. I lost my initial paper sketches unfortunately, but luckily sketched a version of the data viz in Keynote survived. I wasn't familiar with wire-framing tools such as Figma, which I have grown accustomed to using nowadays.
+
+  I wanted the data viz to have several features that would all contribute to helping users	find potential collaborators or exploring the capstones of others:
+
+1. A main scatter plot where each point represented a capstone proposal, and the location of a shape would represent a proposal's general topic. Similarity to other proposals would be reflected in the distances of each point to the others such that similar proposals would be clustered together.
+2. A search function where one could highlight proposals which contained a keyword.
+3. An intended LO course table section where one could see which proposals were planning to apply LOs from a particular course.
+
+  [br/]
+  [img  src:"../capstone/static/images/design.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption ]
+   Early sketch of the Capstone data viz tool, sketched out in Keynote. Annotations included!  [/Caption]
+
+	I wrote to the Capstone Head Instructor Professor Suzanne Kern about what I intended to do with this data viz project of mine and managed to get her approval and support. I had initially envisioned this project to be published in the *Minerva Quest*, the student-produced news source and publishing platform for the Minerva Schools community. 
+  
+
+  [Aside]
+  ```
+  #do not collect any text above!
+  #_______
+  abstract
+      #scrap abstract body here
+
+  description
+      #scrap description here
+      #remove all images, tables!
+
+  Intended LO Application Appendix
+      #scrap all LOs here!
+  #_______
+  #do not collect any text above!
+
+  ```
+  [Caption]
+  Text file schema. If the text file looked like this, then `Python` would have no problem turning the text into a dataframe row! [/Caption]
+[/Aside]
+
+  However, Professor Kern also let me know that capstone information could be not published in a public platform like the Quest due to Family Educational Rights and Privacy Act (FERPA) regulations that restrict making students' majors publicly available. This regulation would be difficult to navigate later on when I had to think of a way to publish my data viz that wouldn't violate this regulation. More on that later.
+
+#### Data
+
+
+
+  With Professor Kern's approval, I went to work scraping the data from the proposal documents. These documents were mostly PDFs, and so I used a `Python` library `pdftotext` to convert these documents into text. Of course, the conversions were often far from perfect, so I had to manually clean many of these text files by getting rid of page footers and images, etc.
+
+
+  Thankfully, all of the proposals had to follow a proposal convention. Every proposal had to have an abstract, description, and intended LO applications, which made the process of manually cleaning much less difficult. Post-cleaning, I finally complied a complete dataset of each proposal - who wrote it, their majors, the proposal abstract, the capstone description, and the intended LOs applications. 
+
+  [Aside]
+  [img  src:"../capstone/static/images/pythonClean.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption ]
+   `Python` cleaning code that I wrote to make sure the data was data viz ready. The first code block made sure all of the student majors were consistently formatted such that students from the same major would be identified. The second code block detected if there were problematic data rows that suggested that particular proposal’s text file required more cleaning.  [/Caption]
+  [/Aside]
+
+  Thanks to my data science courses, I knew that it was possible to quantify text similarity with natural language processing models and machine learning. My idea was to create a numeric representation of each proposal's abstract using a natural language processing method called `doc2vec`. These vector representations of multiple dimensions were then compressed into the 2-dimensional scatterplot using a machine learning technique known as t-distributed stochastic neighbor embedding (`TSNE`). After some `TSNE` trial-and-error, I plotted the results out using `Python`'s Matplotlib library:
+
+	
+  [br/]
+  [br/]
+  [img  src:"../capstone/static/images/tsneResult.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Matplotlib scatterplot of the capstone proposals after `doc2vec` and `TSNE`.[/Caption]
+
+  I could immediately identify clusters of proposals from people with similar majors, an incredibly encouraging finding that meant that my data viz was entirely feasible. With this, I moved to development in `D3`.
+
+#### Development
+
+  [Aside]
+  [img  src:"../capstone/static/images/d3Hover.gif" alt:"placeholder" width:`100%` height:"400px"/]
+  [Caption ]
+   Development excitement, my amazement at `D3`'s reactive on-hover mouse events.   [/Caption]
+  [/Aside]
+
+  Aside from figuring out how to draw half-filled circles representing double majors (stackoverflow to the rescue!), creating the scatter plot in `D3` wasn't all too difficult. However, implementing the interactivity that would be challenging. I only intuitively understood the value of interactivity in data viz in providing layers of information that could be provided upon user request, but I also thought that things happening in a data viz like colour changes were really engaging ways to get a user drawn into a data viz. `D3`'s handling of interactivity was also one of the heavily touched upon topics in Scott Murray’s *Interactive Data Visualization for the Web*.
+
+	In the case of this data viz, it meant writing a lot of `D3` code to handle what would happen to other parts of the viz if a user hovered their mouse over a particular part of the viz. For instance, this `D3` code makes the other proposal circles change size if a user hovers their mouse on a proposal circle.
+
+
+  As one can probably imagine, this was a lot of code. 822 lines of `D3` code to be exact. And yes, I didn't structure my code very well, and repeated lots of code that probably could have been functions, but coding concerns put aside, it worked.
+
+    [Aside]
+  [video width:"100%" height:"400px" controls:`true` autoplay:`true`]
+    [source src:"../capstone/static/images/svgLink.mp4" type:"video/mp4" /]
+    Your browser does not support the video tag.
+  [/video]
+  [Caption]
+  When I figured out how to connect on-hover interactivity between different `SVG` elements with `D3`!
+  [/Caption]
+  [/Aside]
+
+  Hovering my mouse over the legend of different majors and all of the circles of that major sprang to vibrant life while the other circles politely complied with my code and faded into the background. I still can't get over it. A visual idea that only existed in my imagination wasn't just precisely drawn out on a canvas, but things that I somehow manifested magically reacted to my mouse as I moved it around.
+
+
+
+	I then added the course LO table by using `D3` to draw the rectangles representing each course, and implemented the search bar function with vanilla `Javascript`, making sure that these functionalities worked in conjunction with the scatter plot circles. I made some adjustments in terms of positioning and added some annotations to guide users. 
+
+	Finally, I also had to make the rest of the website to house the data viz so it would live in a nicely designed website home and asked my talented artist friends [link text:"Shani" url:"https://www.shanizhang.com/" target:"_blank"/] and [link text:"Linnea" url:"https://www.futuretoobright.com/" target:"_blank"/] for some illustrations to liven up the site. The data viz and the application that housed it was thus more or less complete.
+  [hr/]
+  [br/]
+  [br/]
+  [br/]
+  [img fullWidth:true src:"../capstone/static/images/complete.gif" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption fullWidth:true]
+  Web page overview, including a view of the `Google Authentication` feature in the web application. The user had to verify their identity using their Minerva email in order to access the data. [/Caption]
+
+#### Authentication
+
+[Aside]
+  [var name:"stepperIndex" value:0 /]
+
+  [Stepper currentStep:stepperIndex]
+    [Graphic]
+      [img src:`"static/images/" + stepperIndex + ".png"` /]
+    [/Graphic]
+
+    [Step]
+      [br/]
+
+      [Caption]`Firebase` analytics of the average engagement time of users.[/Caption]
+    [/Step]
+    [Step]
+      [br/]
+      [Caption]`Firebase` analytics of the number of login events into the web application. [/Caption]
+    [/Step]
+    [StepperControl /]
+[/Stepper]
+[/Aside]
+
+  However, because of the FERPA regulations that Professor Kern told me about, I wasn't allowed to deploy the visualisation such that random people from the public could access the data that I scraped. After exploring possible options, I resolved to figure out how to use `Firebase` and `Google Authentication` protocol to ensure that only people affiliated with Minerva would be able to access the data.
+
+	Using `Firebase` to store the data such that it would only be delivered after authentication and deploying the project via `Firebase` also had the added benefit that I was privy to lots of analytics information about my project. To my amazement, the analytics reported that the average engagement time of readers was 18 minutes, while 442 unique users had viewed the data viz! 
+
+
+
+#### Takeaways
+
+* Awesome things happen when one combines different skillsets. This project was only possible because I happened to be familiar with machine learning, natural language processing, and (basic) data visualisation. There are plenty of people out there who are experts in these topics, but there are fewer who are comfortable in these three areas simultaneously. This project confirmed an intuition of mine - that there's plenty of interesting stuff to be made in terms of products, projects, and ideas, that emerge from experimentally combining knowledge from different fields! It may not always work out like this project, but when it does, the work can truly be something unique.
+  
+* Having to navigate `Google Authentication` and `Firebase` was a scary jump into the back-end web development world, after-all, I had only just familiarised myself with front-end web development. But it had to be done if anyone was going to be able to see the visualisation at all. My experience with back-end development work reminded me, like with mobile responsiveness, that data viz doesn't happen in a `D3` vacuum.
+  
+* I have such talented artist friends. Shani and Linnea's illustrations.
+
+
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]
