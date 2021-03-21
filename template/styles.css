@@ -23,6 +23,7 @@ h4 {
   font-family: 'Courier New', Courier, monospace;
   width: 90%;
   margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 @media all and (min-width: 800px) 
@@ -32,13 +33,25 @@ h4 {
   h4 {
     margin-left: 1.5em;
   }
+  pre {
+    margin-left: 2em !important;
+    margin-bottom: 0.5em !important;
+  }
+  video {
+    padding-left: 2em;
+  }
+}
+
+hr {
+  border-top: 3px solid purple;
+  margin: 1.5em 0;
 }
 
 h5 {
   text-align: center;
   font-weight: lighter;
   font-size: 1.1em;
-  margin: 1.5em 0em;
+  margin: 1.5em 2em;
 }
 
 
@@ -47,9 +60,11 @@ button {
   font-size: large;
 }
 
-
-
 .aside img {
+  box-shadow: 3px 3px 2px silver;
+}
+
+.aside iframe {
   box-shadow: 3px 3px 2px silver;
 }
 
@@ -58,14 +73,20 @@ button {
 }
 
 .aside .react_tinylink_card {
-  box-shadow: 3px 3px 2px silver;
+  margin-left:0;
 }
 
-a:hover.react_tinylink_card {
-  /*background: #EAE7D6;*/
-  box-shadow: none !important;
-  text-decoration: none
+.react_tinylink_card {
+  margin-left: 2em;
+  box-shadow: 3px 3px 2px silver !important;
 }
+
+
+a:hover.react_tinylink_card {
+  box-shadow: none !important;
+  text-decoration: none;  
+}
+
 
 .idyll-root {
   box-sizing: border-box;
@@ -94,12 +115,12 @@ a:hover.react_tinylink_card {
 
 .article-header {
   font-family: 'Courier New', Courier, monospace;
+  text-decoration: underline;
   font-weight: 400;
-  width: 600px;
   width: 100%;
   text-align: center;
-  padding: auto 2em;
-  margin-bottom: 45px;
+  padding: auto 5em;
+  margin-bottom: 75px;
   background-color: white !important;
   color: black !important;
 }
@@ -366,7 +387,7 @@ input {
 }
 
 .parametric-caption {
-  margin: 0.5em 1em;
+  margin: 0em 1em 2em 5em;
   text-align: right;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -376,8 +397,9 @@ input {
   padding: 0;
 }
 
+
 .react_tinylink_card_content_header_description {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Courier New', Courier, monospace !important;
 }
 
@@ -394,6 +416,7 @@ input {
   font-family: 'Courier New', Courier, monospace;
   margin-top: 2em;
   border-top:3px solid purple;
+  border-bottom:3px solid purple;
   padding-left: calc((100vw - 1440px) / 2);
   padding-right: calc((100vw - 1440px) / 2);
 }
@@ -476,11 +499,7 @@ input {
   opacity: 0;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  font-weight: 300;
-}
-
-.parametric-annotation .parametric-annotation-text b {
-  font-style: italic;
+  font-weight: initial;
 }
 
 .parametric-annotation:hover .parametric-annotation-text {
@@ -509,11 +528,13 @@ input {
   transition: box-shadow 0.25s ease-out;
 }
 
+
 .idyll-text-container a:hover {
   /*background: #EAE7D6;*/
   box-shadow: inset 0 -22px 0 silver;
   text-decoration: none
 }
+
 
 .idyll-text-container a tspan {
   text-decoration: none;
@@ -526,7 +547,7 @@ input {
 }
 
 .parametric-recirc-next-article a:hover {
-  box-shadow: inset 0 10em 0 silver;
+  box-shadow: inset 0 20em 0 silver;
 }
 
 .idyll-step-graphic {
@@ -538,3 +559,12 @@ input {
   text-align: right;
   font-family: 'Courier New', Courier, monospace;
 }
+
+ol {
+    font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+    }
+
+
+ul {
+  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+  }

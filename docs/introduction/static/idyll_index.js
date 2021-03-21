@@ -171,7 +171,7 @@ var Nav = function (_React$PureComponent) {
           _react2.default.createElement(
             'a',
             { href: '/' },
-            'Jasen\'s Interactive Visual Data Journalism Portfolio'
+            'Jasen\'s Interactive Data Viz Portfolio'
           ),
           _react2.default.createElement(
             'div',
@@ -18339,7 +18339,7 @@ function childrenToMarkup(node, depth) {
 
   return (node.children || []).reduce(function (memo, child) {
     return memo + ('' + separator + nodeToMarkup(child, depth, insertFullWidth, separator));
-  }, '');
+  }, '').replace(/\n\n+/g, '\n\n');
 }
 
 function nodeToMarkup(node, depth, insertFullWidth) {
@@ -18359,9 +18359,9 @@ function nodeToMarkup(node, depth, insertFullWidth) {
       return '' + '  '.repeat(depth) + node.value.trim();
     case 'component':
       if (node.name.toLowerCase() === 'textcontainer') {
-        return '\n' + childrenToMarkup(node, depth, '\n', false) + '\n';
+        return '\n' + childrenToMarkup(node, depth, '\n', false);
       } else if (node.name.toLowerCase() === 'p' && depth < 1) {
-        return '\n' + childrenToMarkup(node, depth, ' ', false).trim() + '\n';
+        return '\n' + childrenToMarkup(node, depth, '\n', false).trim() + '\n';
       } else if (markupNodes.includes(node.name.toLowerCase())) {
         switch (node.name.toLowerCase()) {
           case 'strong':
@@ -18392,7 +18392,7 @@ function nodeToMarkup(node, depth, insertFullWidth) {
       var propString = propertiesToString(node, depth, insertFullWidth);
       if (hasChildren(node)) {
         if (node.name === 'a') {
-          return '[' + node.name + (propString ? '' + propString : '') + ']' + childrenToMarkup(node, depth + 1, ' ', false).trim() + '[/' + node.name + ']';
+          return '  '.repeat(depth) + '[' + node.name + (propString ? '' + propString : '') + ']' + childrenToMarkup(node, depth + 1, ' ', false).trim() + '[/' + node.name + ']';
         }
         return '  '.repeat(depth) + '[' + node.name + (propString ? '' + propString : '') + ']' + childrenToMarkup(node, depth + 1, separator, false) + '\n' + '  '.repeat(depth) + '[/' + node.name + ']';
       }
@@ -18415,7 +18415,11 @@ function nodeToMarkup(node, depth, insertFullWidth) {
 function toMarkup(ast) {
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { insertFullWidth: false };
 
-  return childrenToMarkup(ast, 0, ast.name === 'p' ? ' ' : '\n', options.insertFullWidth || false).trim();
+  var markup = childrenToMarkup(ast, 0, ast.name === 'p' ? ' ' : '\n', options.insertFullWidth || false).trim();
+
+  var cleanedMarkup = markup.replace(/([\]\*\_]) ([,\.\!\?\:\[])/g, '$1$2');
+
+  return cleanedMarkup;
 }
 
 module.exports = {
@@ -20242,10 +20246,11 @@ var additionalTextByIndex = function additionalTextByIndex(authors, suffix, join
 
 var AuthorLink = function AuthorLink(_ref) {
   var name = _ref.name,
-      link = _ref.link;
+      link = _ref.link,
+      color = _ref.color;
   return _react2.default.createElement(
     'a',
-    { target: '_blank', href: link },
+    { target: '_blank', href: link, style: { color: color } },
     name
   );
 };
@@ -20254,7 +20259,8 @@ var ByLineMultipleAuthors = function ByLineMultipleAuthors(_ref2) {
   var authors = _ref2.authors,
       prefix = _ref2.prefix,
       joint = _ref2.joint,
-      suffix = _ref2.suffix;
+      suffix = _ref2.suffix,
+      color = _ref2.color;
   return _react2.default.createElement(
     'div',
     { className: 'byline' },
@@ -20265,7 +20271,7 @@ var ByLineMultipleAuthors = function ByLineMultipleAuthors(_ref2) {
       return _react2.default.createElement(
         'span',
         { key: authorDisplay },
-        typeof author.link === 'string' ? _react2.default.createElement(AuthorLink, author) : authorDisplay,
+        typeof author.link === 'string' ? _react2.default.createElement(AuthorLink, _extends({}, author, { color: color })) : authorDisplay,
         additionalTextByIndex(authors, suffix, joint, i)
       );
     })
@@ -20293,13 +20299,17 @@ var Header = function (_React$PureComponent) {
         prefix = _byLineDefault$byLine.prefix,
         suffix = _byLineDefault$byLine.suffix;
 
+    var _background = background || (idyll && idyll.theme ? idyll.theme.headerBackground : undefined);
+
+    var _color = color || (idyll && idyll.theme ? idyll.theme.headerColor : undefined);
+
     return _react2.default.createElement(
       'div',
       {
         className: 'article-header',
         style: _extends({
-          background: background || (idyll && idyll.theme ? idyll.theme.headerBackground : undefined),
-          color: color || (idyll && idyll.theme ? idyll.theme.headerColor : undefined)
+          background: _background,
+          color: _color
         }, this.props.style)
       },
       _react2.default.createElement(
@@ -20318,7 +20328,11 @@ var Header = function (_React$PureComponent) {
         prefix.trim() + ' ',
         _react2.default.createElement(
           'a',
-          { target: '_blank', href: this.props.authorLink },
+          {
+            target: '_blank',
+            href: this.props.authorLink,
+            style: { color: _color }
+          },
           this.props.author
         )
       ),
@@ -20326,7 +20340,8 @@ var Header = function (_React$PureComponent) {
         authors: this.props.authors,
         prefix: prefix.trim(),
         joint: joint.trim(),
-        suffix: suffix.trim()
+        suffix: suffix.trim(),
+        color: _color
       }),
       this.props.date && _react2.default.createElement(
         'div',
@@ -20385,6 +20400,80 @@ Header._idyll = {
 };
 
 exports.default = Header;
+},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/link.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Link = function (_React$PureComponent) {
+  _inherits(Link, _React$PureComponent);
+
+  function Link(props) {
+    _classCallCheck(this, Link);
+
+    return _possibleConstructorReturn(this, _React$PureComponent.call(this, props));
+  }
+
+  Link.prototype.render = function render() {
+    var _props = this.props,
+        idyll = _props.idyll,
+        hasError = _props.hasError,
+        updateProps = _props.updateProps,
+        props = _objectWithoutProperties(_props, ['idyll', 'hasError', 'updateProps']);
+
+    var passProps = _extends({}, props);
+    if (passProps.url) {
+      passProps.href = passProps.url;
+    }
+    return _react2.default.createElement(
+      'a',
+      passProps,
+      props.text || props.children
+    );
+  };
+
+  return Link;
+}(_react2.default.PureComponent);
+
+Link._idyll = {
+  name: 'Link',
+  tagType: 'closed',
+  displayType: 'inline',
+  props: [{
+    name: 'text',
+    type: 'string',
+    example: '"This is a hyperlink"',
+    description: 'The text to display'
+  }, {
+    name: 'url',
+    type: 'string',
+    example: '"https://idyll-lang.org/"',
+    description: 'The URL to open when the link is clicked'
+  }, {
+    name: 'target',
+    type: 'string',
+    example: '"_blank"',
+    description: 'Specifies where to open the linked document'
+  }]
+};
+
+exports.default = Link;
 },{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js":[function(require,module,exports){
 'use strict';
 
@@ -20651,7 +20740,7 @@ Stepper.defaultProps = {
 Stepper._idyll = {
   name: 'Stepper',
   tagType: 'open',
-  children: ['\n[Graphic fullWidth:true]\n  [Image src:`"https://www.placecage.com/" + (["g", "c", "gif"][x]) + "/600/320"` style:`{ width:"100%", height: "auto", display: "block" }` /]\n[/Graphic]\n[Step]A black and white photo[/Step]\n[Step]A color photo[/Step]\n[Step]An animated gif![/Step]\n[StepperControl /]'],
+  children: ['\n[Graphic fullWidth:true]\n  [VegaLite\n    data:`[{x: 0, y: 0}, {x: 1, y: 1}]`\n    spec:`{\n    mark: "line",\n    encoding: {\n      x: {\n        field: "x",\n        type: "quantitative"\n      },\n      y: {\n        field: "y",\n        type: "quantitative"\n      }\n    }\n  }`\n  width:400\n  height:300 /]\n[/Graphic]\n[Step]A black and white photo[/Step]\n[Step]A color photo[/Step]\n[Step]An animated gif![/Step]\n[StepperControl /]'],
   props: [{
     name: 'currentStep',
     type: 'number',
@@ -20730,7 +20819,162 @@ TextContainer._idyll = {
 };
 
 exports.default = TextContainer;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-document/dist/cjs/components/author-tool.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/youtube.js":[function(require,module,exports){
+'use strict';
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var YouTube = void 0;
+
+var YT_PLAYING = 1;
+var YT_PAUSED = 2;
+
+var YoutubeComponent = function (_React$Component) {
+  _inherits(YoutubeComponent, _React$Component);
+
+  function YoutubeComponent(props) {
+    _classCallCheck(this, YoutubeComponent);
+
+    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+    _this.state = {
+      mounted: false
+    };
+    return _this;
+  }
+
+  YoutubeComponent.prototype.componentDidMount = function componentDidMount() {
+    this.setState({ mounted: true });
+    YouTube = require('react-youtube').default;
+  };
+
+  YoutubeComponent.prototype.render = function render() {
+    if (!this.state.mounted) {
+      return null;
+    }
+
+    var opts = {
+      height: this.props.height,
+      width: this.props.width,
+      playerVars: Object.assign({}, {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: this.props.play
+      }, this.props.options)
+    };
+
+    var style = this.props.style || {};
+
+    return _react2.default.createElement(
+      'div',
+      { style: _extends({ minHeight: this.props.height }, style) },
+      _react2.default.createElement(YouTube, {
+        key: this.props.id,
+        videoId: this.props.id,
+        opts: opts,
+        onReady: this._onReady.bind(this)
+      })
+    );
+  };
+
+  YoutubeComponent.prototype.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
+    if (this._player && this.props.id !== prevProps.id) {
+      // // The video has changed
+      // this.props.audio ? this._player.unMute() : this._player.mute();
+      // if (this.props.play) {
+      //   console.log('playing video')
+      //   setTimeout(() => {
+      //     this._player.playVideo();
+      //   }, 1000)
+      // }
+    } else {
+      // Modify options to the same video
+      if (this._player && this.props.play !== prevProps.play) {
+        this.props.play ? this._player.playVideo() : this._player.pauseVideo();
+      }
+      if (this._player && this.props.audio !== prevProps.audio) {
+        this.props.audio ? this._player.unMute() : this._player.mute();
+      }
+    }
+  };
+
+  YoutubeComponent.prototype._onReady = function _onReady(event) {
+    var _this2 = this;
+
+    this._player = event.target;
+    if (!this.props.audio) {
+      this._player.mute();
+    }
+    this._player.addEventListener('onStateChange', function (event) {
+      if (event.data === YT_PLAYING && !_this2.props.play) {
+        _this2.props.updateProps({ play: true });
+      } else if (event.data === YT_PAUSED && _this2.props.play) {
+        _this2.props.updateProps({ play: false });
+      }
+    });
+    this.props.onReady && this.props.onReady();
+  };
+
+  return YoutubeComponent;
+}(_react2.default.Component);
+
+YoutubeComponent._idyll = {
+  name: 'Youtube',
+  tagType: 'closed',
+  props: [{
+    name: 'play',
+    type: 'boolean',
+    example: 'true',
+    defaultValue: 'false',
+    description: 'Is the video playing?'
+  }, {
+    name: 'audio',
+    type: 'boolean',
+    example: 'false',
+    defaultValue: 'true',
+    description: 'Is the audio turned on?'
+  }, {
+    name: 'width',
+    type: 'integer',
+    example: '600',
+    description: 'Width of the video.'
+  }, {
+    name: 'height',
+    type: 'integer',
+    example: '400',
+    description: 'Height of the video.'
+  }, {
+    name: 'id',
+    type: 'string',
+    example: '"KnPe6dZuwlg"',
+    description: 'YouTube video id. Required.'
+  }, {
+    name: 'options',
+    type: 'object',
+    example: '`{ modestbranding: 1 }`',
+    defaultValue: '`{}`',
+    description: 'Dictionary of extra options. See YouTube docs for all options.'
+  }, {
+    name: 'onReady',
+    type: 'expression',
+    description: 'Callback triggered when the video is ready to play.'
+  }]
+};
+exports.default = YoutubeComponent;
+},{"react":"react","react-youtube":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/react-youtube/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-document/dist/cjs/components/author-tool.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -27404,6 +27648,73 @@ function Lexer(defunct) {
     }
 }
 
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/load-script/index.js":[function(require,module,exports){
+
+module.exports = function load (src, opts, cb) {
+  var head = document.head || document.getElementsByTagName('head')[0]
+  var script = document.createElement('script')
+
+  if (typeof opts === 'function') {
+    cb = opts
+    opts = {}
+  }
+
+  opts = opts || {}
+  cb = cb || function() {}
+
+  script.type = opts.type || 'text/javascript'
+  script.charset = opts.charset || 'utf8';
+  script.async = 'async' in opts ? !!opts.async : true
+  script.src = src
+
+  if (opts.attrs) {
+    setAttributes(script, opts.attrs)
+  }
+
+  if (opts.text) {
+    script.text = '' + opts.text
+  }
+
+  var onend = 'onload' in script ? stdOnEnd : ieOnEnd
+  onend(script, cb)
+
+  // some good legacy browsers (firefox) fail the 'in' detection above
+  // so as a fallback we always set onload
+  // old IE will ignore this and new IE will set onload
+  if (!script.onload) {
+    stdOnEnd(script, cb);
+  }
+
+  head.appendChild(script)
+}
+
+function setAttributes(script, attrs) {
+  for (var attr in attrs) {
+    script.setAttribute(attr, attrs[attr]);
+  }
+}
+
+function stdOnEnd (script, cb) {
+  script.onload = function () {
+    this.onerror = this.onload = null
+    cb(null, script)
+  }
+  script.onerror = function () {
+    // this.onload = null here is necessary
+    // because even IE9 works not like others
+    this.onerror = this.onload = null
+    cb(new Error('Failed to load ' + this.src), script)
+  }
+}
+
+function ieOnEnd (script, cb) {
+  script.onreadystatechange = function () {
+    if (this.readyState != 'complete' && this.readyState != 'loaded') return
+    this.onreadystatechange = null
+    cb(null, script) // there is no way to catch loading errors in IE8
+  }
+}
+
 },{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/lower-case-first/lower-case-first.js":[function(require,module,exports){
 var lowerCase = require('lower-case')
 
@@ -27477,6 +27788,160 @@ module.exports = function (str, locale) {
   }
 
   return str.toLowerCase()
+}
+
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/ms/index.js":[function(require,module,exports){
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
 },{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/nearley/lib/nearley.js":[function(require,module,exports){
@@ -57078,7 +57543,354 @@ function (_React$Component) {
 module.exports = ReactTooltip;
 
 
-},{"prop-types":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/prop-types/index.js","react":"react","uuid":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/react/cjs/react.development.js":[function(require,module,exports){
+},{"prop-types":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/prop-types/index.js","react":"react","uuid":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/react-youtube/dist/index.js":[function(require,module,exports){
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _fastDeepEqual = _interopRequireDefault(require("fast-deep-equal"));
+
+var _youtubePlayer = _interopRequireDefault(require("youtube-player"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/**
+ * Check whether a `props` change should result in the video being updated.
+ *
+ * @param {Object} prevProps
+ * @param {Object} props
+ */
+function shouldUpdateVideo(prevProps, props) {
+  // A changing video should always trigger an update
+  if (prevProps.videoId !== props.videoId) {
+    return true;
+  } // Otherwise, a change in the start/end time playerVars also requires a player
+  // update.
+
+
+  var prevVars = prevProps.opts.playerVars || {};
+  var vars = props.opts.playerVars || {};
+  return prevVars.start !== vars.start || prevVars.end !== vars.end;
+}
+/**
+ * Neutralize API options that only require a video update, leaving only options
+ * that require a player reset. The results can then be compared to see if a
+ * player reset is necessary.
+ *
+ * @param {Object} opts
+ */
+
+
+function filterResetOptions(opts) {
+  return _objectSpread(_objectSpread({}, opts), {}, {
+    playerVars: _objectSpread({
+      autoplay: 0,
+      start: 0,
+      end: 0
+    }, opts.playerVars)
+  });
+}
+/**
+ * Check whether a `props` change should result in the player being reset.
+ * The player is reset when the `props.opts` change, except if the only change
+ * is in the `start` and `end` playerVars, because a video update can deal with
+ * those.
+ *
+ * @param {Object} prevProps
+ * @param {Object} props
+ */
+
+
+function shouldResetPlayer(prevProps, props) {
+  return !(0, _fastDeepEqual.default)(filterResetOptions(prevProps.opts), filterResetOptions(props.opts));
+}
+/**
+ * Check whether a props change should result in an id or className update.
+ *
+ * @param {Object} prevProps
+ * @param {Object} props
+ */
+
+
+function shouldUpdatePlayer(prevProps, props) {
+  return prevProps.id !== props.id || prevProps.className !== props.className;
+}
+
+var YouTube = /*#__PURE__*/function (_React$Component) {
+  _inherits(YouTube, _React$Component);
+
+  var _super = _createSuper(YouTube);
+
+  /**
+   * Expose PlayerState constants for convenience. These constants can also be
+   * accessed through the global YT object after the YouTube IFrame API is instantiated.
+   * https://developers.google.com/youtube/iframe_api_reference#onStateChange
+   */
+  function YouTube(props) {
+    var _this;
+
+    _classCallCheck(this, YouTube);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "onPlayerReady", function (event) {
+      return _this.props.onReady(event);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onPlayerError", function (event) {
+      return _this.props.onError(event);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onPlayerStateChange", function (event) {
+      _this.props.onStateChange(event);
+
+      switch (event.data) {
+        case YouTube.PlayerState.ENDED:
+          _this.props.onEnd(event);
+
+          break;
+
+        case YouTube.PlayerState.PLAYING:
+          _this.props.onPlay(event);
+
+          break;
+
+        case YouTube.PlayerState.PAUSED:
+          _this.props.onPause(event);
+
+          break;
+
+        default:
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onPlayerPlaybackRateChange", function (event) {
+      return _this.props.onPlaybackRateChange(event);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onPlayerPlaybackQualityChange", function (event) {
+      return _this.props.onPlaybackQualityChange(event);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "createPlayer", function () {
+      // do not attempt to create a player server-side, it won't work
+      if (typeof document === 'undefined') return; // create player
+
+      var playerOpts = _objectSpread(_objectSpread({}, _this.props.opts), {}, {
+        // preload the `videoId` video if one is already given
+        videoId: _this.props.videoId
+      });
+
+      _this.internalPlayer = (0, _youtubePlayer.default)(_this.container, playerOpts); // attach event handlers
+
+      _this.internalPlayer.on('ready', _this.onPlayerReady);
+
+      _this.internalPlayer.on('error', _this.onPlayerError);
+
+      _this.internalPlayer.on('stateChange', _this.onPlayerStateChange);
+
+      _this.internalPlayer.on('playbackRateChange', _this.onPlayerPlaybackRateChange);
+
+      _this.internalPlayer.on('playbackQualityChange', _this.onPlayerPlaybackQualityChange);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "resetPlayer", function () {
+      return _this.internalPlayer.destroy().then(_this.createPlayer);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updatePlayer", function () {
+      _this.internalPlayer.getIframe().then(function (iframe) {
+        if (_this.props.id) iframe.setAttribute('id', _this.props.id);else iframe.removeAttribute('id');
+        if (_this.props.className) iframe.setAttribute('class', _this.props.className);else iframe.removeAttribute('class');
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function () {
+      return _this.internalPlayer;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateVideo", function () {
+      if (typeof _this.props.videoId === 'undefined' || _this.props.videoId === null) {
+        _this.internalPlayer.stopVideo();
+
+        return;
+      } // set queueing options
+
+
+      var autoplay = false;
+      var opts = {
+        videoId: _this.props.videoId
+      };
+
+      if ('playerVars' in _this.props.opts) {
+        autoplay = _this.props.opts.playerVars.autoplay === 1;
+
+        if ('start' in _this.props.opts.playerVars) {
+          opts.startSeconds = _this.props.opts.playerVars.start;
+        }
+
+        if ('end' in _this.props.opts.playerVars) {
+          opts.endSeconds = _this.props.opts.playerVars.end;
+        }
+      } // if autoplay is enabled loadVideoById
+
+
+      if (autoplay) {
+        _this.internalPlayer.loadVideoById(opts);
+
+        return;
+      } // default behaviour just cues the video
+
+
+      _this.internalPlayer.cueVideoById(opts);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "refContainer", function (container) {
+      _this.container = container;
+    });
+
+    _this.container = null;
+    _this.internalPlayer = null;
+    return _this;
+  }
+
+  _createClass(YouTube, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.createPlayer();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (shouldUpdatePlayer(prevProps, this.props)) {
+        this.updatePlayer();
+      }
+
+      if (shouldResetPlayer(prevProps, this.props)) {
+        this.resetPlayer();
+      }
+
+      if (shouldUpdateVideo(prevProps, this.props)) {
+        this.updateVideo();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      /**
+       * Note: The `youtube-player` package that is used promisifies all YouTube
+       * Player API calls, which introduces a delay of a tick before it actually
+       * gets destroyed. Since React attempts to remove the element instantly
+       * this method isn't quick enough to reset the container element.
+       */
+      this.internalPlayer.destroy();
+    }
+    /**
+     * https://developers.google.com/youtube/iframe_api_reference#onReady
+     *
+     * @param {Object} event
+     *   @param {Object} target - player object
+     */
+
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: this.props.containerClassName
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        id: this.props.id,
+        className: this.props.className,
+        ref: this.refContainer
+      }));
+    }
+  }]);
+
+  return YouTube;
+}(_react.default.Component);
+
+_defineProperty(YouTube, "PlayerState", {
+  UNSTARTED: -1,
+  ENDED: 0,
+  PLAYING: 1,
+  PAUSED: 2,
+  BUFFERING: 3,
+  CUED: 5
+});
+
+YouTube.propTypes = {
+  videoId: _propTypes.default.string,
+  // custom ID for player element
+  id: _propTypes.default.string,
+  // custom class name for player element
+  className: _propTypes.default.string,
+  // custom class name for player container element
+  containerClassName: _propTypes.default.string,
+  // https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
+  opts: _propTypes.default.objectOf(_propTypes.default.any),
+  // event subscriptions
+  onReady: _propTypes.default.func,
+  onError: _propTypes.default.func,
+  onPlay: _propTypes.default.func,
+  onPause: _propTypes.default.func,
+  onEnd: _propTypes.default.func,
+  onStateChange: _propTypes.default.func,
+  onPlaybackRateChange: _propTypes.default.func,
+  onPlaybackQualityChange: _propTypes.default.func
+};
+YouTube.defaultProps = {
+  videoId: null,
+  id: null,
+  className: null,
+  opts: {},
+  containerClassName: '',
+  onReady: function onReady() {},
+  onError: function onError() {},
+  onPlay: function onPlay() {},
+  onPause: function onPause() {},
+  onEnd: function onEnd() {},
+  onStateChange: function onStateChange() {},
+  onPlaybackRateChange: function onPlaybackRateChange() {},
+  onPlaybackQualityChange: function onPlaybackQualityChange() {}
+};
+var _default = YouTube;
+exports.default = _default;
+
+},{"fast-deep-equal":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/fast-deep-equal/index.js","prop-types":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/prop-types/index.js","react":"react","youtube-player":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/react/cjs/react.development.js":[function(require,module,exports){
 /** @license React v16.14.0
  * react.development.js
  *
@@ -63450,7 +64262,70 @@ module.exports = function (value, locale) {
   return upperCaseFirst(noCase(value, locale), locale)
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/no-case/no-case.js","upper-case-first":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/smartquotes/dist/smartquotes.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/no-case/no-case.js","upper-case-first":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/sister/src/sister.js":[function(require,module,exports){
+'use strict';
+
+var Sister;
+
+/**
+* @link https://github.com/gajus/sister for the canonical source repository
+* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
+*/
+Sister = function () {
+    var sister = {},
+        events = {};
+
+    /**
+     * @name handler
+     * @function
+     * @param {Object} data Event data.
+     */
+
+    /**
+     * @param {String} name Event name.
+     * @param {handler} handler
+     * @return {listener}
+     */
+    sister.on = function (name, handler) {
+        var listener = {name: name, handler: handler};
+        events[name] = events[name] || [];
+        events[name].unshift(listener);
+        return listener;
+    };
+
+    /**
+     * @param {listener}
+     */
+    sister.off = function (listener) {
+        var index = events[listener.name].indexOf(listener);
+
+        if (index !== -1) {
+            events[listener.name].splice(index, 1);
+        }
+    };
+
+    /**
+     * @param {String} name Event name.
+     * @param {Object} data Event data.
+     */
+    sister.trigger = function (name, data) {
+        var listeners = events[name],
+            i;
+
+        if (listeners) {
+            i = listeners.length;
+            while (i--) {
+                listeners[i].handler(data);
+            }
+        }
+    };
+
+    return sister;
+};
+
+module.exports = Sister;
+
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/smartquotes/dist/smartquotes.js":[function(require,module,exports){
 (function(a,b){'object'==typeof exports&&'object'==typeof module?module.exports=b():'function'==typeof define&&define.amd?define([],b):'object'==typeof exports?exports.smartquotes=b():a.smartquotes=b()})(this,function(){return function(a){function b(d){if(c[d])return c[d].exports;var e=c[d]={i:d,l:!1,exports:{}};return a[d].call(e.exports,e,e.exports,b),e.l=!0,e.exports}var c={};return b.m=a,b.c=c,b.d=function(a,c,d){b.o(a,c)||Object.defineProperty(a,c,{configurable:!1,enumerable:!0,get:d})},b.n=function(a){var c=a&&a.__esModule?function(){return a['default']}:function(){return a};return b.d(c,'a',c),c},b.o=function(a,b){return Object.prototype.hasOwnProperty.call(a,b)},b.p='',b(b.s=3)}([function(a,b,c){'use strict';var d=c(1);a.exports=function(a,b){return b=b||{},d.forEach(function(c){var d='function'==typeof c[1]?c[1](b.retainLength):c[1];a=a.replace(c[0],d)}),a}},function(a){'use strict';a.exports=[[/'''/g,function(a){return'\u2034'+(a?'\u2063\u2063':'')}],[/(\W|^)"(\w)/g,'$1\u201C$2'],[/(\u201c[^"]*)"([^"]*$|[^\u201c"]*\u201c)/g,'$1\u201D$2'],[/([^0-9])"/g,'$1\u201D'],[/''/g,function(a){return'\u2033'+(a?'\u2063':'')}],[/(\W|^)'(\S)/g,'$1\u2018$2'],[/([a-z0-9])'([a-z])/ig,'$1\u2019$2'],[/(\u2018)([0-9]{2}[^\u2019]*)(\u2018([^0-9]|$)|$|\u2019[a-z])/ig,'\u2019$2$3'],[/((\u2018[^']*)|[a-z])'([^0-9]|$)/ig,'$1\u2019$3'],[/(\B|^)\u2018(?=([^\u2018\u2019]*\u2019\b)*([^\u2018\u2019]*\B\W[\u2018\u2019]\b|[^\u2018\u2019]*$))/ig,'$1\u2019'],[/"/g,'\u2033'],[/'/g,'\u2032']]},function(a,b,c){'use strict';function d(a){if(-1===['CODE','PRE','SCRIPT','STYLE','NOSCRIPT'].indexOf(a.nodeName.toUpperCase())){var b,c,h,i='',j=a.childNodes,k=[];for(b=0;b<j.length;b++)c=j[b],c.nodeType===g||'#text'===c.nodeName?(k.push([c,i.length]),i+=c.nodeValue||c.value):c.childNodes&&c.childNodes.length&&(i+=d(c));for(b in i=f(i,{retainLength:!0}),k)h=k[b],h[0].nodeValue?h[0].nodeValue=e(i,h[0].nodeValue,h[1]):h[0].value&&(h[0].value=e(i,h[0].value,h[1]));return i}}function e(a,b,c){return a.substr(c,b.length).replace('\u2063','')}var f=c(0),g='undefined'!=typeof Element&&Element.TEXT_NODE||3;a.exports=function(a){return d(a),a}},function(a,b,c){'use strict';function d(a){return'undefined'!=typeof document&&'undefined'==typeof a?(g.runOnReady(function(){return f(document.body)}),d):'string'==typeof a?h(a):f(a)}var e=c(1),f=c(2),g=c(4),h=c(0);a.exports=d,a.exports.string=h,a.exports.element=f,a.exports.replacements=e,a.exports.listen=g},function(a,b,c){'use strict';function d(a){var b=new MutationObserver(function(a){a.forEach(function(a){var b,c=!0,d=!1;try{for(var f,g,h=a.addedNodes[Symbol.iterator]();!(c=(f=h.next()).done);c=!0)g=f.value,e(g)}catch(a){d=!0,b=a}finally{try{!c&&h.return&&h.return()}finally{if(d)throw b}}})});return d.runOnReady(function(){b.observe(a||document.body,{childList:!0,subtree:!0})}),b}var e=c(2),f=c(0);d.runOnReady=function(a){if('loading'!==document.readyState)a();else if(document.addEventListener)document.addEventListener('DOMContentLoaded',a,!1);else var b=setInterval(function(){'loading'!==document.readyState&&(clearInterval(b),a())},10)},a.exports=d}])});
 
 },{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/snake-case/snake-case.js":[function(require,module,exports){
@@ -66916,10 +67791,821 @@ const v5 = (0, _v.default)('v5', 0x50, _sha.default);
 var _default = v5;
 exports.default = _default;
 module.exports = exports.default;
-},{"./sha1.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/sha1-browser.js","./v35.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/v35.js"}],"__IDYLL_AST__":[function(require,module,exports){
+},{"./sha1.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/sha1-browser.js","./v35.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/uuid/dist/v35.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/FunctionStateMap.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _PlayerStates = require('./constants/PlayerStates');
+
+var _PlayerStates2 = _interopRequireDefault(_PlayerStates);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  pauseVideo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PAUSED],
+    stateChangeRequired: false
+  },
+  playVideo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING],
+    stateChangeRequired: false
+  },
+  seekTo: {
+    acceptableStates: [_PlayerStates2.default.ENDED, _PlayerStates2.default.PLAYING, _PlayerStates2.default.PAUSED],
+    stateChangeRequired: true,
+
+    // TRICKY: `seekTo` may not cause a state change if no buffering is
+    // required.
+    timeout: 3000
+  }
+};
+module.exports = exports['default'];
+},{"./constants/PlayerStates":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/constants/PlayerStates.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/YouTubePlayer.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _debug = require('debug');
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _functionNames = require('./functionNames');
+
+var _functionNames2 = _interopRequireDefault(_functionNames);
+
+var _eventNames = require('./eventNames');
+
+var _eventNames2 = _interopRequireDefault(_eventNames);
+
+var _FunctionStateMap = require('./FunctionStateMap');
+
+var _FunctionStateMap2 = _interopRequireDefault(_FunctionStateMap);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/* eslint-disable promise/prefer-await-to-then */
+
+var debug = (0, _debug2.default)('youtube-player');
+
+var YouTubePlayer = {};
+
+/**
+ * Construct an object that defines an event handler for all of the YouTube
+ * player events. Proxy captured events through an event emitter.
+ *
+ * @todo Capture event parameters.
+ * @see https://developers.google.com/youtube/iframe_api_reference#Events
+ */
+YouTubePlayer.proxyEvents = function (emitter) {
+  var events = {};
+
+  var _loop = function _loop(eventName) {
+    var onEventName = 'on' + eventName.slice(0, 1).toUpperCase() + eventName.slice(1);
+
+    events[onEventName] = function (event) {
+      debug('event "%s"', onEventName, event);
+
+      emitter.trigger(eventName, event);
+    };
+  };
+
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = _eventNames2.default[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var eventName = _step.value;
+
+      _loop(eventName);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return events;
+};
+
+/**
+ * Delays player API method execution until player state is ready.
+ *
+ * @todo Proxy all of the methods using Object.keys.
+ * @todo See TRICKY below.
+ * @param playerAPIReady Promise that resolves when player is ready.
+ * @param strictState A flag designating whether or not to wait for
+ * an acceptable state when calling supported functions.
+ * @returns {Object}
+ */
+YouTubePlayer.promisifyPlayer = function (playerAPIReady) {
+  var strictState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var functions = {};
+
+  var _loop2 = function _loop2(functionName) {
+    if (strictState && _FunctionStateMap2.default[functionName]) {
+      functions[functionName] = function () {
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        return playerAPIReady.then(function (player) {
+          var stateInfo = _FunctionStateMap2.default[functionName];
+          var playerState = player.getPlayerState();
+
+          // eslint-disable-next-line no-warning-comments
+          // TODO: Just spread the args into the function once Babel is fixed:
+          // https://github.com/babel/babel/issues/4270
+          //
+          // eslint-disable-next-line prefer-spread
+          var value = player[functionName].apply(player, args);
+
+          // TRICKY: For functions like `seekTo`, a change in state must be
+          // triggered given that the resulting state could match the initial
+          // state.
+          if (stateInfo.stateChangeRequired ||
+
+          // eslint-disable-next-line no-extra-parens
+          Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerState) === -1) {
+            return new Promise(function (resolve) {
+              var onPlayerStateChange = function onPlayerStateChange() {
+                var playerStateAfterChange = player.getPlayerState();
+
+                var timeout = void 0;
+
+                if (typeof stateInfo.timeout === 'number') {
+                  timeout = setTimeout(function () {
+                    player.removeEventListener('onStateChange', onPlayerStateChange);
+
+                    resolve();
+                  }, stateInfo.timeout);
+                }
+
+                if (Array.isArray(stateInfo.acceptableStates) && stateInfo.acceptableStates.indexOf(playerStateAfterChange) !== -1) {
+                  player.removeEventListener('onStateChange', onPlayerStateChange);
+
+                  clearTimeout(timeout);
+
+                  resolve();
+                }
+              };
+
+              player.addEventListener('onStateChange', onPlayerStateChange);
+            }).then(function () {
+              return value;
+            });
+          }
+
+          return value;
+        });
+      };
+    } else {
+      functions[functionName] = function () {
+        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+          args[_key2] = arguments[_key2];
+        }
+
+        return playerAPIReady.then(function (player) {
+          // eslint-disable-next-line no-warning-comments
+          // TODO: Just spread the args into the function once Babel is fixed:
+          // https://github.com/babel/babel/issues/4270
+          //
+          // eslint-disable-next-line prefer-spread
+          return player[functionName].apply(player, args);
+        });
+      };
+    }
+  };
+
+  var _iteratorNormalCompletion2 = true;
+  var _didIteratorError2 = false;
+  var _iteratorError2 = undefined;
+
+  try {
+    for (var _iterator2 = _functionNames2.default[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+      var functionName = _step2.value;
+
+      _loop2(functionName);
+    }
+  } catch (err) {
+    _didIteratorError2 = true;
+    _iteratorError2 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+        _iterator2.return();
+      }
+    } finally {
+      if (_didIteratorError2) {
+        throw _iteratorError2;
+      }
+    }
+  }
+
+  return functions;
+};
+
+exports.default = YouTubePlayer;
+module.exports = exports['default'];
+},{"./FunctionStateMap":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/FunctionStateMap.js","./eventNames":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/eventNames.js","./functionNames":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/functionNames.js","debug":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/node_modules/debug/src/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/constants/PlayerStates.js":[function(require,module,exports){
 "use strict";
 
-module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "var", "properties": { "name": { "type": "value", "value": "parametricSlug" }, "value": { "type": "value", "value": "tk-article-slug" } } }, { "id": 3, "type": "var", "properties": { "name": { "type": "value", "value": "stepperIndex" }, "value": { "type": "value", "value": 0 } } }, { "id": 4, "type": "component", "name": "TextContainer", "children": [{ "id": 5, "type": "meta", "properties": { "title": { "type": "value", "value": "Portfolio Piece Template!" }, "description": { "type": "value", "value": "Portfolio Piece Description." }, "shareImageUrl": { "type": "value", "value": ".........." }, "shareImageWidth": { "type": "value", "value": "880" }, "shareImageHeight": { "type": "value", "value": "440" } } }] }, { "id": 6, "type": "component", "name": "Nav", "children": [] }, { "id": 7, "type": "component", "name": "Header", "properties": { "title": { "type": "expression", "value": "[\"An Introduction\"]" }, "subtitle": { "type": "value", "value": "What is this interactive portfolio and why?" }, "date": { "type": "value", "value": "May 15, 2020" } }, "children": [] }, { "id": 8, "type": "component", "name": "TextContainer", "children": [{ "id": 9, "type": "component", "name": "h4", "children": [{ "id": 10, "type": "textnode", "value": "“But what we enjoy the most is wielding data as a tool to explore our curiosities about the world around us.”" }] }, { "id": 11, "type": "component", "name": "Caption", "children": [{ "id": 12, "type": "textnode", "value": "\n- Nadie Bremer & Shirley Wu in Data Sketches" }] }, { "id": 13, "type": "component", "name": "br", "children": [] }, { "id": 14, "type": "component", "name": "p", "children": [{ "id": 15, "type": "textnode", "value": "Hi! I’m Jasen, a computer science student at Minerva Schools at KGI. This interactive portfolio outlines my year-long learning journey to of making data visualisations (data viz) and tell data-driven visual stories. Around this time last year, I was not a data viz practitioner at all. I was very much sitting on the bleachers, wide-eyed at and astonished by the incredible data viz work made by the likes of Mike Bostock, Nadie Bremer, Shirley Wu, and Moritz Stefaner. Their visualisations captured my imagination because they were the least chart-like charts - so precise and yet whimsical, unlike anything I had ever seen before." }] }, { "id": 16, "type": "component", "name": "Aside", "children": [{ "id": 17, "type": "component", "name": "Stepper", "properties": { "currentStep": { "type": "variable", "value": "stepperIndex" } }, "children": [{ "id": 18, "type": "component", "name": "Graphic", "children": [{ "id": 19, "type": "component", "name": "img", "properties": { "src": { "type": "expression", "value": "\"static/images/\" + stepperIndex + \".png\"" } }, "children": [] }] }, { "id": 20, "type": "component", "name": "Step", "children": [{ "id": 21, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "https://truth-and-beauty.net/projects/the-rhythm-of-food" } }, "children": [{ "id": 22, "type": "textnode", "value": "Inspiring Data Viz Examples: The Rhythm of Food, Analyzing food seasonality by Moritz Stefaner" }] }] }, { "id": 23, "type": "component", "name": "Step", "children": [{ "id": 24, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "https://whydocatsanddogs.com/" } }, "children": [{ "id": 25, "type": "textnode", "value": "Inspiring Data Viz Examples: Why do cats & dogs ...? by Nadie Bremer" }] }] }, { "id": 26, "type": "component", "name": "StepperControl", "children": [] }] }] }, { "id": 27, "type": "component", "name": "p", "children": [{ "id": 28, "type": "textnode", "value": "Despite my enthusiasm for visual data stories, however, it wasn’t easy to imagine myself imitating my data viz heroes. From my perspective, it seemed like my favourite data viz people were experts in everything data viz, ranging from code to design and art. At this point, I could only passably code in Python (matplotlib?), put colourful things together in Canva, and occasionally add a watercolour into my journal. The prospect of creating a data viz, all while telling a coherent and engaging story seemed incredibly daunting." }] }, { "id": 29, "type": "component", "name": "p", "children": [{ "id": 30, "type": "textnode", "value": "Fast forward a year later, and I have somehow completed three independently produced data viz projects! Thus, I write this reflection + process piece for all people interested in data viz, whether they be established practitioners or educators who are curious how a data viz skillset can be (and has been sort of!) acquired. Most of all, I really hope that eager but intimidated data viz enthusiasts, as I once was and perhaps still am, can observe what is possible only after a relatively brief learning curve!" }] }] }, { "id": 31, "type": "component", "name": "NextArticle", "properties": { "slug": { "type": "variable", "value": "parametricSlug" } }, "children": [] }] };
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  BUFFERING: 3,
+  ENDED: 0,
+  PAUSED: 2,
+  PLAYING: 1,
+  UNSTARTED: -1,
+  VIDEO_CUED: 5
+};
+module.exports = exports["default"];
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/eventNames.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Events
+ * `volumeChange` is not officially supported but seems to work
+ * it emits an object: `{volume: 82.6923076923077, muted: false}`
+ */
+exports.default = ['ready', 'stateChange', 'playbackQualityChange', 'playbackRateChange', 'error', 'apiChange', 'volumeChange'];
+module.exports = exports['default'];
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/functionNames.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Functions
+ */
+exports.default = ['cueVideoById', 'loadVideoById', 'cueVideoByUrl', 'loadVideoByUrl', 'playVideo', 'pauseVideo', 'stopVideo', 'getVideoLoadedFraction', 'cuePlaylist', 'loadPlaylist', 'nextVideo', 'previousVideo', 'playVideoAt', 'setShuffle', 'setLoop', 'getPlaylist', 'getPlaylistIndex', 'setOption', 'mute', 'unMute', 'isMuted', 'setVolume', 'getVolume', 'seekTo', 'getPlayerState', 'getPlaybackRate', 'setPlaybackRate', 'getAvailablePlaybackRates', 'getPlaybackQuality', 'setPlaybackQuality', 'getAvailableQualityLevels', 'getCurrentTime', 'getDuration', 'removeEventListener', 'getVideoUrl', 'getVideoEmbedCode', 'getOptions', 'getOption', 'addEventListener', 'destroy', 'setSize', 'getIframe'];
+module.exports = exports['default'];
+},{}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/index.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _sister = require('sister');
+
+var _sister2 = _interopRequireDefault(_sister);
+
+var _loadYouTubeIframeApi = require('./loadYouTubeIframeApi');
+
+var _loadYouTubeIframeApi2 = _interopRequireDefault(_loadYouTubeIframeApi);
+
+var _YouTubePlayer = require('./YouTubePlayer');
+
+var _YouTubePlayer2 = _interopRequireDefault(_YouTubePlayer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @typedef YT.Player
+ * @see https://developers.google.com/youtube/iframe_api_reference
+ * */
+
+/**
+ * @see https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player
+ */
+var youtubeIframeAPI = void 0;
+
+/**
+ * A factory function used to produce an instance of YT.Player and queue function calls and proxy events of the resulting object.
+ *
+ * @param maybeElementId Either An existing YT.Player instance,
+ * the DOM element or the id of the HTML element where the API will insert an <iframe>.
+ * @param options See `options` (Ignored when using an existing YT.Player instance).
+ * @param strictState A flag designating whether or not to wait for
+ * an acceptable state when calling supported functions. Default: `false`.
+ * See `FunctionStateMap.js` for supported functions and acceptable states.
+ */
+
+exports.default = function (maybeElementId) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var strictState = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var emitter = (0, _sister2.default)();
+
+  if (!youtubeIframeAPI) {
+    youtubeIframeAPI = (0, _loadYouTubeIframeApi2.default)(emitter);
+  }
+
+  if (options.events) {
+    throw new Error('Event handlers cannot be overwritten.');
+  }
+
+  if (typeof maybeElementId === 'string' && !document.getElementById(maybeElementId)) {
+    throw new Error('Element "' + maybeElementId + '" does not exist.');
+  }
+
+  options.events = _YouTubePlayer2.default.proxyEvents(emitter);
+
+  var playerAPIReady = new Promise(function (resolve) {
+    if ((typeof maybeElementId === 'undefined' ? 'undefined' : _typeof(maybeElementId)) === 'object' && maybeElementId.playVideo instanceof Function) {
+      var player = maybeElementId;
+
+      resolve(player);
+    } else {
+      // asume maybeElementId can be rendered inside
+      // eslint-disable-next-line promise/catch-or-return
+      youtubeIframeAPI.then(function (YT) {
+        // eslint-disable-line promise/prefer-await-to-then
+        var player = new YT.Player(maybeElementId, options);
+
+        emitter.on('ready', function () {
+          resolve(player);
+        });
+
+        return null;
+      });
+    }
+  });
+
+  var playerApi = _YouTubePlayer2.default.promisifyPlayer(playerAPIReady, strictState);
+
+  playerApi.on = emitter.on;
+  playerApi.off = emitter.off;
+
+  return playerApi;
+};
+
+module.exports = exports['default'];
+},{"./YouTubePlayer":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/YouTubePlayer.js","./loadYouTubeIframeApi":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/loadYouTubeIframeApi.js","sister":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/sister/src/sister.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/dist/loadYouTubeIframeApi.js":[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _loadScript = require('load-script');
+
+var _loadScript2 = _interopRequireDefault(_loadScript);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (emitter) {
+  /**
+   * A promise that is resolved when window.onYouTubeIframeAPIReady is called.
+   * The promise is resolved with a reference to window.YT object.
+   */
+  var iframeAPIReady = new Promise(function (resolve) {
+    if (window.YT && window.YT.Player && window.YT.Player instanceof Function) {
+      resolve(window.YT);
+
+      return;
+    } else {
+      var protocol = window.location.protocol === 'http:' ? 'http:' : 'https:';
+
+      (0, _loadScript2.default)(protocol + '//www.youtube.com/iframe_api', function (error) {
+        if (error) {
+          emitter.trigger('error', error);
+        }
+      });
+    }
+
+    var previous = window.onYouTubeIframeAPIReady;
+
+    // The API will call this function when page has finished downloading
+    // the JavaScript for the player API.
+    window.onYouTubeIframeAPIReady = function () {
+      if (previous) {
+        previous();
+      }
+
+      resolve(window.YT);
+    };
+  });
+
+  return iframeAPIReady;
+};
+
+module.exports = exports['default'];
+},{"load-script":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/load-script/index.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/node_modules/debug/src/browser.js":[function(require,module,exports){
+(function (process){(function (){
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = require('./debug');
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  'lightseagreen',
+  'forestgreen',
+  'goldenrod',
+  'dodgerblue',
+  'darkorchid',
+  'crimson'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+}).call(this)}).call(this,require('_process'))
+},{"./debug":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/node_modules/debug/src/debug.js","_process":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/youtube-player/node_modules/debug/src/debug.js":[function(require,module,exports){
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = require('ms');
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Previous log timestamp.
+ */
+
+var prevTime;
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  return debug;
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (var i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+},{"ms":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/ms/index.js"}],"__IDYLL_AST__":[function(require,module,exports){
+"use strict";
+
+module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "var", "properties": { "name": { "type": "value", "value": "parametricSlug" }, "value": { "type": "value", "value": "tk-article-slug" } } }, { "id": 3, "type": "var", "properties": { "name": { "type": "value", "value": "stepperIndex" }, "value": { "type": "value", "value": 0 } } }, { "id": 4, "type": "component", "name": "TextContainer", "children": [{ "id": 5, "type": "meta", "properties": { "title": { "type": "value", "value": "Introducing Trust The Process!" }, "description": { "type": "value", "value": "An introduction to Jasen's interactive portfolio." }, "shareImageUrl": { "type": "value", "value": ".........." }, "shareImageWidth": { "type": "value", "value": "880" }, "shareImageHeight": { "type": "value", "value": "440" } } }] }, { "id": 6, "type": "component", "name": "Nav", "children": [] }, { "id": 7, "type": "component", "name": "Header", "properties": { "title": { "type": "expression", "value": "[\"An Introduction\"]" }, "subtitle": { "type": "value", "value": "What's with the name - Trust The Process?" }, "date": { "type": "value", "value": "May 15, 2020" } }, "children": [] }, { "id": 8, "type": "component", "name": "TextContainer", "children": [{ "id": 9, "type": "component", "name": "h4", "children": [{ "id": 10, "type": "textnode", "value": "They tell us every game, every day: " }, { "id": 11, "type": "component", "name": "strong", "children": [{ "id": 12, "type": "textnode", "value": "Trust the Process. Just continue to build." }] }] }, { "id": 13, "type": "component", "name": "Caption", "children": [{ "id": 14, "type": "textnode", "value": "\n- Former Philadelphia 76ers guard Tony Wroten" }] }, { "id": 15, "type": "component", "name": "Aside", "children": [{ "id": 16, "type": "component", "name": "Youtube", "properties": { "id": { "type": "value", "value": "4fRiV-z7TkA&t=122s" }, "play": { "type": "value", "value": false }, "audio": { "type": "value", "value": true }, "width": { "type": "value", "value": 500 }, "height": { "type": "value", "value": 300 }, "options": { "type": "expression", "value": "{ controls: 1 }" } }, "children": [] }, { "id": 17, "type": "component", "name": "Caption", "children": [{ "id": 18, "type": "textnode", "value": "\nAn ESPN short video about how 76ers fans feel about " }, { "id": 19, "type": "component", "name": "em", "children": [{ "id": 20, "type": "textnode", "value": "Trust the Process" }] }, { "id": 21, "type": "textnode", "value": ". " }] }] }, { "id": 22, "type": "component", "name": "p", "children": [{ "id": 23, "type": "textnode", "value": "In the 2014-15 National Basketball Association (NBA) season, the Philadelphia 76ers finished with an abysmal record of 18-64. At one point, the team lost 17 straight games. Intentionally too, some said. 76ers General Manager Sam Hinkie made basketball personnel decisions that made the team worse. The next season, they went 10-72. Oof. " }] }, { "id": 24, "type": "component", "name": "p", "children": [{ "id": 25, "type": "textnode", "value": "You see, the more games a NBA team loses, the higher their drafting position, and thus the more likely they are to get first dibs on generational talents in the draft at the end of the NBA season. Hinkie was committed to a long-term rebuilding plan by losing so many games, which would only pay off years down the line when the players he drafted would be ready to contend for a championship." }] }, { "id": 26, "type": "component", "name": "p", "children": [{ "id": 27, "type": "textnode", "value": "During this tumultuous time in 76ers history, " }, { "id": 28, "type": "component", "name": "em", "children": [{ "id": 29, "type": "textnode", "value": "Trust the Process" }] }, { "id": 30, "type": "textnode", "value": " became a rallying call for 76ers fans. Almost as a coping mechanism, the slogan signified that fans recognised even though things are terrible right now, there’s a plan to make things better. " }] }, { "id": 31, "type": "component", "name": "h4", "children": [{ "id": 32, "type": "textnode", "value": "I Continue to Build" }, { "id": 33, "type": "textnode", "value": "!" }] }, { "id": 34, "type": "component", "name": "p", "children": [{ "id": 35, "type": "textnode", "value": "I named this website " }, { "id": 36, "type": "component", "name": "em", "children": [{ "id": 37, "type": "textnode", "value": "Trust the Process" }] }, { "id": 38, "type": "textnode", "value": " for two reasons: " }] }, { "id": 39, "type": "component", "name": "p", "children": [{ "id": 40, "type": "textnode", "value": "Firstly, I relate to being completely clueless and incapable in the data visualisation (data viz) world. Like Hinkie’s 76ers, I embrace my inability as a crutch to motivate my self-improvement and I commit myself to a long-term plan to become a more skilled and thoughtful data viz person. I might not know how to make much now, but I’m committed to learning how to build things from scratch so that I can be capable down the line. Hopefully, as I add more projects to this blog, I will be able to observe my gradual improvement to " }, { "id": 41, "type": "component", "name": "em", "children": [{ "id": 42, "type": "textnode", "value": "championship-level" }] }, { "id": 43, "type": "textnode", "value": " data viz." }, { "id": 44, "type": "component", "name": "Aside", "children": [{ "id": 45, "type": "component", "name": "Preview", "properties": { "header": { "type": "value", "value": "Data Feminism" }, "description": { "type": "value", "value": "Catherine D'Ignazio and Lauren F. Klein’s transformed my outlook on everything data." }, "media": { "type": "value", "value": "../introduction/static/images/dataFem.jpg" }, "url": { "type": "value", "value": "https://data-feminism.mitpress.mit.edu/" } }, "children": [] }, { "id": 46, "type": "component", "name": "Caption", "children": [{ "id": 47, "type": "textnode", "value": "\nClick this card to start reading " }, { "id": 48, "type": "component", "name": "em", "children": [{ "id": 49, "type": "textnode", "value": "Data Feminism" }] }, { "id": 50, "type": "textnode", "value": ", it’s entirely free to read and open-access!" }] }] }] }, { "id": 51, "type": "component", "name": "p", "children": [{ "id": 52, "type": "textnode", "value": "Secondly, this portfolio also serves as a repository for documenting my data viz processes. Digital Humanities theory, especially Catherine D’Ignazio and Lauren F. Klein’s " }, { "id": 53, "type": "component", "name": "em", "children": [{ "id": 54, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Data Feminism" }, "url": { "type": "value", "value": "https://mitpress.mit.edu/books/data-feminism" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }] }, { "id": 55, "type": "textnode", "value": ", has influenced me and my outlook towards data-driven work. Digital Humanities emphasises the critical examination and the democratisation of the production of digital work and data-driven processes. Too many people assume data and the charts representing data as objective sources, even though data and data viz are loaded with biases and assumptions, like any other information source. The many write-ups that prominent data visualisation designers have created also inspire me. These write-ups helped me realise that some of the best data viz work is doable and lessened the intimidation I felt for creating data-driven things. These write-ups motivate me to do the same, and I’m glad to share some of the experience and knowledge I have managed to accumulate in the past year." }, { "id": 56, "type": "component", "name": "br", "children": [] }, { "id": 57, "type": "component", "name": "br", "children": [] }] }, { "id": 58, "type": "component", "name": "ul", "children": [{ "id": 59, "type": "component", "name": "li", "children": [{ "id": 60, "type": "component", "name": "em", "children": [{ "id": 61, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Data Sketches" }, "url": { "type": "value", "value": "https://www.datasketch.es/" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }] }, { "id": 62, "type": "textnode", "value": " " }, { "id": 63, "type": "textnode", "value": "by Shirley Wu and Nadie Bremer" }] }, { "id": 64, "type": "component", "name": "li", "children": [{ "id": 65, "type": "component", "name": "em", "children": [{ "id": 66, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Creating my first data vis story: a process" }, "url": { "type": "value", "value": "https://medium.com/kontinentalist/creating-my-first-data-vis-story-a-process-dbfe96dfd096" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }] }, { "id": 67, "type": "textnode", "value": " " }, { "id": 68, "type": "textnode", "value": "by Mick Wang" }] }, { "id": 69, "type": "component", "name": "li", "children": [{ "id": 70, "type": "component", "name": "em", "children": [{ "id": 71, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "The Courage (and Disappointment) of Pitching a Visual Essay" }, "url": { "type": "value", "value": "https://pudding.cool/process/pitching-gendered-descriptions/" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }] }, { "id": 72, "type": "textnode", "value": " " }, { "id": 73, "type": "textnode", "value": "by Erin Davis" }] }] }, { "id": 74, "type": "component", "name": "Aside", "children": [{ "id": 75, "type": "component", "name": "Stepper", "properties": { "currentStep": { "type": "variable", "value": "stepperIndex" } }, "children": [{ "id": 76, "type": "component", "name": "Graphic", "children": [{ "id": 77, "type": "component", "name": "img", "properties": { "src": { "type": "expression", "value": "\"static/images/\" + stepperIndex + \".png\"" } }, "children": [] }] }, { "id": 78, "type": "component", "name": "Step", "children": [{ "id": 79, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "https://truth-and-beauty.net/projects/the-rhythm-of-food" } }, "children": [{ "id": 80, "type": "textnode", "value": "Inspiring Data Viz Examples: The Rhythm of Food, Analyzing food seasonality by Moritz Stefaner" }] }] }, { "id": 81, "type": "component", "name": "Step", "children": [{ "id": 82, "type": "component", "name": "a", "properties": { "href": { "type": "value", "value": "https://whydocatsanddogs.com/" } }, "children": [{ "id": 83, "type": "textnode", "value": "Inspiring Data Viz Examples: Why do cats & dogs ...? by Nadie Bremer" }] }] }, { "id": 84, "type": "component", "name": "StepperControl", "children": [] }] }] }, { "id": 85, "type": "component", "name": "h4", "children": [{ "id": 86, "type": "textnode", "value": "But what we enjoy the most is wielding data as a tool to explore our curiosities about the world around us." }] }, { "id": 87, "type": "component", "name": "Caption", "children": [{ "id": 88, "type": "textnode", "value": "\n- Nadie Bremer & Shirley Wu in " }, { "id": 89, "type": "component", "name": "em", "children": [{ "id": 90, "type": "textnode", "value": "Data Sketches" }] }, { "id": 91, "type": "textnode", "value": "\n" }] }, { "id": 92, "type": "component", "name": "br", "children": [] }, { "id": 93, "type": "component", "name": "p", "children": [{ "id": 94, "type": "textnode", "value": "This interactive portfolio outlines my year-long learning journey to tell data-driven visual stories using data visualisations. Around this time last year, I was not a data viz practitioner at all. I was very much sitting on the bleachers, wide-eyed at and astonished by the incredible data viz work made by the likes of " }, { "id": 95, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Mike Bostock" }, "url": { "type": "value", "value": "https://bost.ocks.org/mike/" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }, { "id": 96, "type": "textnode", "value": ", " }, { "id": 97, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Nadie Bremer" }, "url": { "type": "value", "value": "https://www.visualcinnamon.com/\n" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }, { "id": 98, "type": "textnode", "value": ", " }, { "id": 99, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Shirley Wu" }, "url": { "type": "value", "value": "https://shirleywu.studio/\n" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }, { "id": 100, "type": "textnode", "value": ", and " }, { "id": 101, "type": "component", "name": "link", "properties": { "text": { "type": "value", "value": "Moritz Stefaner" }, "url": { "type": "value", "value": "https://truth-and-beauty.net/\n" }, "target": { "type": "value", "value": "_blank" } }, "children": [] }, { "id": 102, "type": "textnode", "value": ". Their visualisations captured my imagination because they were the least chart-like charts, so unlike anything I had ever seen before." }] }, { "id": 103, "type": "component", "name": "p", "children": [{ "id": 104, "type": "textnode", "value": "These creators converted numbers from boring spreadsheets into quirky shapes and strange colour gradients, thus teasing out fascinating narratives and rendering them in beautiful nuance. What more, the nature of web-based data viz meant that many were highly interactive. Often, I could explore the data at my leisure, feeling as though I was being accompanied by a knowing and helpful guide eager to tell me more about this data. So much complicated, multidimensional information could be so well explained and made so accessible - " }, { "id": 105, "type": "component", "name": "strong", "children": [{ "id": 106, "type": "textnode", "value": "the elegance of it all shook me." }] }] }, { "id": 107, "type": "component", "name": "p", "children": [{ "id": 108, "type": "textnode", "value": "Despite my enthusiasm for visual data stories, however, it wasn’t easy to imagine myself imitating my data viz heroes. From my perspective, it seemed like my favourite data viz people were experts in everything data viz, ranging from code to design and art. At this point, I could only passably code in " }, { "id": 109, "type": "component", "name": "code", "children": [{ "id": 110, "type": "textnode", "value": "Python" }] }, { "id": 111, "type": "textnode", "value": ", put colourful things together in Canva, and occasionally add a watercolour into my journal. The prospect of creating a data viz, all while telling a coherent and engaging story seemed incredibly daunting." }] }, { "id": 112, "type": "component", "name": "p", "children": [{ "id": 113, "type": "textnode", "value": "Fast forward a year later, and I have somehow completed three independently produced data viz projects! Thus, I write these reflections and process pieces for all people interested in data viz, whether they be established practitioners or educators who are curious how a data viz skillset can be (and has been sort of!) acquired. Most of all, I really hope that eager but intimidated data viz enthusiasts, as I once was and perhaps still am, can observe what is possible only after a relatively brief learning curve." }] }] }, { "id": 114, "type": "component", "name": "NextArticle", "properties": { "slug": { "type": "variable", "value": "parametricSlug" } }, "children": [] }] };
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
@@ -66930,15 +68616,18 @@ module.exports = {
 	'header': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/header.js'),
 	'h4': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/h4.js'),
 	'caption': require('/Users/jasenlo/Capstone_Final/posts/introduction/components/caption.js'),
+	'youtube': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/youtube.js'),
+	'aside': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js'),
+	'preview': require('/Users/jasenlo/Capstone_Final/posts/introduction/components/preview.js'),
+	'link': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/link.js'),
 	'graphic': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/graphic.js'),
 	'step': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js'),
 	'stepper-control': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper-control.js'),
 	'stepper': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper.js'),
-	'aside': require('/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js'),
 	'next-article': require('/Users/jasenlo/Capstone_Final/posts/introduction/components/next-article.js')
 };
 
-},{"/Users/jasenlo/Capstone_Final/posts/introduction/components/caption.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/caption.js","/Users/jasenlo/Capstone_Final/posts/introduction/components/nav.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/nav.js","/Users/jasenlo/Capstone_Final/posts/introduction/components/next-article.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/next-article.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/graphic.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/graphic.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/h4.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/h4.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/header.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/header.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper-control.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper-control.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/text-container.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/text-container.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
+},{"/Users/jasenlo/Capstone_Final/posts/introduction/components/caption.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/caption.js","/Users/jasenlo/Capstone_Final/posts/introduction/components/nav.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/nav.js","/Users/jasenlo/Capstone_Final/posts/introduction/components/next-article.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/next-article.js","/Users/jasenlo/Capstone_Final/posts/introduction/components/preview.js":"/Users/jasenlo/Capstone_Final/posts/introduction/components/preview.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/aside.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/graphic.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/graphic.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/h4.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/h4.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/header.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/header.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/link.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/link.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/step.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper-control.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper-control.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/stepper.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/text-container.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/text-container.js","/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/youtube.js":"/Users/jasenlo/Capstone_Final/posts/introduction/node_modules/idyll-components/dist/cjs/youtube.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
 
 module.exports = function () {
 

@@ -1264,8 +1264,6 @@ button {
   font-size: large;
 }
 
-
-
 .aside img {
   box-shadow: 3px 3px 2px silver;
 }
@@ -1275,13 +1273,18 @@ button {
 }
 
 .aside .react_tinylink_card {
-  box-shadow: 3px 3px 2px silver;
+  margin-left:0;
 }
 
+.react_tinylink_card {
+  margin-left: 2em;
+  box-shadow: 3px 3px 2px silver !important;
+}
+
+
 a:hover.react_tinylink_card {
-  /*background: #EAE7D6;*/
   box-shadow: none !important;
-  text-decoration: none
+  text-decoration: none;  
 }
 
 
@@ -1696,11 +1699,7 @@ input {
   opacity: 0;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  font-weight: 300;
-}
-
-.parametric-annotation .parametric-annotation-text b {
-  font-style: italic;
+  font-weight: initial;
 }
 
 .parametric-annotation:hover .parametric-annotation-text {
@@ -1764,3 +1763,8 @@ input {
 ol {
     font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
     }
+
+ul {
+      font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+      }
+    

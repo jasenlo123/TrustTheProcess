@@ -6,8 +6,9 @@ class Logo extends React.Component {
     return (
       <div style={{width: '100%', color: 'black'}}>
         <div className="parametric-cover-title" style={{width: '100%', textAlign: 'left'}}>
-          <span style={{characterSpacing: '2.4px'}}>A Starter's Journey </span><br/>
-          into Visual Data Journalism
+          <span style={{characterSpacing: '2.4px', fontSize:"90px", lineHeight:"92px"}}>Trust </span><br/>
+          <span style={{characterSpacing: '2.4px', fontSize:"90px", lineHeight:"92px"}}>The </span><br/>
+          <span style={{characterSpacing: '2.4px', fontSize:"90px", lineHeight:"92px"}}>Process</span>
         </div>
       </div>
     );

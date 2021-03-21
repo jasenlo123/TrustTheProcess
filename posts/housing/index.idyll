@@ -1,0 +1,167 @@
+[meta title:"Trust the Process - Housing Worth or Nah" description:"Portfolio Piece Description."
+  shareImageUrl:".........."
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"tk-article-slug" /]
+
+[Nav fullWidth:true /]
+
+[Header
+  title:`["Housing at Minerva…Worth or Nah?"]`
+  longTitle:`["Housing at Minerva", "…Worth or Nah?"]`
+  date:"October, 2020"
+  subtitle:"web scrapping and scrollytelling adventures!"
+  fullWidth:true
+
+/]
+
+[Aside]
+  (Click [link text:"underlines" url:"https://jasenlo123.github.io/The-Minerva-Quest---Worth-Or-Nah-/" target:"_blank"/] to visit links. Hover over [Annotation annotationText:"This is an annotation!"] highlights [/Annotation] for inline annotations. ```Code or frameworks``` are denoted by this style.)
+[/Aside]
+
+
+#### Scrollytelling!
+
+[Aside]
+  [Preview header:"Housing at Minerva…Worth or Nah?" description:"A Minerva Quest data-driven investigative report about the financial aid and independent housing policy." media:"https://jasenlo123.github.io/The-Minerva-Quest---Worth-Or-Nah-/assets/house.gif" url:"https://jasenlo123.github.io/The-Minerva-Quest---Worth-Or-Nah-/" /]
+  [Caption]
+  Click this card to view the project!
+  [/Caption]
+[/Aside]
+
+  I've always had ambitions of implementing a data viz scrollytelling story. Scrollytelling, a play on words referring to a type of storytelling, made possible by web browsers and ```Javascript```, where the story progresses and things happen as the user scrolls down the browser.
+
+  Scrollytelling was first made popular by the *New York Times*' [link text:"Snow Fall" url:"https://www.nytimes.com/projects/2012/snow-fall/index.html#/?part=tunnel-creek" target:"_blank"/], which tells the tale of a 2012 Washington avalanche. *[link text:"The Pudding" url:"https://pudding.cool/" target:"_blank"/]*, one of my favourite digital publications, is a leader in producing stories in the data viz scrollytelling format.
+
+  Scrollytelling is not specific to data-centric stories, but I recognised how combining scrollytelling with data viz would make for compelling data stories. My previous capstone data viz tool was slightly interactive with mouse hovers and search functions. Otherwise, the data viz itself remained relatively static, everything that was there was there. I also noted how I had to add lots of annotations and text instructions to guide the users through the data viz because users were coming to the data viz with fresh eyes and little context as to what was happening.
+
+  [Aside]
+  [img src:"https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/601081473053d6008225be0d_6002086f72b72771e201de47_Wxr2dlSr6FOTvZrAIJaBTfyNUZeh3G7f2Mn-5mAVi6Yc0o53uzWKvtSgs8Yh6DDbU7gl0AWvzDbmkET6djdpyM1JhTSIoHxsMARw9VYR_NdFXdE2w1RtJbfKidaCtuCMbsYo8Mif.gif" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Snow Fall, by the *New York Times*, widely recognised as the piece of media that popularised scrollytelling. *The Atlantic*'s Rebecca Greenfield [link text:"described" url:"https://www.theatlantic.com/technology/archive/2012/12/new-york-times-snow-fall-feature/320253/" target:"_blank"/] why this story was so revolutionary - "**Snow Fall integrates video, photos, and graphics in a way that makes multimedia feel natural and useful, not just tacked on.**"
+  [/Caption]
+  [/Aside]
+
+  Scrollytelling leverages more of the the inherent, interactive nature of internet browsing beyond just mouse events, but scrolling events too. Scrolling through a story with sequentially placed annotations would help guide users through different layers and details of a data viz view.
+
+  I looked into how *The Pudding* implements their scrollytelling stories, and found that they have extensive and helpful tutorials on how to recreate their various visual essay styles. Russell Goldenberg at the Pudding, developed an open-source JavaScript library called ```Scrollama``` for scrollytelling. He wrote *[link text:"An Introduction to Scrollama.js" url:"https://pudding.cool/process/introducing-scrollama/" target:"_blank"/]* that was immensely helpful for me to understand how to use the library in combination with ```D3```.
+
+  [br/]
+  [video width:"100%" height:"auto" controls:`true` autoplay:`true`]
+    [source src:"https://pudding.cool/process/introducing-scrollama/assets/sticky-graphic-pattern.mp4" type:"video/mp4" /]
+    Your browser does not support the video tag.
+  [/video]
+  [Caption]
+  How scrollytelling works as told in Godenberg's *[link text:"An Introduction to Scrollama.js" url:"https://pudding.cool/process/introducing-scrollama/" target:"_blank"/]*.
+  [/Caption]
+
+
+#### Ideation
+
+  As a student at Minerva Schools at KGI, I have always wondered about was the cost of housing in various rotation cities. Minerva students live in 7 cities over the course of 4 years, where housing prices in each city vary drastically. However, Minerva charges the same fees for housing at Minerva's residence halls in all locations instead of having fees fluctuate each semester based on specific city costs.
+
+  At the same time, I came across a *Minerva Quest* [link text:"article" url:"https://www.minervaquest.com/2020/04/09/how-i-saved-money-at-minerva-despite-having-0-financial-aid/" target:"_blank"/] by Tessa Owens on how she saved money without financial aid, listing living "in independent housing in Seoul & Buenos Aires" as one of the ways she managed to save money. Intrigued, I decided to dig into the premise of opting out of Minerva residence halls in favour of independent housing as a means for students to save money. I hoped that this article, would help my schoolmates make more informed decisions regarding the housing costs of their Minerva education.
+
+
+#### Data
+
+  [Aside]
+  [img src:"https://jasenlo123.github.io/The-Minerva-Quest---Worth-Or-Nah-/assets/search.gif" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Search conditions for sampling Airbnb listings for San Francisco in Airbnb website. 
+  [/Caption]
+  [/Aside]
+
+  Since Owens mentioned that she found housing in Seoul and Buenos Aires through Airbnb, I figured it would be valid, albeit with many assumptions, to compare Airbnb housing prices with that of Minerva's housing prices. To do this, I decided to find Airbnb data by searching for accommodation in Minerva rotation cities under certain conditions to simulate a Minerva student searching for independent housing.
+
+  Since there isn't a publicly available Airbnb `API` for accessing live data, and because I didn't understand `GET requests` work in back-end web processes to intercept the data somehow, I resorted to scraping the Airbnb data from the `HTML` of the Airbnb search results page. This entails using web scraping methods such as the beginner-friendly web scraping combination of `requests` and `BeautifulSoup` in order to ask Airbnb's website for the content of a page, then recording the relevant information in a dataset, and repeat that programatically such that all the results are recorded.
+
+  Unfortunately, Airbnb would only show a maximum of 300 results for every search, but I figured this would be an acceptably large enough sample size. I was also unable to use `requests` and `BeautifulSoup` to access the page's search results, which I suspect has something to front-end frameworks like `React` bundling the Airbnb's website interface in `Javascript` that `BeautifulSoup` cannot parse.
+
+  Thus, I had to learn and rely on `Selenium`, a web scraping library which simulates a browser, to do the web scraping. I still don't entirely understand why `Selenium` manages to grab all the `HTML` content I was looking for, but it worked. My `Python` script dutifully scraped a dataset of 1531 Airbnb listings across the seven rotation cities. I recall becoming slightly concerned at how easy it was for me to essentially program a bot to visit websites and collect information automatically.
+
+#### Development
+
+  [Aside]
+  [img src:"../housing/static/images/histo.png" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Early `D3` histogram prototype of Airbnb listings prices in Berlin.  [/Caption]
+  [/Aside]
+
+  Dataset in hand, I thought about how I could make use of scrollytelling effectively in this story, and how I should visualise the data that I had. Talking to my fellow students and friends about the particular issue, I realised that I had to take the financial aid component into account as I reported the Airbnb data. I had to relate the data to the context of Minerva students, and the fact of the matter was that most Minerva students were on financial aid, which discourages students from opting out of Minerva residence halls even if there were cheaper alternatives on Airbnb.
+
+  However, the various policy mechanism were difficult to navigate and pretty specific to each student's degree of financial aid that they receive from Minerva. Thus, with much helpful advice from my journalism tutorial mates, I settled on two main data viz components:
+[br/]
+[br/]
+
+* The first visualisation would show a distribution of the prices of listings in each rotation city using histograms that displayed the median price and Minerva housing price, and scrolling down would sequentially show the data for each rotation city in the order that Minerva students visit them.
+* The second visualisation would focus more on the implications of the financial aid policies, specifically, how much or little financial aid does a student receive which would dictate the viability of them finding independent housing and saving money as a result. Though I was not entirely sure what kind of visualisation would work best for this.
+[br/]
+
+I went to work implementing the histograms, which are actually surprisingly complicated in `D3` relative to bar charts or line graphs because of the need to bin the data into bars before plotting those bins. Once the histograms were ready, I managed to get `Scrollama` working thanks to various Stackoverflow pages and Goldenberg's instructions. I also added some annotations to help guide users, and the captions and pictures for each rotation city:
+
+  [hr/]
+  [br/]
+  [br/]
+  [br/]
+  [img fullWidth:true src:"../housing/static/images/histoScroll.gif" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption fullWidth:true]
+  `Scrollama`'s scrollytelling implementation of the histograms of Airbnb listing prices.  [/Caption]
+
+#### Progress Scroll Woah Moment.
+
+  [Aside]
+  [img src:"../housing/static/images/progressTemplate.gif" alt:"placeholder" width:`100%` height:"auto"/]
+  [Caption]
+  Scrollama’s progress scroll example template.   
+  [/Caption]
+  [/Aside]
+
+  With the scrollytelling part done, the I began to think of ways to tackle the second visualisation problem. The primary concern was that I wanted users to be able to adjust the data viz view of the available listings that were viable to their specific financial aid situation. Thus, I thought of using adjustable range sliders that would change the listings that were visible in a scatter plot, which would have been the easier implementation.
+
+  [Preview header:"Range Sliders with d3.brush" description:"There are two different ones - a simpler one, and one that snaps to integer values. The view is updated while the brush is being dragged, but it can easily be changed to only update after dragging stops, e.g. if complex calculations follow." media:"https://static.observableusercontent.com/thumbnail/7f209309a496e301eca2bb234370c2309258a0fdbc483fa1e3d0c610626b5463.jpg" url:"https://observablehq.com/@sarah37/snapping-range-slider-with-d3-brush" /]
+  [Caption]
+  Click this card to view the `D3` implementation of a brush slider.
+  [/Caption]
+
+
+  But as I was looking through `Scrollama`'s documentation, I found that Goldenberg also developed a template for 'progress' scrollytelling. Instead of the step-by-step scroll to a certain point to change the step, this template allowed for the visualisation to correspond to the scroll progress within each step. 
+
+  I wondered if it was possible to implement a scrollytelling data viz in which the user could vary the financial aid amount as they scrolled down. After first creating a scatter plot of the Airbnb listings and some tinkering about, it turned out that progress scrolling in this context was entirely possible:
+  
+  [hr/]
+  [br/]
+  [br/]
+  [br/]
+
+    [img fullWidth:true src:"../housing/static/images/scatterScroll.gif" alt:"placeholder" width:`100%` height:"auto"/]
+    [Caption fullWidth:true]
+    Using `Scrollama`’s progress scroll template to visualise what housing options are available to a student given varying financial aid amounts. I also included a nice `D3` transition to the next step after the first progress scrolling step!   [/Caption]
+
+  This is still my favourite data viz that I've created so far. It hides the complicated math behind housing and financial aid policies to show a simple point, the more scholarship amount a student gets, the less they get to opt out for independent housing and save money.
+  
+
+  Since I already created the scatter plot of the listings, I decided to use `D3` to visualise which cities had the most viable listings, and which listings had lots of reviews. Harkening back to my capstone data viz tool, hovering one's mouse over a circle would show the math explaining how much a student would save, as well as a tooltip with a picture of the listing.
+
+#### Ethical Implications
+
+  Yet, as I finished up the write-up for the piece that accompanied the data viz, I became increasingly concerned about the impact of my article. I was worried that students who are not on financial aid would understand that Minerva housing is less cost-effective than they previously believed and thus opt-out of Minerva residence halls, which might prompt an increase in housing prices for students on financial aid.
+
+	Thus, I made the extra effort to consult with all stakeholders involved, from fellow students to Minerva’s Chief Financial Officer. This way, I knew I could publish my story knowing that it was not only accurate as all stakeholders had had an opportunity to respond, but that I wasn't going to make the financial situation worst for some members of my student community by publishing my findings.
+
+#### Takeaways
+
+* Scrollytelling isn't all too difficult to implement thanks to libraries such as Scrollama. All of the nitty-gritty `Javascript` coding like resizing and event handling is abstracted away such that all I had to do was specify what happens to the `D3` data viz when the scroller index changes. What more, I found that scrollytelling could be used to implement engaging animations and effects, instead of the linear or chronological scrollytelling stories I had seen.
+
+* Web scrapping is a frighteningly efficient way of sourcing data from the internet. There are just so much data out there that can be collected so easily with web scrapping tools like `Selenium` and `BeautifulSoup`, and it makes me wonder how many interesting data stories are hiding in plain sight in random websites, digitalised documents and archives.
+
+* This project was also my first real journalism experience, where I not only interviewed people of their opinions and expert knowledge, but also had to contemplate the ethical complications of my work and the impact it might have on others if I pushed the publish button. As I was completing this piece, I was heavily influenced by my digital humanities course, which stressed critical reflection of the methodology and consequences of data-driven work. This digital humanities emphasis prompted me to make sure that I carefully outlined my assumptions, processes and ethical considerations in published version.
+
+
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]

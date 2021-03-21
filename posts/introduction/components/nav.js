@@ -41,7 +41,7 @@ class Nav extends React.PureComponent {
             color: 'purple'
           }}>
             <a href="/" >
-              Jasen's Interactive Visual Data Journalism Portfolio
+              Jasen's Interactive Data Viz Portfolio
             </a>
             <div className='parametric-nav-toc' style={{cursor: 'pointer', textDecoration: 'none', fontSize: 48, position: 'relative', top: -8}} onClick={this.handleContents}>
               ☰
@@ -91,7 +91,7 @@ class Nav extends React.PureComponent {
             <div style={{textAlign: 'right'}}>
               <div style={{marginTop: '3em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                 <div style={{fontFamily: 'Courier New', fontWeight: 500}}>
-                  <a style={{color: '#222'}} href={`/introduction/`}>Introduction</a>
+                <a style={{color: '#222'}} href={`/introduction/`}>Introduction</a>
                 </div>
               </div>
               <div style={{ marginBottom: '1em', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>

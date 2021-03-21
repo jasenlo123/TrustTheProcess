@@ -1,4 +1,4 @@
-[meta title:"Portfolio Piece Template!" description:"Portfolio Piece Description."
+[meta title:"Introducing Trust The Process!" description:"An introduction to Jasen's interactive portfolio."
   shareImageUrl:".........."
   shareImageWidth:"880"
   shareImageHeight:"440" /]
@@ -9,21 +9,56 @@
 
 [Header
   title:`["An Introduction"]`
-  subtitle:"What is this interactive portfolio and why?"
+  subtitle:"What's with the name - Trust The Process?"
   date:"May 15, 2020"
   fullWidth:true
 /]
 
-
-#### “But what we enjoy the most is wielding data as a tool to explore our curiosities about the world around us.” 
+#### They tell us every game, every day: **Trust the Process. Just continue to build.**
 [Caption]
-- Nadie Bremer & Shirley Wu in Data Sketches
+- Former Philadelphia 76ers guard Tony Wroten
 [/Caption]
 
+// sixers video
+[Aside]
+[Youtube
+  id:"4fRiV-z7TkA&t=122s"
+  play:false
+  audio:true
+  width: 500
+  height: 300
+  options:`{ controls: 1 }`
+  /]
+[Caption]
+An ESPN short video about how 76ers fans feel about *Trust the Process*. [/Caption]
+[/Aside]
+
+In the 2014-15 National Basketball Association (NBA) season, the Philadelphia 76ers finished with an abysmal record of 18-64. At one point, the team lost 17 straight games. Intentionally too, some said. 76ers General Manager Sam Hinkie made basketball personnel decisions that made the team worse. The next season, they went 10-72. Oof. 
+
+You see, the more games a NBA team loses, the higher their drafting position, and thus the more likely they are to get first dibs on generational talents in the draft at the end of the NBA season. Hinkie was committed to a long-term rebuilding plan by losing so many games, which would only pay off years down the line when the players he drafted would be ready to contend for a championship.
+
+During this tumultuous time in 76ers history, *Trust the Process* became a rallying call for 76ers fans. Almost as a coping mechanism, the slogan signified that fans recognised even though things are terrible right now, there's a plan to make things better. 
+
+
+#### I Continue to Build!
+I named this website *Trust the Process* for two reasons: 
+
+Firstly, I relate to being completely clueless and incapable in the data visualisation (data viz) world. Like Hinkie's 76ers, I embrace my inability as a crutch to motivate my self-improvement and I commit myself to a long-term plan to become a more skilled and thoughtful data viz person. I might not know how to make much now, but I'm committed to learning how to build things from scratch so that I can be capable down the line. Hopefully, as I add more projects to this blog, I will be able to observe my gradual improvement to *championship-level* data viz.
+[Aside]
+[Preview header:"Data Feminism" description:"Catherine D'Ignazio and Lauren F. Klein’s transformed my outlook on everything data." media:"../introduction/static/images/dataFem.jpg" url:"https://data-feminism.mitpress.mit.edu/" /]
+[Caption]
+Click this card to start reading *Data Feminism*, it's entirely free to read and open-access!
+[/Caption]
+[/Aside]
+
+Secondly, this portfolio also serves as a repository for documenting my data viz processes. Digital Humanities theory, especially Catherine D'Ignazio and Lauren F. Klein’s *[link text:"Data Feminism" url:"https://mitpress.mit.edu/books/data-feminism" target:"_blank"/]*, has influenced me and my outlook towards data-driven work. Digital Humanities emphasises the critical examination and the democratisation of the production of digital work and data-driven processes. Too many people assume data and the charts representing data as objective sources, even though data and data viz are loaded with biases and assumptions, like any other information source. The many write-ups that prominent data visualisation designers have created also inspire me. These write-ups helped me realise that some of the best data viz work is doable and lessened the intimidation I felt for creating data-driven things. These write-ups motivate me to do the same, and I'm glad to share some of the experience and knowledge I have managed to accumulate in the past year.
+[br/]
 [br/]
 
+* *[link text:"Data Sketches" url:"https://www.datasketch.es/" target:"_blank"/]* by Shirley Wu and Nadie Bremer
+* *[link text:"Creating my first data vis story: a process" url:"https://medium.com/kontinentalist/creating-my-first-data-vis-story-a-process-dbfe96dfd096" target:"_blank"/]* by Mick Wang
+* *[link text:"The Courage (and Disappointment) of Pitching a Visual Essay" url:"https://pudding.cool/process/pitching-gendered-descriptions/" target:"_blank"/]* by Erin Davis
 
-Hi! I'm Jasen, a computer science student at Minerva Schools at KGI. This interactive portfolio outlines my year-long learning journey to of making data visualisations (data viz) and tell data-driven visual stories. Around this time last year, I was not a data viz practitioner at all. I was very much sitting on the bleachers, wide-eyed at and astonished by the incredible data viz work made by the likes of Mike Bostock, Nadie Bremer, Shirley Wu, and Moritz Stefaner. Their visualisations captured my imagination because they were the least chart-like charts - so precise and yet whimsical, unlike anything I had ever seen before.
 
 [Aside]
   [var name:"stepperIndex" value:0 /]
@@ -44,10 +79,23 @@ Hi! I'm Jasen, a computer science student at Minerva Schools at KGI. This intera
 [/Stepper]
 [/Aside]
 
-Despite my enthusiasm for visual data stories, however, it wasn't easy to imagine myself imitating my data viz heroes. From my perspective, it seemed like my favourite data viz people were experts in everything data viz, ranging from code to design and art. At this point, I could only passably code in Python (matplotlib?), put colourful things together in Canva, and occasionally add a watercolour into my journal. The prospect of creating a data viz, all while telling a coherent and engaging story seemed incredibly daunting.
+#### But what we enjoy the most is wielding data as a tool to explore our curiosities about the world around us.
+[Caption]
+- Nadie Bremer & Shirley Wu in *Data Sketches*
+[/Caption]
 
-Fast forward a year later, and I have somehow completed three independently produced data viz projects! Thus, I write this reflection + process piece for all people interested in data viz, whether they be established practitioners or educators who are curious how a data viz skillset can be (and has been sort of!) acquired. Most of all, I really hope that eager but intimidated data viz enthusiasts, as I once was and perhaps still am, can observe what is possible only after a relatively brief learning curve!
+[br/]
 
+This interactive portfolio outlines my year-long learning journey to tell data-driven visual stories using data visualisations. Around this time last year, I was not a data viz practitioner at all. I was very much sitting on the bleachers, wide-eyed at and astonished by the incredible data viz work made by the likes of [link text:"Mike Bostock" url:"https://bost.ocks.org/mike/" target:"_blank"/], [link text:"Nadie Bremer" url:"https://www.visualcinnamon.com/
+" target:"_blank"/], [link text:"Shirley Wu" url:"https://shirleywu.studio/
+" target:"_blank"/], and [link text:"Moritz Stefaner" url:"https://truth-and-beauty.net/
+" target:"_blank"/]. Their visualisations captured my imagination because they were the least chart-like charts, so unlike anything I had ever seen before.
+
+These creators converted numbers from boring spreadsheets into quirky shapes and strange colour gradients, thus teasing out fascinating narratives and rendering them in beautiful nuance. What more, the nature of web-based data viz meant that many were highly interactive. Often, I could explore the data at my leisure, feeling as though I was being accompanied by a knowing and helpful guide eager to tell me more about this data. So much complicated, multidimensional information could be so well explained and made so accessible - **the elegance of it all shook me.**
+
+Despite my enthusiasm for visual data stories, however, it wasn't easy to imagine myself imitating my data viz heroes. From my perspective, it seemed like my favourite data viz people were experts in everything data viz, ranging from code to design and art. At this point, I could only passably code in ```Python```, put colourful things together in Canva, and occasionally add a watercolour into my journal. The prospect of creating a data viz, all while telling a coherent and engaging story seemed incredibly daunting.
+
+Fast forward a year later, and I have somehow completed three independently produced data viz projects! Thus, I write these reflections and process pieces for all people interested in data viz, whether they be established practitioners or educators who are curious how a data viz skillset can be (and has been sort of!) acquired. Most of all, I really hope that eager but intimidated data viz enthusiasts, as I once was and perhaps still am, can observe what is possible only after a relatively brief learning curve.
 
 
 [NextArticle slug:parametricSlug fullWidth:true /]
