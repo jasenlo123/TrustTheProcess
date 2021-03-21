@@ -222,7 +222,7 @@ var Nav = function (_React$PureComponent) {
             } },
           _react2.default.createElement(
             'a',
-            { href: '/' },
+            { href: '/TrustTheProcess' },
             'Jasen\'s Interactive Data Viz Portfolio'
           ),
           _react2.default.createElement(
@@ -273,7 +273,7 @@ var Nav = function (_React$PureComponent) {
                     { style: { fontFamily: 'Courier New', fontWeight: 500 } },
                     _react2.default.createElement(
                       'a',
-                      { style: { color: '#222' }, href: '/' + slug + '/' },
+                      { style: { color: '#222' }, href: '/TrustTheProcess/' + slug + '/' },
                       formatTitle(titleBreaks)
                     )
                   ),
@@ -302,7 +302,7 @@ var Nav = function (_React$PureComponent) {
                 { style: { fontFamily: 'Courier New', fontWeight: 500 } },
                 _react2.default.createElement(
                   'a',
-                  { style: { color: '#222' }, href: '/introduction/' },
+                  { style: { color: '#222' }, href: '/TrustTheProcess/introduction/' },
                   'Introduction'
                 )
               )
@@ -315,7 +315,7 @@ var Nav = function (_React$PureComponent) {
                 { style: { fontFamily: 'Courier New', fontWeight: 500 } },
                 _react2.default.createElement(
                   'a',
-                  { style: { color: '#222' }, href: '/aboutMe/' },
+                  { style: { color: '#222' }, href: '/TrustTheProcess/aboutMe/' },
                   'About Me'
                 )
               )
