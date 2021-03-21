@@ -354,6 +354,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Preview = require('./preview');
+
 var CustomComponent = function (_React$Component) {
   _inherits(CustomComponent, _React$Component);
 
@@ -389,7 +391,7 @@ var CustomComponent = function (_React$Component) {
         { className: 'parametric-recirc-next-article' },
         _react2.default.createElement(
           'a',
-          { href: '/' + article.slug + '/' },
+          { href: '/TrustTheProcess/' + article.slug + '/' },
           _react2.default.createElement(
             'div',
             null,
@@ -419,7 +421,7 @@ var CustomComponent = function (_React$Component) {
 
 module.exports = CustomComponent;
 
-},{"./articles":"/Users/jasenlo/Capstone_Final/posts/capstone/components/articles.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/capstone/components/preview.js":[function(require,module,exports){
+},{"./articles":"/Users/jasenlo/Capstone_Final/posts/capstone/components/articles.js","./preview":"/Users/jasenlo/Capstone_Final/posts/capstone/components/preview.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/capstone/components/preview.js":[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
