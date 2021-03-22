@@ -22,7 +22,7 @@
         [/div]
 
         [div className:"information"]
-          [a href:"/aboutme"]About Me[/a]
+          [a href:"./aboutme"]About Me[/a]
         [/div]
       [/div]
       [hr /]
