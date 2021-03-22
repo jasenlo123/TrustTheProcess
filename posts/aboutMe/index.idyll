@@ -1,0 +1,64 @@
+[meta title:"Trust the Process - About Me" description:"About Me page of Jasen's portfolio"
+  shareImageUrl:"https://avatars.githubusercontent.com/u/44358575?s=460&u=b79f586ab1dff82fbc690b3b626e5c037d641c51&v=4"
+  shareImageWidth:"880"
+  shareImageHeight:"440" /]
+
+[var name:"parametricSlug" value:"capstone" /]
+
+[Nav fullWidth:true /]
+
+[Header
+  title:`["About Me"]`
+  longTitle:`["About", "Me"]`
+  date:"Last Updated: May 22, 2021"
+  subtitle:"Jasen the Aspiring Data Journo"
+  fullWidth:true
+
+/]
+
+
+[Aside]
+(Click [link text:"underlines" url:"/" target:"_blank"/] to visit links. Hover over [Annotation annotationText:"This is an annotation!"] highlights [/Annotation] for inline annotations. ```Code or frameworks``` are denoted by this style.)
+[/Aside]
+
+
+#### Hello!
+
+ I'm Jasen (he/him/his), a computer science student based in **San Francisco**, originally from **Hong Kong** and **Singapore**.
+
+[Aside]
+  [img src:"../aboutMe/static/images/me.JPG" alt:"placeholder" width:"300px" height:"auto"/]
+  [Caption]
+  Helu! This is me!
+  [/Caption]
+[/Aside]
+
+I'm an aspiring **Data Journalist**, **Digital Humanist**, **Data Viz Maker**, and **Investigator** of random datasets for the *[link text:"Minerva Quest" url:"https://www.minervaquest.com/" target:"_blank"/]*. I'm a **Data Science** major at [link text:"Minerva Schools at KGI" url:"https://www.minerva.kgi.edu/" target:"_blank"/], and I'm due to graduate in May 2021.
+
+I code mostly in `Python` and `Javascript`. Some of my favourite technologies and frameworks are: `Svelte`, `D3`, `Scrollama`, and `Idyll`. 
+
+My favourite book right now is *[link text:"Clara and the Sun" url:"https://www.npr.org/2021/03/03/972841445/klara-and-the-sun-is-a-masterpiece-about-life-love-and-mortality" target:"_blank"/]* by Kazuo Ishiguro. 
+
+
+#### Contact Me
+* **Email:** jasenlo123@gmail.com
+* **[link text:"Twitter" url:"https://twitter.com/jasenlo123" target:"_blank"/]**
+* **[link text:"Github" url:"https://github.com/jasenlo123" target:"_blank"/]**
+
+
+#### My Other Stuff
+
+I've worked in projects ranging from **Econometrics** and **Natural Language Processing** to **Historical Analysis** and **Generative Art**. I am passionate about **Interactive Data Visualisation** as a medium for journalism. Hurray **Interactive Data Journalism** so show me the scrollies!
+
+[Preview header:"My Other Portfolio" description:"This portfolio contains a lot of my non-data viz related work in Econometrics, Public History, and Data Science!" media:"https://jasenlo123.github.io/portfolio/img/portrait.jpg" url:"https://jasenlo123.github.io/portfolio/work.html" /]
+[Caption]
+Check out some of my non-data viz stuff here!
+[/Caption]
+
+
+
+
+[NextArticle slug:parametricSlug fullWidth:true /]
+
+// Uncomment before pub
+//[Analytics google:"UA-9DX3NMQ4V-X" tag:parametricSlug /]
