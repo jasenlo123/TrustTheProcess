@@ -589,7 +589,7 @@ var Nav = function (_React$PureComponent) {
                 { style: { fontFamily: 'Courier New', fontWeight: 500 } },
                 _react2.default.createElement(
                   'a',
-                  { style: { color: '#222' }, href: '/TrustTheProcess/aboutMe/' },
+                  { style: { color: '#222' }, href: '/TrustTheProcess/aboutme/' },
                   'About Me'
                 )
               )
