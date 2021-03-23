@@ -1,7 +1,7 @@
-[meta title:"Trust the Process - About Me" description:"About Me page of Jasen's portfolio"
+[meta title:"Trust the Process - About Me" description:"Some info about me, the author of this project"
   shareImageUrl:"https://avatars.githubusercontent.com/u/44358575?s=460&u=b79f586ab1dff82fbc690b3b626e5c037d641c51&v=4"
-  shareImageWidth:"880"
-  shareImageHeight:"440" /]
+  shareImageWidth:"500"
+  shareImageHeight:"300" /]
 
 [var name:"parametricSlug" value:"capstone" /]
 
