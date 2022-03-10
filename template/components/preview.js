@@ -4,7 +4,7 @@ const React = require('react');
 
 class Preview extends React.Component {
   render() {
-    const { hasError, idyll, updateProps,header, description, url, media, ...props } = this.props;
+    const { hasError, idyll, updateProps, header, description, url, media, ...props } = this.props;
     return (
       <ReactTinyLink
       header= {header}
