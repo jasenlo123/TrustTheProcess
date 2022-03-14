@@ -1220,142 +1220,585 @@ img {
     max-height: 200px;
   }
 }
-
-html {
-  scroll-behavior: smooth;
+body {
+  margin: 0;
 }
 
-@media all and (min-width: 1000px) {
-  body {
-    height: 200vh; /* Used to enable scrolling */
-    background: linear-gradient(360deg, white 40%,pink 75%, purple 90%, indigo 100%);
-  }
-  .parametric-cover-top-matter {
-    margin: 40vh auto 10vh auto;
-  }
+p {
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 }
 
-
-/* TopMatter */
-.parametric-cover-top-matter {
+h4 {
+  box-shadow: inset 0 -0.5rem 0 silver;
+  font-size: 2em;
+  line-height: 0.9em;
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  width: 90vw;
-  flex-direction: row;
+  width: 90%;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
-.parametric-cover-title {
-  font-size: 60px;
-  line-height: 72px;
-  width: '100%';
-  color: black;
+@media all and (min-width: 800px) 
+  {p {
+  padding-left: 2em;
+}
+  h4 {
+    margin-left: 1.5em;
+  }
+  pre {
+    margin-left: 2em !important;
+    margin-bottom: 0.5em !important;
+  }
+  video {
+    padding-left: 2em;
+  }
 }
 
-.parametric-issue-title {
-  font-size: 50px;
-  line-height: 72px;
-  text-align: right;
+hr {
+  border-top: 3px solid purple;
+  margin: 1.5em 0;
 }
 
-
-.parametric-issue-date {
-  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif;
-  font-size: 20px;
-  margin-top: 32px;
-  text-align: right;
+h5 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.1em;
+  margin: 1.5em 2em;
 }
 
-@media all and (max-width: 1000px) {
-  .parametric-cover-top-matter {
-    flex-direction: column;
-  }
-  .parametric-issue-title,
-  .parametric-cover-title {
-    font-size: 48px;
-    line-height: 50px;
-  }
-
-  .parametric-cover-top-matter {
-    max-width: none;
-    margin-left: 1em;
-  }
-
-  .parametric-issue-title {
-    margin-top: 0.5em;
-    font-size: 36px;
-    line-height: 38px;
-    text-align: left;
-  }
-
-  .parametric-issue-date {
-    margin-top: 0;
-  }
-}
 
 button {
   font-family: 'Courier New', Courier, monospace;
   font-size: large;
 }
-@media (min-width: 1000px) {
-  button {
-    margin-bottom:5vh;
-  }
+
+.aside img {
+  box-shadow: 3px 3px 2px silver;
 }
 
-@media (max-width: 1000px) {
-  button {
-    display: none;
-  }
+img {
+  box-shadow: 3px 3px 2px silver;
+}
+
+.aside iframe {
+  box-shadow: 3px 3px 2px silver;
+}
+
+.aside svg {
+  box-shadow: 3px 3px 2px silver;
+}
+
+.aside .react_tinylink_card {
+  margin-left:0;
+}
+
+.react_tinylink_card {
+  margin-left: 2em;
+  box-shadow: 3px 3px 2px silver !important;
 }
 
 
-/* Main Cover */
-.parametric-article-nav {
-  position: fixed;
-  width: 100vw;
-  left: 0;
-  margin-left: 0;
+a:hover.react_tinylink_card {
+  box-shadow: none !important;
+  text-decoration: none;  
+}
+
+
+.idyll-root {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 60px;
+  max-width: 1440px;
+}
+
+.idyll-text-container {
+  max-width: 600px;
+  margin-top: 0;
   margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  max-width: none;
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+
+.section {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.idyll-pub-date {
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+.article-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: auto 5em;
+  margin-bottom: 20px;
+  background-color: white !important;
+  color: black !important;
+}
+
+.inset {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+.aside-container {
+  position: relative;
+    display: block;
+
+}
+.aside {
+  position: absolute;
+  width: 500px;
+  left: 750px;
+}
+
+.fixed {
+  position: fixed;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  width: calc((80vw - 600px) - 50px);
+  justify-content: center;
+}
+
+.fixed div {
+  width: 100%;
+}
+
+.idyll-scroll-graphic {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.idyll-scroll-graphic img {
+  max-height: 100vh;
+}
+
+.component-debug-view {
+  position: relative;
+  transition: background-color 0.3s ease-in;
+  box-shadow: 5px 5px 10px 1px lightGray;
+}
+
+.author-view-button {
+  position: absolute;
+  top: 3px;
   right: 0;
-  background-color: #222222;
-  /* border-bottom: solid 1px #D8FFA2; */
-  /* border: none; */
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 50px;
+  opacity: .38;
+  background-color: #E7E3D0;
+  background-image: url('https://idyll-lang.org/static/images/quill-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
-.parametric-article-nav {
-  max-width: 700px;
+.author-view-button:focus {
+  outline: none;
 }
 
-
-
-.right {
-  color: #ffffff;
-  width: calc(100vw - 720px);
-  height: 50vh;
-  position: absolute;
-  padding: 15vh 3rem 0 3rem;
+.component-debug-view:hover > .author-view-button {
+  opacity: 0.87;
+  transition: opacity 600ms linear;
 }
 
-.left {
-  color: #ffffff;
-  width: calc(100vw - 720px);
-  height: 50vh;
-  position: absolute;
-  padding: 3rem 3rem 0rem 3rem;
-  left: 650px;
-  z-index: 2;
+.author-component-view {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
 }
 
-.left a {
+.author-component-view h2, .author-component-view h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.props-table {
+  width: 90%;
+  min-width: 500px;
+  display: table;
+  border: 1px solid #A4A2A2;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.props-table-type {
+  font-family: 'Courier-New';
+}
+
+.props-table-row {
+  text-align: center;
+}
+
+.debug-collapse {
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: height 0.3s ease-in;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.icon-links {
+  margin-top: 13px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon-link {
+  color: inherit;
+}
+
+.icon-link:hover {
   text-decoration: none;
 }
 
+.icon-link-image {
+  cursor: pointer;
+}
+
+.button-parametric-annotation {
+  background-color: black !important;
+  padding: 0 5px;
+}
+
+.button-parametric-annotation.place-top:after {
+  border-top-color: black !important;
+}
+
+.button-parametric-annotation.place-right:after {
+  border-right-color: black !important;
+}
+
+.button-parametric-annotation.place-bottom:after {
+  border-bottom-color: black !important;
+}
+
+.button-parametric-annotation.place-left:after {
+  border-left-color: black !important;
+}
+
+.parametric-annotation-header {
+  line-height: 1;
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.parametric-annotation-subtitle {
+  font-style: italic;
+}
+
+.article-header .idyll-text-container {
+  margin-left: 50px;
+}
+
+
+@media all and (max-width: 1600px) {
+  .fixed {
+    width: calc((85vw - 600px) - 50px);
+  }
+}
+
+@media all and (max-width: 1200px) {
+  /* put your css styles in here */
+  .desktop {
+    display: none;
+  }
+  .relative {
+    position: static;
+  }
+  .aside {
+    position: static;
+    width: 100%;
+    right: 0;
+  }
+  .idyll-text-container {
+    max-width: calc(100% - 2em);
+    margin-top: 0;
+    margin-right: 1em;
+    margin-bottom: 0;
+    margin-left: 1em;
+  }
+  .hed {
+    width: 100%;
+  }
+
+  .idyll-root {
+    padding: 15px 0;
+  }
+
+  .idyll-root {
+    margin: 0 auto;
+  }
+  .article-header {
+    margin: 0 auto;
+    padding-left: 1em;
+  }
+  .fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    top: initial;
+    background: white;
+    padding: 20px 0;
+    border-top: solid 2px black;
+  }
+  
+}
+
+
+.parametric-article-nav {
+  font-size: 16px;
+  line-height: 24px;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 1px purple;
+  background-color: white;
+  color: purple;
+  margin-left: calc((100vw - 1440px) / -2);
+  margin-right: calc((100vw - 1440px) / -2);
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0;
+  overflow-x: visible;
+  z-index: 1;
+}
+
+.parametric-article-nav .parametric-nav-links a {
+  font-weight: 300;
+  color: purple;
+}
+
+@media (max-width: 1200px) {
+  .parametric-article-nav {
+      padding-left: 1em;
+      padding-right: 1em;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .aside {
+    display: none;
+  }
+
+}
+
+.parametric-caption {
+  margin: 0em 1em 2em 5em;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.react_tinylink_card p {
+  padding: 0;
+}
+
+
+.react_tinylink_card_content_header_description {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.react_tinylink_card_content_description {
+  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+}
+
+.react_tinylink_card_footer_description {
+  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+}
+
+.parametric-recirc-next-article {
+  bottom: 0;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 2em;
+  border-top:3px solid purple;
+  border-bottom:3px solid purple;
+  padding-left: calc((100vw - 1440px) / 2);
+  padding-right: calc((100vw - 1440px) / 2);
+}
+
+.parametric-recirc-next-article a {
+  font-size: 56px;
+  line-height: 64px;
+   font-weight: 200;
+    color: silver;
+    text-shadow: none;
+     display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5em 0.5em;
+      text-decoration-color: purple;
+
+}
+@media (min-width: 700px) {
+  .parametric-recirc-next-article a {
+    padding: 1em 3em;
+  }
+}
+
+
+.highlight-hover {
+  font-size: 32px;
+  line-height: '48px';
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: silver;
+  text-decoration-color: silver;
+}
+
+
+
+#blockColorblindContent {
+  display: none;
+}
+
+/* parametric-annotation container */
+.parametric-annotation {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.parametric-annotation, .parametric-annotation:visited {
+  /*border-bottom: 1px solid silver;*/
+  box-shadow: inset 0 -22px 0 silver;
+  transition: box-shadow 0.25s ease-out;
+}
+
+.parametric-annotation:hover {
+  color: black;
+  /*background: silver;*/
+  box-shadow: inset 0 -4px 0  purple;
+}
+
+
+/* parametric-annotation text */
+.parametric-annotation .parametric-annotation-text {
+  visibility: hidden;
+  border-style: solid;
+  border-color: purple;
+  background: #fffff8 ;
+  text-align: left;
+  padding: 10px 10px;
+  border-radius: 4px;
+  /* Position the parametric-annotation text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  font-style: italic;
+}
+
+.parametric-annotation .parametric-annotation-text {
+  width: 30vh;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -15vh; /* Use half of the width (120/2 = 60), to center the parametric-annotation */
+  opacity: 0;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: initial;
+}
+
+.parametric-annotation:hover .parametric-annotation-text {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.25s ease-out;
+
+}
+
+@media all and (max-width: 600px) {
+  .parametric-annotation .parametric-annotation-text {
+    width: 50vw;
+    position: fixed;
+    left: 50%;
+    bottom: 20%;
+  }
+}
+
+
+.idyll-text-container a, a:visited {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  /*border-bottom: 1px solid #EAE7D6;*/
+  box-shadow: inset 0 -4px 0 purple;
+  transition: box-shadow 0.25s ease-out;
+}
+
+
+.idyll-text-container a:hover {
+  /*background: #EAE7D6;*/
+  box-shadow: inset 0 -22px 0 silver;
+  text-decoration: none
+}
+
+
+.idyll-text-container a tspan {
+  text-decoration: none;
+}
+
+.parametric-recirc-next-article a, a:visited {
+  color: black;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in;
+}
+
+.parametric-recirc-next-article a:hover {
+  box-shadow: inset 0 20em 0 silver;
+}
+
+.idyll-step-graphic {
+  background: none;
+}
+
+.idyll-step-content {
+  background: none;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ol {
+    font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+    }
+
+
+ul {
+  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif !important;
+  }
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information {
+  font-family: 'Courier New';
+  font-weight: bolder;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
 
 .description-text {
   max-width: 600px;
@@ -1395,149 +1838,7 @@ button {
   text-decoration: none;
 }
 
-.idyll-display {
-  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif;
-}
-
 .article-link-container {
   display: inline-block;
   margin-top: 1.5em;
 }
-
-.article-titles {
-  font-family: 'Courier New';
-  font-size: 1.85rem;
-  line-height: 1.2;
-}
-
-.information-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.information {
-  font-family: 'Courier New';
-  font-weight: bolder;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-}
-
-.information a {
-  color: silver;
-  text-decoration: none;
-}
-
-.information a:hover {
-  text-decoration: underline;
-  text-decoration-color: purple;
-}
-
-.article-link-container a {
-  color: silver;
-}
-
-.article-link-container a .idyll-display {
-  font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif;
-}
-
-.parametric-nav-links a:first-of-type {
-  text-decoration: underline;
-}
-
-.article-visual {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-
-.article-visual img {
-  width: auto;
-  max-height: 90vh;
-  max-width: 90%;
-  border: 2px solid purple;
-}
-
-.divider {
-  padding: 0 0.5em;
-  /* display: inline-block; */
-}
-
-hr {
-  border-top: 3px solid purple;
-  margin: 1.5em 0;
-}
-
- .selected .article-authors {
-  font-size: 18px;
-} 
-/* enable green hover on selected on non-mobile screens */
-
-@media all and (min-width: 800px) {
-  .selected.article-link-container a .idyll-display {
-    font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri,  sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1.6rem;
-    color: black;
-  }
-  .article-titles .selected {
-    font-size: 1.85rem;
-  }
-  .selected .article-authors {
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .right, .left {
-    width: 600px;
-  }
-  .parametric-article-nav {
-    max-width: 600px;
-  }
-  .right {
-    width: calc(100vw - 600px);
-    left: 600px;
-  }
-  .description-text .idyll-display {
-    font-size: 22px;
-    text-decoration-color: black;
-  }
-  .article-titles {
-    font-size: 1.85rem;
-  }
-}
-
-@media all and (max-width: 1000px) {
-  .right, .left {
-    width: 100%;
-    height: auto;
-    position: static;
-    /* overflow: ; */
-    border-right: none;
-  }
-
-  .left {
-    padding: 5rem 1em 0 1em;
-  }
-  .parametric-article-nav {
-    padding-left: 1em;
-  }
-  .parametric-article-nav {
-    max-width: 100%;
-  }
-  .right {
-    display: none;
-    left: 0;
-    top: 100vh;
-  }
-
-  .information-container {
-    margin-bottom: 100px;
-  }
-}
-
