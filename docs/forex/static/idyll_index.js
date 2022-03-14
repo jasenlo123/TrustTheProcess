@@ -1,4 +1,4 @@
-require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({"/Users/jasenlo/Capstone_Final/posts/forex/components/annotation.js":[function(require,module,exports){
+require=(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({"/Users/jasenlo/TrustTheProcess/posts/forex/components/annotation.js":[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -50,7 +50,7 @@ var Annotation = function (_React$Component) {
 
 module.exports = Annotation;
 
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/components/articles.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/articles.js":[function(require,module,exports){
 "use strict";
 
 var ARTICLES = [{
@@ -85,7 +85,7 @@ var ARTICLES = [{
 
 module.exports = ARTICLES;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/components/caption.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/caption.js":[function(require,module,exports){
 "use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -131,7 +131,7 @@ var Caption = function (_React$Component) {
 
 module.exports = Caption;
 
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/components/d3LineChart.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/d3LineChart.js":[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -405,7 +405,7 @@ var d3LineChart = function (_D3Component) {
 
 module.exports = d3LineChart;
 
-},{"d3":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3/build/d3.node.js","idyll-d3-component":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-d3-component/lib.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/components/nav.js":[function(require,module,exports){
+},{"d3":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3/build/d3.node.js","idyll-d3-component":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-d3-component/lib.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/nav.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -481,7 +481,7 @@ var Nav = function (_React$PureComponent) {
           _react2.default.createElement(
             'div',
             { style: { fontFamily: 'Courier New', textDecoration: 'none', color: 'silver' } },
-            'Trust The Process | A Capstone Project'
+            'Trust The Process'
           )
         ),
         _react2.default.createElement(
@@ -605,7 +605,7 @@ var Nav = function (_React$PureComponent) {
 
 exports.default = Nav;
 
-},{"./articles":"/Users/jasenlo/Capstone_Final/posts/forex/components/articles.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/components/next-article.js":[function(require,module,exports){
+},{"./articles":"/Users/jasenlo/TrustTheProcess/posts/forex/components/articles.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/next-article.js":[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -695,7 +695,7 @@ var CustomComponent = function (_React$Component) {
 
 module.exports = CustomComponent;
 
-},{"./articles":"/Users/jasenlo/Capstone_Final/posts/forex/components/articles.js","./preview":"/Users/jasenlo/Capstone_Final/posts/forex/components/preview.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/components/preview.js":[function(require,module,exports){
+},{"./articles":"/Users/jasenlo/TrustTheProcess/posts/forex/components/articles.js","./preview":"/Users/jasenlo/TrustTheProcess/posts/forex/components/preview.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/components/preview.js":[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -752,7 +752,7 @@ var Preview = function (_React$Component) {
 
 module.exports = Preview;
 
-},{"react":"react","react-tiny-link":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-tiny-link/lib/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/acorn/dist/acorn.js":[function(require,module,exports){
+},{"react":"react","react-tiny-link":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-tiny-link/lib/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/acorn/dist/acorn.js":[function(require,module,exports){
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -5940,7 +5940,7 @@ module.exports = Preview;
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/ajv.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/ajv.js":[function(require,module,exports){
 'use strict';
 
 var compileSchema = require('./compile')
@@ -6448,7 +6448,7 @@ function setLogger(self) {
 
 function noop() {}
 
-},{"./cache":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/cache.js","./compile":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/index.js","./compile/async":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/async.js","./compile/error_classes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/error_classes.js","./compile/formats":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/formats.js","./compile/resolve":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/resolve.js","./compile/rules":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/rules.js","./compile/schema_obj":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/schema_obj.js","./compile/util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js","./data":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/data.js","./keyword":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/keyword.js","./refs/data.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/data.json","./refs/json-schema-draft-07.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json","fast-json-stable-stringify":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-json-stable-stringify/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/cache.js":[function(require,module,exports){
+},{"./cache":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/cache.js","./compile":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/index.js","./compile/async":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/async.js","./compile/error_classes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/error_classes.js","./compile/formats":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/formats.js","./compile/resolve":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/resolve.js","./compile/rules":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/rules.js","./compile/schema_obj":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/schema_obj.js","./compile/util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js","./data":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/data.js","./keyword":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/keyword.js","./refs/data.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/data.json","./refs/json-schema-draft-07.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json","fast-json-stable-stringify":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-json-stable-stringify/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/cache.js":[function(require,module,exports){
 'use strict';
 
 
@@ -6476,7 +6476,7 @@ Cache.prototype.clear = function Cache_clear() {
   this._cache = {};
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/async.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/async.js":[function(require,module,exports){
 'use strict';
 
 var MissingRefError = require('./error_classes').MissingRef;
@@ -6568,7 +6568,7 @@ function compileAsync(schema, meta, callback) {
   }
 }
 
-},{"./error_classes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/error_classes.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/error_classes.js":[function(require,module,exports){
+},{"./error_classes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/error_classes.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/error_classes.js":[function(require,module,exports){
 'use strict';
 
 var resolve = require('./resolve');
@@ -6604,7 +6604,7 @@ function errorSubclass(Subclass) {
   return Subclass;
 }
 
-},{"./resolve":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/resolve.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/formats.js":[function(require,module,exports){
+},{"./resolve":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/resolve.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/formats.js":[function(require,module,exports){
 'use strict';
 
 var util = require('./util');
@@ -6748,7 +6748,7 @@ function regex(str) {
   }
 }
 
-},{"./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/index.js":[function(require,module,exports){
+},{"./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/index.js":[function(require,module,exports){
 'use strict';
 
 var resolve = require('./resolve')
@@ -7137,7 +7137,7 @@ function vars(arr, statement) {
   return code;
 }
 
-},{"../dotjs/validate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/validate.js","./error_classes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/error_classes.js","./resolve":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/resolve.js","./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js","fast-deep-equal":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-deep-equal/index.js","fast-json-stable-stringify":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-json-stable-stringify/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/resolve.js":[function(require,module,exports){
+},{"../dotjs/validate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/validate.js","./error_classes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/error_classes.js","./resolve":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/resolve.js","./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js","fast-deep-equal":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-deep-equal/index.js","fast-json-stable-stringify":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-json-stable-stringify/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/resolve.js":[function(require,module,exports){
 'use strict';
 
 var URI = require('uri-js')
@@ -7409,7 +7409,7 @@ function resolveIds(schema) {
   return localRefs;
 }
 
-},{"./schema_obj":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/schema_obj.js","./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js","fast-deep-equal":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-deep-equal/index.js","json-schema-traverse":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/json-schema-traverse/index.js","uri-js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uri-js/dist/es5/uri.all.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/rules.js":[function(require,module,exports){
+},{"./schema_obj":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/schema_obj.js","./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js","fast-deep-equal":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-deep-equal/index.js","json-schema-traverse":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/json-schema-traverse/index.js","uri-js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uri-js/dist/es5/uri.all.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/rules.js":[function(require,module,exports){
 'use strict';
 
 var ruleModules = require('../dotjs')
@@ -7477,7 +7477,7 @@ module.exports = function rules() {
   return RULES;
 };
 
-},{"../dotjs":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/index.js","./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/schema_obj.js":[function(require,module,exports){
+},{"../dotjs":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/index.js","./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/schema_obj.js":[function(require,module,exports){
 'use strict';
 
 var util = require('./util');
@@ -7488,7 +7488,7 @@ function SchemaObject(obj) {
   util.copy(obj, this);
 }
 
-},{"./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/ucs2length.js":[function(require,module,exports){
+},{"./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/ucs2length.js":[function(require,module,exports){
 'use strict';
 
 // https://mathiasbynens.be/notes/javascript-encoding
@@ -7510,7 +7510,7 @@ module.exports = function ucs2length(str) {
   return length;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/util.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/util.js":[function(require,module,exports){
 'use strict';
 
 
@@ -7751,7 +7751,7 @@ function unescapeJsonPointer(str) {
   return str.replace(/~1/g, '/').replace(/~0/g, '~');
 }
 
-},{"./ucs2length":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/compile/ucs2length.js","fast-deep-equal":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-deep-equal/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/data.js":[function(require,module,exports){
+},{"./ucs2length":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/compile/ucs2length.js","fast-deep-equal":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-deep-equal/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/data.js":[function(require,module,exports){
 'use strict';
 
 var KEYWORDS = [
@@ -7802,7 +7802,7 @@ module.exports = function (metaSchema, keywordsJsonPointers) {
   return metaSchema;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/definition_schema.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/definition_schema.js":[function(require,module,exports){
 'use strict';
 
 var metaSchema = require('./refs/json-schema-draft-07.json');
@@ -7841,7 +7841,7 @@ module.exports = {
   }
 };
 
-},{"./refs/json-schema-draft-07.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limit.js":[function(require,module,exports){
+},{"./refs/json-schema-draft-07.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limit.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate__limit(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8006,7 +8006,7 @@ module.exports = function generate__limit(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitItems.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitItems.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate__limitItems(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8088,7 +8088,7 @@ module.exports = function generate__limitItems(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitLength.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitLength.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate__limitLength(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8175,7 +8175,7 @@ module.exports = function generate__limitLength(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitProperties.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitProperties.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate__limitProperties(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8257,7 +8257,7 @@ module.exports = function generate__limitProperties(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/allOf.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/allOf.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_allOf(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8301,7 +8301,7 @@ module.exports = function generate_allOf(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/anyOf.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/anyOf.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_anyOf(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8376,7 +8376,7 @@ module.exports = function generate_anyOf(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/comment.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/comment.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_comment(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8392,7 +8392,7 @@ module.exports = function generate_comment(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/const.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/const.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_const(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8450,7 +8450,7 @@ module.exports = function generate_const(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/contains.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/contains.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_contains(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8533,7 +8533,7 @@ module.exports = function generate_contains(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/custom.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/custom.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_custom(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8763,7 +8763,7 @@ module.exports = function generate_custom(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/dependencies.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/dependencies.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_dependencies(it, $keyword, $ruleType) {
   var out = ' ';
@@ -8933,7 +8933,7 @@ module.exports = function generate_dependencies(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/enum.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/enum.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_enum(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9001,7 +9001,7 @@ module.exports = function generate_enum(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/format.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/format.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_format(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9153,7 +9153,7 @@ module.exports = function generate_format(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/if.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/if.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_if(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9258,7 +9258,7 @@ module.exports = function generate_if(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/index.js":[function(require,module,exports){
 'use strict';
 
 //all requires must be explicit because browserify won't work with dynamic requires
@@ -9293,7 +9293,7 @@ module.exports = {
   validate: require('./validate')
 };
 
-},{"./_limit":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limit.js","./_limitItems":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitItems.js","./_limitLength":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitLength.js","./_limitProperties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/_limitProperties.js","./allOf":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/allOf.js","./anyOf":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/anyOf.js","./comment":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/comment.js","./const":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/const.js","./contains":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/contains.js","./dependencies":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/dependencies.js","./enum":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/enum.js","./format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/format.js","./if":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/if.js","./items":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/items.js","./multipleOf":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/multipleOf.js","./not":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/not.js","./oneOf":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/oneOf.js","./pattern":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/pattern.js","./properties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/properties.js","./propertyNames":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/propertyNames.js","./ref":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/ref.js","./required":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/required.js","./uniqueItems":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/uniqueItems.js","./validate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/validate.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/items.js":[function(require,module,exports){
+},{"./_limit":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limit.js","./_limitItems":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitItems.js","./_limitLength":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitLength.js","./_limitProperties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/_limitProperties.js","./allOf":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/allOf.js","./anyOf":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/anyOf.js","./comment":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/comment.js","./const":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/const.js","./contains":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/contains.js","./dependencies":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/dependencies.js","./enum":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/enum.js","./format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/format.js","./if":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/if.js","./items":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/items.js","./multipleOf":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/multipleOf.js","./not":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/not.js","./oneOf":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/oneOf.js","./pattern":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/pattern.js","./properties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/properties.js","./propertyNames":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/propertyNames.js","./ref":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/ref.js","./required":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/required.js","./uniqueItems":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/uniqueItems.js","./validate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/validate.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/items.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_items(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9435,7 +9435,7 @@ module.exports = function generate_items(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/multipleOf.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/multipleOf.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_multipleOf(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9517,7 +9517,7 @@ module.exports = function generate_multipleOf(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/not.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/not.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_not(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9603,7 +9603,7 @@ module.exports = function generate_not(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/oneOf.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/oneOf.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_oneOf(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9678,7 +9678,7 @@ module.exports = function generate_oneOf(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/pattern.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/pattern.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_pattern(it, $keyword, $ruleType) {
   var out = ' ';
@@ -9755,7 +9755,7 @@ module.exports = function generate_pattern(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/properties.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/properties.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_properties(it, $keyword, $ruleType) {
   var out = ' ';
@@ -10092,7 +10092,7 @@ module.exports = function generate_properties(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/propertyNames.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/propertyNames.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_propertyNames(it, $keyword, $ruleType) {
   var out = ' ';
@@ -10175,7 +10175,7 @@ module.exports = function generate_propertyNames(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/ref.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/ref.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_ref(it, $keyword, $ruleType) {
   var out = ' ';
@@ -10301,7 +10301,7 @@ module.exports = function generate_ref(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/required.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/required.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_required(it, $keyword, $ruleType) {
   var out = ' ';
@@ -10573,7 +10573,7 @@ module.exports = function generate_required(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/uniqueItems.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/uniqueItems.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_uniqueItems(it, $keyword, $ruleType) {
   var out = ' ';
@@ -10661,7 +10661,7 @@ module.exports = function generate_uniqueItems(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/validate.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/validate.js":[function(require,module,exports){
 'use strict';
 module.exports = function generate_validate(it, $keyword, $ruleType) {
   var out = '';
@@ -11145,7 +11145,7 @@ module.exports = function generate_validate(it, $keyword, $ruleType) {
   return out;
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/keyword.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/keyword.js":[function(require,module,exports){
 'use strict';
 
 var IDENTIFIER = /^[a-z_$][a-z0-9_$-]*$/i;
@@ -11293,7 +11293,7 @@ function validateKeyword(definition, throwError) {
     return false;
 }
 
-},{"./definition_schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/definition_schema.js","./dotjs/custom":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/dotjs/custom.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/data.json":[function(require,module,exports){
+},{"./definition_schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/definition_schema.js","./dotjs/custom":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/dotjs/custom.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/data.json":[function(require,module,exports){
 module.exports={
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://raw.githubusercontent.com/ajv-validator/ajv/master/lib/refs/data.json#",
@@ -11312,7 +11312,7 @@ module.exports={
     "additionalProperties": false
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-06.json":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-06.json":[function(require,module,exports){
 module.exports={
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "http://json-schema.org/draft-06/schema#",
@@ -11468,7 +11468,7 @@ module.exports={
     "default": {}
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-07.json":[function(require,module,exports){
 module.exports={
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://json-schema.org/draft-07/schema#",
@@ -11638,7 +11638,7 @@ module.exports={
     "default": true
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/base64-js/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/base64-js/index.js":[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -11790,11 +11790,11 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js":[function(require,module,exports){
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browserify/lib/_empty.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js"][0].apply(exports,arguments)
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browserify/lib/_empty.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js"][0].apply(exports,arguments)
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js":[function(require,module,exports){
 (function (Buffer){(function (){
 /*!
  * The buffer module from node.js, for the browser.
@@ -13575,7 +13575,7 @@ function numberIsNaN (obj) {
 }
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"base64-js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/base64-js/index.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","ieee754":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ieee754/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/builtin-status-codes/browser.js":[function(require,module,exports){
+},{"base64-js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/base64-js/index.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","ieee754":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ieee754/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/builtin-status-codes/browser.js":[function(require,module,exports){
 module.exports = {
   "100": "Continue",
   "101": "Switching Protocols",
@@ -13641,7 +13641,7 @@ module.exports = {
   "511": "Network Authentication Required"
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/callBound.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/callBound.js":[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -13658,7 +13658,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 	return intrinsic;
 };
 
-},{"./":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/index.js","get-intrinsic":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/index.js":[function(require,module,exports){
+},{"./":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/index.js","get-intrinsic":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/index.js":[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
@@ -13707,7 +13707,7 @@ if ($defineProperty) {
 	module.exports.apply = applyBind;
 }
 
-},{"function-bind":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/index.js","get-intrinsic":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/camel-case/camel-case.js":[function(require,module,exports){
+},{"function-bind":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/index.js","get-intrinsic":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/camel-case/camel-case.js":[function(require,module,exports){
 var upperCase = require('upper-case')
 var noCase = require('no-case')
 
@@ -13732,7 +13732,7 @@ module.exports = function (value, locale, mergeNumbers) {
   })
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/change-case/change-case.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/change-case/change-case.js":[function(require,module,exports){
 exports.no = exports.noCase = require('no-case')
 exports.dot = exports.dotCase = require('dot-case')
 exports.swap = exports.swapCase = require('swap-case')
@@ -13754,7 +13754,7 @@ exports.isLower = exports.isLowerCase = require('is-lower-case')
 exports.ucFirst = exports.upperCaseFirst = require('upper-case-first')
 exports.lcFirst = exports.lowerCaseFirst = require('lower-case-first')
 
-},{"camel-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/camel-case/camel-case.js","constant-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/constant-case/constant-case.js","dot-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/dot-case/dot-case.js","header-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/header-case/header-case.js","is-lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-lower-case/is-lower-case.js","is-upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-upper-case/is-upper-case.js","lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js","lower-case-first":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case-first/lower-case-first.js","no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js","param-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/param-case/param-case.js","pascal-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/pascal-case/pascal-case.js","path-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/path-case/path-case.js","sentence-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/sentence-case/sentence-case.js","snake-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/snake-case/snake-case.js","swap-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/swap-case/swap-case.js","title-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/title-case/title-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js","upper-case-first":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/constant-case/constant-case.js":[function(require,module,exports){
+},{"camel-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/camel-case/camel-case.js","constant-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/constant-case/constant-case.js","dot-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/dot-case/dot-case.js","header-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/header-case/header-case.js","is-lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-lower-case/is-lower-case.js","is-upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-upper-case/is-upper-case.js","lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js","lower-case-first":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case-first/lower-case-first.js","no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js","param-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/param-case/param-case.js","pascal-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/pascal-case/pascal-case.js","path-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/path-case/path-case.js","sentence-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/sentence-case/sentence-case.js","snake-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/snake-case/snake-case.js","swap-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/swap-case/swap-case.js","title-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/title-case/title-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js","upper-case-first":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/constant-case/constant-case.js":[function(require,module,exports){
 var upperCase = require('upper-case')
 var snakeCase = require('snake-case')
 
@@ -13769,7 +13769,7 @@ module.exports = function (value, locale) {
   return upperCase(snakeCase(value, locale), locale)
 }
 
-},{"snake-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/snake-case/snake-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js":[function(require,module,exports){
+},{"snake-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/snake-case/snake-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js":[function(require,module,exports){
 (function (Buffer){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -13880,7 +13880,7 @@ function objectToString(o) {
 }
 
 }).call(this)}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-buffer/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/ResizeableBuffer.js":[function(require,module,exports){
+},{"../../is-buffer/index.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-buffer/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/ResizeableBuffer.js":[function(require,module,exports){
 (function (Buffer){(function (){
 "use strict";
 
@@ -13985,7 +13985,7 @@ var ResizeableBuffer = /*#__PURE__*/function () {
 
 module.exports = ResizeableBuffer;
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/index.js":[function(require,module,exports){
+},{"buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/index.js":[function(require,module,exports){
 (function (Buffer,setImmediate){(function (){
 "use strict";
 
@@ -15498,7 +15498,7 @@ var normalizeColumnsArray = function normalizeColumnsArray(columns) {
   return normalizedColumns;
 };
 }).call(this)}).call(this,require("buffer").Buffer,require("timers").setImmediate)
-},{"./ResizeableBuffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/ResizeableBuffer.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-browserify/index.js","timers":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/timers-browserify/main.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/sync.js":[function(require,module,exports){
+},{"./ResizeableBuffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/ResizeableBuffer.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-browserify/index.js","timers":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/timers-browserify/main.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/sync.js":[function(require,module,exports){
 (function (Buffer){(function (){
 "use strict";
 
@@ -15534,7 +15534,7 @@ module.exports = function (data) {
   return records;
 };
 }).call(this)}).call(this,require("buffer").Buffer)
-},{".":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/index.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-array/build/d3-array.js":[function(require,module,exports){
+},{".":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/index.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-array/build/d3-array.js":[function(require,module,exports){
 // https://d3js.org/d3-array/ Version 1.2.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -16126,7 +16126,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-axis/build/d3-axis.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-axis/build/d3-axis.js":[function(require,module,exports){
 // https://d3js.org/d3-axis/ Version 1.0.8. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -16321,7 +16321,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-brush/build/d3-brush.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-brush/build/d3-brush.js":[function(require,module,exports){
 // https://d3js.org/d3-brush/ Version 1.0.4. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-dispatch'), require('d3-drag'), require('d3-interpolate'), require('d3-selection'), require('d3-transition')) :
@@ -16890,7 +16890,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-interpolate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-transition":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-transition/build/d3-transition.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-chord/build/d3-chord.js":[function(require,module,exports){
+},{"d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-interpolate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-transition":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-transition/build/d3-transition.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-chord/build/d3-chord.js":[function(require,module,exports){
 // https://d3js.org/d3-chord/ Version 1.0.4. Copyright 2017 Mike Bostock.
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-array'), require('d3-path')) :
@@ -17122,7 +17122,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-array":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-array/build/d3-array.js","d3-path":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-path/build/d3-path.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-collection/build/d3-collection.js":[function(require,module,exports){
+},{"d3-array":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-array/build/d3-array.js","d3-path":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-path/build/d3-path.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-collection/build/d3-collection.js":[function(require,module,exports){
 // https://d3js.org/d3-collection/ Version 1.0.4. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -17341,7 +17341,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-color/build/d3-color.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-color/build/d3-color.js":[function(require,module,exports){
 // https://d3js.org/d3-color/ Version 1.0.3. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -17866,7 +17866,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js":[function(require,module,exports){
 // https://d3js.org/d3-dispatch/ Version 1.0.3. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -17963,7 +17963,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-drag/build/d3-drag.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-drag/build/d3-drag.js":[function(require,module,exports){
 // https://d3js.org/d3-drag/ Version 1.2.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-dispatch'), require('d3-selection')) :
@@ -18199,7 +18199,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-selection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dsv/build/d3-dsv.js":[function(require,module,exports){
+},{"d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-selection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dsv/build/d3-dsv.js":[function(require,module,exports){
 // https://d3js.org/d3-dsv/ Version 1.0.8. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -18363,7 +18363,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-ease/build/d3-ease.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-ease/build/d3-ease.js":[function(require,module,exports){
 // https://d3js.org/d3-ease/ Version 1.0.3. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -18624,7 +18624,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-force/build/d3-force.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-force/build/d3-force.js":[function(require,module,exports){
 // https://d3js.org/d3-force/ Version 1.1.0. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-quadtree'), require('d3-collection'), require('d3-dispatch'), require('d3-timer')) :
@@ -19286,7 +19286,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-collection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-quadtree":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js","d3-timer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-timer/build/d3-timer.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-format/build/d3-format.js":[function(require,module,exports){
+},{"d3-collection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-quadtree":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js","d3-timer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-timer/build/d3-timer.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-format/build/d3-format.js":[function(require,module,exports){
 // https://d3js.org/d3-format/ Version 1.2.2. Copyright 2018 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -19619,7 +19619,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-geo/build/d3-geo.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-geo/build/d3-geo.js":[function(require,module,exports){
 // https://d3js.org/d3-geo/ Version 1.9.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-array')) :
@@ -22666,7 +22666,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-array":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-array/build/d3-array.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-hierarchy/build/d3-hierarchy.js":[function(require,module,exports){
+},{"d3-array":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-array/build/d3-array.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-hierarchy/build/d3-hierarchy.js":[function(require,module,exports){
 // https://d3js.org/d3-hierarchy/ Version 1.1.5. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -23955,7 +23955,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js":[function(require,module,exports){
 // https://d3js.org/d3-interpolate/ Version 1.1.6. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-color')) :
@@ -24502,7 +24502,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-color":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-color/build/d3-color.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-path/build/d3-path.js":[function(require,module,exports){
+},{"d3-color":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-color/build/d3-color.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-path/build/d3-path.js":[function(require,module,exports){
 // https://d3js.org/d3-path/ Version 1.0.5. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -24645,7 +24645,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-polygon/build/d3-polygon.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-polygon/build/d3-polygon.js":[function(require,module,exports){
 // https://d3js.org/d3-polygon/ Version 1.0.3. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -24797,7 +24797,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js":[function(require,module,exports){
 // https://d3js.org/d3-quadtree/ Version 1.0.3. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -25234,7 +25234,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-queue/build/d3-queue.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-queue/build/d3-queue.js":[function(require,module,exports){
 // https://d3js.org/d3-queue/ Version 3.0.7. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -25370,7 +25370,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-random/build/d3-random.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-random/build/d3-random.js":[function(require,module,exports){
 // https://d3js.org/d3-random/ Version 1.1.0. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -25487,7 +25487,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-request/build/d3-request.node.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-request/build/d3-request.node.js":[function(require,module,exports){
 'use strict';
 
 var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
@@ -25704,7 +25704,7 @@ exports.xml = xml;
 exports.csv = csv;
 exports.tsv = tsv;
 
-},{"d3-collection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-dsv":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dsv/build/d3-dsv.js","xmlhttprequest":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/xmlhttprequest/lib/XMLHttpRequest.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-scale/build/d3-scale.js":[function(require,module,exports){
+},{"d3-collection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-dsv":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dsv/build/d3-dsv.js","xmlhttprequest":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/xmlhttprequest/lib/XMLHttpRequest.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-scale/build/d3-scale.js":[function(require,module,exports){
 // https://d3js.org/d3-scale/ Version 1.0.7. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-array'), require('d3-collection'), require('d3-interpolate'), require('d3-format'), require('d3-time'), require('d3-time-format'), require('d3-color')) :
@@ -26631,7 +26631,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-array":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-array/build/d3-array.js","d3-collection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-color":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-color/build/d3-color.js","d3-format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-format/build/d3-format.js","d3-interpolate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-time":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time/build/d3-time.js","d3-time-format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time-format/build/d3-time-format.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js":[function(require,module,exports){
+},{"d3-array":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-array/build/d3-array.js","d3-collection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-color":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-color/build/d3-color.js","d3-format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-format/build/d3-format.js","d3-interpolate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-time":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time/build/d3-time.js","d3-time-format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time-format/build/d3-time-format.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js":[function(require,module,exports){
 // https://d3js.org/d3-selection/ Version 1.3.0. Copyright 2018 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -27628,7 +27628,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-shape/build/d3-shape.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-shape/build/d3-shape.js":[function(require,module,exports){
 // https://d3js.org/d3-shape/ Version 1.2.0. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-path')) :
@@ -29565,7 +29565,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-path":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-path/build/d3-path.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time-format/build/d3-time-format.js":[function(require,module,exports){
+},{"d3-path":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-path/build/d3-path.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time-format/build/d3-time-format.js":[function(require,module,exports){
 // https://d3js.org/d3-time-format/ Version 2.1.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-time')) :
@@ -30255,7 +30255,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-time":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time/build/d3-time.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time/build/d3-time.js":[function(require,module,exports){
+},{"d3-time":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time/build/d3-time.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time/build/d3-time.js":[function(require,module,exports){
 // https://d3js.org/d3-time/ Version 1.0.8. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -30642,7 +30642,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-timer/build/d3-timer.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-timer/build/d3-timer.js":[function(require,module,exports){
 // https://d3js.org/d3-timer/ Version 1.0.7. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -30793,7 +30793,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-transition/build/d3-transition.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-transition/build/d3-transition.js":[function(require,module,exports){
 // https://d3js.org/d3-transition/ Version 1.1.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-selection'), require('d3-dispatch'), require('d3-timer'), require('d3-interpolate'), require('d3-color'), require('d3-ease')) :
@@ -31582,7 +31582,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-color":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-color/build/d3-color.js","d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-ease":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-ease/build/d3-ease.js","d3-interpolate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-timer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-timer/build/d3-timer.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-voronoi/build/d3-voronoi.js":[function(require,module,exports){
+},{"d3-color":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-color/build/d3-color.js","d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-ease":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-ease/build/d3-ease.js","d3-interpolate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-timer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-timer/build/d3-timer.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-voronoi/build/d3-voronoi.js":[function(require,module,exports){
 // https://d3js.org/d3-voronoi/ Version 1.1.2. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -32583,7 +32583,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-zoom/build/d3-zoom.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-zoom/build/d3-zoom.js":[function(require,module,exports){
 // https://d3js.org/d3-zoom/ Version 1.7.1. Copyright 2017 Mike Bostock.
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-dispatch'), require('d3-drag'), require('d3-interpolate'), require('d3-selection'), require('d3-transition')) :
@@ -33087,7 +33087,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-},{"d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-interpolate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-transition":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-transition/build/d3-transition.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3/build/d3.node.js":[function(require,module,exports){
+},{"d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-interpolate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-selection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-transition":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-transition/build/d3-transition.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3/build/d3.node.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33158,7 +33158,7 @@ Object.keys(d3Voronoi).forEach(function (key) { exports[key] = d3Voronoi[key]; }
 Object.keys(d3Zoom).forEach(function (key) { exports[key] = d3Zoom[key]; });
 Object.defineProperty(exports, "event", {get: function() { return d3Selection.event; }});
 
-},{"d3-array":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-array/build/d3-array.js","d3-axis":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-axis/build/d3-axis.js","d3-brush":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-brush/build/d3-brush.js","d3-chord":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-chord/build/d3-chord.js","d3-collection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-color":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-color/build/d3-color.js","d3-dispatch":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-dsv":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-dsv/build/d3-dsv.js","d3-ease":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-ease/build/d3-ease.js","d3-force":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-force/build/d3-force.js","d3-format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-format/build/d3-format.js","d3-geo":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-geo/build/d3-geo.js","d3-hierarchy":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-hierarchy/build/d3-hierarchy.js","d3-interpolate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-path":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-path/build/d3-path.js","d3-polygon":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-polygon/build/d3-polygon.js","d3-quadtree":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js","d3-queue":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-queue/build/d3-queue.js","d3-random":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-random/build/d3-random.js","d3-request":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-request/build/d3-request.node.js","d3-scale":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-scale/build/d3-scale.js","d3-selection":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-shape":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-shape/build/d3-shape.js","d3-time":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time/build/d3-time.js","d3-time-format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-time-format/build/d3-time-format.js","d3-timer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-timer/build/d3-timer.js","d3-transition":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-transition/build/d3-transition.js","d3-voronoi":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-voronoi/build/d3-voronoi.js","d3-zoom":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-zoom/build/d3-zoom.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/define-properties/index.js":[function(require,module,exports){
+},{"d3-array":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-array/build/d3-array.js","d3-axis":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-axis/build/d3-axis.js","d3-brush":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-brush/build/d3-brush.js","d3-chord":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-chord/build/d3-chord.js","d3-collection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-collection/build/d3-collection.js","d3-color":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-color/build/d3-color.js","d3-dispatch":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dispatch/build/d3-dispatch.js","d3-drag":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-drag/build/d3-drag.js","d3-dsv":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-dsv/build/d3-dsv.js","d3-ease":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-ease/build/d3-ease.js","d3-force":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-force/build/d3-force.js","d3-format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-format/build/d3-format.js","d3-geo":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-geo/build/d3-geo.js","d3-hierarchy":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-hierarchy/build/d3-hierarchy.js","d3-interpolate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-interpolate/build/d3-interpolate.js","d3-path":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-path/build/d3-path.js","d3-polygon":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-polygon/build/d3-polygon.js","d3-quadtree":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-quadtree/build/d3-quadtree.js","d3-queue":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-queue/build/d3-queue.js","d3-random":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-random/build/d3-random.js","d3-request":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-request/build/d3-request.node.js","d3-scale":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-scale/build/d3-scale.js","d3-selection":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-selection/dist/d3-selection.js","d3-shape":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-shape/build/d3-shape.js","d3-time":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time/build/d3-time.js","d3-time-format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-time-format/build/d3-time-format.js","d3-timer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-timer/build/d3-timer.js","d3-transition":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-transition/build/d3-transition.js","d3-voronoi":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-voronoi/build/d3-voronoi.js","d3-zoom":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-zoom/build/d3-zoom.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/define-properties/index.js":[function(require,module,exports){
 'use strict';
 
 var keys = require('object-keys');
@@ -33218,7 +33218,7 @@ defineProperties.supportsDescriptors = !!supportsDescriptors;
 
 module.exports = defineProperties;
 
-},{"object-keys":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/dot-case/dot-case.js":[function(require,module,exports){
+},{"object-keys":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/dot-case/dot-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 
 /**
@@ -33232,12 +33232,12 @@ module.exports = function (value, locale) {
   return noCase(value, locale, '.')
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js":[function(require,module,exports){
 'use strict';
 
 module.exports = require('../5/CheckObjectCoercible');
 
-},{"../5/CheckObjectCoercible":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/es-abstract/5/CheckObjectCoercible.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/es-abstract/5/CheckObjectCoercible.js":[function(require,module,exports){
+},{"../5/CheckObjectCoercible":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/es-abstract/5/CheckObjectCoercible.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/es-abstract/5/CheckObjectCoercible.js":[function(require,module,exports){
 'use strict';
 
 var GetIntrinsic = require('get-intrinsic');
@@ -33253,7 +33253,7 @@ module.exports = function CheckObjectCoercible(value, optMessage) {
 	return value;
 };
 
-},{"get-intrinsic":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js":[function(require,module,exports){
+},{"get-intrinsic":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/get-intrinsic/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -33778,7 +33778,7 @@ function functionBindPolyfill(context) {
   };
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/extend-shallow/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/extend-shallow/index.js":[function(require,module,exports){
 'use strict';
 
 var isObject = require('is-extendable');
@@ -33813,7 +33813,7 @@ function hasOwn(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj, key);
 }
 
-},{"is-extendable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-extendable/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/falafel/index.js":[function(require,module,exports){
+},{"is-extendable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-extendable/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/falafel/index.js":[function(require,module,exports){
 var acorn = require('acorn');
 var isArray = require('isarray');
 var objectKeys = require('object-keys');
@@ -33898,14 +33898,14 @@ function insertHelpers (node, parent, chunks) {
     }
 }
 
-},{"acorn":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/acorn/dist/acorn.js","foreach":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/foreach/index.js","isarray":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/falafel/node_modules/isarray/index.js","object-keys":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/index.js","util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/util.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/falafel/node_modules/isarray/index.js":[function(require,module,exports){
+},{"acorn":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/acorn/dist/acorn.js","foreach":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/foreach/index.js","isarray":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/falafel/node_modules/isarray/index.js","object-keys":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/index.js","util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/util.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/falafel/node_modules/isarray/index.js":[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-deep-equal/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-deep-equal/index.js":[function(require,module,exports){
 'use strict';
 
 // do not edit .js files directly - edit src/index.jst
@@ -33953,7 +33953,7 @@ module.exports = function equal(a, b) {
   return a!==a && b!==b;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/fast-json-stable-stringify/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/fast-json-stable-stringify/index.js":[function(require,module,exports){
 'use strict';
 
 module.exports = function (data, opts) {
@@ -34014,7 +34014,7 @@ module.exports = function (data, opts) {
     })(data);
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/foreach/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/foreach/index.js":[function(require,module,exports){
 
 var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
@@ -34038,7 +34038,7 @@ module.exports = function forEach (obj, fn, ctx) {
 };
 
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/implementation.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/implementation.js":[function(require,module,exports){
 'use strict';
 
 /* eslint no-invalid-this: 1 */
@@ -34092,14 +34092,14 @@ module.exports = function bind(that) {
     return bound;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/index.js":[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
 
 module.exports = Function.prototype.bind || implementation;
 
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/implementation.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/get-intrinsic/index.js":[function(require,module,exports){
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/implementation.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/get-intrinsic/index.js":[function(require,module,exports){
 'use strict';
 
 var undefined;
@@ -34431,7 +34431,7 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 	return value;
 };
 
-},{"function-bind":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/index.js","has":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has/src/index.js","has-symbols":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has-symbols/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/index.js":[function(require,module,exports){
+},{"function-bind":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/index.js","has":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has/src/index.js","has-symbols":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has-symbols/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/index.js":[function(require,module,exports){
 'use strict';
 
 
@@ -34640,7 +34640,7 @@ matter.language = function(str, options) {
 
 module.exports = matter;
 
-},{"./lib/defaults":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/defaults.js","./lib/engines":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engines.js","./lib/excerpt":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/excerpt.js","./lib/parse":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/parse.js","./lib/stringify":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/stringify.js","./lib/to-file":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/to-file.js","./lib/utils":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/utils.js","extend-shallow":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/extend-shallow/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/defaults.js":[function(require,module,exports){
+},{"./lib/defaults":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/defaults.js","./lib/engines":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engines.js","./lib/excerpt":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/excerpt.js","./lib/parse":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/parse.js","./lib/stringify":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/stringify.js","./lib/to-file":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/to-file.js","./lib/utils":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/utils.js","extend-shallow":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/extend-shallow/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/defaults.js":[function(require,module,exports){
 'use strict';
 
 var extend = require('extend-shallow');
@@ -34661,7 +34661,7 @@ module.exports = function(options) {
   return opts;
 };
 
-},{"./engines":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engines.js","./utils":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/utils.js","extend-shallow":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/extend-shallow/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engine.js":[function(require,module,exports){
+},{"./engines":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engines.js","./utils":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/utils.js","extend-shallow":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/extend-shallow/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engine.js":[function(require,module,exports){
 'use strict';
 
 module.exports = function(name, options) {
@@ -34693,7 +34693,7 @@ function aliase(name) {
   }
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engines.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engines.js":[function(require,module,exports){
 'use strict';
 
 var extend = require('extend-shallow');
@@ -34750,7 +34750,7 @@ engines.javascript = {
   }
 };
 
-},{"extend-shallow":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/extend-shallow/index.js","js-yaml":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/excerpt.js":[function(require,module,exports){
+},{"extend-shallow":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/extend-shallow/index.js","js-yaml":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/excerpt.js":[function(require,module,exports){
 'use strict';
 
 var defaults = require('./defaults');
@@ -34785,7 +34785,7 @@ module.exports = function(file, options) {
   return file;
 };
 
-},{"./defaults":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/defaults.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/parse.js":[function(require,module,exports){
+},{"./defaults":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/defaults.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/parse.js":[function(require,module,exports){
 'use strict';
 
 var getEngine = require('./engine');
@@ -34800,7 +34800,7 @@ module.exports = function(language, str, options) {
   return engine.parse(str, opts);
 };
 
-},{"./defaults":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/defaults.js","./engine":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engine.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/stringify.js":[function(require,module,exports){
+},{"./defaults":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/defaults.js","./engine":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engine.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/stringify.js":[function(require,module,exports){
 'use strict';
 
 var extend = require('extend-shallow');
@@ -34861,7 +34861,7 @@ function newline(str) {
   return str.slice(-1) !== '\n' ? str + '\n' : str;
 }
 
-},{"./defaults":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/defaults.js","./engine":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/engine.js","extend-shallow":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/extend-shallow/index.js","kind-of":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/kind-of/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/to-file.js":[function(require,module,exports){
+},{"./defaults":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/defaults.js","./engine":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/engine.js","extend-shallow":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/extend-shallow/index.js","kind-of":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/kind-of/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/to-file.js":[function(require,module,exports){
 'use strict';
 
 var typeOf = require('kind-of');
@@ -34925,7 +34925,7 @@ module.exports = function(file) {
   return file;
 };
 
-},{"./stringify":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/stringify.js","./utils":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/utils.js","kind-of":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/kind-of/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/lib/utils.js":[function(require,module,exports){
+},{"./stringify":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/stringify.js","./utils":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/utils.js","kind-of":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/kind-of/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/lib/utils.js":[function(require,module,exports){
 (function (Buffer){(function (){
 'use strict';
 
@@ -34991,7 +34991,7 @@ exports.startsWith = function(str, substr, len) {
 };
 
 }).call(this)}).call(this,require("buffer").Buffer)
-},{"buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","kind-of":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/kind-of/index.js","strip-bom-string":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/strip-bom-string/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has-symbols/index.js":[function(require,module,exports){
+},{"buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","kind-of":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/kind-of/index.js","strip-bom-string":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/strip-bom-string/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has-symbols/index.js":[function(require,module,exports){
 'use strict';
 
 var origSymbol = typeof Symbol !== 'undefined' && Symbol;
@@ -35006,7 +35006,7 @@ module.exports = function hasNativeSymbols() {
 	return hasSymbolSham();
 };
 
-},{"./shams":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has-symbols/shams.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has-symbols/shams.js":[function(require,module,exports){
+},{"./shams":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has-symbols/shams.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has-symbols/shams.js":[function(require,module,exports){
 'use strict';
 
 /* eslint complexity: [2, 18], max-statements: [2, 33] */
@@ -35050,14 +35050,14 @@ module.exports = function hasSymbols() {
 	return true;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has/src/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has/src/index.js":[function(require,module,exports){
 'use strict';
 
 var bind = require('function-bind');
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
-},{"function-bind":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/function-bind/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/header-case/header-case.js":[function(require,module,exports){
+},{"function-bind":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/function-bind/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/header-case/header-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 var upperCase = require('upper-case')
 
@@ -35074,7 +35074,7 @@ module.exports = function (value, locale) {
   })
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/https-browserify/index.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/https-browserify/index.js":[function(require,module,exports){
 var http = require('http')
 var url = require('url')
 
@@ -35107,7 +35107,7 @@ function validateParams (params) {
   return params
 }
 
-},{"http":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/index.js","url":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/url.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/ast.schema.json":[function(require,module,exports){
+},{"http":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/index.js","url":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/url.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/ast.schema.json":[function(require,module,exports){
 module.exports={
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AST Schema V1",
@@ -35287,7 +35287,7 @@ module.exports={
   "required": ["id", "type"]
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/converters/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/converters/index.js":[function(require,module,exports){
 'use strict';
 
 /*
@@ -35423,7 +35423,7 @@ module.exports = {
   convertV1ToV2: convertV1ToV2,
   convertV2ToV1: convertV2ToV1
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/error.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/error.js":[function(require,module,exports){
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35472,7 +35472,7 @@ exports.MalformedAstError = function (_ExtendableError2) {
 
   return MalformedAstError;
 }(ExtendableError);
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -36503,7 +36503,7 @@ module.exports = {
   walkNodesBreadthFirst: walkNodesBreadthFirst,
   toMarkup: toMarkup
 };
-},{"./ast.schema.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/ast.schema.json","./converters":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/converters/index.js","./error":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/error.js","ajv":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/ajv.js","ajv/lib/refs/json-schema-draft-06.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-06.json","html-tags":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/node_modules/html-tags/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/node_modules/html-tags/html-tags.json":[function(require,module,exports){
+},{"./ast.schema.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/ast.schema.json","./converters":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/converters/index.js","./error":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/error.js","ajv":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/ajv.js","ajv/lib/refs/json-schema-draft-06.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ajv/lib/refs/json-schema-draft-06.json","html-tags":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/node_modules/html-tags/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/node_modules/html-tags/html-tags.json":[function(require,module,exports){
 module.exports=[
 	"a",
 	"abbr",
@@ -36624,11 +36624,11 @@ module.exports=[
 	"wbr"
 ]
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/node_modules/html-tags/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/node_modules/html-tags/index.js":[function(require,module,exports){
 'use strict';
 module.exports = require('./html-tags.json');
 
-},{"./html-tags.json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/node_modules/html-tags/html-tags.json"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/v1/dist/cjs/index.js":[function(require,module,exports){
+},{"./html-tags.json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/node_modules/html-tags/html-tags.json"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/v1/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 /**
@@ -36935,7 +36935,7 @@ module.exports = {
   walkNodes: walkNodes,
   findNodes: findNodes
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/grammar.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/grammar.js":[function(require,module,exports){
 "use strict";
 
 // Generated automatically by nearley, version 2.19.7
@@ -37261,7 +37261,7 @@ module.exports = {
     window.grammar = grammar;
   }
 })();
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 var parse = require('./parser');
@@ -37349,7 +37349,7 @@ module.exports = function (input, options, alias, callback) {
     }) : astTransform;
   }
 };
-},{"./lexer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/lexer.js","./parser":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/parser.js","./processors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/index.js","./processors/post":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/post.js","./processors/pre":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/pre.js","gray-matter":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/gray-matter/index.js","idyll-ast":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/lexer.js":[function(require,module,exports){
+},{"./lexer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/lexer.js","./parser":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/parser.js","./processors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/index.js","./processors/post":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/post.js","./processors/pre":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/pre.js","gray-matter":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/gray-matter/index.js","idyll-ast":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/lexer.js":[function(require,module,exports){
 'use strict';
 
 var _templateObject = _taggedTemplateLiteralLoose(['[s*(', ')s*([^/]]*)s*][\ns\t]*(((?!([s*/(', ')s*])).\n?)*)[\ns\t]*[s*/s*(', ')s*]'], ['\\[\\s*(', ')\\s*([^\\/\\]]*)\\s*\\][\\n\\s\\t]*(((?!(\\[\\s*\\/(', ')\\s*\\])).\\n?)*)[\\n\\s\\t]*\\[\\s*\\/\\s*(', ')\\s*\\]']);
@@ -37736,7 +37736,7 @@ var lex = function lex(options) {
 };
 
 module.exports = lex;
-},{"lex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lex/lexer.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/parser.js":[function(require,module,exports){
+},{"lex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lex/lexer.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/parser.js":[function(require,module,exports){
 'use strict';
 
 var grammar = require('./grammar');
@@ -37775,7 +37775,7 @@ module.exports = function (input, tokens, positions, options) {
 
   throw new Error('No parse results');
 };
-},{"./grammar":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/grammar.js","nearley":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/nearley/lib/nearley.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/index.js":[function(require,module,exports){
+},{"./grammar":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/grammar.js","nearley":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/nearley/lib/nearley.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/index.js":[function(require,module,exports){
 "use strict";
 
 module.exports = function (input, options) {
@@ -37791,7 +37791,7 @@ module.exports = function (input, options) {
 
   return processor;
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/post.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/post.js":[function(require,module,exports){
 'use strict';
 
 var smartquotes = require('smartquotes');
@@ -38044,7 +38044,7 @@ module.exports = {
   seperateTextAndHyperLink: seperateTextAndHyperLink,
   getHyperLinksFromText: getHyperLinksFromText
 };
-},{"idyll-ast/v1":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/v1/dist/cjs/index.js","smartquotes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/smartquotes/dist/smartquotes.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/pre.js":[function(require,module,exports){
+},{"idyll-ast/v1":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/v1/dist/cjs/index.js","smartquotes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/smartquotes/dist/smartquotes.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/processors/pre.js":[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -38052,7 +38052,7 @@ module.exports = {
     return input.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   }
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/aside.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/aside.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38100,7 +38100,7 @@ Aside._idyll = {
 };
 
 exports.default = Aside;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/display.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/display.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38185,7 +38185,7 @@ Display._idyll = {
 };
 
 exports.default = Display;
-},{"d3-format":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/d3-format/build/d3-format.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js":[function(require,module,exports){
+},{"d3-format":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/d3-format/build/d3-format.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38228,7 +38228,7 @@ var GenerateHeaders = function GenerateHeaders(props) {
 };
 
 exports.default = GenerateHeaders;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h4.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h4.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38274,7 +38274,7 @@ H4._idyll = {
 };
 
 exports.default = H4;
-},{"./generateHeaders":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h5.js":[function(require,module,exports){
+},{"./generateHeaders":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h5.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38320,7 +38320,7 @@ H5._idyll = {
 };
 
 exports.default = H5;
-},{"./generateHeaders":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/header.js":[function(require,module,exports){
+},{"./generateHeaders":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/generateHeaders.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/header.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38494,7 +38494,7 @@ Header._idyll = {
 };
 
 exports.default = Header;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/link.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/link.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38568,7 +38568,7 @@ Link._idyll = {
 };
 
 exports.default = Link;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/range.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/range.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38657,7 +38657,7 @@ Range._idyll = {
 };
 
 exports.default = Range;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/select.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/select.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38746,7 +38746,7 @@ Select._idyll = {
   }]
 };
 exports.default = Select;
-},{"react":"react","react-dom":"react-dom"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js":[function(require,module,exports){
+},{"react":"react","react-dom":"react-dom"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -38811,7 +38811,7 @@ TextContainer._idyll = {
 };
 
 exports.default = TextContainer;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-d3-component/lib.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-d3-component/lib.js":[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -38864,7 +38864,7 @@ var D3Component = function (_React$Component) {
 
 module.exports = D3Component;
 
-},{"react":"react","react-dom":"react-dom"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/components/author-tool.js":[function(require,module,exports){
+},{"react":"react","react-dom":"react-dom"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/components/author-tool.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39151,7 +39151,7 @@ var AuthorTool = function (_React$PureComponent) {
 }(_react2.default.PureComponent);
 
 exports.default = AuthorTool;
-},{"react":"react","react-tooltip":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-tooltip/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/components/placeholder.js":[function(require,module,exports){
+},{"react":"react","react-tooltip":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-tooltip/dist/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/components/placeholder.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39198,7 +39198,7 @@ var generatePlaceholder = function generatePlaceholder(name) {
   }(_react2.default.PureComponent);
 };
 exports.generatePlaceholder = generatePlaceholder;
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/index.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -39376,7 +39376,7 @@ var IdyllDocument = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = IdyllDocument;
-},{"./runtime":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/runtime.js","idyll-compiler":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-compiler/dist/cjs/index.js","idyll-layouts":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js","idyll-themes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/index.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/runtime.js":[function(require,module,exports){
+},{"./runtime":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/runtime.js","idyll-compiler":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-compiler/dist/cjs/index.js","idyll-layouts":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js","idyll-themes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/index.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/runtime.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40018,7 +40018,7 @@ IdyllRuntime.defaultProps = {
 };
 
 exports.default = IdyllRuntime;
-},{"./components/author-tool":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/components/author-tool.js","./components/placeholder":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/components/placeholder.js","./utils":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/utils/index.js","./utils/schema2element":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/utils/schema2element.js","fast-deep-equal":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/node_modules/fast-deep-equal/index.js","idyll-ast":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/index.js","idyll-layouts":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js","idyll-themes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/index.js","object.entries":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/index.js","object.values":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/index.js","react":"react","react-dom":"react-dom","scrollmonitor":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scrollmonitor/scrollMonitor.js","scrollparent":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scrollparent/scrollparent.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/utils/index.js":[function(require,module,exports){
+},{"./components/author-tool":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/components/author-tool.js","./components/placeholder":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/components/placeholder.js","./utils":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/utils/index.js","./utils/schema2element":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/utils/schema2element.js","fast-deep-equal":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/node_modules/fast-deep-equal/index.js","idyll-ast":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/index.js","idyll-layouts":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js","idyll-themes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/index.js","object.entries":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/index.js","object.values":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/index.js","react":"react","react-dom":"react-dom","scrollmonitor":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scrollmonitor/scrollMonitor.js","scrollparent":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scrollparent/scrollparent.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/utils/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40446,7 +40446,7 @@ var findWrapTargets = function findWrapTargets(schema, state, components) {
   return targets;
 };
 exports.findWrapTargets = findWrapTargets;
-},{"csv-parse/lib/es5/sync":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/csv-parse/lib/es5/sync.js","falafel":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/falafel/index.js","idyll-ast":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-ast/dist/cjs/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/utils/schema2element.js":[function(require,module,exports){
+},{"csv-parse/lib/es5/sync":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/csv-parse/lib/es5/sync.js","falafel":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/falafel/index.js","idyll-ast":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-ast/dist/cjs/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/utils/schema2element.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40603,7 +40603,7 @@ var ReactJsonSchema = function () {
 }();
 
 exports.default = ReactJsonSchema;
-},{"change-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/change-case/change-case.js","react":"react","react-dom-factories":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom-factories/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/node_modules/fast-deep-equal/index.js":[function(require,module,exports){
+},{"change-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/change-case/change-case.js","react":"react","react-dom-factories":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom-factories/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/node_modules/fast-deep-equal/index.js":[function(require,module,exports){
 'use strict';
 
 var isArray = Array.isArray;
@@ -40660,7 +40660,7 @@ module.exports = function equal(a, b) {
   return a!==a && b!==b;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40684,7 +40684,7 @@ var config = {
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/styles.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40693,7 +40693,7 @@ exports.default = function (_ref) {
   var maxWidth = _ref.maxWidth;
   return "\n\nbody {\n  margin: 0;\n}\n\n.idyll-root {\n  box-sizing: border-box;\n  margin: 0 auto;\n  padding: 60px 0;\n  margin-bottom: 60px;\n}\n\n.idyll-text-container {\n  max-width: 600px;\n  margin-top: 0;\n  margin-right: 0;\n  margin-bottom: 0;\n  margin-left: 50px;\n}\n\n.section {\n  padding: 0 10px;\n  margin: 0 auto;\n}\n\n.article-header {\n  text-align: left;\n  padding-left: 50px;\n  margin-bottom: 45px;\n}\n\n.inset {\n  max-width: 400px;\n  margin: 0 auto;\n}\n\ninput {\n  cursor: pointer;\n}\n\n.relative {\n  position: relative;\n}\n.aside-container {\n  position: relative;\n  display: block;\n}\n.aside {\n  display: block;\n  position: absolute;\n  width: 300px;\n  right: calc((10vw + 600px + 150px) / -2);\n}\n\n.fixed {\n  position: fixed;\n  display: flex;\n  align-self: center;\n  flex-direction: column;\n  align-items: center;\n  right: 25px;\n  top: 0;\n  bottom: 0;\n  width: calc((80vw - 600px) - 50px);\n  justify-content: center;\n}\n\n.fixed div {\n  width: 100%;\n}\n\n.idyll-scroll-graphic {\n  position: -webkit-sticky;\n  position: sticky;\n}\n\n.idyll-scroll-graphic img {\n  max-height: 100vh;\n}\n\n.component-debug-view {\n  position: relative;\n  transition: background-color 0.3s ease-in;\n}\n\n.author-view-button {\n  position: absolute;\n  top: 3px;\n  right: 0;\n  opacity: .38;\n  background-color: #E7E3D0;\n  background-image: url('https://idyll-lang.org/static/images/quill-icon.png');\n  background-repeat: no-repeat;\n  background-size: contain;\n  width: 24px;\n  height: 24px;\n  margin-right: 10px;\n  box-sizing: border-box;\n  border-radius: 12px;\n  cursor: pointer;\n}\n\n.author-view-button:focus {\n  outline: none;\n}\n\n.component-debug-view:hover > .author-view-button {\n  opacity: 0.87;\n  transition: opacity 600ms linear;\n}\n\n.author-component-view {\n  display: flex;\n  flex-direction: column;\n  overflow-x: scroll;\n}\n\n.author-component-view h2, .author-component-view h3 {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n\n.props-table {\n  width: 90%;\n  min-width: 500px;\n  display: table;\n  border: 1px solid #A4A2A2;\n  border-radius: 20px;\n  margin: 0 auto;\n}\n\n.props-table-type {\n  font-family: 'Courier-New';\n}\n\n.props-table-row {\n  text-align: center;\n}\n\n.debug-collapse {\n  overflow: hidden;\n  overflow-y: scroll;\n  transition: height 0.3s ease-in;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.icon-links {\n  margin-top: 13px;\n  text-align: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n\n.icon-link {\n  color: inherit;\n}\n\n.icon-link:hover {\n  text-decoration: none;\n}\n\n.icon-link-image {\n  cursor: pointer;\n}\n\n.button-tooltip {\n  background-color: black !important;\n  padding: 0 5px;\n}\n\n.button-tooltip.place-top:after {\n  border-top-color: black !important;\n}\n\n.button-tooltip.place-right:after {\n  border-right-color: black !important;\n}\n\n.button-tooltip.place-bottom:after {\n  border-bottom-color: black !important;\n}\n\n.button-tooltip.place-left:after {\n  border-left-color: black !important;\n}\n\n.tooltip-header {\n  line-height: 1;\n  margin: 6px 0;\n  font-size: 18px;\n}\n\n.tooltip-subtitle {\n  font-style: italic;\n}\n\n@media all and (max-width: 1600px) {\n  .fixed {\n    width: calc((85vw - 600px) - 50px);\n  }\n}\n\n@media all and (max-width: 1000px) {\n  /* put your css styles in here */\n  .desktop {\n    display: none;\n  }\n  .relative {\n    position: static;\n  }\n  .aside {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n  .idyll-text-container {\n    max-width: calc(100% - 2em);\n    margin-top: 0;\n    margin-right: 1em;\n    margin-bottom: 0;\n    margin-left: 1em;\n  }\n  .hed {\n    width: 100%;\n  }\n\n  .idyll-root {\n    padding: 15px 0;\n  }\n\n  .idyll-root {\n    margin: 0 auto;\n    padding-bottom: 80vh;\n  }\n  .article-header {\n    margin: 0 auto;\n    padding-left: 1em;\n  }\n  .fixed {\n    position: fixed;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    width: 100vw;\n    top: initial;\n    background: white;\n    padding: 20px 0;\n    border-top: solid 2px black;\n  }\n}\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40717,7 +40717,7 @@ var config = {
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/styles.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40725,7 +40725,7 @@ exports.__esModule = true;
 exports.default = function () {
   return "\nbody {\n  margin: 0;\n}\n\n.idyll-root {\n  box-sizing: border-box;\n  padding: 60px 0;\n  margin-bottom: 60px;\n}\n\n.idyll-text-container {\n  max-width: 600px;\n  margin: 0 auto;\n}\n.article-header {\n  margin-bottom: 45px;\n  text-align: center;\n}\n\n.inset {\n  max-width: 400px;\n  margin: 0 auto;\n}\n\ninput {\n  cursor: pointer;\n}\n\n.relative {\n  position: relative;\n}\n\n.aside-container {\n  position: relative;\n  display: block;\n}\n.aside {\n  display: block;\n  position: absolute;\n  width: 300px;\n  right: calc((10vw + 350px + 150px) / -2);\n}\n\n.idyll-scroll-graphic {\n  position: -webkit-sticky;\n  position: sticky;\n  overflow: hidden;\n}\n\n.idyll-scroll-graphic img {\n  max-height: 100vh;\n}\n\n.idyll-scroll-graphic > * {\n  display: block;\n}\n\n.component-debug-view {\n  position: relative;\n  transition: background-color 0.3s ease-in;\n}\n\n.author-view-button {\n  position: absolute;\n  top: 3px;\n  right: 0;\n  opacity: .38;\n  background-color: #E7E3D0;\n  background-image: url('https://idyll-lang.org/static/images/quill-icon.png');\n  background-repeat: no-repeat;\n  background-size: contain;\n  width: 24px;\n  height: 24px;\n  margin-right: 10px;\n  box-sizing: border-box;\n  border-radius: 12px;\n  cursor: pointer;\n}\n\n.author-view-button:focus {\n  outline: none;\n}\n\n.component-debug-view:hover > .author-view-button {\n  opacity: 0.87;\n  transition: opacity 600ms linear;\n}\n\n.author-component-view {\n  display: flex;\n  flex-direction: column;\n  overflow-x: scroll;\n}\n\n.author-component-view h2, .author-component-view h3 {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n\n.props-table {\n  width: 90%;\n  min-width: 500px;\n  display: table;\n  border: 1px solid #A4A2A2;\n  border-radius: 20px;\n  margin: 0 auto;\n}\n\n.props-table-type {\n  font-family: 'Courier-New';\n}\n\n.props-table-row {\n  text-align: center;\n}\n\n.debug-collapse {\n  overflow: hidden;\n  overflow-y: scroll;\n  transition: height 0.3s ease-in;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.icon-links {\n  margin-top: 13px;\n  text-align: center;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n\n.icon-link {\n  color: inherit;\n}\n\n.icon-link:hover {\n  text-decoration: none;\n}\n\n.icon-link-image {\n  cursor: pointer;\n}\n\n.button-tooltip {\n  background-color: black !important;\n  padding: 0 5px;\n}\n\n.button-tooltip.place-top:after {\n  border-top-color: black !important;\n}\n\n.button-tooltip.place-right:after {\n  border-right-color: black !important;\n}\n\n.button-tooltip.place-bottom:after {\n  border-bottom-color: black !important;\n}\n\n.button-tooltip.place-left:after {\n  border-left-color: black !important;\n}\n\n.tooltip-header {\n  line-height: 1;\n  margin: 6px 0;\n  font-size: 18px;\n}\n\n.tooltip-subtitle {\n  font-style: italic;\n}\n\n@media all and (max-width: 1000px) {\n\n  .idyll-root {\n    margin: 0 auto;\n    padding: 60px 20px;\n    margin-bottom: 60px;\n    width: 100%;\n  }\n  .idyll-text-container {\n    max-width: calc(100% - 2em);\n    margin: 0 1em;\n  }\n  .desktop {\n    display: none;\n  }\n  .relative {\n    position: static;\n  }\n  .aside {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n\n}\n\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40758,7 +40758,7 @@ Object.defineProperty(exports, 'none', {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./blog":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/index.js","./centered":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/index.js","./none":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/none/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/none/index.js":[function(require,module,exports){
+},{"./blog":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/blog/index.js","./centered":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/centered/index.js","./none":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/none/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/none/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40778,7 +40778,7 @@ var config = {
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40786,7 +40786,7 @@ exports.__esModule = true;
 exports.default = function () {
   return "";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40807,7 +40807,7 @@ var config = {
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/styles.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40815,9 +40815,9 @@ exports.__esModule = true;
 exports.default = function () {
   return "\n@font-face {\n  font-family: octicons-link;\n  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');\n}\n\n.ReactTable{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border:1px solid rgba(0,0,0,0.1);}.ReactTable *{box-sizing:border-box}.ReactTable .rt-table{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;border-collapse:collapse;overflow:auto}.ReactTable .rt-thead{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.ReactTable .rt-thead.-headerGroups{background:rgba(0,0,0,0.03);border-bottom:1px solid rgba(0,0,0,0.05)}.ReactTable .rt-thead.-filters{border-bottom:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-thead.-filters .rt-th{border-right:1px solid rgba(0,0,0,0.02)}.ReactTable .rt-thead.-header{box-shadow:0 2px 15px 0 rgba(0,0,0,0.15)}.ReactTable .rt-thead .rt-tr{text-align:center}.ReactTable .rt-thead .rt-th,.ReactTable .rt-thead .rt-td{padding:5px 5px;line-height:normal;position:relative;border-right:1px solid rgba(0,0,0,0.05);-webkit-transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);box-shadow:inset 0 0 0 0 transparent;}.ReactTable .rt-thead .rt-th.-sort-asc,.ReactTable .rt-thead .rt-td.-sort-asc{box-shadow:inset 0 3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-sort-desc,.ReactTable .rt-thead .rt-td.-sort-desc{box-shadow:inset 0 -3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-cursor-pointer,.ReactTable .rt-thead .rt-td.-cursor-pointer{cursor:pointer}.ReactTable .rt-thead .rt-th:last-child,.ReactTable .rt-thead .rt-td:last-child{border-right:0}.ReactTable .rt-thead .rt-resizable-header{overflow:visible;}.ReactTable .rt-thead .rt-resizable-header:last-child{overflow:hidden}.ReactTable .rt-thead .rt-resizable-header-content{overflow:hidden;text-overflow:ellipsis}.ReactTable .rt-thead .rt-header-pivot{border-right-color:#f7f7f7}.ReactTable .rt-thead .rt-header-pivot:after,.ReactTable .rt-thead .rt-header-pivot:before{left:100%;top:50%;border:solid transparent;content:\" \";height:0;width:0;position:absolute;pointer-events:none}.ReactTable .rt-thead .rt-header-pivot:after{border-color:rgba(255,255,255,0);border-left-color:#fff;border-width:8px;margin-top:-8px}.ReactTable .rt-thead .rt-header-pivot:before{border-color:rgba(102,102,102,0);border-left-color:#f7f7f7;border-width:10px;margin-top:-10px}.ReactTable .rt-tbody{-webkit-box-flex:99999;-ms-flex:99999 1 auto;flex:99999 1 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;overflow:auto;}.ReactTable .rt-tbody .rt-tr-group{border-bottom:solid 1px rgba(0,0,0,0.05);}.ReactTable .rt-tbody .rt-tr-group:last-child{border-bottom:0}.ReactTable .rt-tbody .rt-td{border-right:1px solid rgba(0,0,0,0.02);}.ReactTable .rt-tbody .rt-td:last-child{border-right:0}.ReactTable .rt-tbody .rt-expandable{cursor:pointer}.ReactTable .rt-tr-group{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.ReactTable .rt-tr{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.ReactTable .rt-th,.ReactTable .rt-td{-webkit-box-flex:1;-ms-flex:1 0 0px;flex:1 0 0;white-space:nowrap;text-overflow:ellipsis;padding:7px 5px;overflow:hidden;-webkit-transition:.3s ease;transition:.3s ease;-webkit-transition-property:width,min-width,padding,opacity;transition-property:width,min-width,padding,opacity;}.ReactTable .rt-th.-hidden,.ReactTable .rt-td.-hidden{width:0 !important;min-width:0 !important;padding:0 !important;border:0 !important;opacity:0 !important}.ReactTable .rt-expander{display:inline-block;position:relative;margin:0;color:transparent;margin:0 10px;}.ReactTable .rt-expander:after{content:'';position:absolute;width:0;height:0;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);border-left:5.04px solid transparent;border-right:5.04px solid transparent;border-top:7px solid rgba(0,0,0,0.8);-webkit-transition:all .3s cubic-bezier(.175,.885,.32,1.275);transition:all .3s cubic-bezier(.175,.885,.32,1.275);cursor:pointer}.ReactTable .rt-expander.-open:after{-webkit-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}.ReactTable .rt-resizer{display:inline-block;position:absolute;width:36px;top:0;bottom:0;right:-18px;cursor:col-resize;z-index:10}.ReactTable .rt-tfoot{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;box-shadow:0 0 15px 0 rgba(0,0,0,0.15);}.ReactTable .rt-tfoot .rt-td{border-right:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-tfoot .rt-td:last-child{border-right:0}.ReactTable.-striped .rt-tr.-odd{background:rgba(0,0,0,0.03)}.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover{background:rgba(0,0,0,0.05)}.ReactTable .-pagination{z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:3px;box-shadow:0 0 15px 0 rgba(0,0,0,0.1);border-top:2px solid rgba(0,0,0,0.1);}.ReactTable .-pagination .-btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:100%;border:0;border-radius:3px;padding:6px;font-size:1em;color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.1);-webkit-transition:all .1s ease;transition:all .1s ease;cursor:pointer;outline:none;}.ReactTable .-pagination .-btn[disabled]{opacity:.5;cursor:default}.ReactTable .-pagination .-btn:not([disabled]):hover{background:rgba(0,0,0,0.3);color:#fff}.ReactTable .-pagination .-previous,.ReactTable .-pagination .-next{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center}.ReactTable .-pagination .-center{-webkit-box-flex:1.5;-ms-flex:1.5;flex:1.5;text-align:center;margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.ReactTable .-pagination .-pageInfo{display:inline-block;margin:3px 10px;white-space:nowrap}.ReactTable .-pagination .-pageJump{display:inline-block;}.ReactTable .-pagination .-pageJump input{width:70px;text-align:center}.ReactTable .-pagination .-pageSizeOptions{margin:3px 10px}.ReactTable .rt-noData{display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:1;pointer-events:none;padding:20px;color:rgba(0,0,0,0.5)}.ReactTable .-loading{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:-1;opacity:0;pointer-events:none;}.ReactTable .-loading > div{position:absolute;display:block;text-align:center;width:100%;top:50%;left:0;font-size:15px;color:rgba(0,0,0,0.6);-webkit-transform:translateY(-52%);transform:translateY(-52%);-webkit-transition:all .3s cubic-bezier(.25,.46,.45,.94);transition:all .3s cubic-bezier(.25,.46,.45,.94)}.ReactTable .-loading.-active{opacity:1;z-index:2;pointer-events:all;}.ReactTable .-loading.-active > div{-webkit-transform:translateY(50%);transform:translateY(50%)}.ReactTable input,.ReactTable select{border:1px solid rgba(0,0,0,0.1);background:#fff;padding:5px 7px;font-size:inherit;border-radius:3px;font-weight:normal;outline:none}.ReactTable .rt-resizing .rt-th,.ReactTable .rt-resizing .rt-td{-webkit-transition:none !important;transition:none !important;cursor:col-resize;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}\n\n.ReactTable .-pagination .-btn {\n  margin: 0;\n}\n\n* {\n  box-sizing: border-box;\n}\nbody {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  line-height: 1.5;\n  color: #24292e;\n  font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  font-size: 16px;\n  line-height: 1.5;\n  word-wrap: break-word;\n}\n\n.pl-c {\n  color: #969896;\n}\n\n.pl-c1,\n.pl-s .pl-v {\n  color: #0086b3;\n}\n\n.pl-e,\n.pl-en {\n  color: #795da3;\n}\n\n.pl-smi,\n.pl-s .pl-s1 {\n  color: #333;\n}\n\n.pl-ent {\n  color: #63a35c;\n}\n\n.pl-k {\n  color: #a71d5d;\n}\n\n.pl-s,\n.pl-pds,\n.pl-s .pl-pse .pl-s1,\n.pl-sr,\n.pl-sr .pl-cce,\n.pl-sr .pl-sre,\n.pl-sr .pl-sra {\n  color: #183691;\n}\n\n.pl-v,\n.pl-smw {\n  color: #ed6a43;\n}\n\n.pl-bu {\n  color: #b52a1d;\n}\n\n.pl-ii {\n  color: #f8f8f8;\n  background-color: #b52a1d;\n}\n\n.pl-c2 {\n  color: #f8f8f8;\n  background-color: #b52a1d;\n}\n\n.pl-c2::before {\n  content: \"\\000d\";\n}\n\n.pl-sr .pl-cce {\n  font-weight: bold;\n  color: #63a35c;\n}\n\n.pl-ml {\n  color: #693a17;\n}\n\n.pl-mh,\n.pl-mh .pl-en,\n.pl-ms {\n  font-weight: bold;\n  color: #1d3e81;\n}\n\n.pl-mq {\n  color: #008080;\n}\n\n.pl-mi {\n  font-style: italic;\n  color: #333;\n}\n\n.pl-mb {\n  font-weight: bold;\n  color: #333;\n}\n\n.pl-md {\n  color: #bd2c00;\n  background-color: #ffecec;\n}\n\n.pl-mi1 {\n  color: #55a532;\n  background-color: #eaffea;\n}\n\n.pl-mc {\n  color: #ef9700;\n  background-color: #ffe3b4;\n}\n\n.pl-mi2 {\n  color: #d8d8d8;\n  background-color: #808080;\n}\n\n.pl-mdr {\n  font-weight: bold;\n  color: #795da3;\n}\n\n.pl-mo {\n  color: #1d3e81;\n}\n\n.pl-ba {\n  color: #595e62;\n}\n\n.pl-sg {\n  color: #c0c0c0;\n}\n\n.pl-corl {\n  text-decoration: underline;\n  color: #183691;\n}\n\n.octicon {\n  display: inline-block;\n  vertical-align: text-top;\n  fill: currentColor;\n}\n\na {\n  background-color: transparent;\n  -webkit-text-decoration-skip: objects;\n}\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\nstrong {\n  font-weight: inherit;\n}\n\nstrong {\n  font-weight: bolder;\n}\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\nimg {\n  border-style: none;\n}\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\ncode,\nkbd,\npre {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n  overflow: visible;\n}\n\ninput {\n  font: inherit;\n  margin: 10px 10px 20px 0;\n}\n\ninput {\n  overflow: visible;\n}\n\n[type=\"checkbox\"] {\n  box-sizing: border-box;\n  padding: 0;\n}\n\n\ninput {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\n\n\n/* Buttons\n\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013 */\n.button,\nbutton,\ninput[type=\"submit\"],\ninput[type=\"reset\"],\ninput[type=\"button\"] {\n  display: inline-block;\n  height: 38px;\n  padding: 0 30px;\n  color: #333;\n  text-align: center;\n  font-size: 11px;\n  font-weight: 600;\n  line-height: 38px;\n  text-decoration: none;\n  white-space: nowrap;\n  background-color: transparent;\n  border-radius: 4px;\n  border: 1px solid #bbb;\n  cursor: pointer;\n  box-sizing: border-box; }\n.button:hover,\nbutton:hover,\ninput[type=\"submit\"]:hover,\ninput[type=\"reset\"]:hover,\ninput[type=\"button\"]:hover,\n.button:focus,\nbutton:focus,\ninput[type=\"submit\"]:focus,\ninput[type=\"reset\"]:focus,\ninput[type=\"button\"]:focus {\n  color: #333;\n  border-color: #888;\n  outline: 0; }\n.button.button-primary,\nbutton.button-primary,\ninput[type=\"submit\"].button-primary,\ninput[type=\"reset\"].button-primary,\ninput[type=\"button\"].button-primary {\n  color: #FFF;\n  background-color: #33C3F0;\n  border-color: #33C3F0; }\n.button.button-primary:hover,\nbutton.button-primary:hover,\ninput[type=\"submit\"].button-primary:hover,\ninput[type=\"reset\"].button-primary:hover,\ninput[type=\"button\"].button-primary:hover,\n.button.button-primary:focus,\nbutton.button-primary:focus,\ninput[type=\"submit\"].button-primary:focus,\ninput[type=\"reset\"].button-primary:focus,\ninput[type=\"button\"].button-primary:focus {\n  color: #FFF;\n  background-color: #1EAEDB;\n  border-color: #1EAEDB; }\n\n\n/* Forms\n\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013 */\ninput[type=\"email\"],\ninput[type=\"number\"],\ninput[type=\"search\"],\ninput[type=\"text\"],\ninput[type=\"tel\"],\ninput[type=\"url\"],\ninput[type=\"password\"],\ntextarea,\nselect {\n  height: 38px;\n  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */\n  background-color: #fff;\n  border: 1px solid #D1D1D1;\n  border-radius: 4px;\n  box-shadow: none;\n  box-sizing: border-box; }\n/* Removes awkward default styles on some inputs for iOS */\ninput[type=\"email\"],\ninput[type=\"number\"],\ninput[type=\"search\"],\ninput[type=\"text\"],\ninput[type=\"tel\"],\ninput[type=\"url\"],\ninput[type=\"password\"],\ntextarea {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\ntextarea {\n  min-height: 65px;\n  padding-top: 6px;\n  padding-bottom: 6px; }\ninput[type=\"email\"]:focus,\ninput[type=\"number\"]:focus,\ninput[type=\"search\"]:focus,\ninput[type=\"text\"]:focus,\ninput[type=\"tel\"]:focus,\ninput[type=\"url\"]:focus,\ninput[type=\"password\"]:focus,\ntextarea:focus,\nselect:focus {\n  border: 1px solid #666;\n  outline: 0; }\nlabel,\nlegend {\n  display: block;\n  margin-bottom: .5rem;\n  font-weight: 600; }\nfieldset {\n  padding: 0;\n  border-width: 0; }\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  display: inline; }\nlabel > .label-body {\n  display: inline-block;\n  margin-left: .5rem;\n  font-weight: normal; }\n\na {\n  color: #0366d6;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}\n\nstrong {\n  font-weight: 600;\n}\n\nhr {\n  height: 0;\n  margin: 15px 0;\n  overflow: hidden;\n  background: transparent;\n  border: 0;\n  border-bottom: 1px solid #dfe2e5;\n}\n\nhr::before {\n  display: table;\n  content: \"\";\n}\n\nhr::after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\n\ntd,\nth {\n  padding: 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nh1 {\n  font-size: 32px;\n  font-weight: 600;\n}\n\nh2 {\n  font-size: 24px;\n  font-weight: 600;\n}\n\nh3 {\n  font-size: 20px;\n  font-weight: 600;\n}\n\nh4 {\n  font-size: 16px;\n  font-weight: 600;\n}\n\nh5 {\n  font-size: 14px;\n  font-weight: 600;\n}\n\nh6 {\n  font-size: 12px;\n  font-weight: 600;\n}\n\np {\n  margin-top: 0;\n  margin-bottom: 10px;\n}\n\nblockquote {\n  margin: 0;\n}\n\nul,\nol {\n  padding-left: 0;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nol ol,\nul ol {\n  list-style-type: lower-roman;\n}\n\nul ul ol,\nul ol ol,\nol ul ol,\nol ol ol {\n  list-style-type: lower-alpha;\n}\n\ndd {\n  margin-left: 0;\n}\n\ncode {\n  font-family: \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n  font-size: 12px;\n}\n\npre {\n  margin-top: 0;\n  margin-bottom: 0;\n  font: 12px \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n}\n\n.octicon {\n  vertical-align: text-bottom;\n}\n\n.pl-0 {\n  padding-left: 0 !important;\n}\n\n.pl-1 {\n  padding-left: 4px !important;\n}\n\n.pl-2 {\n  padding-left: 8px !important;\n}\n\n.pl-3 {\n  padding-left: 16px !important;\n}\n\n.pl-4 {\n  padding-left: 24px !important;\n}\n\n.pl-5 {\n  padding-left: 32px !important;\n}\n\n.pl-6 {\n  padding-left: 40px !important;\n}\n\n.idyll-root::before {\n  display: table;\n  content: \"\";\n}\n\n.idyll-root::after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.idyll-root>*:first-child {\n  margin-top: 0 !important;\n}\n\n.idyll-root>*:last-child {\n  margin-bottom: 0 !important;\n}\n\na:not([href]) {\n  color: inherit;\n  text-decoration: none;\n}\n\n.anchor {\n  float: left;\n  padding-right: 4px;\n  margin-left: -20px;\n  line-height: 1;\n}\n\n.anchor:focus {\n  outline: none;\n}\n\np,\nblockquote,\nul,\nol,\ndl,\ntable,\npre {\n  margin-top: 0;\n  margin-bottom: 16px;\n}\n\nhr {\n  height: 0.25em;\n  padding: 0;\n  margin: 24px 0;\n  background-color: #e1e4e8;\n  border: 0;\n}\n\nblockquote {\n  padding: 0 1em;\n  color: #6a737d;\n  border-left: 0.25em solid #dfe2e5;\n}\n\nblockquote>:first-child {\n  margin-top: 0;\n}\n\nblockquote>:last-child {\n  margin-bottom: 0;\n}\n\nkbd {\n  display: inline-block;\n  padding: 3px 5px;\n  font-size: 11px;\n  line-height: 10px;\n  color: #444d56;\n  vertical-align: middle;\n  background-color: #fafbfc;\n  border: solid 1px #c6cbd1;\n  border-bottom-color: #959da5;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 #959da5;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 24px;\n  margin-bottom: 16px;\n  font-weight: 600;\n  line-height: 1.25;\n}\n\nh1 .octicon-link,\nh2 .octicon-link,\nh3 .octicon-link,\nh4 .octicon-link,\nh5 .octicon-link,\nh6 .octicon-link {\n  color: #1b1f23;\n  vertical-align: middle;\n  visibility: hidden;\n}\n\nh1:hover .anchor,\nh2:hover .anchor,\nh3:hover .anchor,\nh4:hover .anchor,\nh5:hover .anchor,\nh6:hover .anchor {\n  text-decoration: none;\n}\n\nh1:hover .anchor .octicon-link,\nh2:hover .anchor .octicon-link,\nh3:hover .anchor .octicon-link,\nh4:hover .anchor .octicon-link,\nh5:hover .anchor .octicon-link,\nh6:hover .anchor .octicon-link {\n  visibility: visible;\n}\n\nh1 {\n  padding-bottom: 0.3em;\n  font-size: 2em;\n}\n\nh2 {\n  padding-bottom: 0.3em;\n  font-size: 1.5em;\n}\n\nh3 {\n  font-size: 1.25em;\n}\n\nh4 {\n  font-size: 1em;\n}\n\nh5 {\n  font-size: 0.875em;\n}\n\nh6 {\n  font-size: 0.85em;\n  color: #6a737d;\n}\n\nh1.hed,\nh2.dek {\n  border-bottom: none;\n  padding-bottom: 0;\n  margin-top: 12px;\n}\n\nul,\nol {\n  padding-left: 2em;\n}\n\nul ul,\nul ol,\nol ol,\nol ul {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nli>p {\n  margin-top: 16px;\n}\n\nli+li {\n  margin-top: 0.25em;\n}\n\ndl {\n  padding: 0;\n}\n\ndl dt {\n  padding: 0;\n  margin-top: 16px;\n  font-size: 1em;\n  font-style: italic;\n  font-weight: 600;\n}\n\ndl dd {\n  padding: 0 16px;\n  margin-bottom: 16px;\n}\n\ntable {\n  display: block;\n  width: 100%;\n  overflow: auto;\n}\n\ntable th {\n  font-weight: 600;\n}\n\n:not(.gist) table th,\n:not(.gist) table td {\n  padding: 6px 13px;\n  border: 1px solid #dfe2e5;\n}\n\n:not(.gist) table tr {\n  background-color: #fff;\n  border-top: 1px solid #c6cbd1;\n}\n\n:not(.gist) table tr:nth-child(2n) {\n  background-color: #f6f8fa;\n}\n\n.vega-embed {\n  width: 100%;\n}\n\nimg {\n  max-width: 100%;\n  box-sizing: content-box;\n  background-color: #fff;\n}\n\ncode {\n  padding: 0;\n  padding-top: 0.2em;\n  padding-bottom: 0.2em;\n  margin: 0;\n  font-size: 85%;\n  background-color: rgba(27,31,35,0.05);\n  border-radius: 3px;\n}\n\ncode::before,\ncode::after {\n  letter-spacing: -0.2em;\n  content: \"\\00a0\";\n}\n\npre {\n  word-wrap: normal;\n}\n\npre>code {\n  padding: 0;\n  margin: 0;\n  font-size: 100%;\n  word-break: normal;\n  white-space: pre;\n  background: transparent;\n  border: 0;\n}\n\n.highlight {\n  margin-bottom: 16px;\n}\n\n.highlight pre {\n  margin-bottom: 0;\n  word-break: normal;\n}\n\n.highlight pre,\npre {\n  padding: 16px;\n  overflow: auto;\n  font-size: 85%;\n  line-height: 1.45;\n  background-color: #f6f8fa;\n  border-radius: 3px;\n}\n\npre code {\n  display: inline;\n  max-width: auto;\n  padding: 0;\n  margin: 0;\n  overflow: visible;\n  line-height: inherit;\n  word-wrap: normal;\n  background-color: transparent;\n  border: 0;\n}\n\npre code::before,\npre code::after {\n  content: normal;\n}\n\n.full-commit .btn-outline:not(:disabled):hover {\n  color: #005cc5;\n  border-color: #005cc5;\n}\n\nkbd {\n  display: inline-block;\n  padding: 3px 5px;\n  font: 11px \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n  line-height: 10px;\n  color: #444d56;\n  vertical-align: middle;\n  background-color: #fcfcfc;\n  border: solid 1px #c6cbd1;\n  border-bottom-color: #959da5;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 #959da5;\n}\n\n:checked+.radio-label {\n  position: relative;\n  z-index: 1;\n  border-color: #0366d6;\n}\n\n.task-list-item {\n  list-style-type: none;\n}\n\n.task-list-item+.task-list-item {\n  margin-top: 3px;\n}\n\n.task-list-item input {\n  margin: 0 0.2em 0.25em -1.6em;\n  vertical-align: middle;\n}\n\nhr {\n  border-bottom-color: #eee;\n}\n\n.idyll-dynamic {\n  text-decoration: underline;\n  text-decoration-style: dotted;\n}\n\n.idyll-action {\n  text-decoration: underline;\n}\n\n.idyll-document-error {\n  color: red;\n  font-family: monospace;\n}\n\n\n\n.idyll-step-graphic {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  height: 100%;\n  overflow: hidden;\n  margin: 0 auto;\n  text-align: center;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: black;\n}\n\n.idyll-scroll-graphic {\n\n  text-align: center;\n  width: 100%;\n}\n\n.idyll-step-graphic img {\n  flex-shrink: 0;\n  min-width: 100%;\n  min-height: 100%\n}\n\n.idyll-step-content {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  color: white;\n  padding: 10px;\n  background: rgba(0, 0, 0, 0.8);\n}\n\n.idyll-stepper-control {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 100%;\n}\n\n.idyll-stepper-control-button {\n  background: rgba(0, 0, 0, 0.7);\n  color: white;\n  font-weight: bold;\n  padding: 15px 10px;\n  cursor: pointer;\n}\n\n.idyll-stepper-control-button-previous {\n  position: absolute;\n  left: 10px;\n}\n\n.idyll-stepper-control-button-next {\n  position: absolute;\n  right: 10px;\n}\n\n.idyll-stepper {\n  margin: 60px 0;\n}\n\n.idyll-scroll {\n  margin-top: 25vh;\n}\n\n.idyll-scroll-text {\n  padding: 0 0 50vh 0;\n}\n\n.idyll-scroll-text .idyll-step {\n  margin: 0 0 90vh 0;\n  padding: 50px;\n  background: white;\n  border: solid 1px #333;\n  box-shadow: #ddd 2px 2px 3px;\n}\n\n.idyll-root {\n  padding-top: 0;\n}\n\nbutton {\n  display: block;\n  margin: 1em auto;\n}\n\nh1, h2, h3, h4, h5 {\n  border-bottom: none;\n}\n\npre {\n  max-width: 960px;\n  margin: 2em auto;\n}\n\nh1.hed {\n  font-size: 4em;\n  margin-top: 0;\n}\nh2.dek {\n  font-size: 2em;\n  margin: 0.5em auto;\n  font-weight: lighter;\n}\n.article-header {\n  background: #222;\n  color: white;\n  padding-top: 8em;\n  padding-bottom: 4em;\n  margin-bottom: 4em;\n}\n.article-header a {\n  color: white;\n  text-decoration: underline;\n}\n.idyll-dynamic {\n  cursor: ew-resize;\n  font-family: monospace;\n}\n.idyll-display {\n  font-family: monospace;\n}\nimg {\n  display: block;\n  margin: 0 auto;\n}\n\n@media all and (max-width: 1000px) {\n  .idyll-root {\n    max-width: none;\n    padding: 0;\n  }\n\n  h1.hed {\n    font-size: 2em;\n  }\n  h2.dek {\n    font-size: 1em;\n  }\n}\n\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/github/index.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js"][0].apply(exports,arguments)
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/github/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/github/styles.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/github/index.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js"][0].apply(exports,arguments)
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/github/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/github/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40825,9 +40825,9 @@ exports.__esModule = true;
 exports.default = function () {
   return "\n@font-face {\n  font-family: octicons-link;\n  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');\n}\n\n.ReactTable{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border:1px solid rgba(0,0,0,0.1);}.ReactTable *{box-sizing:border-box}.ReactTable .rt-table{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;border-collapse:collapse;overflow:auto}.ReactTable .rt-thead{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.ReactTable .rt-thead.-headerGroups{background:rgba(0,0,0,0.03);border-bottom:1px solid rgba(0,0,0,0.05)}.ReactTable .rt-thead.-filters{border-bottom:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-thead.-filters .rt-th{border-right:1px solid rgba(0,0,0,0.02)}.ReactTable .rt-thead.-header{box-shadow:0 2px 15px 0 rgba(0,0,0,0.15)}.ReactTable .rt-thead .rt-tr{text-align:center}.ReactTable .rt-thead .rt-th,.ReactTable .rt-thead .rt-td{padding:5px 5px;line-height:normal;position:relative;border-right:1px solid rgba(0,0,0,0.05);-webkit-transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);box-shadow:inset 0 0 0 0 transparent;}.ReactTable .rt-thead .rt-th.-sort-asc,.ReactTable .rt-thead .rt-td.-sort-asc{box-shadow:inset 0 3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-sort-desc,.ReactTable .rt-thead .rt-td.-sort-desc{box-shadow:inset 0 -3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-cursor-pointer,.ReactTable .rt-thead .rt-td.-cursor-pointer{cursor:pointer}.ReactTable .rt-thead .rt-th:last-child,.ReactTable .rt-thead .rt-td:last-child{border-right:0}.ReactTable .rt-thead .rt-resizable-header{overflow:visible;}.ReactTable .rt-thead .rt-resizable-header:last-child{overflow:hidden}.ReactTable .rt-thead .rt-resizable-header-content{overflow:hidden;text-overflow:ellipsis}.ReactTable .rt-thead .rt-header-pivot{border-right-color:#f7f7f7}.ReactTable .rt-thead .rt-header-pivot:after,.ReactTable .rt-thead .rt-header-pivot:before{left:100%;top:50%;border:solid transparent;content:\" \";height:0;width:0;position:absolute;pointer-events:none}.ReactTable .rt-thead .rt-header-pivot:after{border-color:rgba(255,255,255,0);border-left-color:#fff;border-width:8px;margin-top:-8px}.ReactTable .rt-thead .rt-header-pivot:before{border-color:rgba(102,102,102,0);border-left-color:#f7f7f7;border-width:10px;margin-top:-10px}.ReactTable .rt-tbody{-webkit-box-flex:99999;-ms-flex:99999 1 auto;flex:99999 1 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;overflow:auto;}.ReactTable .rt-tbody .rt-tr-group{border-bottom:solid 1px rgba(0,0,0,0.05);}.ReactTable .rt-tbody .rt-tr-group:last-child{border-bottom:0}.ReactTable .rt-tbody .rt-td{border-right:1px solid rgba(0,0,0,0.02);}.ReactTable .rt-tbody .rt-td:last-child{border-right:0}.ReactTable .rt-tbody .rt-expandable{cursor:pointer}.ReactTable .rt-tr-group{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.ReactTable .rt-tr{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.ReactTable .rt-th,.ReactTable .rt-td{-webkit-box-flex:1;-ms-flex:1 0 0px;flex:1 0 0;white-space:nowrap;text-overflow:ellipsis;padding:7px 5px;overflow:hidden;-webkit-transition:.3s ease;transition:.3s ease;-webkit-transition-property:width,min-width,padding,opacity;transition-property:width,min-width,padding,opacity;}.ReactTable .rt-th.-hidden,.ReactTable .rt-td.-hidden{width:0 !important;min-width:0 !important;padding:0 !important;border:0 !important;opacity:0 !important}.ReactTable .rt-expander{display:inline-block;position:relative;margin:0;color:transparent;margin:0 10px;}.ReactTable .rt-expander:after{content:'';position:absolute;width:0;height:0;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);border-left:5.04px solid transparent;border-right:5.04px solid transparent;border-top:7px solid rgba(0,0,0,0.8);-webkit-transition:all .3s cubic-bezier(.175,.885,.32,1.275);transition:all .3s cubic-bezier(.175,.885,.32,1.275);cursor:pointer}.ReactTable .rt-expander.-open:after{-webkit-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}.ReactTable .rt-resizer{display:inline-block;position:absolute;width:36px;top:0;bottom:0;right:-18px;cursor:col-resize;z-index:10}.ReactTable .rt-tfoot{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;box-shadow:0 0 15px 0 rgba(0,0,0,0.15);}.ReactTable .rt-tfoot .rt-td{border-right:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-tfoot .rt-td:last-child{border-right:0}.ReactTable.-striped .rt-tr.-odd{background:rgba(0,0,0,0.03)}.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover{background:rgba(0,0,0,0.05)}.ReactTable .-pagination{z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:3px;box-shadow:0 0 15px 0 rgba(0,0,0,0.1);border-top:2px solid rgba(0,0,0,0.1);}.ReactTable .-pagination .-btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:100%;border:0;border-radius:3px;padding:6px;font-size:1em;color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.1);-webkit-transition:all .1s ease;transition:all .1s ease;cursor:pointer;outline:none;}.ReactTable .-pagination .-btn[disabled]{opacity:.5;cursor:default}.ReactTable .-pagination .-btn:not([disabled]):hover{background:rgba(0,0,0,0.3);color:#fff}.ReactTable .-pagination .-previous,.ReactTable .-pagination .-next{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center}.ReactTable .-pagination .-center{-webkit-box-flex:1.5;-ms-flex:1.5;flex:1.5;text-align:center;margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.ReactTable .-pagination .-pageInfo{display:inline-block;margin:3px 10px;white-space:nowrap}.ReactTable .-pagination .-pageJump{display:inline-block;}.ReactTable .-pagination .-pageJump input{width:70px;text-align:center}.ReactTable .-pagination .-pageSizeOptions{margin:3px 10px}.ReactTable .rt-noData{display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:1;pointer-events:none;padding:20px;color:rgba(0,0,0,0.5)}.ReactTable .-loading{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:-1;opacity:0;pointer-events:none;}.ReactTable .-loading > div{position:absolute;display:block;text-align:center;width:100%;top:50%;left:0;font-size:15px;color:rgba(0,0,0,0.6);-webkit-transform:translateY(-52%);transform:translateY(-52%);-webkit-transition:all .3s cubic-bezier(.25,.46,.45,.94);transition:all .3s cubic-bezier(.25,.46,.45,.94)}.ReactTable .-loading.-active{opacity:1;z-index:2;pointer-events:all;}.ReactTable .-loading.-active > div{-webkit-transform:translateY(50%);transform:translateY(50%)}.ReactTable input,.ReactTable select{border:1px solid rgba(0,0,0,0.1);background:#fff;padding:5px 7px;font-size:inherit;border-radius:3px;font-weight:normal;outline:none}.ReactTable .rt-resizing .rt-th,.ReactTable .rt-resizing .rt-td{-webkit-transition:none !important;transition:none !important;cursor:col-resize;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}\n\n.ReactTable .-pagination .-btn {\n  margin: 0;\n}\n* {\n  box-sizing: border-box;\n}\nbody {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  line-height: 1.5;\n  color: #24292e;\n  font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  font-size: 16px;\n  line-height: 1.5;\n  word-wrap: break-word;\n}\n\n.pl-c {\n  color: #969896;\n}\n\n.pl-c1,\n.pl-s .pl-v {\n  color: #0086b3;\n}\n\n.pl-e,\n.pl-en {\n  color: #795da3;\n}\n\n.pl-smi,\n.pl-s .pl-s1 {\n  color: #333;\n}\n\n.pl-ent {\n  color: #63a35c;\n}\n\n.pl-k {\n  color: #a71d5d;\n}\n\n.pl-s,\n.pl-pds,\n.pl-s .pl-pse .pl-s1,\n.pl-sr,\n.pl-sr .pl-cce,\n.pl-sr .pl-sre,\n.pl-sr .pl-sra {\n  color: #183691;\n}\n\n.pl-v,\n.pl-smw {\n  color: #ed6a43;\n}\n\n.pl-bu {\n  color: #b52a1d;\n}\n\n.pl-ii {\n  color: #f8f8f8;\n  background-color: #b52a1d;\n}\n\n.pl-c2 {\n  color: #f8f8f8;\n  background-color: #b52a1d;\n}\n\n.pl-c2::before {\n  content: \"\\000d\";\n}\n\n.pl-sr .pl-cce {\n  font-weight: bold;\n  color: #63a35c;\n}\n\n.pl-ml {\n  color: #693a17;\n}\n\n.pl-mh,\n.pl-mh .pl-en,\n.pl-ms {\n  font-weight: bold;\n  color: #1d3e81;\n}\n\n.pl-mq {\n  color: #008080;\n}\n\n.pl-mi {\n  font-style: italic;\n  color: #333;\n}\n\n.pl-mb {\n  font-weight: bold;\n  color: #333;\n}\n\n.pl-md {\n  color: #bd2c00;\n  background-color: #ffecec;\n}\n\n.pl-mi1 {\n  color: #55a532;\n  background-color: #eaffea;\n}\n\n.pl-mc {\n  color: #ef9700;\n  background-color: #ffe3b4;\n}\n\n.pl-mi2 {\n  color: #d8d8d8;\n  background-color: #808080;\n}\n\n.pl-mdr {\n  font-weight: bold;\n  color: #795da3;\n}\n\n.pl-mo {\n  color: #1d3e81;\n}\n\n.pl-ba {\n  color: #595e62;\n}\n\n.pl-sg {\n  color: #c0c0c0;\n}\n\n.pl-corl {\n  text-decoration: underline;\n  color: #183691;\n}\n\n.octicon {\n  display: inline-block;\n  vertical-align: text-top;\n  fill: currentColor;\n}\n\na {\n  background-color: transparent;\n  -webkit-text-decoration-skip: objects;\n}\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\nstrong {\n  font-weight: inherit;\n}\n\nstrong {\n  font-weight: bolder;\n}\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\nimg {\n  border-style: none;\n}\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\ncode,\nkbd,\npre {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n  overflow: visible;\n}\n\ninput {\n  font: inherit;\n  margin: 10px 10px 20px 0;\n}\n\ninput {\n  overflow: visible;\n}\n\n[type=\"checkbox\"] {\n  box-sizing: border-box;\n  padding: 0;\n}\n\n\ninput {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\n\na {\n  color: #0366d6;\n  text-decoration: none;\n}\n\na:hover {\n  text-decoration: underline;\n}\n\nstrong {\n  font-weight: 600;\n}\n\nhr {\n  height: 0;\n  margin: 15px 0;\n  overflow: hidden;\n  background: transparent;\n  border: 0;\n  border-bottom: 1px solid #dfe2e5;\n}\n\nhr::before {\n  display: table;\n  content: \"\";\n}\n\nhr::after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\n\ntd,\nth {\n  padding: 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nh1 {\n  font-size: 32px;\n  font-weight: 600;\n}\n\nh2 {\n  font-size: 24px;\n  font-weight: 600;\n}\n\nh3 {\n  font-size: 20px;\n  font-weight: 600;\n}\n\nh4 {\n  font-size: 16px;\n  font-weight: 600;\n}\n\nh5 {\n  font-size: 14px;\n  font-weight: 600;\n}\n\nh6 {\n  font-size: 12px;\n  font-weight: 600;\n}\n\np {\n  margin-top: 0;\n  margin-bottom: 10px;\n}\n\nblockquote {\n  margin: 0;\n}\n\nul,\nol {\n  padding-left: 0;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nol ol,\nul ol {\n  list-style-type: lower-roman;\n}\n\nul ul ol,\nul ol ol,\nol ul ol,\nol ol ol {\n  list-style-type: lower-alpha;\n}\n\ndd {\n  margin-left: 0;\n}\n\ncode {\n  font-family: \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n  font-size: 12px;\n}\n\npre {\n  margin-top: 0;\n  margin-bottom: 0;\n  font: 12px \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n}\n\n.octicon {\n  vertical-align: text-bottom;\n}\n\n.pl-0 {\n  padding-left: 0 !important;\n}\n\n.pl-1 {\n  padding-left: 4px !important;\n}\n\n.pl-2 {\n  padding-left: 8px !important;\n}\n\n.pl-3 {\n  padding-left: 16px !important;\n}\n\n.pl-4 {\n  padding-left: 24px !important;\n}\n\n.pl-5 {\n  padding-left: 32px !important;\n}\n\n.pl-6 {\n  padding-left: 40px !important;\n}\n\n.idyll-root::before {\n  display: table;\n  content: \"\";\n}\n\n.idyll-root::after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.idyll-root>*:first-child {\n  margin-top: 0 !important;\n}\n\n.idyll-root>*:last-child {\n  margin-bottom: 0 !important;\n}\n\na:not([href]) {\n  color: inherit;\n  text-decoration: none;\n}\n\n.anchor {\n  float: left;\n  padding-right: 4px;\n  margin-left: -20px;\n  line-height: 1;\n}\n\n.anchor:focus {\n  outline: none;\n}\n\np,\nblockquote,\nul,\nol,\ndl,\ntable,\npre {\n  margin-top: 0;\n  margin-bottom: 16px;\n}\n\nhr {\n  height: 0.25em;\n  padding: 0;\n  margin: 24px 0;\n  background-color: #e1e4e8;\n  border: 0;\n}\n\nblockquote {\n  padding: 0 1em;\n  color: #6a737d;\n  border-left: 0.25em solid #dfe2e5;\n}\n\nblockquote>:first-child {\n  margin-top: 0;\n}\n\nblockquote>:last-child {\n  margin-bottom: 0;\n}\n\nkbd {\n  display: inline-block;\n  padding: 3px 5px;\n  font-size: 11px;\n  line-height: 10px;\n  color: #444d56;\n  vertical-align: middle;\n  background-color: #fafbfc;\n  border: solid 1px #c6cbd1;\n  border-bottom-color: #959da5;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 #959da5;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  margin-top: 24px;\n  margin-bottom: 16px;\n  font-weight: 600;\n  line-height: 1.25;\n}\n\nh1 .octicon-link,\nh2 .octicon-link,\nh3 .octicon-link,\nh4 .octicon-link,\nh5 .octicon-link,\nh6 .octicon-link {\n  color: #1b1f23;\n  vertical-align: middle;\n  visibility: hidden;\n}\n\nh1:hover .anchor,\nh2:hover .anchor,\nh3:hover .anchor,\nh4:hover .anchor,\nh5:hover .anchor,\nh6:hover .anchor {\n  text-decoration: none;\n}\n\nh1:hover .anchor .octicon-link,\nh2:hover .anchor .octicon-link,\nh3:hover .anchor .octicon-link,\nh4:hover .anchor .octicon-link,\nh5:hover .anchor .octicon-link,\nh6:hover .anchor .octicon-link {\n  visibility: visible;\n}\n\nh1 {\n  padding-bottom: 0.3em;\n  font-size: 2em;\n  border-bottom: 1px solid #eaecef;\n}\n\nh2 {\n  padding-bottom: 0.3em;\n  font-size: 1.5em;\n  border-bottom: 1px solid #eaecef;\n}\n\nh3 {\n  font-size: 1.25em;\n}\n\nh4 {\n  font-size: 1em;\n}\n\nh5 {\n  font-size: 0.875em;\n}\n\nh6 {\n  font-size: 0.85em;\n  color: #6a737d;\n}\n\nh1.hed,\nh2.dek {\n  border-bottom: none;\n  padding-bottom: 0;\n  margin-top: 12px;\n}\n\nul,\nol {\n  padding-left: 2em;\n}\n\nul ul,\nul ol,\nol ol,\nol ul {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\nli>p {\n  margin-top: 16px;\n}\n\nli+li {\n  margin-top: 0.25em;\n}\n\ndl {\n  padding: 0;\n}\n\ndl dt {\n  padding: 0;\n  margin-top: 16px;\n  font-size: 1em;\n  font-style: italic;\n  font-weight: 600;\n}\n\ndl dd {\n  padding: 0 16px;\n  margin-bottom: 16px;\n}\n\ntable {\n  display: block;\n  width: 100%;\n  overflow: auto;\n}\n\ntable th {\n  font-weight: 600;\n}\n\n:not(.gist) table th,\n:not(.gist) table td {\n  padding: 6px 13px;\n  border: 1px solid #dfe2e5;\n}\n\n:not(.gist) table tr {\n  background-color: #fff;\n  border-top: 1px solid #c6cbd1;\n}\n\n:not(.gist) table tr:nth-child(2n) {\n  background-color: #f6f8fa;\n}\n\nimg {\n  max-width: 100%;\n  box-sizing: content-box;\n  background-color: #fff;\n}\n\n.vega-embed {\n  width: 100%;\n}\n\ncode {\n  padding: 0;\n  padding-top: 0.2em;\n  padding-bottom: 0.2em;\n  margin: 0;\n  font-size: 85%;\n  background-color: rgba(27,31,35,0.05);\n  border-radius: 3px;\n}\n\ncode::before,\ncode::after {\n  letter-spacing: -0.2em;\n  content: \"\\00a0\";\n}\n\npre {\n  word-wrap: normal;\n}\n\npre>code {\n  padding: 0;\n  margin: 0;\n  font-size: 100%;\n  word-break: normal;\n  white-space: pre;\n  background: transparent;\n  border: 0;\n}\n\n.highlight {\n  margin-bottom: 16px;\n}\n\n.highlight pre {\n  margin-bottom: 0;\n  word-break: normal;\n}\n\n.highlight pre,\npre {\n  padding: 16px;\n  overflow: auto;\n  font-size: 85%;\n  line-height: 1.45;\n  background-color: #f6f8fa;\n  border-radius: 3px;\n}\n\npre code {\n  display: inline;\n  max-width: auto;\n  padding: 0;\n  margin: 0;\n  overflow: visible;\n  line-height: inherit;\n  word-wrap: normal;\n  background-color: transparent;\n  border: 0;\n}\n\npre code::before,\npre code::after {\n  content: normal;\n}\n\n.full-commit .btn-outline:not(:disabled):hover {\n  color: #005cc5;\n  border-color: #005cc5;\n}\n\nkbd {\n  display: inline-block;\n  padding: 3px 5px;\n  font: 11px \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n  line-height: 10px;\n  color: #444d56;\n  vertical-align: middle;\n  background-color: #fcfcfc;\n  border: solid 1px #c6cbd1;\n  border-bottom-color: #959da5;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 #959da5;\n}\n\n:checked+.radio-label {\n  position: relative;\n  z-index: 1;\n  border-color: #0366d6;\n}\n\n.task-list-item {\n  list-style-type: none;\n}\n\n.task-list-item+.task-list-item {\n  margin-top: 3px;\n}\n\n.task-list-item input {\n  margin: 0 0.2em 0.25em -1.6em;\n  vertical-align: middle;\n}\n\nhr {\n  border-bottom-color: #eee;\n}\n\n.idyll-dynamic {\n  text-decoration: underline;\n  text-decoration-style: dotted;\n}\n\n.idyll-action {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.idyll-document-error {\n  color: red;\n  font-family: monospace;\n}\n\n\n\n.idyll-step-graphic {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  height: 100%;\n  overflow: hidden;\n  margin: 0 auto;\n  text-align: center;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: black;\n}\n\n.idyll-scroll-graphic {\n\n  text-align: center;\n  width: 100%;\n}\n\n.idyll-step-graphic img {\n  flex-shrink: 0;\n  min-width: 100%;\n  min-height: 100%\n}\n\n.idyll-step-content {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  color: white;\n  padding: 10px;\n  background: rgba(0, 0, 0, 0.8);\n}\n\n.idyll-stepper-control {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 100%;\n}\n\n.idyll-stepper-control-button {\n  background: rgba(0, 0, 0, 0.7);\n  color: white;\n  font-weight: bold;\n  padding: 15px 10px;\n  cursor: pointer;\n}\n\n.idyll-stepper-control-button-previous {\n  position: absolute;\n  left: 10px;\n}\n\n.idyll-stepper-control-button-next {\n  position: absolute;\n  right: 10px;\n}\n\n.idyll-stepper {\n  margin: 60px 0;\n}\n\n.idyll-scroll {\n  margin-top: 25vh;\n}\n\n.idyll-scroll-text {\n  padding: 0 0 50vh 0;\n}\n\n.idyll-scroll-text .idyll-step {\n  margin: 0 0 90vh 0;\n  padding: 50px;\n  background: white;\n}\n\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/index.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js"][0].apply(exports,arguments)
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/styles.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/index.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js"][0].apply(exports,arguments)
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40835,7 +40835,7 @@ exports.__esModule = true;
 exports.default = function () {
   return "\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n  margin: 0;\n  padding: 0;\n}\n\nimg {\n  display: block;\n  width: 100%;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n}\n\nh1,h2,h3,h4,h5,h6{\n  margin: 40px 0 20px 0;\n  font-weight: bold;\n}\n\n\nbody {\n  color: black;\n}\n\np, .article-body {\n  font-size: 1.15rem;\n  line-height: 1.75rem;\n}\n\n.byline a {\n  color: black;\n}\n\n.ReactTable{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border:1px solid rgba(0,0,0,0.1);}.ReactTable *{box-sizing:border-box}.ReactTable .rt-table{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;border-collapse:collapse;overflow:auto}.ReactTable .rt-thead{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.ReactTable .rt-thead.-headerGroups{background:rgba(0,0,0,0.03);border-bottom:1px solid rgba(0,0,0,0.05)}.ReactTable .rt-thead.-filters{border-bottom:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-thead.-filters .rt-th{border-right:1px solid rgba(0,0,0,0.02)}.ReactTable .rt-thead.-header{box-shadow:0 2px 15px 0 rgba(0,0,0,0.15)}.ReactTable .rt-thead .rt-tr{text-align:center}.ReactTable .rt-thead .rt-th,.ReactTable .rt-thead .rt-td{padding:5px 5px;line-height:normal;position:relative;border-right:1px solid rgba(0,0,0,0.05);-webkit-transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);box-shadow:inset 0 0 0 0 transparent;}.ReactTable .rt-thead .rt-th.-sort-asc,.ReactTable .rt-thead .rt-td.-sort-asc{box-shadow:inset 0 3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-sort-desc,.ReactTable .rt-thead .rt-td.-sort-desc{box-shadow:inset 0 -3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-cursor-pointer,.ReactTable .rt-thead .rt-td.-cursor-pointer{cursor:pointer}.ReactTable .rt-thead .rt-th:last-child,.ReactTable .rt-thead .rt-td:last-child{border-right:0}.ReactTable .rt-thead .rt-resizable-header{overflow:visible;}.ReactTable .rt-thead .rt-resizable-header:last-child{overflow:hidden}.ReactTable .rt-thead .rt-resizable-header-content{overflow:hidden;text-overflow:ellipsis}.ReactTable .rt-thead .rt-header-pivot{border-right-color:#f7f7f7}.ReactTable .rt-thead .rt-header-pivot:after,.ReactTable .rt-thead .rt-header-pivot:before{left:100%;top:50%;border:solid transparent;content:\" \";height:0;width:0;position:absolute;pointer-events:none}.ReactTable .rt-thead .rt-header-pivot:after{border-color:rgba(255,255,255,0);border-left-color:#fff;border-width:8px;margin-top:-8px}.ReactTable .rt-thead .rt-header-pivot:before{border-color:rgba(102,102,102,0);border-left-color:#f7f7f7;border-width:10px;margin-top:-10px}.ReactTable .rt-tbody{-webkit-box-flex:99999;-ms-flex:99999 1 auto;flex:99999 1 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;overflow:auto;}.ReactTable .rt-tbody .rt-tr-group{border-bottom:solid 1px rgba(0,0,0,0.05);}.ReactTable .rt-tbody .rt-tr-group:last-child{border-bottom:0}.ReactTable .rt-tbody .rt-td{border-right:1px solid rgba(0,0,0,0.02);}.ReactTable .rt-tbody .rt-td:last-child{border-right:0}.ReactTable .rt-tbody .rt-expandable{cursor:pointer}.ReactTable .rt-tr-group{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.ReactTable .rt-tr{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.ReactTable .rt-th,.ReactTable .rt-td{-webkit-box-flex:1;-ms-flex:1 0 0px;flex:1 0 0;white-space:nowrap;text-overflow:ellipsis;padding:7px 5px;overflow:hidden;-webkit-transition:.3s ease;transition:.3s ease;-webkit-transition-property:width,min-width,padding,opacity;transition-property:width,min-width,padding,opacity;}.ReactTable .rt-th.-hidden,.ReactTable .rt-td.-hidden{width:0 !important;min-width:0 !important;padding:0 !important;border:0 !important;opacity:0 !important}.ReactTable .rt-expander{display:inline-block;position:relative;margin:0;color:transparent;margin:0 10px;}.ReactTable .rt-expander:after{content:'';position:absolute;width:0;height:0;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);border-left:5.04px solid transparent;border-right:5.04px solid transparent;border-top:7px solid rgba(0,0,0,0.8);-webkit-transition:all .3s cubic-bezier(.175,.885,.32,1.275);transition:all .3s cubic-bezier(.175,.885,.32,1.275);cursor:pointer}.ReactTable .rt-expander.-open:after{-webkit-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}.ReactTable .rt-resizer{display:inline-block;position:absolute;width:36px;top:0;bottom:0;right:-18px;cursor:col-resize;z-index:10}.ReactTable .rt-tfoot{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;box-shadow:0 0 15px 0 rgba(0,0,0,0.15);}.ReactTable .rt-tfoot .rt-td{border-right:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-tfoot .rt-td:last-child{border-right:0}.ReactTable.-striped .rt-tr.-odd{background:rgba(0,0,0,0.03)}.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover{background:rgba(0,0,0,0.05)}.ReactTable .-pagination{z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:3px;box-shadow:0 0 15px 0 rgba(0,0,0,0.1);border-top:2px solid rgba(0,0,0,0.1);}.ReactTable .-pagination .-btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:100%;border:0;border-radius:3px;padding:6px;font-size:1em;color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.1);-webkit-transition:all .1s ease;transition:all .1s ease;cursor:pointer;outline:none;}.ReactTable .-pagination .-btn[disabled]{opacity:.5;cursor:default}.ReactTable .-pagination .-btn:not([disabled]):hover{background:rgba(0,0,0,0.3);color:#fff}.ReactTable .-pagination .-previous,.ReactTable .-pagination .-next{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center}.ReactTable .-pagination .-center{-webkit-box-flex:1.5;-ms-flex:1.5;flex:1.5;text-align:center;margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.ReactTable .-pagination .-pageInfo{display:inline-block;margin:3px 10px;white-space:nowrap}.ReactTable .-pagination .-pageJump{display:inline-block;}.ReactTable .-pagination .-pageJump input{width:70px;text-align:center}.ReactTable .-pagination .-pageSizeOptions{margin:3px 10px}.ReactTable .rt-noData{display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:1;pointer-events:none;padding:20px;color:rgba(0,0,0,0.5)}.ReactTable .-loading{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:-1;opacity:0;pointer-events:none;}.ReactTable .-loading > div{position:absolute;display:block;text-align:center;width:100%;top:50%;left:0;font-size:15px;color:rgba(0,0,0,0.6);-webkit-transform:translateY(-52%);transform:translateY(-52%);-webkit-transition:all .3s cubic-bezier(.25,.46,.45,.94);transition:all .3s cubic-bezier(.25,.46,.45,.94)}.ReactTable .-loading.-active{opacity:1;z-index:2;pointer-events:all;}.ReactTable .-loading.-active > div{-webkit-transform:translateY(50%);transform:translateY(50%)}.ReactTable input,.ReactTable select{border:1px solid rgba(0,0,0,0.1);background:#fff;padding:5px 7px;font-size:inherit;border-radius:3px;font-weight:normal;outline:none}.ReactTable .rt-resizing .rt-th,.ReactTable .rt-resizing .rt-td{-webkit-transition:none !important;transition:none !important;cursor:col-resize;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}\n\n.ReactTable .-pagination .-btn {\n  margin: 0;\n}\n.hed {\n  font-size: 3rem;\n  line-height: 3rem;\n  margin: 20px 0 20px;\n  font-weight: bold;\n  width: 150%;\n  max-width: 90vw;\n}\n\n.dek {\n  margin: 0;\n  display: block;\n  font-size: 1.5rem;\n  line-height: 2.2rem;\n  color: black;\n  margin-top: 1rem;\n  max-width: 90vw;\n}\n\n.byline {\n  font-size: .95rem;\n  line-height: 1rem;\n  color: black;\n  margin-top: 1rem;\n}\n\na, a:visited, a:hover {\n  color: black;\n  cursor: pointer;\n  text-decoration: none;\n  /*border-bottom: 1px solid #EAE7D6;*/\n  box-shadow: inset 0 -4px 0 #EAE7D6;\n  transition: box-shadow 0.25s ease-out;\n}\n\na:hover {\n  color: black;\n  /*background: #EAE7D6;*/\n  box-shadow: inset 0 -20px 0 #EAE7D6;\n}\n\npre {\n  margin-top: 25px;\n  margin-bottom: 25px;\n}\n\npre code {\n  background: #F2F3F2;\n  color: black;\n  padding: 20px 15px;\n  width: 100%;\n  display: block;\n  overflow-x: auto;\n  font-size: 12px;\n  text-align: initial;\n  font-style: normal;\n}\ncode {\n  background: #F2F3F2;\n  color: black;\n  padding: 1px 5px;\n}\n\n\n\nspan.action {\n  border-color: #5601FF;\n  border-width: 2px;\n  border-style: none none solid none;\n  color: #5601FF;\n  /*font-size: 0.9em;*/\n  padding: -4px 5px;\n  margin: 0 5px;\n  cursor: pointer;\n}\n\n.idyll-dynamic {\n  text-decoration: underline;\n  text-decoration-style: dotted;\n}\n\n.idyll-action {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.idyll-document-error {\n  color: red;\n  font-family: monospace;\n}\n\n\n\n.idyll-step-graphic {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  height: 100%;\n  overflow: hidden;\n  margin: 0 auto;\n  text-align: center;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: black;\n}\n\n.idyll-scroll-graphic {\n\n  text-align: center;\n  width: 100%;\n}\n\n.idyll-step-graphic img {\n  flex-shrink: 0;\n  min-width: 100%;\n  min-height: 100%\n}\n\n.idyll-step-content {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  color: white;\n  padding: 10px;\n  background: rgba(0, 0, 0, 0.8);\n}\n\n.idyll-stepper-control {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 100%;\n}\n\n.idyll-stepper-control-button {\n  background: rgba(0, 0, 0, 0.7);\n  color: white;\n  font-weight: bold;\n  padding: 15px 10px;\n  cursor: pointer;\n}\n\n.idyll-stepper-control-button-previous {\n  position: absolute;\n  left: 10px;\n}\n\n.idyll-stepper-control-button-next {\n  position: absolute;\n  right: 10px;\n}\n\n.idyll-stepper {\n  margin: 60px 0;\n}\n\n.idyll-scroll {\n  margin-top: 25vh;\n}\n\n.idyll-scroll-text {\n  padding: 0 0 50vh 0;\n}\n\n.idyll-scroll-text .idyll-step {\n  margin: 0 0 90vh 0;\n  padding: 50px;\n  background: white;\n}\n\n\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40886,7 +40886,7 @@ Object.defineProperty(exports, 'tufte', {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./default":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js","./github":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/github/index.js","./idyll":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/index.js","./none":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/none/index.js","./tufte":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/none/index.js":[function(require,module,exports){
+},{"./default":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/default/index.js","./github":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/github/index.js","./idyll":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/idyll/index.js","./none":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/none/index.js","./tufte":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/none/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40904,9 +40904,9 @@ var config = {};
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/none/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/none/styles.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js"][0].apply(exports,arguments)
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/index.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/none/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/none/styles.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-layouts/dist/cjs/none/styles.js"][0].apply(exports,arguments)
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/index.js":[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -40927,7 +40927,7 @@ var config = {
 exports.default = _extends({}, config, {
   styles: (0, _styles2.default)(config)
 });
-},{"./styles":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/styles.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/styles.js":[function(require,module,exports){
+},{"./styles":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/styles.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-themes/dist/cjs/tufte/styles.js":[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -40935,7 +40935,7 @@ exports.__esModule = true;
 exports.default = function () {
   return "\n@charset \"UTF-8\";\n\n/* Import ET Book styles\n   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */\n\n@font-face { font-family: \"et-book\";\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot\");\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff\") format(\"woff\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf\") format(\"truetype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf\") format(\"svg\");\n             font-weight: normal;\n             font-style: normal; }\n\n@font-face { font-family: \"et-book\";\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot\");\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff\") format(\"woff\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf\") format(\"truetype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf\") format(\"svg\");\n             font-weight: normal;\n             font-style: italic; }\n\n@font-face { font-family: \"et-book\";\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot\");\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff\") format(\"woff\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf\") format(\"truetype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf\") format(\"svg\");\n             font-weight: bold;\n             font-style: normal; }\n\n@font-face { font-family: \"et-book-roman-old-style\";\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot\");\n             src: url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff\") format(\"woff\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf\") format(\"truetype\"), url(\"https://cdn.rawgit.com/edwardtufte/tufte-css/gh-pages/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf\") format(\"svg\");\n             font-weight: normal;\n             font-style: normal; }\n\n\n             .ReactTable{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border:1px solid rgba(0,0,0,0.1);}.ReactTable *{box-sizing:border-box}.ReactTable .rt-table{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;border-collapse:collapse;overflow:auto}.ReactTable .rt-thead{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.ReactTable .rt-thead.-headerGroups{background:rgba(0,0,0,0.03);border-bottom:1px solid rgba(0,0,0,0.05)}.ReactTable .rt-thead.-filters{border-bottom:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-thead.-filters .rt-th{border-right:1px solid rgba(0,0,0,0.02)}.ReactTable .rt-thead.-header{box-shadow:0 2px 15px 0 rgba(0,0,0,0.15)}.ReactTable .rt-thead .rt-tr{text-align:center}.ReactTable .rt-thead .rt-th,.ReactTable .rt-thead .rt-td{padding:5px 5px;line-height:normal;position:relative;border-right:1px solid rgba(0,0,0,0.05);-webkit-transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);transition:box-shadow .3s cubic-bezier(.175,.885,.32,1.275);box-shadow:inset 0 0 0 0 transparent;}.ReactTable .rt-thead .rt-th.-sort-asc,.ReactTable .rt-thead .rt-td.-sort-asc{box-shadow:inset 0 3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-sort-desc,.ReactTable .rt-thead .rt-td.-sort-desc{box-shadow:inset 0 -3px 0 0 rgba(0,0,0,0.6)}.ReactTable .rt-thead .rt-th.-cursor-pointer,.ReactTable .rt-thead .rt-td.-cursor-pointer{cursor:pointer}.ReactTable .rt-thead .rt-th:last-child,.ReactTable .rt-thead .rt-td:last-child{border-right:0}.ReactTable .rt-thead .rt-resizable-header{overflow:visible;}.ReactTable .rt-thead .rt-resizable-header:last-child{overflow:hidden}.ReactTable .rt-thead .rt-resizable-header-content{overflow:hidden;text-overflow:ellipsis}.ReactTable .rt-thead .rt-header-pivot{border-right-color:#f7f7f7}.ReactTable .rt-thead .rt-header-pivot:after,.ReactTable .rt-thead .rt-header-pivot:before{left:100%;top:50%;border:solid transparent;content:\" \";height:0;width:0;position:absolute;pointer-events:none}.ReactTable .rt-thead .rt-header-pivot:after{border-color:rgba(255,255,255,0);border-left-color:#fff;border-width:8px;margin-top:-8px}.ReactTable .rt-thead .rt-header-pivot:before{border-color:rgba(102,102,102,0);border-left-color:#f7f7f7;border-width:10px;margin-top:-10px}.ReactTable .rt-tbody{-webkit-box-flex:99999;-ms-flex:99999 1 auto;flex:99999 1 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;overflow:auto;}.ReactTable .rt-tbody .rt-tr-group{border-bottom:solid 1px rgba(0,0,0,0.05);}.ReactTable .rt-tbody .rt-tr-group:last-child{border-bottom:0}.ReactTable .rt-tbody .rt-td{border-right:1px solid rgba(0,0,0,0.02);}.ReactTable .rt-tbody .rt-td:last-child{border-right:0}.ReactTable .rt-tbody .rt-expandable{cursor:pointer}.ReactTable .rt-tr-group{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}.ReactTable .rt-tr{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.ReactTable .rt-th,.ReactTable .rt-td{-webkit-box-flex:1;-ms-flex:1 0 0px;flex:1 0 0;white-space:nowrap;text-overflow:ellipsis;padding:7px 5px;overflow:hidden;-webkit-transition:.3s ease;transition:.3s ease;-webkit-transition-property:width,min-width,padding,opacity;transition-property:width,min-width,padding,opacity;}.ReactTable .rt-th.-hidden,.ReactTable .rt-td.-hidden{width:0 !important;min-width:0 !important;padding:0 !important;border:0 !important;opacity:0 !important}.ReactTable .rt-expander{display:inline-block;position:relative;margin:0;color:transparent;margin:0 10px;}.ReactTable .rt-expander:after{content:'';position:absolute;width:0;height:0;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) rotate(-90deg);transform:translate(-50%,-50%) rotate(-90deg);border-left:5.04px solid transparent;border-right:5.04px solid transparent;border-top:7px solid rgba(0,0,0,0.8);-webkit-transition:all .3s cubic-bezier(.175,.885,.32,1.275);transition:all .3s cubic-bezier(.175,.885,.32,1.275);cursor:pointer}.ReactTable .rt-expander.-open:after{-webkit-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}.ReactTable .rt-resizer{display:inline-block;position:absolute;width:36px;top:0;bottom:0;right:-18px;cursor:col-resize;z-index:10}.ReactTable .rt-tfoot{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;box-shadow:0 0 15px 0 rgba(0,0,0,0.15);}.ReactTable .rt-tfoot .rt-td{border-right:1px solid rgba(0,0,0,0.05);}.ReactTable .rt-tfoot .rt-td:last-child{border-right:0}.ReactTable.-striped .rt-tr.-odd{background:rgba(0,0,0,0.03)}.ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover{background:rgba(0,0,0,0.05)}.ReactTable .-pagination{z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:3px;box-shadow:0 0 15px 0 rgba(0,0,0,0.1);border-top:2px solid rgba(0,0,0,0.1);}.ReactTable .-pagination .-btn{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:block;width:100%;height:100%;border:0;border-radius:3px;padding:6px;font-size:1em;color:rgba(0,0,0,0.6);background:rgba(0,0,0,0.1);-webkit-transition:all .1s ease;transition:all .1s ease;cursor:pointer;outline:none;}.ReactTable .-pagination .-btn[disabled]{opacity:.5;cursor:default}.ReactTable .-pagination .-btn:not([disabled]):hover{background:rgba(0,0,0,0.3);color:#fff}.ReactTable .-pagination .-previous,.ReactTable .-pagination .-next{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center}.ReactTable .-pagination .-center{-webkit-box-flex:1.5;-ms-flex:1.5;flex:1.5;text-align:center;margin-bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.ReactTable .-pagination .-pageInfo{display:inline-block;margin:3px 10px;white-space:nowrap}.ReactTable .-pagination .-pageJump{display:inline-block;}.ReactTable .-pagination .-pageJump input{width:70px;text-align:center}.ReactTable .-pagination .-pageSizeOptions{margin:3px 10px}.ReactTable .rt-noData{display:block;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:1;pointer-events:none;padding:20px;color:rgba(0,0,0,0.5)}.ReactTable .-loading{display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(255,255,255,0.8);-webkit-transition:all .3s ease;transition:all .3s ease;z-index:-1;opacity:0;pointer-events:none;}.ReactTable .-loading > div{position:absolute;display:block;text-align:center;width:100%;top:50%;left:0;font-size:15px;color:rgba(0,0,0,0.6);-webkit-transform:translateY(-52%);transform:translateY(-52%);-webkit-transition:all .3s cubic-bezier(.25,.46,.45,.94);transition:all .3s cubic-bezier(.25,.46,.45,.94)}.ReactTable .-loading.-active{opacity:1;z-index:2;pointer-events:all;}.ReactTable .-loading.-active > div{-webkit-transform:translateY(50%);transform:translateY(50%)}.ReactTable input,.ReactTable select{border:1px solid rgba(0,0,0,0.1);background:#fff;padding:5px 7px;font-size:inherit;border-radius:3px;font-weight:normal;outline:none}.ReactTable .rt-resizing .rt-th,.ReactTable .rt-resizing .rt-td{-webkit-transition:none !important;transition:none !important;cursor:col-resize;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}\n             ReactTable .-pagination .-btn {\n              margin: 0;\n            }\n/* Tufte CSS styles */\n\nhtml {\n  font-size: 15px;\n}\n\nbody {\n  background-color: #fffff8;\n}\n\nbody { font-family: et-book, Palatino, \"Palatino Linotype\", \"Palatino LT STD\", \"Book Antiqua\", Georgia, serif;\n       background-color: #fffff8;\n       color: #111;\n       counter-reset: sidenote-counter; }\n\n\n.idyll-root { position: relative;\n          padding: 5rem 0rem;\n          margin-left: 0;\n          width: auto;\n          margin: auto; }\n\nh1, .hed { font-weight: 400;\n     margin-top: 4rem;\n     margin-bottom: 1.5rem;\n     font-size: 3.2rem;\n     line-height: 1; }\n\nh2 { font-style: italic;\n     font-weight: 400;\n     margin-top: 2.1rem;\n     margin-bottom: 0;\n     font-size: 2.2rem;\n     line-height: 1; }\n\nh3 { font-style: italic;\n     font-weight: 400;\n     font-size: 1.7rem;\n     margin-top: 2rem;\n     margin-bottom: 0;\n     line-height: 1; }\n\nhr { display: block;\n     height: 1px;\n     width: 55%;\n     border: 0;\n     border-top: 1px solid #ccc;\n     margin: 1em 0;\n     padding: 0; }\n\np.subtitle,\n.dek { font-style: italic;\n             margin-top: 1rem;\n             margin-bottom: 1rem;\n             font-size: 1.8rem;\n             display: block;\n             line-height: 1; }\n\n.numeral { font-family: et-book-roman-old-style; }\n\n.danger { color: red; }\n\nsection { padding-top: 1rem;\n          padding-bottom: 1rem; }\n\np, ol, ul { font-size: 1.4rem; }\n\np { line-height: 2rem;\n    margin-top: 1.4rem;\n    margin-bottom: 1.4rem;\n    padding-right: 0;\n    vertical-align: baseline; }\n\n/* Chapter Epigraphs */\ndiv.epigraph { margin: 5em 0; }\n\ndiv.epigraph > blockquote { margin-top: 3em;\n                            margin-bottom: 3em; }\n\ndiv.epigraph > blockquote, div.epigraph > blockquote > p { font-style: italic; }\n\ndiv.epigraph > blockquote > footer { font-style: normal; }\n\ndiv.epigraph > blockquote > footer > cite { font-style: italic; }\n/* end chapter epigraphs styles */\n\nblockquote { font-size: 1.4rem; }\n\nblockquote p { width: 55%;\n               margin-right: 40px; }\n\nblockquote footer { width: 55%;\n                    font-size: 1.1rem;\n                    text-align: right; }\n\nsection>ol, section>ul { width: 45%;\n                         -webkit-padding-start: 5%;\n                         -webkit-padding-end: 5%; }\n\nli { padding: 0.5rem 0; }\n\nfigure { padding: 0;\n         border: 0;\n         font-size: 100%;\n         font: inherit;\n         vertical-align: baseline;\n         max-width: 55%;\n         -webkit-margin-start: 0;\n         -webkit-margin-end: 0;\n         margin: 0 0 3em 0; }\n\nfigcaption { float: right;\n             clear: right;\n             margin-top: 0;\n             margin-bottom: 0;\n             font-size: 1.1rem;\n             line-height: 1.6;\n             vertical-align: baseline;\n             position: relative;\n             max-width: 40%; }\n\nfigure.fullwidth figcaption { margin-right: 24%; }\n\n/* Links: replicate underline that clears descenders */\na:link, a:visited { color: inherit; }\n\n@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 87%, 87%, 87%; } }\n\n\na:link::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;\n                         background: #b4d5fe; }\n\n/* Sidenotes, margin notes, figures, captions */\nimg { max-width: 100%; }\n\n.aside, .sidenote, .marginnote { float: right;\n                         clear: right;\n                         margin-right: -60%;\n                         width: 50%;\n                         margin-top: 0;\n                         margin-bottom: 0;\n                         font-size: 1.1rem;\n                         line-height: 1.3;\n                         vertical-align: baseline;\n                         position: relative; }\n\n.sidenote-number { counter-increment: sidenote-counter; }\n\n.sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) \" \";\n                                           font-family: et-book-roman-old-style;\n                                           position: relative;\n                                           vertical-align: baseline; }\n\n.sidenote-number:after { content: counter(sidenote-counter);\n                         font-size: 1rem;\n                         top: -0.5rem;\n                         left: 0.1rem; }\n\n.sidenote:before { content: counter(sidenote-counter) \" \";\n                   top: -0.5rem; }\n\nblockquote .sidenote, blockquote .marginnote, blockquote .aside { margin-right: -82%;\n                                               min-width: 59%;\n                                               text-align: left; }\n\n.aside-container {\n  position: static;\n  width: 55%;\n}\ndiv.fullwidth, table.fullwidth { width: 100%; }\n\ndiv.table-wrapper { overflow-x: auto;\n                    font-family: \"Trebuchet MS\", \"Gill Sans\", \"Gill Sans MT\", sans-serif; }\n\n.sans { font-family: \"Gill Sans\", \"Gill Sans MT\", Calibri, sans-serif;\n        letter-spacing: .03em; }\n\ncode { font-family: Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n       font-size: 1.0rem;\n       line-height: 1.42; }\n\n.sans > code { font-size: 1.2rem; }\n\nh1 > code, h2 > code, h3 > code { font-size: 0.80em; }\n\n.marginnote > code, .sidenote > code { font-size: 1rem; }\n\npre.code { font-size: 0.9rem;\n           width: 52.5%;\n           margin-left: 2.5%;\n           overflow-x: auto; }\n\npre.code.fullwidth { width: 90%; }\n\n.fullwidth { max-width: 90%;\n             clear:both; }\n\nspan.newthought { font-variant: small-caps;\n                  font-size: 1.2em; }\n\ninput.margin-toggle { display: none; }\n\nlabel.sidenote-number { display: inline; }\n\nlabel.margin-toggle:not(.sidenote-number) { display: none; }\n\n@media (max-width: 760px) { p, footer { width: 100%; }\n                            pre.code { width: 97%; }\n                            ul { width: 85%; }\n                            figure { max-width: 90%; }\n                            figcaption, figure.fullwidth figcaption { margin-right: 0%;\n                                                                      max-width: none; }\n                            blockquote { margin-left: 1.5em;\n                                         margin-right: 0em; }\n                            blockquote p, blockquote footer { width: 100%; }\n                            label.margin-toggle:not(.sidenote-number) { display: inline; }\n                            .sidenote, .marginnote { display: none; }\n                            .margin-toggle:checked + .sidenote,\n                            .margin-toggle:checked + .marginnote { display: block;\n                                                                   float: left;\n                                                                   left: 1rem;\n                                                                   clear: both;\n                                                                   width: 95%;\n                                                                   margin: 1rem 2.5%;\n                                                                   vertical-align: baseline;\n                                                                   position: relative; }\n                            label { cursor: pointer; }\n                            div.table-wrapper, table { width: 85%; }\n                            img { width: 100%; } }\n\n\n\n.idyll-dynamic {\n  text-decoration: underline;\n  text-decoration-style: dotted;\n}\n\n.idyll-action {\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n\n.idyll-document-error {\n  color: red;\n  font-family: monospace;\n}\n\n\n.idyll-step-graphic {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  height: 100%;\n  overflow: hidden;\n  margin: 0 auto;\n  text-align: center;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: black;\n}\n\n.idyll-scroll-graphic {\n\n  text-align: center;\n  width: 100%;\n}\n\n.idyll-step-graphic img {\n  flex-shrink: 0;\n  min-width: 100%;\n  min-height: 100%\n}\n\n.idyll-step-content {\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  color: white;\n  padding: 10px;\n  background: rgba(0, 0, 0, 0.8);\n}\n\n.idyll-stepper-control {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 100%;\n}\n\n.idyll-stepper-control-button {\n  background: rgba(0, 0, 0, 0.7);\n  color: white;\n  font-weight: bold;\n  padding: 15px 10px;\n  cursor: pointer;\n}\n\n.idyll-stepper-control-button-previous {\n  position: absolute;\n  left: 10px;\n}\n\n.idyll-stepper-control-button-next {\n  position: absolute;\n  right: 10px;\n}\n\n.idyll-stepper {\n  margin: 60px 0;\n}\n\n.idyll-scroll {\n  margin-top: 25vh;\n}\n\n.idyll-scroll-text {\n  padding: 0 0 50vh 0;\n}\n\n.idyll-scroll-text .idyll-step {\n  margin: 0 0 90vh 0;\n  padding: 50px;\n  background: #fff;\n  border: solid 1px #111;\n}\n\n.idyll-scroll-text .idyll-step h2 {\n  margin-top: 0;\n}\n\npre {\n  background: #f3f3f3;\n  padding: 15px;\n  overflow-x: auto;\n}\n\n";
 };
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll/src/client/build.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll/src/client/build.js":[function(require,module,exports){
 /**
  * NOTE - this file does not get compiled from
  * ES6 --> ES5. Everything in here should be
@@ -40979,7 +40979,7 @@ ReactDOM[mountMethod](
   mountNode
 );
 
-},{"__IDYLL_AST__":"__IDYLL_AST__","__IDYLL_COMPONENTS__":"__IDYLL_COMPONENTS__","__IDYLL_CONTEXT__":"__IDYLL_CONTEXT__","__IDYLL_DATA__":"__IDYLL_DATA__","__IDYLL_OPTS__":"__IDYLL_OPTS__","__IDYLL_SYNTAX_HIGHLIGHT__":"__IDYLL_SYNTAX_HIGHLIGHT__","idyll-document":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-document/dist/cjs/index.js","react":"react","react-dom":"react-dom","regenerator-runtime/runtime":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/regenerator-runtime/runtime.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/ieee754/index.js":[function(require,module,exports){
+},{"__IDYLL_AST__":"__IDYLL_AST__","__IDYLL_COMPONENTS__":"__IDYLL_COMPONENTS__","__IDYLL_CONTEXT__":"__IDYLL_CONTEXT__","__IDYLL_DATA__":"__IDYLL_DATA__","__IDYLL_OPTS__":"__IDYLL_OPTS__","__IDYLL_SYNTAX_HIGHLIGHT__":"__IDYLL_SYNTAX_HIGHLIGHT__","idyll-document":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-document/dist/cjs/index.js","react":"react","react-dom":"react-dom","regenerator-runtime/runtime":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/regenerator-runtime/runtime.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/ieee754/index.js":[function(require,module,exports){
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -41066,7 +41066,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js":[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -41095,7 +41095,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-buffer/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-buffer/index.js":[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -41118,7 +41118,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-extendable/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-extendable/index.js":[function(require,module,exports){
 /*!
  * is-extendable <https://github.com/jonschlinkert/is-extendable>
  *
@@ -41133,7 +41133,7 @@ module.exports = function isExtendable(val) {
     && (typeof val === 'object' || typeof val === 'function');
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-lower-case/is-lower-case.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-lower-case/is-lower-case.js":[function(require,module,exports){
 var lowerCase = require('lower-case')
 
 /**
@@ -41147,7 +41147,7 @@ module.exports = function (string, locale) {
   return lowerCase(string, locale) === string
 }
 
-},{"lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/is-upper-case/is-upper-case.js":[function(require,module,exports){
+},{"lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/is-upper-case/is-upper-case.js":[function(require,module,exports){
 var upperCase = require('upper-case')
 
 /**
@@ -41161,9 +41161,9 @@ module.exports = function (string, locale) {
   return upperCase(string, locale) === string
 }
 
-},{"upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/isarray/index.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/falafel/node_modules/isarray/index.js"][0].apply(exports,arguments)
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/index.js":[function(require,module,exports){
+},{"upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/isarray/index.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/falafel/node_modules/isarray/index.js"][0].apply(exports,arguments)
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/index.js":[function(require,module,exports){
 'use strict';
 
 
@@ -41172,7 +41172,7 @@ var yaml = require('./lib/js-yaml.js');
 
 module.exports = yaml;
 
-},{"./lib/js-yaml.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml.js":[function(require,module,exports){
+},{"./lib/js-yaml.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml.js":[function(require,module,exports){
 'use strict';
 
 
@@ -41213,7 +41213,7 @@ module.exports.parse          = deprecated('parse');
 module.exports.compose        = deprecated('compose');
 module.exports.addConstructor = deprecated('addConstructor');
 
-},{"./js-yaml/dumper":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/dumper.js","./js-yaml/exception":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./js-yaml/loader":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/loader.js","./js-yaml/schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","./js-yaml/schema/core":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js","./js-yaml/schema/default_full":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./js-yaml/schema/default_safe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js","./js-yaml/schema/failsafe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js","./js-yaml/schema/json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js","./js-yaml/type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js":[function(require,module,exports){
+},{"./js-yaml/dumper":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/dumper.js","./js-yaml/exception":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./js-yaml/loader":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/loader.js","./js-yaml/schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","./js-yaml/schema/core":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js","./js-yaml/schema/default_full":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./js-yaml/schema/default_safe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js","./js-yaml/schema/failsafe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js","./js-yaml/schema/json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js","./js-yaml/type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js":[function(require,module,exports){
 'use strict';
 
 
@@ -41274,7 +41274,7 @@ module.exports.repeat         = repeat;
 module.exports.isNegativeZero = isNegativeZero;
 module.exports.extend         = extend;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/dumper.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/dumper.js":[function(require,module,exports){
 'use strict';
 
 /*eslint-disable no-use-before-define*/
@@ -42126,7 +42126,7 @@ function safeDump(input, options) {
 module.exports.dump     = dump;
 module.exports.safeDump = safeDump;
 
-},{"./common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./schema/default_full":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./schema/default_safe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js":[function(require,module,exports){
+},{"./common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./schema/default_full":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./schema/default_safe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js":[function(require,module,exports){
 // YAML error class. http://stackoverflow.com/questions/8458984
 //
 'use strict';
@@ -42171,7 +42171,7 @@ YAMLException.prototype.toString = function toString(compact) {
 
 module.exports = YAMLException;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/loader.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/loader.js":[function(require,module,exports){
 'use strict';
 
 /*eslint-disable max-len,no-use-before-define*/
@@ -43817,7 +43817,7 @@ module.exports.load        = load;
 module.exports.safeLoadAll = safeLoadAll;
 module.exports.safeLoad    = safeLoad;
 
-},{"./common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./mark":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/mark.js","./schema/default_full":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./schema/default_safe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/mark.js":[function(require,module,exports){
+},{"./common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./mark":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/mark.js","./schema/default_full":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js","./schema/default_safe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/mark.js":[function(require,module,exports){
 'use strict';
 
 
@@ -43895,7 +43895,7 @@ Mark.prototype.toString = function toString(compact) {
 
 module.exports = Mark;
 
-},{"./common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js":[function(require,module,exports){
+},{"./common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js":[function(require,module,exports){
 'use strict';
 
 /*eslint-disable max-len*/
@@ -44005,7 +44005,7 @@ Schema.create = function createSchema() {
 
 module.exports = Schema;
 
-},{"./common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js":[function(require,module,exports){
+},{"./common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","./exception":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js","./type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js":[function(require,module,exports){
 // Standard YAML's Core schema.
 // http://www.yaml.org/spec/1.2/spec.html#id2804923
 //
@@ -44025,7 +44025,7 @@ module.exports = new Schema({
   ]
 });
 
-},{"../schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","./json":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js":[function(require,module,exports){
+},{"../schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","./json":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_full.js":[function(require,module,exports){
 // JS-YAML's default schema for `load` function.
 // It is not described in the YAML specification.
 //
@@ -44052,7 +44052,7 @@ module.exports = Schema.DEFAULT = new Schema({
   ]
 });
 
-},{"../schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/js/function":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/function.js","../type/js/regexp":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js","../type/js/undefined":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js","./default_safe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js":[function(require,module,exports){
+},{"../schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/js/function":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/function.js","../type/js/regexp":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js","../type/js/undefined":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js","./default_safe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js":[function(require,module,exports){
 // JS-YAML's default schema for `safeLoad` function.
 // It is not described in the YAML specification.
 //
@@ -44082,7 +44082,7 @@ module.exports = new Schema({
   ]
 });
 
-},{"../schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/binary":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/binary.js","../type/merge":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/merge.js","../type/omap":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/omap.js","../type/pairs":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/pairs.js","../type/set":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/set.js","../type/timestamp":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/timestamp.js","./core":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js":[function(require,module,exports){
+},{"../schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/binary":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/binary.js","../type/merge":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/merge.js","../type/omap":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/omap.js","../type/pairs":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/pairs.js","../type/set":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/set.js","../type/timestamp":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/timestamp.js","./core":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/core.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js":[function(require,module,exports){
 // Standard YAML's Failsafe schema.
 // http://www.yaml.org/spec/1.2/spec.html#id2802346
 
@@ -44101,7 +44101,7 @@ module.exports = new Schema({
   ]
 });
 
-},{"../schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/map":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/map.js","../type/seq":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/seq.js","../type/str":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/str.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js":[function(require,module,exports){
+},{"../schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/map":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/map.js","../type/seq":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/seq.js","../type/str":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/str.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/json.js":[function(require,module,exports){
 // Standard YAML's JSON schema.
 // http://www.yaml.org/spec/1.2/spec.html#id2803231
 //
@@ -44128,7 +44128,7 @@ module.exports = new Schema({
   ]
 });
 
-},{"../schema":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/bool":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/bool.js","../type/float":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/float.js","../type/int":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/int.js","../type/null":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/null.js","./failsafe":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js":[function(require,module,exports){
+},{"../schema":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema.js","../type/bool":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/bool.js","../type/float":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/float.js","../type/int":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/int.js","../type/null":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/null.js","./failsafe":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js":[function(require,module,exports){
 'use strict';
 
 var YAMLException = require('./exception');
@@ -44191,7 +44191,7 @@ function Type(tag, options) {
 
 module.exports = Type;
 
-},{"./exception":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/binary.js":[function(require,module,exports){
+},{"./exception":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/exception.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/binary.js":[function(require,module,exports){
 'use strict';
 
 /*eslint-disable no-bitwise*/
@@ -44331,7 +44331,7 @@ module.exports = new Type('tag:yaml.org,2002:binary', {
   represent: representYamlBinary
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/bool.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/bool.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -44368,7 +44368,7 @@ module.exports = new Type('tag:yaml.org,2002:bool', {
   defaultStyle: 'lowercase'
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/float.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/float.js":[function(require,module,exports){
 'use strict';
 
 var common = require('../common');
@@ -44486,7 +44486,7 @@ module.exports = new Type('tag:yaml.org,2002:float', {
   defaultStyle: 'lowercase'
 });
 
-},{"../common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/int.js":[function(require,module,exports){
+},{"../common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/int.js":[function(require,module,exports){
 'use strict';
 
 var common = require('../common');
@@ -44661,7 +44661,7 @@ module.exports = new Type('tag:yaml.org,2002:int', {
   }
 });
 
-},{"../common":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/function.js":[function(require,module,exports){
+},{"../common":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/common.js","../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/function.js":[function(require,module,exports){
 'use strict';
 
 var esprima;
@@ -44756,7 +44756,7 @@ module.exports = new Type('tag:yaml.org,2002:js/function', {
   represent: representJavascriptFunction
 });
 
-},{"../../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js":[function(require,module,exports){
+},{"../../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../../type');
@@ -44818,7 +44818,7 @@ module.exports = new Type('tag:yaml.org,2002:js/regexp', {
   represent: representJavascriptRegExp
 });
 
-},{"../../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js":[function(require,module,exports){
+},{"../../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../../type');
@@ -44848,7 +44848,7 @@ module.exports = new Type('tag:yaml.org,2002:js/undefined', {
   represent: representJavascriptUndefined
 });
 
-},{"../../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/map.js":[function(require,module,exports){
+},{"../../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/map.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -44858,7 +44858,7 @@ module.exports = new Type('tag:yaml.org,2002:map', {
   construct: function (data) { return data !== null ? data : {}; }
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/merge.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/merge.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -44872,7 +44872,7 @@ module.exports = new Type('tag:yaml.org,2002:merge', {
   resolve: resolveYamlMerge
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/null.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/null.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -44908,7 +44908,7 @@ module.exports = new Type('tag:yaml.org,2002:null', {
   defaultStyle: 'lowercase'
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/omap.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/omap.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -44954,7 +44954,7 @@ module.exports = new Type('tag:yaml.org,2002:omap', {
   construct: constructYamlOmap
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/pairs.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/pairs.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -45009,7 +45009,7 @@ module.exports = new Type('tag:yaml.org,2002:pairs', {
   construct: constructYamlPairs
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/seq.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/seq.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -45019,7 +45019,7 @@ module.exports = new Type('tag:yaml.org,2002:seq', {
   construct: function (data) { return data !== null ? data : []; }
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/set.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/set.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -45050,7 +45050,7 @@ module.exports = new Type('tag:yaml.org,2002:set', {
   construct: constructYamlSet
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/str.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/str.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -45060,7 +45060,7 @@ module.exports = new Type('tag:yaml.org,2002:str', {
   construct: function (data) { return data !== null ? data : ''; }
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type/timestamp.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type/timestamp.js":[function(require,module,exports){
 'use strict';
 
 var Type = require('../type');
@@ -45150,7 +45150,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
   represent: representYamlTimestamp
 });
 
-},{"../type":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/json-schema-traverse/index.js":[function(require,module,exports){
+},{"../type":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/js-yaml/lib/js-yaml/type.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/json-schema-traverse/index.js":[function(require,module,exports){
 'use strict';
 
 var traverse = module.exports = function (schema, opts, cb) {
@@ -45241,7 +45241,7 @@ function escapeJsonPtr(str) {
   return str.replace(/~/g, '~0').replace(/\//g, '~1');
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/kind-of/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/kind-of/index.js":[function(require,module,exports){
 var toString = Object.prototype.toString;
 
 /**
@@ -45390,7 +45390,7 @@ function isBuffer(val) {
     && val.constructor.isBuffer(val);
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lex/lexer.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lex/lexer.js":[function(require,module,exports){
 if (typeof module === "object" && typeof module.exports === "object") module.exports = Lexer;
 
 Lexer.defunct = function (chr) {
@@ -45538,7 +45538,7 @@ function Lexer(defunct) {
     }
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case-first/lower-case-first.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case-first/lower-case-first.js":[function(require,module,exports){
 var lowerCase = require('lower-case')
 
 /**
@@ -45557,7 +45557,7 @@ module.exports = function (str, locale) {
   return lowerCase(str.charAt(0), locale) + str.substr(1)
 }
 
-},{"lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js":[function(require,module,exports){
+},{"lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js":[function(require,module,exports){
 /**
  * Special language-specific overrides.
  *
@@ -45613,7 +45613,7 @@ module.exports = function (str, locale) {
   return str.toLowerCase()
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/nearley/lib/nearley.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/nearley/lib/nearley.js":[function(require,module,exports){
 (function(root, factory) {
     if (typeof module === 'object' && module.exports) {
         module.exports = factory();
@@ -46179,7 +46179,7 @@ module.exports = function (str, locale) {
 
 }));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js":[function(require,module,exports){
 var lowerCase = require('lower-case')
 
 var NON_WORD_REGEXP = require('./vendor/non-word-regexp')
@@ -46221,16 +46221,16 @@ module.exports = function (str, locale, replacement) {
   return lowerCase(str, locale)
 }
 
-},{"./vendor/camel-case-regexp":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/camel-case-regexp.js","./vendor/camel-case-upper-regexp":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/camel-case-upper-regexp.js","./vendor/non-word-regexp":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/non-word-regexp.js","lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/camel-case-regexp.js":[function(require,module,exports){
+},{"./vendor/camel-case-regexp":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/camel-case-regexp.js","./vendor/camel-case-upper-regexp":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/camel-case-upper-regexp.js","./vendor/non-word-regexp":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/non-word-regexp.js","lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/camel-case-regexp.js":[function(require,module,exports){
 module.exports = /([a-z\xB5\xDF-\xF6\xF8-\xFF\u0101\u0103\u0105\u0107\u0109\u010B\u010D\u010F\u0111\u0113\u0115\u0117\u0119\u011B\u011D\u011F\u0121\u0123\u0125\u0127\u0129\u012B\u012D\u012F\u0131\u0133\u0135\u0137\u0138\u013A\u013C\u013E\u0140\u0142\u0144\u0146\u0148\u0149\u014B\u014D\u014F\u0151\u0153\u0155\u0157\u0159\u015B\u015D\u015F\u0161\u0163\u0165\u0167\u0169\u016B\u016D\u016F\u0171\u0173\u0175\u0177\u017A\u017C\u017E-\u0180\u0183\u0185\u0188\u018C\u018D\u0192\u0195\u0199-\u019B\u019E\u01A1\u01A3\u01A5\u01A8\u01AA\u01AB\u01AD\u01B0\u01B4\u01B6\u01B9\u01BA\u01BD-\u01BF\u01C6\u01C9\u01CC\u01CE\u01D0\u01D2\u01D4\u01D6\u01D8\u01DA\u01DC\u01DD\u01DF\u01E1\u01E3\u01E5\u01E7\u01E9\u01EB\u01ED\u01EF\u01F0\u01F3\u01F5\u01F9\u01FB\u01FD\u01FF\u0201\u0203\u0205\u0207\u0209\u020B\u020D\u020F\u0211\u0213\u0215\u0217\u0219\u021B\u021D\u021F\u0221\u0223\u0225\u0227\u0229\u022B\u022D\u022F\u0231\u0233-\u0239\u023C\u023F\u0240\u0242\u0247\u0249\u024B\u024D\u024F-\u0293\u0295-\u02AF\u0371\u0373\u0377\u037B-\u037D\u0390\u03AC-\u03CE\u03D0\u03D1\u03D5-\u03D7\u03D9\u03DB\u03DD\u03DF\u03E1\u03E3\u03E5\u03E7\u03E9\u03EB\u03ED\u03EF-\u03F3\u03F5\u03F8\u03FB\u03FC\u0430-\u045F\u0461\u0463\u0465\u0467\u0469\u046B\u046D\u046F\u0471\u0473\u0475\u0477\u0479\u047B\u047D\u047F\u0481\u048B\u048D\u048F\u0491\u0493\u0495\u0497\u0499\u049B\u049D\u049F\u04A1\u04A3\u04A5\u04A7\u04A9\u04AB\u04AD\u04AF\u04B1\u04B3\u04B5\u04B7\u04B9\u04BB\u04BD\u04BF\u04C2\u04C4\u04C6\u04C8\u04CA\u04CC\u04CE\u04CF\u04D1\u04D3\u04D5\u04D7\u04D9\u04DB\u04DD\u04DF\u04E1\u04E3\u04E5\u04E7\u04E9\u04EB\u04ED\u04EF\u04F1\u04F3\u04F5\u04F7\u04F9\u04FB\u04FD\u04FF\u0501\u0503\u0505\u0507\u0509\u050B\u050D\u050F\u0511\u0513\u0515\u0517\u0519\u051B\u051D\u051F\u0521\u0523\u0525\u0527\u0529\u052B\u052D\u052F\u0561-\u0587\u13F8-\u13FD\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E01\u1E03\u1E05\u1E07\u1E09\u1E0B\u1E0D\u1E0F\u1E11\u1E13\u1E15\u1E17\u1E19\u1E1B\u1E1D\u1E1F\u1E21\u1E23\u1E25\u1E27\u1E29\u1E2B\u1E2D\u1E2F\u1E31\u1E33\u1E35\u1E37\u1E39\u1E3B\u1E3D\u1E3F\u1E41\u1E43\u1E45\u1E47\u1E49\u1E4B\u1E4D\u1E4F\u1E51\u1E53\u1E55\u1E57\u1E59\u1E5B\u1E5D\u1E5F\u1E61\u1E63\u1E65\u1E67\u1E69\u1E6B\u1E6D\u1E6F\u1E71\u1E73\u1E75\u1E77\u1E79\u1E7B\u1E7D\u1E7F\u1E81\u1E83\u1E85\u1E87\u1E89\u1E8B\u1E8D\u1E8F\u1E91\u1E93\u1E95-\u1E9D\u1E9F\u1EA1\u1EA3\u1EA5\u1EA7\u1EA9\u1EAB\u1EAD\u1EAF\u1EB1\u1EB3\u1EB5\u1EB7\u1EB9\u1EBB\u1EBD\u1EBF\u1EC1\u1EC3\u1EC5\u1EC7\u1EC9\u1ECB\u1ECD\u1ECF\u1ED1\u1ED3\u1ED5\u1ED7\u1ED9\u1EDB\u1EDD\u1EDF\u1EE1\u1EE3\u1EE5\u1EE7\u1EE9\u1EEB\u1EED\u1EEF\u1EF1\u1EF3\u1EF5\u1EF7\u1EF9\u1EFB\u1EFD\u1EFF-\u1F07\u1F10-\u1F15\u1F20-\u1F27\u1F30-\u1F37\u1F40-\u1F45\u1F50-\u1F57\u1F60-\u1F67\u1F70-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6\u1FB7\u1FBE\u1FC2-\u1FC4\u1FC6\u1FC7\u1FD0-\u1FD3\u1FD6\u1FD7\u1FE0-\u1FE7\u1FF2-\u1FF4\u1FF6\u1FF7\u210A\u210E\u210F\u2113\u212F\u2134\u2139\u213C\u213D\u2146-\u2149\u214E\u2184\u2C30-\u2C5E\u2C61\u2C65\u2C66\u2C68\u2C6A\u2C6C\u2C71\u2C73\u2C74\u2C76-\u2C7B\u2C81\u2C83\u2C85\u2C87\u2C89\u2C8B\u2C8D\u2C8F\u2C91\u2C93\u2C95\u2C97\u2C99\u2C9B\u2C9D\u2C9F\u2CA1\u2CA3\u2CA5\u2CA7\u2CA9\u2CAB\u2CAD\u2CAF\u2CB1\u2CB3\u2CB5\u2CB7\u2CB9\u2CBB\u2CBD\u2CBF\u2CC1\u2CC3\u2CC5\u2CC7\u2CC9\u2CCB\u2CCD\u2CCF\u2CD1\u2CD3\u2CD5\u2CD7\u2CD9\u2CDB\u2CDD\u2CDF\u2CE1\u2CE3\u2CE4\u2CEC\u2CEE\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA641\uA643\uA645\uA647\uA649\uA64B\uA64D\uA64F\uA651\uA653\uA655\uA657\uA659\uA65B\uA65D\uA65F\uA661\uA663\uA665\uA667\uA669\uA66B\uA66D\uA681\uA683\uA685\uA687\uA689\uA68B\uA68D\uA68F\uA691\uA693\uA695\uA697\uA699\uA69B\uA723\uA725\uA727\uA729\uA72B\uA72D\uA72F-\uA731\uA733\uA735\uA737\uA739\uA73B\uA73D\uA73F\uA741\uA743\uA745\uA747\uA749\uA74B\uA74D\uA74F\uA751\uA753\uA755\uA757\uA759\uA75B\uA75D\uA75F\uA761\uA763\uA765\uA767\uA769\uA76B\uA76D\uA76F\uA771-\uA778\uA77A\uA77C\uA77F\uA781\uA783\uA785\uA787\uA78C\uA78E\uA791\uA793-\uA795\uA797\uA799\uA79B\uA79D\uA79F\uA7A1\uA7A3\uA7A5\uA7A7\uA7A9\uA7B5\uA7B7\uA7FA\uAB30-\uAB5A\uAB60-\uAB65\uAB70-\uABBF\uFB00-\uFB06\uFB13-\uFB17\uFF41-\uFF5A0-9\xB2\xB3\xB9\xBC-\xBE\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u09F4-\u09F9\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0B72-\u0B77\u0BE6-\u0BF2\u0C66-\u0C6F\u0C78-\u0C7E\u0CE6-\u0CEF\u0D66-\u0D75\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F33\u1040-\u1049\u1090-\u1099\u1369-\u137C\u16EE-\u16F0\u17E0-\u17E9\u17F0-\u17F9\u1810-\u1819\u1946-\u194F\u19D0-\u19DA\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\u2070\u2074-\u2079\u2080-\u2089\u2150-\u2182\u2185-\u2189\u2460-\u249B\u24EA-\u24FF\u2776-\u2793\u2CFD\u3007\u3021-\u3029\u3038-\u303A\u3192-\u3195\u3220-\u3229\u3248-\u324F\u3251-\u325F\u3280-\u3289\u32B1-\u32BF\uA620-\uA629\uA6E6-\uA6EF\uA830-\uA835\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19])([A-Z\xC0-\xD6\xD8-\xDE\u0100\u0102\u0104\u0106\u0108\u010A\u010C\u010E\u0110\u0112\u0114\u0116\u0118\u011A\u011C\u011E\u0120\u0122\u0124\u0126\u0128\u012A\u012C\u012E\u0130\u0132\u0134\u0136\u0139\u013B\u013D\u013F\u0141\u0143\u0145\u0147\u014A\u014C\u014E\u0150\u0152\u0154\u0156\u0158\u015A\u015C\u015E\u0160\u0162\u0164\u0166\u0168\u016A\u016C\u016E\u0170\u0172\u0174\u0176\u0178\u0179\u017B\u017D\u0181\u0182\u0184\u0186\u0187\u0189-\u018B\u018E-\u0191\u0193\u0194\u0196-\u0198\u019C\u019D\u019F\u01A0\u01A2\u01A4\u01A6\u01A7\u01A9\u01AC\u01AE\u01AF\u01B1-\u01B3\u01B5\u01B7\u01B8\u01BC\u01C4\u01C7\u01CA\u01CD\u01CF\u01D1\u01D3\u01D5\u01D7\u01D9\u01DB\u01DE\u01E0\u01E2\u01E4\u01E6\u01E8\u01EA\u01EC\u01EE\u01F1\u01F4\u01F6-\u01F8\u01FA\u01FC\u01FE\u0200\u0202\u0204\u0206\u0208\u020A\u020C\u020E\u0210\u0212\u0214\u0216\u0218\u021A\u021C\u021E\u0220\u0222\u0224\u0226\u0228\u022A\u022C\u022E\u0230\u0232\u023A\u023B\u023D\u023E\u0241\u0243-\u0246\u0248\u024A\u024C\u024E\u0370\u0372\u0376\u037F\u0386\u0388-\u038A\u038C\u038E\u038F\u0391-\u03A1\u03A3-\u03AB\u03CF\u03D2-\u03D4\u03D8\u03DA\u03DC\u03DE\u03E0\u03E2\u03E4\u03E6\u03E8\u03EA\u03EC\u03EE\u03F4\u03F7\u03F9\u03FA\u03FD-\u042F\u0460\u0462\u0464\u0466\u0468\u046A\u046C\u046E\u0470\u0472\u0474\u0476\u0478\u047A\u047C\u047E\u0480\u048A\u048C\u048E\u0490\u0492\u0494\u0496\u0498\u049A\u049C\u049E\u04A0\u04A2\u04A4\u04A6\u04A8\u04AA\u04AC\u04AE\u04B0\u04B2\u04B4\u04B6\u04B8\u04BA\u04BC\u04BE\u04C0\u04C1\u04C3\u04C5\u04C7\u04C9\u04CB\u04CD\u04D0\u04D2\u04D4\u04D6\u04D8\u04DA\u04DC\u04DE\u04E0\u04E2\u04E4\u04E6\u04E8\u04EA\u04EC\u04EE\u04F0\u04F2\u04F4\u04F6\u04F8\u04FA\u04FC\u04FE\u0500\u0502\u0504\u0506\u0508\u050A\u050C\u050E\u0510\u0512\u0514\u0516\u0518\u051A\u051C\u051E\u0520\u0522\u0524\u0526\u0528\u052A\u052C\u052E\u0531-\u0556\u10A0-\u10C5\u10C7\u10CD\u13A0-\u13F5\u1E00\u1E02\u1E04\u1E06\u1E08\u1E0A\u1E0C\u1E0E\u1E10\u1E12\u1E14\u1E16\u1E18\u1E1A\u1E1C\u1E1E\u1E20\u1E22\u1E24\u1E26\u1E28\u1E2A\u1E2C\u1E2E\u1E30\u1E32\u1E34\u1E36\u1E38\u1E3A\u1E3C\u1E3E\u1E40\u1E42\u1E44\u1E46\u1E48\u1E4A\u1E4C\u1E4E\u1E50\u1E52\u1E54\u1E56\u1E58\u1E5A\u1E5C\u1E5E\u1E60\u1E62\u1E64\u1E66\u1E68\u1E6A\u1E6C\u1E6E\u1E70\u1E72\u1E74\u1E76\u1E78\u1E7A\u1E7C\u1E7E\u1E80\u1E82\u1E84\u1E86\u1E88\u1E8A\u1E8C\u1E8E\u1E90\u1E92\u1E94\u1E9E\u1EA0\u1EA2\u1EA4\u1EA6\u1EA8\u1EAA\u1EAC\u1EAE\u1EB0\u1EB2\u1EB4\u1EB6\u1EB8\u1EBA\u1EBC\u1EBE\u1EC0\u1EC2\u1EC4\u1EC6\u1EC8\u1ECA\u1ECC\u1ECE\u1ED0\u1ED2\u1ED4\u1ED6\u1ED8\u1EDA\u1EDC\u1EDE\u1EE0\u1EE2\u1EE4\u1EE6\u1EE8\u1EEA\u1EEC\u1EEE\u1EF0\u1EF2\u1EF4\u1EF6\u1EF8\u1EFA\u1EFC\u1EFE\u1F08-\u1F0F\u1F18-\u1F1D\u1F28-\u1F2F\u1F38-\u1F3F\u1F48-\u1F4D\u1F59\u1F5B\u1F5D\u1F5F\u1F68-\u1F6F\u1FB8-\u1FBB\u1FC8-\u1FCB\u1FD8-\u1FDB\u1FE8-\u1FEC\u1FF8-\u1FFB\u2102\u2107\u210B-\u210D\u2110-\u2112\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u2130-\u2133\u213E\u213F\u2145\u2183\u2C00-\u2C2E\u2C60\u2C62-\u2C64\u2C67\u2C69\u2C6B\u2C6D-\u2C70\u2C72\u2C75\u2C7E-\u2C80\u2C82\u2C84\u2C86\u2C88\u2C8A\u2C8C\u2C8E\u2C90\u2C92\u2C94\u2C96\u2C98\u2C9A\u2C9C\u2C9E\u2CA0\u2CA2\u2CA4\u2CA6\u2CA8\u2CAA\u2CAC\u2CAE\u2CB0\u2CB2\u2CB4\u2CB6\u2CB8\u2CBA\u2CBC\u2CBE\u2CC0\u2CC2\u2CC4\u2CC6\u2CC8\u2CCA\u2CCC\u2CCE\u2CD0\u2CD2\u2CD4\u2CD6\u2CD8\u2CDA\u2CDC\u2CDE\u2CE0\u2CE2\u2CEB\u2CED\u2CF2\uA640\uA642\uA644\uA646\uA648\uA64A\uA64C\uA64E\uA650\uA652\uA654\uA656\uA658\uA65A\uA65C\uA65E\uA660\uA662\uA664\uA666\uA668\uA66A\uA66C\uA680\uA682\uA684\uA686\uA688\uA68A\uA68C\uA68E\uA690\uA692\uA694\uA696\uA698\uA69A\uA722\uA724\uA726\uA728\uA72A\uA72C\uA72E\uA732\uA734\uA736\uA738\uA73A\uA73C\uA73E\uA740\uA742\uA744\uA746\uA748\uA74A\uA74C\uA74E\uA750\uA752\uA754\uA756\uA758\uA75A\uA75C\uA75E\uA760\uA762\uA764\uA766\uA768\uA76A\uA76C\uA76E\uA779\uA77B\uA77D\uA77E\uA780\uA782\uA784\uA786\uA78B\uA78D\uA790\uA792\uA796\uA798\uA79A\uA79C\uA79E\uA7A0\uA7A2\uA7A4\uA7A6\uA7A8\uA7AA-\uA7AD\uA7B0-\uA7B4\uA7B6\uFF21-\uFF3A])/g
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/camel-case-upper-regexp.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/camel-case-upper-regexp.js":[function(require,module,exports){
 module.exports = /([A-Z\xC0-\xD6\xD8-\xDE\u0100\u0102\u0104\u0106\u0108\u010A\u010C\u010E\u0110\u0112\u0114\u0116\u0118\u011A\u011C\u011E\u0120\u0122\u0124\u0126\u0128\u012A\u012C\u012E\u0130\u0132\u0134\u0136\u0139\u013B\u013D\u013F\u0141\u0143\u0145\u0147\u014A\u014C\u014E\u0150\u0152\u0154\u0156\u0158\u015A\u015C\u015E\u0160\u0162\u0164\u0166\u0168\u016A\u016C\u016E\u0170\u0172\u0174\u0176\u0178\u0179\u017B\u017D\u0181\u0182\u0184\u0186\u0187\u0189-\u018B\u018E-\u0191\u0193\u0194\u0196-\u0198\u019C\u019D\u019F\u01A0\u01A2\u01A4\u01A6\u01A7\u01A9\u01AC\u01AE\u01AF\u01B1-\u01B3\u01B5\u01B7\u01B8\u01BC\u01C4\u01C7\u01CA\u01CD\u01CF\u01D1\u01D3\u01D5\u01D7\u01D9\u01DB\u01DE\u01E0\u01E2\u01E4\u01E6\u01E8\u01EA\u01EC\u01EE\u01F1\u01F4\u01F6-\u01F8\u01FA\u01FC\u01FE\u0200\u0202\u0204\u0206\u0208\u020A\u020C\u020E\u0210\u0212\u0214\u0216\u0218\u021A\u021C\u021E\u0220\u0222\u0224\u0226\u0228\u022A\u022C\u022E\u0230\u0232\u023A\u023B\u023D\u023E\u0241\u0243-\u0246\u0248\u024A\u024C\u024E\u0370\u0372\u0376\u037F\u0386\u0388-\u038A\u038C\u038E\u038F\u0391-\u03A1\u03A3-\u03AB\u03CF\u03D2-\u03D4\u03D8\u03DA\u03DC\u03DE\u03E0\u03E2\u03E4\u03E6\u03E8\u03EA\u03EC\u03EE\u03F4\u03F7\u03F9\u03FA\u03FD-\u042F\u0460\u0462\u0464\u0466\u0468\u046A\u046C\u046E\u0470\u0472\u0474\u0476\u0478\u047A\u047C\u047E\u0480\u048A\u048C\u048E\u0490\u0492\u0494\u0496\u0498\u049A\u049C\u049E\u04A0\u04A2\u04A4\u04A6\u04A8\u04AA\u04AC\u04AE\u04B0\u04B2\u04B4\u04B6\u04B8\u04BA\u04BC\u04BE\u04C0\u04C1\u04C3\u04C5\u04C7\u04C9\u04CB\u04CD\u04D0\u04D2\u04D4\u04D6\u04D8\u04DA\u04DC\u04DE\u04E0\u04E2\u04E4\u04E6\u04E8\u04EA\u04EC\u04EE\u04F0\u04F2\u04F4\u04F6\u04F8\u04FA\u04FC\u04FE\u0500\u0502\u0504\u0506\u0508\u050A\u050C\u050E\u0510\u0512\u0514\u0516\u0518\u051A\u051C\u051E\u0520\u0522\u0524\u0526\u0528\u052A\u052C\u052E\u0531-\u0556\u10A0-\u10C5\u10C7\u10CD\u13A0-\u13F5\u1E00\u1E02\u1E04\u1E06\u1E08\u1E0A\u1E0C\u1E0E\u1E10\u1E12\u1E14\u1E16\u1E18\u1E1A\u1E1C\u1E1E\u1E20\u1E22\u1E24\u1E26\u1E28\u1E2A\u1E2C\u1E2E\u1E30\u1E32\u1E34\u1E36\u1E38\u1E3A\u1E3C\u1E3E\u1E40\u1E42\u1E44\u1E46\u1E48\u1E4A\u1E4C\u1E4E\u1E50\u1E52\u1E54\u1E56\u1E58\u1E5A\u1E5C\u1E5E\u1E60\u1E62\u1E64\u1E66\u1E68\u1E6A\u1E6C\u1E6E\u1E70\u1E72\u1E74\u1E76\u1E78\u1E7A\u1E7C\u1E7E\u1E80\u1E82\u1E84\u1E86\u1E88\u1E8A\u1E8C\u1E8E\u1E90\u1E92\u1E94\u1E9E\u1EA0\u1EA2\u1EA4\u1EA6\u1EA8\u1EAA\u1EAC\u1EAE\u1EB0\u1EB2\u1EB4\u1EB6\u1EB8\u1EBA\u1EBC\u1EBE\u1EC0\u1EC2\u1EC4\u1EC6\u1EC8\u1ECA\u1ECC\u1ECE\u1ED0\u1ED2\u1ED4\u1ED6\u1ED8\u1EDA\u1EDC\u1EDE\u1EE0\u1EE2\u1EE4\u1EE6\u1EE8\u1EEA\u1EEC\u1EEE\u1EF0\u1EF2\u1EF4\u1EF6\u1EF8\u1EFA\u1EFC\u1EFE\u1F08-\u1F0F\u1F18-\u1F1D\u1F28-\u1F2F\u1F38-\u1F3F\u1F48-\u1F4D\u1F59\u1F5B\u1F5D\u1F5F\u1F68-\u1F6F\u1FB8-\u1FBB\u1FC8-\u1FCB\u1FD8-\u1FDB\u1FE8-\u1FEC\u1FF8-\u1FFB\u2102\u2107\u210B-\u210D\u2110-\u2112\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u2130-\u2133\u213E\u213F\u2145\u2183\u2C00-\u2C2E\u2C60\u2C62-\u2C64\u2C67\u2C69\u2C6B\u2C6D-\u2C70\u2C72\u2C75\u2C7E-\u2C80\u2C82\u2C84\u2C86\u2C88\u2C8A\u2C8C\u2C8E\u2C90\u2C92\u2C94\u2C96\u2C98\u2C9A\u2C9C\u2C9E\u2CA0\u2CA2\u2CA4\u2CA6\u2CA8\u2CAA\u2CAC\u2CAE\u2CB0\u2CB2\u2CB4\u2CB6\u2CB8\u2CBA\u2CBC\u2CBE\u2CC0\u2CC2\u2CC4\u2CC6\u2CC8\u2CCA\u2CCC\u2CCE\u2CD0\u2CD2\u2CD4\u2CD6\u2CD8\u2CDA\u2CDC\u2CDE\u2CE0\u2CE2\u2CEB\u2CED\u2CF2\uA640\uA642\uA644\uA646\uA648\uA64A\uA64C\uA64E\uA650\uA652\uA654\uA656\uA658\uA65A\uA65C\uA65E\uA660\uA662\uA664\uA666\uA668\uA66A\uA66C\uA680\uA682\uA684\uA686\uA688\uA68A\uA68C\uA68E\uA690\uA692\uA694\uA696\uA698\uA69A\uA722\uA724\uA726\uA728\uA72A\uA72C\uA72E\uA732\uA734\uA736\uA738\uA73A\uA73C\uA73E\uA740\uA742\uA744\uA746\uA748\uA74A\uA74C\uA74E\uA750\uA752\uA754\uA756\uA758\uA75A\uA75C\uA75E\uA760\uA762\uA764\uA766\uA768\uA76A\uA76C\uA76E\uA779\uA77B\uA77D\uA77E\uA780\uA782\uA784\uA786\uA78B\uA78D\uA790\uA792\uA796\uA798\uA79A\uA79C\uA79E\uA7A0\uA7A2\uA7A4\uA7A6\uA7A8\uA7AA-\uA7AD\uA7B0-\uA7B4\uA7B6\uFF21-\uFF3A])([A-Z\xC0-\xD6\xD8-\xDE\u0100\u0102\u0104\u0106\u0108\u010A\u010C\u010E\u0110\u0112\u0114\u0116\u0118\u011A\u011C\u011E\u0120\u0122\u0124\u0126\u0128\u012A\u012C\u012E\u0130\u0132\u0134\u0136\u0139\u013B\u013D\u013F\u0141\u0143\u0145\u0147\u014A\u014C\u014E\u0150\u0152\u0154\u0156\u0158\u015A\u015C\u015E\u0160\u0162\u0164\u0166\u0168\u016A\u016C\u016E\u0170\u0172\u0174\u0176\u0178\u0179\u017B\u017D\u0181\u0182\u0184\u0186\u0187\u0189-\u018B\u018E-\u0191\u0193\u0194\u0196-\u0198\u019C\u019D\u019F\u01A0\u01A2\u01A4\u01A6\u01A7\u01A9\u01AC\u01AE\u01AF\u01B1-\u01B3\u01B5\u01B7\u01B8\u01BC\u01C4\u01C7\u01CA\u01CD\u01CF\u01D1\u01D3\u01D5\u01D7\u01D9\u01DB\u01DE\u01E0\u01E2\u01E4\u01E6\u01E8\u01EA\u01EC\u01EE\u01F1\u01F4\u01F6-\u01F8\u01FA\u01FC\u01FE\u0200\u0202\u0204\u0206\u0208\u020A\u020C\u020E\u0210\u0212\u0214\u0216\u0218\u021A\u021C\u021E\u0220\u0222\u0224\u0226\u0228\u022A\u022C\u022E\u0230\u0232\u023A\u023B\u023D\u023E\u0241\u0243-\u0246\u0248\u024A\u024C\u024E\u0370\u0372\u0376\u037F\u0386\u0388-\u038A\u038C\u038E\u038F\u0391-\u03A1\u03A3-\u03AB\u03CF\u03D2-\u03D4\u03D8\u03DA\u03DC\u03DE\u03E0\u03E2\u03E4\u03E6\u03E8\u03EA\u03EC\u03EE\u03F4\u03F7\u03F9\u03FA\u03FD-\u042F\u0460\u0462\u0464\u0466\u0468\u046A\u046C\u046E\u0470\u0472\u0474\u0476\u0478\u047A\u047C\u047E\u0480\u048A\u048C\u048E\u0490\u0492\u0494\u0496\u0498\u049A\u049C\u049E\u04A0\u04A2\u04A4\u04A6\u04A8\u04AA\u04AC\u04AE\u04B0\u04B2\u04B4\u04B6\u04B8\u04BA\u04BC\u04BE\u04C0\u04C1\u04C3\u04C5\u04C7\u04C9\u04CB\u04CD\u04D0\u04D2\u04D4\u04D6\u04D8\u04DA\u04DC\u04DE\u04E0\u04E2\u04E4\u04E6\u04E8\u04EA\u04EC\u04EE\u04F0\u04F2\u04F4\u04F6\u04F8\u04FA\u04FC\u04FE\u0500\u0502\u0504\u0506\u0508\u050A\u050C\u050E\u0510\u0512\u0514\u0516\u0518\u051A\u051C\u051E\u0520\u0522\u0524\u0526\u0528\u052A\u052C\u052E\u0531-\u0556\u10A0-\u10C5\u10C7\u10CD\u13A0-\u13F5\u1E00\u1E02\u1E04\u1E06\u1E08\u1E0A\u1E0C\u1E0E\u1E10\u1E12\u1E14\u1E16\u1E18\u1E1A\u1E1C\u1E1E\u1E20\u1E22\u1E24\u1E26\u1E28\u1E2A\u1E2C\u1E2E\u1E30\u1E32\u1E34\u1E36\u1E38\u1E3A\u1E3C\u1E3E\u1E40\u1E42\u1E44\u1E46\u1E48\u1E4A\u1E4C\u1E4E\u1E50\u1E52\u1E54\u1E56\u1E58\u1E5A\u1E5C\u1E5E\u1E60\u1E62\u1E64\u1E66\u1E68\u1E6A\u1E6C\u1E6E\u1E70\u1E72\u1E74\u1E76\u1E78\u1E7A\u1E7C\u1E7E\u1E80\u1E82\u1E84\u1E86\u1E88\u1E8A\u1E8C\u1E8E\u1E90\u1E92\u1E94\u1E9E\u1EA0\u1EA2\u1EA4\u1EA6\u1EA8\u1EAA\u1EAC\u1EAE\u1EB0\u1EB2\u1EB4\u1EB6\u1EB8\u1EBA\u1EBC\u1EBE\u1EC0\u1EC2\u1EC4\u1EC6\u1EC8\u1ECA\u1ECC\u1ECE\u1ED0\u1ED2\u1ED4\u1ED6\u1ED8\u1EDA\u1EDC\u1EDE\u1EE0\u1EE2\u1EE4\u1EE6\u1EE8\u1EEA\u1EEC\u1EEE\u1EF0\u1EF2\u1EF4\u1EF6\u1EF8\u1EFA\u1EFC\u1EFE\u1F08-\u1F0F\u1F18-\u1F1D\u1F28-\u1F2F\u1F38-\u1F3F\u1F48-\u1F4D\u1F59\u1F5B\u1F5D\u1F5F\u1F68-\u1F6F\u1FB8-\u1FBB\u1FC8-\u1FCB\u1FD8-\u1FDB\u1FE8-\u1FEC\u1FF8-\u1FFB\u2102\u2107\u210B-\u210D\u2110-\u2112\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u2130-\u2133\u213E\u213F\u2145\u2183\u2C00-\u2C2E\u2C60\u2C62-\u2C64\u2C67\u2C69\u2C6B\u2C6D-\u2C70\u2C72\u2C75\u2C7E-\u2C80\u2C82\u2C84\u2C86\u2C88\u2C8A\u2C8C\u2C8E\u2C90\u2C92\u2C94\u2C96\u2C98\u2C9A\u2C9C\u2C9E\u2CA0\u2CA2\u2CA4\u2CA6\u2CA8\u2CAA\u2CAC\u2CAE\u2CB0\u2CB2\u2CB4\u2CB6\u2CB8\u2CBA\u2CBC\u2CBE\u2CC0\u2CC2\u2CC4\u2CC6\u2CC8\u2CCA\u2CCC\u2CCE\u2CD0\u2CD2\u2CD4\u2CD6\u2CD8\u2CDA\u2CDC\u2CDE\u2CE0\u2CE2\u2CEB\u2CED\u2CF2\uA640\uA642\uA644\uA646\uA648\uA64A\uA64C\uA64E\uA650\uA652\uA654\uA656\uA658\uA65A\uA65C\uA65E\uA660\uA662\uA664\uA666\uA668\uA66A\uA66C\uA680\uA682\uA684\uA686\uA688\uA68A\uA68C\uA68E\uA690\uA692\uA694\uA696\uA698\uA69A\uA722\uA724\uA726\uA728\uA72A\uA72C\uA72E\uA732\uA734\uA736\uA738\uA73A\uA73C\uA73E\uA740\uA742\uA744\uA746\uA748\uA74A\uA74C\uA74E\uA750\uA752\uA754\uA756\uA758\uA75A\uA75C\uA75E\uA760\uA762\uA764\uA766\uA768\uA76A\uA76C\uA76E\uA779\uA77B\uA77D\uA77E\uA780\uA782\uA784\uA786\uA78B\uA78D\uA790\uA792\uA796\uA798\uA79A\uA79C\uA79E\uA7A0\uA7A2\uA7A4\uA7A6\uA7A8\uA7AA-\uA7AD\uA7B0-\uA7B4\uA7B6\uFF21-\uFF3A][a-z\xB5\xDF-\xF6\xF8-\xFF\u0101\u0103\u0105\u0107\u0109\u010B\u010D\u010F\u0111\u0113\u0115\u0117\u0119\u011B\u011D\u011F\u0121\u0123\u0125\u0127\u0129\u012B\u012D\u012F\u0131\u0133\u0135\u0137\u0138\u013A\u013C\u013E\u0140\u0142\u0144\u0146\u0148\u0149\u014B\u014D\u014F\u0151\u0153\u0155\u0157\u0159\u015B\u015D\u015F\u0161\u0163\u0165\u0167\u0169\u016B\u016D\u016F\u0171\u0173\u0175\u0177\u017A\u017C\u017E-\u0180\u0183\u0185\u0188\u018C\u018D\u0192\u0195\u0199-\u019B\u019E\u01A1\u01A3\u01A5\u01A8\u01AA\u01AB\u01AD\u01B0\u01B4\u01B6\u01B9\u01BA\u01BD-\u01BF\u01C6\u01C9\u01CC\u01CE\u01D0\u01D2\u01D4\u01D6\u01D8\u01DA\u01DC\u01DD\u01DF\u01E1\u01E3\u01E5\u01E7\u01E9\u01EB\u01ED\u01EF\u01F0\u01F3\u01F5\u01F9\u01FB\u01FD\u01FF\u0201\u0203\u0205\u0207\u0209\u020B\u020D\u020F\u0211\u0213\u0215\u0217\u0219\u021B\u021D\u021F\u0221\u0223\u0225\u0227\u0229\u022B\u022D\u022F\u0231\u0233-\u0239\u023C\u023F\u0240\u0242\u0247\u0249\u024B\u024D\u024F-\u0293\u0295-\u02AF\u0371\u0373\u0377\u037B-\u037D\u0390\u03AC-\u03CE\u03D0\u03D1\u03D5-\u03D7\u03D9\u03DB\u03DD\u03DF\u03E1\u03E3\u03E5\u03E7\u03E9\u03EB\u03ED\u03EF-\u03F3\u03F5\u03F8\u03FB\u03FC\u0430-\u045F\u0461\u0463\u0465\u0467\u0469\u046B\u046D\u046F\u0471\u0473\u0475\u0477\u0479\u047B\u047D\u047F\u0481\u048B\u048D\u048F\u0491\u0493\u0495\u0497\u0499\u049B\u049D\u049F\u04A1\u04A3\u04A5\u04A7\u04A9\u04AB\u04AD\u04AF\u04B1\u04B3\u04B5\u04B7\u04B9\u04BB\u04BD\u04BF\u04C2\u04C4\u04C6\u04C8\u04CA\u04CC\u04CE\u04CF\u04D1\u04D3\u04D5\u04D7\u04D9\u04DB\u04DD\u04DF\u04E1\u04E3\u04E5\u04E7\u04E9\u04EB\u04ED\u04EF\u04F1\u04F3\u04F5\u04F7\u04F9\u04FB\u04FD\u04FF\u0501\u0503\u0505\u0507\u0509\u050B\u050D\u050F\u0511\u0513\u0515\u0517\u0519\u051B\u051D\u051F\u0521\u0523\u0525\u0527\u0529\u052B\u052D\u052F\u0561-\u0587\u13F8-\u13FD\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E01\u1E03\u1E05\u1E07\u1E09\u1E0B\u1E0D\u1E0F\u1E11\u1E13\u1E15\u1E17\u1E19\u1E1B\u1E1D\u1E1F\u1E21\u1E23\u1E25\u1E27\u1E29\u1E2B\u1E2D\u1E2F\u1E31\u1E33\u1E35\u1E37\u1E39\u1E3B\u1E3D\u1E3F\u1E41\u1E43\u1E45\u1E47\u1E49\u1E4B\u1E4D\u1E4F\u1E51\u1E53\u1E55\u1E57\u1E59\u1E5B\u1E5D\u1E5F\u1E61\u1E63\u1E65\u1E67\u1E69\u1E6B\u1E6D\u1E6F\u1E71\u1E73\u1E75\u1E77\u1E79\u1E7B\u1E7D\u1E7F\u1E81\u1E83\u1E85\u1E87\u1E89\u1E8B\u1E8D\u1E8F\u1E91\u1E93\u1E95-\u1E9D\u1E9F\u1EA1\u1EA3\u1EA5\u1EA7\u1EA9\u1EAB\u1EAD\u1EAF\u1EB1\u1EB3\u1EB5\u1EB7\u1EB9\u1EBB\u1EBD\u1EBF\u1EC1\u1EC3\u1EC5\u1EC7\u1EC9\u1ECB\u1ECD\u1ECF\u1ED1\u1ED3\u1ED5\u1ED7\u1ED9\u1EDB\u1EDD\u1EDF\u1EE1\u1EE3\u1EE5\u1EE7\u1EE9\u1EEB\u1EED\u1EEF\u1EF1\u1EF3\u1EF5\u1EF7\u1EF9\u1EFB\u1EFD\u1EFF-\u1F07\u1F10-\u1F15\u1F20-\u1F27\u1F30-\u1F37\u1F40-\u1F45\u1F50-\u1F57\u1F60-\u1F67\u1F70-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6\u1FB7\u1FBE\u1FC2-\u1FC4\u1FC6\u1FC7\u1FD0-\u1FD3\u1FD6\u1FD7\u1FE0-\u1FE7\u1FF2-\u1FF4\u1FF6\u1FF7\u210A\u210E\u210F\u2113\u212F\u2134\u2139\u213C\u213D\u2146-\u2149\u214E\u2184\u2C30-\u2C5E\u2C61\u2C65\u2C66\u2C68\u2C6A\u2C6C\u2C71\u2C73\u2C74\u2C76-\u2C7B\u2C81\u2C83\u2C85\u2C87\u2C89\u2C8B\u2C8D\u2C8F\u2C91\u2C93\u2C95\u2C97\u2C99\u2C9B\u2C9D\u2C9F\u2CA1\u2CA3\u2CA5\u2CA7\u2CA9\u2CAB\u2CAD\u2CAF\u2CB1\u2CB3\u2CB5\u2CB7\u2CB9\u2CBB\u2CBD\u2CBF\u2CC1\u2CC3\u2CC5\u2CC7\u2CC9\u2CCB\u2CCD\u2CCF\u2CD1\u2CD3\u2CD5\u2CD7\u2CD9\u2CDB\u2CDD\u2CDF\u2CE1\u2CE3\u2CE4\u2CEC\u2CEE\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA641\uA643\uA645\uA647\uA649\uA64B\uA64D\uA64F\uA651\uA653\uA655\uA657\uA659\uA65B\uA65D\uA65F\uA661\uA663\uA665\uA667\uA669\uA66B\uA66D\uA681\uA683\uA685\uA687\uA689\uA68B\uA68D\uA68F\uA691\uA693\uA695\uA697\uA699\uA69B\uA723\uA725\uA727\uA729\uA72B\uA72D\uA72F-\uA731\uA733\uA735\uA737\uA739\uA73B\uA73D\uA73F\uA741\uA743\uA745\uA747\uA749\uA74B\uA74D\uA74F\uA751\uA753\uA755\uA757\uA759\uA75B\uA75D\uA75F\uA761\uA763\uA765\uA767\uA769\uA76B\uA76D\uA76F\uA771-\uA778\uA77A\uA77C\uA77F\uA781\uA783\uA785\uA787\uA78C\uA78E\uA791\uA793-\uA795\uA797\uA799\uA79B\uA79D\uA79F\uA7A1\uA7A3\uA7A5\uA7A7\uA7A9\uA7B5\uA7B7\uA7FA\uAB30-\uAB5A\uAB60-\uAB65\uAB70-\uABBF\uFB00-\uFB06\uFB13-\uFB17\uFF41-\uFF5A])/g
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/vendor/non-word-regexp.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/vendor/non-word-regexp.js":[function(require,module,exports){
 module.exports = /[^A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0-\u08B4\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FD5\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AD\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC0-9\xB2\xB3\xB9\xBC-\xBE\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u09F4-\u09F9\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0B72-\u0B77\u0BE6-\u0BF2\u0C66-\u0C6F\u0C78-\u0C7E\u0CE6-\u0CEF\u0D66-\u0D75\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F33\u1040-\u1049\u1090-\u1099\u1369-\u137C\u16EE-\u16F0\u17E0-\u17E9\u17F0-\u17F9\u1810-\u1819\u1946-\u194F\u19D0-\u19DA\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\u2070\u2074-\u2079\u2080-\u2089\u2150-\u2182\u2185-\u2189\u2460-\u249B\u24EA-\u24FF\u2776-\u2793\u2CFD\u3007\u3021-\u3029\u3038-\u303A\u3192-\u3195\u3220-\u3229\u3248-\u324F\u3251-\u325F\u3280-\u3289\u32B1-\u32BF\uA620-\uA629\uA6E6-\uA6EF\uA830-\uA835\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uABF0-\uABF9\uFF10-\uFF19]+/g
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js":[function(require,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -46322,7 +46322,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/implementation.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/implementation.js":[function(require,module,exports){
 'use strict';
 
 var keysShim;
@@ -46446,7 +46446,7 @@ if (!Object.keys) {
 }
 module.exports = keysShim;
 
-},{"./isArguments":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/isArguments.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/index.js":[function(require,module,exports){
+},{"./isArguments":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/isArguments.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/index.js":[function(require,module,exports){
 'use strict';
 
 var slice = Array.prototype.slice;
@@ -46480,7 +46480,7 @@ keysShim.shim = function shimObjectKeys() {
 
 module.exports = keysShim;
 
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/implementation.js","./isArguments":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/isArguments.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-keys/isArguments.js":[function(require,module,exports){
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/implementation.js","./isArguments":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/isArguments.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-keys/isArguments.js":[function(require,module,exports){
 'use strict';
 
 var toStr = Object.prototype.toString;
@@ -46499,7 +46499,7 @@ module.exports = function isArguments(value) {
 	return isArgs;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/implementation.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/implementation.js":[function(require,module,exports){
 'use strict';
 
 var RequireObjectCoercible = require('es-abstract/2020/RequireObjectCoercible');
@@ -46518,7 +46518,7 @@ module.exports = function entries(O) {
 	return entrys;
 };
 
-},{"call-bind/callBound":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/callBound.js","es-abstract/2020/RequireObjectCoercible":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js","has":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has/src/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/index.js":[function(require,module,exports){
+},{"call-bind/callBound":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/callBound.js","es-abstract/2020/RequireObjectCoercible":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js","has":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has/src/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/index.js":[function(require,module,exports){
 'use strict';
 
 var define = require('define-properties');
@@ -46538,7 +46538,7 @@ define(polyfill, {
 
 module.exports = polyfill;
 
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/implementation.js","./polyfill":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/polyfill.js","./shim":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/shim.js","call-bind":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/index.js","define-properties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/polyfill.js":[function(require,module,exports){
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/implementation.js","./polyfill":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/polyfill.js","./shim":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/shim.js","call-bind":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/index.js","define-properties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/polyfill.js":[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
@@ -46547,7 +46547,7 @@ module.exports = function getPolyfill() {
 	return typeof Object.entries === 'function' ? Object.entries : implementation;
 };
 
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/implementation.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/shim.js":[function(require,module,exports){
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/implementation.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/shim.js":[function(require,module,exports){
 'use strict';
 
 var getPolyfill = require('./polyfill');
@@ -46563,7 +46563,7 @@ module.exports = function shimEntries() {
 	return polyfill;
 };
 
-},{"./polyfill":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/polyfill.js","define-properties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/implementation.js":[function(require,module,exports){
+},{"./polyfill":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/polyfill.js","define-properties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/implementation.js":[function(require,module,exports){
 'use strict';
 
 var has = require('has');
@@ -46583,9 +46583,9 @@ module.exports = function values(O) {
 	return vals;
 };
 
-},{"call-bind/callBound":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/callBound.js","es-abstract/2020/RequireObjectCoercible":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js","has":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/has/src/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/index.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.entries/index.js"][0].apply(exports,arguments)
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/implementation.js","./polyfill":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/polyfill.js","./shim":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/shim.js","call-bind":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/call-bind/index.js","define-properties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/polyfill.js":[function(require,module,exports){
+},{"call-bind/callBound":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/callBound.js","es-abstract/2020/RequireObjectCoercible":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/es-abstract/2020/RequireObjectCoercible.js","has":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/has/src/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/index.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.entries/index.js"][0].apply(exports,arguments)
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/implementation.js","./polyfill":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/polyfill.js","./shim":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/shim.js","call-bind":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/call-bind/index.js","define-properties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/polyfill.js":[function(require,module,exports){
 'use strict';
 
 var implementation = require('./implementation');
@@ -46594,7 +46594,7 @@ module.exports = function getPolyfill() {
 	return typeof Object.values === 'function' ? Object.values : implementation;
 };
 
-},{"./implementation":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/implementation.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/shim.js":[function(require,module,exports){
+},{"./implementation":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/implementation.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/shim.js":[function(require,module,exports){
 'use strict';
 
 var getPolyfill = require('./polyfill');
@@ -46610,7 +46610,7 @@ module.exports = function shimValues() {
 	return polyfill;
 };
 
-},{"./polyfill":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object.values/polyfill.js","define-properties":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/param-case/param-case.js":[function(require,module,exports){
+},{"./polyfill":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object.values/polyfill.js","define-properties":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/define-properties/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/param-case/param-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 
 /**
@@ -46624,7 +46624,7 @@ module.exports = function (value, locale) {
   return noCase(value, locale, '-')
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/pascal-case/pascal-case.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/pascal-case/pascal-case.js":[function(require,module,exports){
 var camelCase = require('camel-case')
 var upperCaseFirst = require('upper-case-first')
 
@@ -46640,7 +46640,7 @@ module.exports = function (value, locale, mergeNumbers) {
   return upperCaseFirst(camelCase(value, locale, mergeNumbers), locale)
 }
 
-},{"camel-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/camel-case/camel-case.js","upper-case-first":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/path-case/path-case.js":[function(require,module,exports){
+},{"camel-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/camel-case/camel-case.js","upper-case-first":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/path-case/path-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 
 /**
@@ -46654,7 +46654,7 @@ module.exports = function (value, locale) {
   return noCase(value, locale, '/')
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process-nextick-args/index.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process-nextick-args/index.js":[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -46703,7 +46703,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js":[function(require,module,exports){
+},{"_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -46889,7 +46889,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/checkPropTypes.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/checkPropTypes.js":[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -46993,7 +46993,7 @@ checkPropTypes.resetWarningCache = function() {
 
 module.exports = checkPropTypes;
 
-},{"./lib/ReactPropTypesSecret":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/factoryWithThrowingShims.js":[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/factoryWithThrowingShims.js":[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -47059,7 +47059,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"./lib/ReactPropTypesSecret":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -47652,7 +47652,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-},{"./checkPropTypes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/checkPropTypes.js","./lib/ReactPropTypesSecret":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js","object-assign":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js","react-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/index.js":[function(require,module,exports){
+},{"./checkPropTypes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/checkPropTypes.js","./lib/ReactPropTypesSecret":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js","object-assign":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js","react-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/index.js":[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -47673,7 +47673,7 @@ if ("development" !== 'production') {
   module.exports = require('./factoryWithThrowingShims')();
 }
 
-},{"./factoryWithThrowingShims":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/factoryWithThrowingShims.js","./factoryWithTypeCheckers":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/factoryWithTypeCheckers.js","react-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports){
+},{"./factoryWithThrowingShims":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/factoryWithThrowingShims.js","./factoryWithTypeCheckers":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/factoryWithTypeCheckers.js","react-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -47687,7 +47687,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/punycode/punycode.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/punycode/punycode.js":[function(require,module,exports){
 (function (global){(function (){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 ;(function(root) {
@@ -48224,7 +48224,7 @@ module.exports = ReactPropTypesSecret;
 }(this));
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/decode.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/decode.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -48310,7 +48310,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/encode.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/encode.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -48397,13 +48397,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/index.js":[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/decode.js","./encode":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/encode.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom-factories/index.js":[function(require,module,exports){
+},{"./decode":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/decode.js","./encode":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/encode.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom-factories/index.js":[function(require,module,exports){
 (function (global){(function (){
 'use strict';
 
@@ -48602,7 +48602,7 @@ exports.encode = exports.stringify = require('./encode');
 
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports){
+},{"react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports){
 /** @license React v16.14.0
  * react-dom.development.js
  *
@@ -73616,7 +73616,7 @@ exports.version = ReactVersion;
   })();
 }
 
-},{"object-assign":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js","prop-types/checkPropTypes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/checkPropTypes.js","react":"react","scheduler":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/index.js","scheduler/tracing":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/tracing.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom/cjs/react-dom.production.min.js":[function(require,module,exports){
+},{"object-assign":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js","prop-types/checkPropTypes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/checkPropTypes.js","react":"react","scheduler":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/index.js","scheduler/tracing":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/tracing.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom/cjs/react-dom.production.min.js":[function(require,module,exports){
 /** @license React v16.14.0
  * react-dom.production.min.js
  *
@@ -73910,7 +73910,7 @@ exports.flushSync=function(a,b){if((W&(fj|gj))!==V)throw Error(u(187));var c=W;W
 exports.unmountComponentAtNode=function(a){if(!gk(a))throw Error(u(40));return a._reactRootContainer?(Nj(function(){ik(null,null,a,!1,function(){a._reactRootContainer=null;a[Od]=null})}),!0):!1};exports.unstable_batchedUpdates=Mj;exports.unstable_createPortal=function(a,b){return kk(a,b,2<arguments.length&&void 0!==arguments[2]?arguments[2]:null)};
 exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!gk(c))throw Error(u(200));if(null==a||void 0===a._reactInternalFiber)throw Error(u(38));return ik(a,b,c,!1,d)};exports.version="16.14.0";
 
-},{"object-assign":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js","react":"react","scheduler":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports){
+},{"object-assign":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js","react":"react","scheduler":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports){
 (function (process){(function (){
 /** @license React v16.13.1
  * react-is.development.js
@@ -74095,7 +74095,7 @@ exports.typeOf = typeOf;
 }
 
 }).call(this)}).call(this,require('_process'))
-},{"_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/cjs/react-is.production.min.js":[function(require,module,exports){
+},{"_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/cjs/react-is.production.min.js":[function(require,module,exports){
 /** @license React v16.13.1
  * react-is.production.min.js
  *
@@ -74112,7 +74112,7 @@ exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;exports.isAsyncMode=f
 exports.isMemo=function(a){return z(a)===r};exports.isPortal=function(a){return z(a)===d};exports.isProfiler=function(a){return z(a)===g};exports.isStrictMode=function(a){return z(a)===f};exports.isSuspense=function(a){return z(a)===p};
 exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===w||a.$$typeof===x||a.$$typeof===y||a.$$typeof===v)};exports.typeOf=z;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/index.js":[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -74123,7 +74123,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 }).call(this)}).call(this,require('_process'))
-},{"./cjs/react-is.development.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/cjs/react-is.development.js","./cjs/react-is.production.min.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-is/cjs/react-is.production.min.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-tiny-link/lib/index.js":[function(require,module,exports){
+},{"./cjs/react-is.development.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/cjs/react-is.development.js","./cjs/react-is.production.min.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-is/cjs/react-is.production.min.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-tiny-link/lib/index.js":[function(require,module,exports){
 !function(e,t){if("object"==typeof exports&&"object"==typeof module)module.exports=t(require("react"),require("prop-types"));else if("function"==typeof define&&define.amd)define(["react","prop-types"],t);else{var n="object"==typeof exports?t(require("react"),require("prop-types")):t(e.react,e["prop-types"]);for(var r in n)("object"==typeof exports?exports:e)[r]=n[r]}}(window,(function(e,t){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="../lib/",n(n.s=15)}([function(t,n){t.exports=e},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.ReactTinyLinkType=void 0,function(e){e.TYPE_AMAZON="TYPE_AMAZON",e.TYPE_YOUTUBE="TYPE_YOUTUBE",e.TYPE_AUDIO="TYPE_AUDIO",e.TYPE_VIDEO="TYPE_VIDEO",e.TYPE_IMAGE="TYPE_IMAGE",e.TYPE_DEFAULT="TYPE_DEFAULT",e.TYPE_INSTAGRAM="TYPE_INSTAGRAM",e.TYPE_BOARDGAMEGEEK="TYPE_BOARDGAMEGEEK",e.TYPE_TWITTER="TYPE_TWITTER"}(t.ReactTinyLinkType||(t.ReactTinyLinkType={}))},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.getBaseUrl=t.fixRelativeUrls=t.getInstagramVideo=t.getYoutTubeVideoId=t.getAttrOfDocElement=t.getTitleOfDoc=t.isImage=t.isVideo=t.isAudio=t.isEmpty=t.isTwitterUrl=t.isBoardGameGeekUrl=t.isInstagramUrl=t.isYoutubeUrl=t.isAmazonUrl=void 0;var r=/https?:\/\/(.*amazon\..*\/.*|.*amzn\..*\/.*|.*a\.co\/.*)/i;t.isAmazonUrl=function(e){return r.test(e)};var o=/^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$/gi;t.isYoutubeUrl=function(e){return!!e.toString().match(o)};var i=/(https?:\/\/www\.)?instagram\.com(\/p\/\w+\/?)/gi;t.isInstagramUrl=function(e){return!!e.toString().match(i)};var a=/(https?:\/\/www\.)?boardgamegeek\.com(\/boardgame\/\w+\/\w+\/?)/gi;t.isBoardGameGeekUrl=function(e){return!!e.toString().match(a)};var c=/(https?:\/\/(www)?\.?)?twitter\.com\/.+/gi;t.isTwitterUrl=function(e){return!!e.toString().match(c)},t.isEmpty=function(e){var n=function(e){return void 0===e.length?!Object.keys(e).some((function(n){return!t.isEmpty(e[n])}))&&n(Object.keys(e)):!e.some((function(e){return!t.isEmpty(e)}))};return 0==e||void 0===e||null==e||"object"==typeof e&&n(e)},t.isAudio=function(e){return e.startsWith("audio/")},t.isVideo=function(e){return e.startsWith("video/")},t.isImage=function(e){return e.startsWith("image/")},t.getTitleOfDoc=function(e){var t=e.querySelector("title");return t?t.innerText:null},t.getAttrOfDocElement=function(e,t,n){var r=e.querySelector(t);return r?r.getAttribute(n):null},t.getYoutTubeVideoId=function(e){var t=e.match(/^.*((m\.)?youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*/);return t&&t[3]?t[3]:null},t.getInstagramVideo=function(e){var t=/(?:"video_url":")(.*?)(?:")/g;if(t.test(e)){var n=t.exec(e);if(n&&0!==n.length)return n[0].split('":"')[1].replace('"',"")}return null},t.fixRelativeUrls=function(e,t){var n=t.toLocaleLowerCase();return n.startsWith("http://")||n.startsWith("https://")?t:new URL(t,e).href},t.getBaseUrl=function(e,n){return t.getAttrOfDocElement(e,"base","href")||new URL(n).origin}},function(e,t,n){"use strict";var r=this&&this.__makeTemplateObject||function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e};Object.defineProperty(t,"__esModule",{value:!0}),t.makeCancelable=t.noop=t.defaultData=t.findFirstSecureUrl=t.isValidVideoURL=t.isValidImageURL=t.isLarge=t.getHostname=t.media=void 0;var o,i,a=n(5),c=n(1),s=/^www\./;t.media={mobile:function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return a.css(o||(o=r(["\n    @media (max-width: 48em) {\n      ",";\n    }\n  "],["\n    @media (max-width: 48em) {\n      ",";\n    }\n  "])),a.css.apply(void 0,e))},desktop:function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];return a.css(i||(i=r(["\n    @media (max-width: 48em) {\n      ",";\n    }\n  "],["\n    @media (max-width: 48em) {\n      ",";\n    }\n  "])),a.css.apply(void 0,e))}},t.getHostname=function(e){return new URL(e).hostname.replace(s,"")},t.isLarge=function(e){return"large"===e},t.isValidImageURL=function(e){return"string"==typeof e&&!!e.match(/\w+\.(a?png|gif|jpe?g|svg|webp)/gi)},t.isValidVideoURL=function(e){return"string"==typeof e&&!!e.match(/\w+\.(mp4|ogg|webm)/gi)},t.findFirstSecureUrl=function(e,t){var n=e.find((function(e){return t(e)&&e.startsWith("https://")}));return n||""},t.defaultData=function(e,t){return{title:e.substring(e.lastIndexOf("/")+1),description:e.substring(e.lastIndexOf("/")+1),image:t,url:e,video:t,type:c.ReactTinyLinkType.TYPE_DEFAULT}},t.noop=function(){},t.makeCancelable=function(e){var t=!1;return{promise:new Promise((function(n,r){e.then((function(e){return t?r({isCanceled:!0}):n(e)}),(function(e){return r(t?{isCanceled:!0}:e)}))})),cancel:function(){t=!0}}}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.ReactTinyLink=t.ScrapperWraper=t.useScrapper=void 0;var r=n(0),o=n(9),i=n(19),a=n(3),c=n(10),s=n(29),l=n(30);t.useScrapper=l.useScraper,t.ScrapperWraper=c.default,t.ReactTinyLink=function(e){var t=e.cardSize,n=void 0===t?"small":t,c=e.maxLine,u=void 0===c?2:c,f=e.minLine,d=void 0===f?1:f,p=e.header,h=void 0===p?null:p,m=e.description,y=void 0===m?null:m,g=e.url,v=void 0===g?"":g,b=e.width,w=void 0===b?"640px":b,x=e.noCache,k=void 0!==x&&x,S=e.proxyUrl,O=void 0===S?"https://cors-anywhere.herokuapp.com":S,E=e.showGraphic,_=void 0===E||E,A=e.autoPlay,C=void 0!==A&&A,T=e.defaultMedia,P=void 0===T?"":T,j=e.loadSecureUrl,I=void 0!==j&&j,R=e.onError,M=void 0===R?a.noop:R,L=e.onSuccess,D=void 0===L?a.noop:L,U=e.onClick,N=void 0===U?null:U,$=e.requestHeaders,z=void 0===$?{"x-requested-with":""}:$,Y=P?[P]:[],G=l.useScraper({url:v,proxyUrl:O,requestHeaders:z,defaultMedias:Y,defaultValue:a.defaultData(v,Y),noCache:k,onError:M,onSuccess:D}),F=G[0],H=G[1];return r.createElement(r.Fragment,null,r.createElement(o.Card,{onClick:function(e){N&&(e.preventDefault(),N(e,F))},className:"react_tinylink_card",cardSize:n,href:v,width:w,isShownGraphic:_},_&&r.createElement(s.default,{autoPlay:C,cardSize:n,data:F,loadSecureUrl:I}),r.createElement(o.ContentWrapper,{className:"react_tinylink_card_content_wrapper",cardSize:n},r.createElement(o.Header,{maxLine:u,minLine:d,className:"react_tinylink_card_content_header"},r.createElement(i.default,{loading:H,loadingWidth:2,maxLine:u,minLine:d,className:"react_tinylink_card_content_header_description"},h||(F.title?F.title:v))),r.createElement(o.Content,{maxLine:u,minLine:d,className:"react_tinylink_card_content",cardSize:n},r.createElement(i.default,{loading:H,loadingWidth:1,className:"react_tinylink_card_content_description"},y||(F.description?F.description:v))),r.createElement(o.Footer,{className:"react_tinylink_footer"},r.createElement(i.default,{loading:H,loadingWidth:1,className:"react_tinylink_card_footer_description"},a.getHostname(v))))))}},function(e,t,n){"use strict";n.r(t),function(e){n.d(t,"createGlobalStyle",(function(){return nt})),n.d(t,"css",(function(){return be})),n.d(t,"isStyledComponent",(function(){return _})),n.d(t,"keyframes",(function(){return ot})),n.d(t,"ServerStyleSheet",(function(){return Be})),n.d(t,"StyleSheetConsumer",(function(){return Xe})),n.d(t,"StyleSheetContext",(function(){return qe})),n.d(t,"StyleSheetManager",(function(){return Je})),n.d(t,"ThemeConsumer",(function(){return We})),n.d(t,"ThemeContext",(function(){return He})),n.d(t,"ThemeProvider",(function(){return Ve})),n.d(t,"withTheme",(function(){return it})),n.d(t,"__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS",(function(){return at}));var r=n(6),o=n.n(r),i=n(11),a=n.n(i),c=n(0),s=n.n(c),l=n(12),u=n(7),f=n(8),d=(n(18),n(13)),p=n(14),h=function(e,t){for(var n=[e[0]],r=0,o=t.length;r<o;r+=1)n.push(t[r],e[r+1]);return n},m="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},y=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},g=function(){function e(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(t,n,r){return n&&e(t.prototype,n),r&&e(t,r),t}}(),v=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},b=function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)},w=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t},x=function(e){return"object"===(void 0===e?"undefined":m(e))&&e.constructor===Object},k=Object.freeze([]),S=Object.freeze({});function O(e){return"function"==typeof e}function E(e){return e.displayName||e.name||"Component"}function _(e){return e&&"string"==typeof e.styledComponentId}var A=void 0!==e&&(e.env.REACT_APP_SC_ATTR||e.env.SC_ATTR)||"data-styled",C="undefined"!=typeof window&&"HTMLElement"in window,T="boolean"==typeof SC_DISABLE_SPEEDY&&SC_DISABLE_SPEEDY||void 0!==e&&(e.env.REACT_APP_SC_DISABLE_SPEEDY||e.env.SC_DISABLE_SPEEDY)||!1,P={};var j=function(e){function t(n){y(this,t);for(var r=arguments.length,o=Array(r>1?r-1:0),i=1;i<r;i++)o[i-1]=arguments[i];var a=w(this,e.call(this,"An error occurred. See https://github.com/styled-components/styled-components/blob/master/packages/styled-components/src/utils/errors.md#"+n+" for more information."+(o.length>0?" Additional arguments: "+o.join(", "):"")));return w(a)}return b(t,e),t}(Error),I=/^[^\S\n]*?\/\* sc-component-id:\s*(\S+)\s+\*\//gm,R=function(e){var t=""+(e||""),n=[];return t.replace(I,(function(e,t,r){return n.push({componentId:t,matchIndex:r}),e})),n.map((function(e,r){var o=e.componentId,i=e.matchIndex,a=n[r+1];return{componentId:o,cssFromDOM:a?t.slice(i,a.matchIndex):t.slice(i)}}))},M=/^\s*\/\/.*$/gm,L=new o.a({global:!1,cascade:!0,keyframe:!1,prefix:!1,compress:!1,semicolon:!0}),D=new o.a({global:!1,cascade:!0,keyframe:!1,prefix:!0,compress:!1,semicolon:!1}),U=[],N=function(e){if(-2===e){var t=U;return U=[],t}},$=a()((function(e){U.push(e)})),z=void 0,Y=void 0,G=void 0,F=function(e,t,n){return t>0&&-1!==n.slice(0,t).indexOf(Y)&&n.slice(t-Y.length,t)!==Y?"."+z:e};D.use([function(e,t,n){2===e&&n.length&&n[0].lastIndexOf(Y)>0&&(n[0]=n[0].replace(G,F))},$,N]),L.use([$,N]);var H=function(e){return L("",e)};function W(e,t,n){var r=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"&",o=e.join("").replace(M,""),i=t&&n?n+" "+t+" { "+o+" }":o;return z=r,Y=t,G=new RegExp("\\"+Y+"\\b","g"),D(n||!t?"":t,i)}var V=function(){return n.nc},B=function(e,t,n){n&&((e[t]||(e[t]=Object.create(null)))[n]=!0)},q=function(e,t){e[t]=Object.create(null)},X=function(e){return function(t,n){return void 0!==e[t]&&e[t][n]}},J=function(e){var t="";for(var n in e)t+=Object.keys(e[n]).join(" ")+" ";return t.trim()},K=function(e){if(e.sheet)return e.sheet;for(var t=e.ownerDocument.styleSheets.length,n=0;n<t;n+=1){var r=e.ownerDocument.styleSheets[n];if(r.ownerNode===e)return r}throw new j(10)},Z=function(e,t,n){if(!t)return!1;var r=e.cssRules.length;try{e.insertRule(t,n<=r?n:r)}catch(e){return!1}return!0},Q=function(e){return"\n/* sc-component-id: "+e+" */\n"},ee=function(e,t){for(var n=0,r=0;r<=t;r+=1)n+=e[r];return n},te=function(e,t){return function(n){var r=V();return"<style "+[r&&'nonce="'+r+'"',A+'="'+J(t)+'"','data-styled-version="4.4.1"',n].filter(Boolean).join(" ")+">"+e()+"</style>"}},ne=function(e,t){return function(){var n,r=((n={})[A]=J(t),n["data-styled-version"]="4.4.1",n),o=V();return o&&(r.nonce=o),s.a.createElement("style",v({},r,{dangerouslySetInnerHTML:{__html:e()}}))}},re=function(e){return function(){return Object.keys(e)}},oe=function(e,t){return e.createTextNode(Q(t))},ie=function e(t,n){var r=void 0===t?Object.create(null):t,o=void 0===n?Object.create(null):n,i=function(e){var t=o[e];return void 0!==t?t:o[e]=[""]},a=function(){var e="";for(var t in o){var n=o[t][0];n&&(e+=Q(t)+n)}return e};return{clone:function(){var t=function(e){var t=Object.create(null);for(var n in e)t[n]=v({},e[n]);return t}(r),n=Object.create(null);for(var i in o)n[i]=[o[i][0]];return e(t,n)},css:a,getIds:re(o),hasNameForId:X(r),insertMarker:i,insertRules:function(e,t,n){i(e)[0]+=t.join(" "),B(r,e,n)},removeRules:function(e){var t=o[e];void 0!==t&&(t[0]="",q(r,e))},sealed:!1,styleTag:null,toElement:ne(a,r),toHTML:te(a,r)}},ae=function(e,t,n,r,o){if(C&&!n){var i=function(e,t,n){var r=document;e?r=e.ownerDocument:t&&(r=t.ownerDocument);var o=r.createElement("style");o.setAttribute(A,""),o.setAttribute("data-styled-version","4.4.1");var i=V();if(i&&o.setAttribute("nonce",i),o.appendChild(r.createTextNode("")),e&&!t)e.appendChild(o);else{if(!t||!e||!t.parentNode)throw new j(6);t.parentNode.insertBefore(o,n?t:t.nextSibling)}return o}(e,t,r);return T?function(e,t){var n=Object.create(null),r=Object.create(null),o=void 0!==t,i=!1,a=function(t){var o=r[t];return void 0!==o?o:(r[t]=oe(e.ownerDocument,t),e.appendChild(r[t]),n[t]=Object.create(null),r[t])},c=function(){var e="";for(var t in r)e+=r[t].data;return e};return{clone:function(){throw new j(5)},css:c,getIds:re(r),hasNameForId:X(n),insertMarker:a,insertRules:function(e,r,c){for(var s=a(e),l=[],u=r.length,f=0;f<u;f+=1){var d=r[f],p=o;if(p&&-1!==d.indexOf("@import"))l.push(d);else{p=!1;var h=f===u-1?"":" ";s.appendData(""+d+h)}}B(n,e,c),o&&l.length>0&&(i=!0,t().insertRules(e+"-import",l))},removeRules:function(a){var c=r[a];if(void 0!==c){var s=oe(e.ownerDocument,a);e.replaceChild(s,c),r[a]=s,q(n,a),o&&i&&t().removeRules(a+"-import")}},sealed:!1,styleTag:e,toElement:ne(c,n),toHTML:te(c,n)}}(i,o):function(e,t){var n=Object.create(null),r=Object.create(null),o=[],i=void 0!==t,a=!1,c=function(e){var t=r[e];return void 0!==t?t:(r[e]=o.length,o.push(0),q(n,e),r[e])},s=function(){var t=K(e).cssRules,n="";for(var i in r){n+=Q(i);for(var a=r[i],c=ee(o,a),s=c-o[a];s<c;s+=1){var l=t[s];void 0!==l&&(n+=l.cssText)}}return n};return{clone:function(){throw new j(5)},css:s,getIds:re(r),hasNameForId:X(n),insertMarker:c,insertRules:function(r,s,l){for(var u=c(r),f=K(e),d=ee(o,u),p=0,h=[],m=s.length,y=0;y<m;y+=1){var g=s[y],v=i;v&&-1!==g.indexOf("@import")?h.push(g):Z(f,g,d+p)&&(v=!1,p+=1)}i&&h.length>0&&(a=!0,t().insertRules(r+"-import",h)),o[u]+=p,B(n,r,l)},removeRules:function(c){var s=r[c];if(void 0!==s&&!1!==e.isConnected){var l=o[s];!function(e,t,n){for(var r=t-n,o=t;o>r;o-=1)e.deleteRule(o)}(K(e),ee(o,s)-1,l),o[s]=0,q(n,c),i&&a&&t().removeRules(c+"-import")}},sealed:!1,styleTag:e,toElement:ne(s,n),toHTML:te(s,n)}}(i,o)}return ie()},ce=/\s+/,se=void 0;se=C?T?40:1e3:-1;var le=0,ue=void 0,fe=function(){function e(){var t=this,n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:C?document.head:null,r=arguments.length>1&&void 0!==arguments[1]&&arguments[1];y(this,e),this.getImportRuleTag=function(){var e=t.importRuleTag;if(void 0!==e)return e;var n=t.tags[0];return t.importRuleTag=ae(t.target,n?n.styleTag:null,t.forceServer,!0)},le+=1,this.id=le,this.forceServer=r,this.target=r?null:n,this.tagMap={},this.deferred={},this.rehydratedNames={},this.ignoreRehydratedNames={},this.tags=[],this.capacity=1,this.clones=[]}return e.prototype.rehydrate=function(){if(!C||this.forceServer)return this;var e=[],t=[],n=!1,r=document.querySelectorAll("style["+A+'][data-styled-version="4.4.1"]'),o=r.length;if(!o)return this;for(var i=0;i<o;i+=1){var a=r[i];n||(n=!!a.getAttribute("data-styled-streamed"));for(var c,s=(a.getAttribute(A)||"").trim().split(ce),l=s.length,u=0;u<l;u+=1)c=s[u],this.rehydratedNames[c]=!0;t.push.apply(t,R(a.textContent)),e.push(a)}var f=t.length;if(!f)return this;var d=this.makeTag(null);!function(e,t,n){for(var r=0,o=n.length;r<o;r+=1){var i=n[r],a=i.componentId,c=i.cssFromDOM,s=H(c);e.insertRules(a,s)}for(var l=0,u=t.length;l<u;l+=1){var f=t[l];f.parentNode&&f.parentNode.removeChild(f)}}(d,e,t),this.capacity=Math.max(1,se-f),this.tags.push(d);for(var p=0;p<f;p+=1)this.tagMap[t[p].componentId]=d;return this},e.reset=function(){var t=arguments.length>0&&void 0!==arguments[0]&&arguments[0];ue=new e(void 0,t).rehydrate()},e.prototype.clone=function(){var t=new e(this.target,this.forceServer);return this.clones.push(t),t.tags=this.tags.map((function(e){for(var n=e.getIds(),r=e.clone(),o=0;o<n.length;o+=1)t.tagMap[n[o]]=r;return r})),t.rehydratedNames=v({},this.rehydratedNames),t.deferred=v({},this.deferred),t},e.prototype.sealAllTags=function(){this.capacity=1,this.tags.forEach((function(e){e.sealed=!0}))},e.prototype.makeTag=function(e){var t=e?e.styleTag:null;return ae(this.target,t,this.forceServer,!1,this.getImportRuleTag)},e.prototype.getTagForId=function(e){var t=this.tagMap[e];if(void 0!==t&&!t.sealed)return t;var n=this.tags[this.tags.length-1];return this.capacity-=1,0===this.capacity&&(this.capacity=se,n=this.makeTag(n),this.tags.push(n)),this.tagMap[e]=n},e.prototype.hasId=function(e){return void 0!==this.tagMap[e]},e.prototype.hasNameForId=function(e,t){if(void 0===this.ignoreRehydratedNames[e]&&this.rehydratedNames[t])return!0;var n=this.tagMap[e];return void 0!==n&&n.hasNameForId(e,t)},e.prototype.deferredInject=function(e,t){if(void 0===this.tagMap[e]){for(var n=this.clones,r=0;r<n.length;r+=1)n[r].deferredInject(e,t);this.getTagForId(e).insertMarker(e),this.deferred[e]=t}},e.prototype.inject=function(e,t,n){for(var r=this.clones,o=0;o<r.length;o+=1)r[o].inject(e,t,n);var i=this.getTagForId(e);if(void 0!==this.deferred[e]){var a=this.deferred[e].concat(t);i.insertRules(e,a,n),this.deferred[e]=void 0}else i.insertRules(e,t,n)},e.prototype.remove=function(e){var t=this.tagMap[e];if(void 0!==t){for(var n=this.clones,r=0;r<n.length;r+=1)n[r].remove(e);t.removeRules(e),this.ignoreRehydratedNames[e]=!0,this.deferred[e]=void 0}},e.prototype.toHTML=function(){return this.tags.map((function(e){return e.toHTML()})).join("")},e.prototype.toReactElements=function(){var e=this.id;return this.tags.map((function(t,n){var r="sc-"+e+"-"+n;return Object(c.cloneElement)(t.toElement(),{key:r})}))},g(e,null,[{key:"master",get:function(){return ue||(ue=(new e).rehydrate())}},{key:"instance",get:function(){return e.master}}]),e}(),de=function(){function e(t,n){var r=this;y(this,e),this.inject=function(e){e.hasNameForId(r.id,r.name)||e.inject(r.id,r.rules,r.name)},this.toString=function(){throw new j(12,String(r.name))},this.name=t,this.rules=n,this.id="sc-keyframes-"+t}return e.prototype.getName=function(){return this.name},e}(),pe=/([A-Z])/g,he=/^ms-/;function me(e){return e.replace(pe,"-$1").toLowerCase().replace(he,"-ms-")}var ye=function(e){return null==e||!1===e||""===e},ge=function e(t,n){var r=[];return Object.keys(t).forEach((function(n){if(!ye(t[n])){if(x(t[n]))return r.push.apply(r,e(t[n],n)),r;if(O(t[n]))return r.push(me(n)+":",t[n],";"),r;r.push(me(n)+": "+(o=n,(null==(i=t[n])||"boolean"==typeof i||""===i?"":"number"!=typeof i||0===i||o in l.a?String(i).trim():i+"px")+";"))}var o,i;return r})),n?[n+" {"].concat(r,["}"]):r};function ve(e,t,n){if(Array.isArray(e)){for(var r,o=[],i=0,a=e.length;i<a;i+=1)null!==(r=ve(e[i],t,n))&&(Array.isArray(r)?o.push.apply(o,r):o.push(r));return o}return ye(e)?null:_(e)?"."+e.styledComponentId:O(e)?"function"!=typeof(c=e)||c.prototype&&c.prototype.isReactComponent||!t?e:ve(e(t),t,n):e instanceof de?n?(e.inject(n),e.getName()):e:x(e)?ge(e):e.toString();var c}function be(e){for(var t=arguments.length,n=Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return O(e)||x(e)?ve(h(k,[e].concat(n))):ve(h(e,n))}function we(e){for(var t,n=0|e.length,r=0|n,o=0;n>=4;)t=1540483477*(65535&(t=255&e.charCodeAt(o)|(255&e.charCodeAt(++o))<<8|(255&e.charCodeAt(++o))<<16|(255&e.charCodeAt(++o))<<24))+((1540483477*(t>>>16)&65535)<<16),r=1540483477*(65535&r)+((1540483477*(r>>>16)&65535)<<16)^(t=1540483477*(65535&(t^=t>>>24))+((1540483477*(t>>>16)&65535)<<16)),n-=4,++o;switch(n){case 3:r^=(255&e.charCodeAt(o+2))<<16;case 2:r^=(255&e.charCodeAt(o+1))<<8;case 1:r=1540483477*(65535&(r^=255&e.charCodeAt(o)))+((1540483477*(r>>>16)&65535)<<16)}return((r=1540483477*(65535&(r^=r>>>13))+((1540483477*(r>>>16)&65535)<<16))^r>>>15)>>>0}var xe=function(e){return String.fromCharCode(e+(e>25?39:97))};function ke(e){var t="",n=void 0;for(n=e;n>52;n=Math.floor(n/52))t=xe(n%52)+t;return xe(n%52)+t}function Se(e,t){for(var n=0;n<e.length;n+=1){var r=e[n];if(Array.isArray(r)&&!Se(r,t))return!1;if(O(r)&&!_(r))return!1}return!t.some((function(e){return O(e)||function(e){for(var t in e)if(O(e[t]))return!0;return!1}(e)}))}var Oe,Ee=function(e){return ke(we(e))},_e=function(){function e(t,n,r){y(this,e),this.rules=t,this.isStatic=Se(t,n),this.componentId=r,fe.master.hasId(r)||fe.master.deferredInject(r,[])}return e.prototype.generateAndInjectStyles=function(e,t){var n=this.isStatic,r=this.componentId,o=this.lastClassName;if(C&&n&&"string"==typeof o&&t.hasNameForId(r,o))return o;var i=ve(this.rules,e,t),a=Ee(this.componentId+i.join(""));return t.hasNameForId(r,a)||t.inject(this.componentId,W(i,"."+a,void 0,r),a),this.lastClassName=a,a},e.generateName=function(e){return Ee(e)},e}(),Ae=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:S,r=!!n&&e.theme===n.theme,o=e.theme&&!r?e.theme:t||n.theme;return o},Ce=/[[\].#*$><+~=|^:(),"'`-]+/g,Te=/(^-|-$)/g;function Pe(e){return e.replace(Ce,"-").replace(Te,"")}function je(e){return"string"==typeof e&&!0}var Ie={childContextTypes:!0,contextTypes:!0,defaultProps:!0,displayName:!0,getDerivedStateFromProps:!0,propTypes:!0,type:!0},Re={name:!0,length:!0,prototype:!0,caller:!0,callee:!0,arguments:!0,arity:!0},Me=((Oe={})[u.ForwardRef]={$$typeof:!0,render:!0},Oe),Le=Object.defineProperty,De=Object.getOwnPropertyNames,Ue=Object.getOwnPropertySymbols,Ne=void 0===Ue?function(){return[]}:Ue,$e=Object.getOwnPropertyDescriptor,ze=Object.getPrototypeOf,Ye=Object.prototype,Ge=Array.prototype;function Fe(e,t,n){if("string"!=typeof t){var r=ze(t);r&&r!==Ye&&Fe(e,r,n);for(var o=Ge.concat(De(t),Ne(t)),i=Me[e.$$typeof]||Ie,a=Me[t.$$typeof]||Ie,c=o.length,s=void 0,l=void 0;c--;)if(l=o[c],!(Re[l]||n&&n[l]||a&&a[l]||i&&i[l])&&(s=$e(t,l)))try{Le(e,l,s)}catch(e){}return e}return e}var He=Object(c.createContext)(),We=He.Consumer,Ve=function(e){function t(n){y(this,t);var r=w(this,e.call(this,n));return r.getContext=Object(f.a)(r.getContext.bind(r)),r.renderInner=r.renderInner.bind(r),r}return b(t,e),t.prototype.render=function(){return this.props.children?s.a.createElement(He.Consumer,null,this.renderInner):null},t.prototype.renderInner=function(e){var t=this.getContext(this.props.theme,e);return s.a.createElement(He.Provider,{value:t},this.props.children)},t.prototype.getTheme=function(e,t){if(O(e))return e(t);if(null===e||Array.isArray(e)||"object"!==(void 0===e?"undefined":m(e)))throw new j(8);return v({},t,e)},t.prototype.getContext=function(e,t){return this.getTheme(e,t)},t}(c.Component),Be=function(){function e(){y(this,e),this.masterSheet=fe.master,this.instance=this.masterSheet.clone(),this.sealed=!1}return e.prototype.seal=function(){if(!this.sealed){var e=this.masterSheet.clones.indexOf(this.instance);this.masterSheet.clones.splice(e,1),this.sealed=!0}},e.prototype.collectStyles=function(e){if(this.sealed)throw new j(2);return s.a.createElement(Je,{sheet:this.instance},e)},e.prototype.getStyleTags=function(){return this.seal(),this.instance.toHTML()},e.prototype.getStyleElement=function(){return this.seal(),this.instance.toReactElements()},e.prototype.interleaveWithNodeStream=function(e){throw new j(3)},e}(),qe=Object(c.createContext)(),Xe=qe.Consumer,Je=function(e){function t(n){y(this,t);var r=w(this,e.call(this,n));return r.getContext=Object(f.a)(r.getContext),r}return b(t,e),t.prototype.getContext=function(e,t){if(e)return e;if(t)return new fe(t);throw new j(4)},t.prototype.render=function(){var e=this.props,t=e.children,n=e.sheet,r=e.target;return s.a.createElement(qe.Provider,{value:this.getContext(n,r)},t)},t}(c.Component),Ke={};var Ze=function(e){function t(){y(this,t);var n=w(this,e.call(this));return n.attrs={},n.renderOuter=n.renderOuter.bind(n),n.renderInner=n.renderInner.bind(n),n}return b(t,e),t.prototype.render=function(){return s.a.createElement(Xe,null,this.renderOuter)},t.prototype.renderOuter=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:fe.master;return this.styleSheet=e,this.props.forwardedComponent.componentStyle.isStatic?this.renderInner():s.a.createElement(We,null,this.renderInner)},t.prototype.renderInner=function(e){var t=this.props.forwardedComponent,n=t.componentStyle,r=t.defaultProps,o=(t.displayName,t.foldedComponentIds),i=t.styledComponentId,a=t.target,s=void 0;s=n.isStatic?this.generateAndInjectStyles(S,this.props):this.generateAndInjectStyles(Ae(this.props,e,r)||S,this.props);var l=this.props.as||this.attrs.as||a,u=je(l),f={},p=v({},this.props,this.attrs),h=void 0;for(h in p)"forwardedComponent"!==h&&"as"!==h&&("forwardedRef"===h?f.ref=p[h]:"forwardedAs"===h?f.as=p[h]:u&&!Object(d.a)(h)||(f[h]=p[h]));return this.props.style&&this.attrs.style&&(f.style=v({},this.attrs.style,this.props.style)),f.className=Array.prototype.concat(o,i,s!==i?s:null,this.props.className,this.attrs.className).filter(Boolean).join(" "),Object(c.createElement)(l,f)},t.prototype.buildExecutionContext=function(e,t,n){var r=this,o=v({},t,{theme:e});return n.length?(this.attrs={},n.forEach((function(e){var t,n=e,i=!1,a=void 0,c=void 0;for(c in O(n)&&(n=n(o),i=!0),n)a=n[c],i||!O(a)||(t=a)&&t.prototype&&t.prototype.isReactComponent||_(a)||(a=a(o)),r.attrs[c]=a,o[c]=a})),o):o},t.prototype.generateAndInjectStyles=function(e,t){var n=t.forwardedComponent,r=n.attrs,o=n.componentStyle;n.warnTooManyClasses;return o.isStatic&&!r.length?o.generateAndInjectStyles(S,this.styleSheet):o.generateAndInjectStyles(this.buildExecutionContext(e,t,r),this.styleSheet)},t}(c.Component);function Qe(e,t,n){var r=_(e),o=!je(e),i=t.displayName,a=void 0===i?function(e){return je(e)?"styled."+e:"Styled("+E(e)+")"}(e):i,c=t.componentId,l=void 0===c?function(e,t,n){var r="string"!=typeof t?"sc":Pe(t),o=(Ke[r]||0)+1;Ke[r]=o;var i=r+"-"+e.generateName(r+o);return n?n+"-"+i:i}(_e,t.displayName,t.parentComponentId):c,u=t.ParentComponent,f=void 0===u?Ze:u,d=t.attrs,h=void 0===d?k:d,m=t.displayName&&t.componentId?Pe(t.displayName)+"-"+t.componentId:t.componentId||l,y=r&&e.attrs?Array.prototype.concat(e.attrs,h).filter(Boolean):h,g=new _e(r?e.componentStyle.rules.concat(n):n,y,m),b=void 0,w=function(e,t){return s.a.createElement(f,v({},e,{forwardedComponent:b,forwardedRef:t}))};return w.displayName=a,(b=s.a.forwardRef(w)).displayName=a,b.attrs=y,b.componentStyle=g,b.foldedComponentIds=r?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):k,b.styledComponentId=m,b.target=r?e.target:e,b.withComponent=function(e){var r=t.componentId,o=function(e,t){var n={};for(var r in e)t.indexOf(r)>=0||Object.prototype.hasOwnProperty.call(e,r)&&(n[r]=e[r]);return n}(t,["componentId"]),i=r&&r+"-"+(je(e)?e:Pe(E(e)));return Qe(e,v({},o,{attrs:y,componentId:i,ParentComponent:f}),n)},Object.defineProperty(b,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(t){this._foldedDefaultProps=r?Object(p.a)(e.defaultProps,t):t}}),b.toString=function(){return"."+b.styledComponentId},o&&Fe(b,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,styledComponentId:!0,target:!0,withComponent:!0}),b}var et=function(e){return function e(t,n){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:S;if(!Object(u.isValidElementType)(n))throw new j(1,String(n));var o=function(){return t(n,r,be.apply(void 0,arguments))};return o.withConfig=function(o){return e(t,n,v({},r,o))},o.attrs=function(o){return e(t,n,v({},r,{attrs:Array.prototype.concat(r.attrs,o).filter(Boolean)}))},o}(Qe,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","tspan"].forEach((function(e){et[e]=et(e)}));var tt=function(){function e(t,n){y(this,e),this.rules=t,this.componentId=n,this.isStatic=Se(t,k),fe.master.hasId(n)||fe.master.deferredInject(n,[])}return e.prototype.createStyles=function(e,t){var n=W(ve(this.rules,e,t),"");t.inject(this.componentId,n)},e.prototype.removeStyles=function(e){var t=this.componentId;e.hasId(t)&&e.remove(t)},e.prototype.renderStyles=function(e,t){this.removeStyles(t),this.createStyles(e,t)},e}();function nt(e){for(var t=arguments.length,n=Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var o=be.apply(void 0,[e].concat(n)),i="sc-global-"+we(JSON.stringify(o)),a=new tt(o,i),c=function(e){function t(n){y(this,t);var r=w(this,e.call(this,n)),o=r.constructor,i=o.globalStyle,a=o.styledComponentId;return C&&(window.scCGSHMRCache[a]=(window.scCGSHMRCache[a]||0)+1),r.state={globalStyle:i,styledComponentId:a},r}return b(t,e),t.prototype.componentWillUnmount=function(){window.scCGSHMRCache[this.state.styledComponentId]&&(window.scCGSHMRCache[this.state.styledComponentId]-=1),0===window.scCGSHMRCache[this.state.styledComponentId]&&this.state.globalStyle.removeStyles(this.styleSheet)},t.prototype.render=function(){var e=this;return s.a.createElement(Xe,null,(function(t){e.styleSheet=t||fe.master;var n=e.state.globalStyle;return n.isStatic?(n.renderStyles(P,e.styleSheet),null):s.a.createElement(We,null,(function(t){var r=e.constructor.defaultProps,o=v({},e.props);return void 0!==t&&(o.theme=Ae(e.props,t,r)),n.renderStyles(o,e.styleSheet),null}))}))},t}(s.a.Component);return c.globalStyle=a,c.styledComponentId=i,c}C&&(window.scCGSHMRCache={});var rt=function(e){return e.replace(/\s|\\n/g,"")};function ot(e){for(var t=arguments.length,n=Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var o=be.apply(void 0,[e].concat(n)),i=ke(we(rt(JSON.stringify(o))));return new de(i,W(o,i,"@keyframes"))}var it=function(e){var t=s.a.forwardRef((function(t,n){return s.a.createElement(We,null,(function(r){var o=e.defaultProps,i=Ae(t,r,o);return s.a.createElement(e,v({},t,{theme:i,ref:n}))}))}));return Fe(t,e),t.displayName="WithTheme("+E(e)+")",t},at={StyleSheet:fe};t.default=et}.call(this,n(16))},function(e,t,n){e.exports=function e(t){"use strict";var n=/^\0+/g,r=/[\0\r\f]/g,o=/: */g,i=/zoo|gra/,a=/([,: ])(transform)/g,c=/,+\s*(?![^(]*[)])/g,s=/ +\s*(?![^(]*[)])/g,l=/ *[\0] */g,u=/,\r+?/g,f=/([\t\r\n ])*\f?&/g,d=/:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,p=/\W+/g,h=/@(k\w+)\s*(\S*)\s*/,m=/::(place)/g,y=/:(read-only)/g,g=/\s+(?=[{\];=:>])/g,v=/([[}=:>])\s+/g,b=/(\{[^{]+?);(?=\})/g,w=/\s{2,}/g,x=/([^\(])(:+) */g,k=/[svh]\w+-[tblr]{2}/,S=/\(\s*(.*)\s*\)/g,O=/([\s\S]*?);/g,E=/-self|flex-/g,_=/[^]*?(:[rp][el]a[\w-]+)[^]*/,A=/stretch|:\s*\w+\-(?:conte|avail)/,C=/([^-])(image-set\()/,T="-webkit-",P="-moz-",j="-ms-",I=59,R=125,M=123,L=40,D=41,U=10,N=13,$=32,z=45,Y=42,G=44,F=58,H=47,W=1,V=1,B=0,q=1,X=1,J=1,K=0,Z=0,Q=0,ee=[],te=[],ne=0,re=null,oe=0,ie=1,ae="",ce="",se="";function le(e,t,o,i,a){for(var c,s,u=0,f=0,d=0,p=0,g=0,v=0,b=0,w=0,k=0,O=0,E=0,_=0,A=0,C=0,P=0,j=0,K=0,te=0,re=0,fe=o.length,ge=fe-1,ve="",be="",we="",xe="",ke="",Se="";P<fe;){if(b=o.charCodeAt(P),P===ge&&f+p+d+u!==0&&(0!==f&&(b=f===H?U:H),p=d=u=0,fe++,ge++),f+p+d+u===0){if(P===ge&&(j>0&&(be=be.replace(r,"")),be.trim().length>0)){switch(b){case $:case 9:case I:case N:case U:break;default:be+=o.charAt(P)}b=I}if(1===K)switch(b){case M:case R:case I:case 34:case 39:case L:case D:case G:K=0;case 9:case N:case U:case $:break;default:for(K=0,re=P,g=b,P--,b=I;re<fe;)switch(o.charCodeAt(re++)){case U:case N:case I:++P,b=g,re=fe;break;case F:j>0&&(++P,b=g);case M:re=fe}}switch(b){case M:for(g=(be=be.trim()).charCodeAt(0),E=1,re=++P;P<fe;){switch(b=o.charCodeAt(P)){case M:E++;break;case R:E--;break;case H:switch(v=o.charCodeAt(P+1)){case Y:case H:P=ye(v,P,ge,o)}break;case 91:b++;case L:b++;case 34:case 39:for(;P++<ge&&o.charCodeAt(P)!==b;);}if(0===E)break;P++}switch(we=o.substring(re,P),0===g&&(g=(be=be.replace(n,"").trim()).charCodeAt(0)),g){case 64:switch(j>0&&(be=be.replace(r,"")),v=be.charCodeAt(1)){case 100:case 109:case 115:case z:c=t;break;default:c=ee}if(re=(we=le(t,c,we,v,a+1)).length,Q>0&&0===re&&(re=be.length),ne>0&&(s=me(3,we,c=ue(ee,be,te),t,V,W,re,v,a,i),be=c.join(""),void 0!==s&&0===(re=(we=s.trim()).length)&&(v=0,we="")),re>0)switch(v){case 115:be=be.replace(S,he);case 100:case 109:case z:we=be+"{"+we+"}";break;case 107:we=(be=be.replace(h,"$1 $2"+(ie>0?ae:"")))+"{"+we+"}",we=1===X||2===X&&pe("@"+we,3)?"@"+T+we+"@"+we:"@"+we;break;default:we=be+we,112===i&&(xe+=we,we="")}else we="";break;default:we=le(t,ue(t,be,te),we,i,a+1)}ke+=we,_=0,K=0,C=0,j=0,te=0,A=0,be="",we="",b=o.charCodeAt(++P);break;case R:case I:if((re=(be=(j>0?be.replace(r,""):be).trim()).length)>1)switch(0===C&&((g=be.charCodeAt(0))===z||g>96&&g<123)&&(re=(be=be.replace(" ",":")).length),ne>0&&void 0!==(s=me(1,be,t,e,V,W,xe.length,i,a,i))&&0===(re=(be=s.trim()).length)&&(be="\0\0"),g=be.charCodeAt(0),v=be.charCodeAt(1),g){case 0:break;case 64:if(105===v||99===v){Se+=be+o.charAt(P);break}default:if(be.charCodeAt(re-1)===F)break;xe+=de(be,g,v,be.charCodeAt(2))}_=0,K=0,C=0,j=0,te=0,be="",b=o.charCodeAt(++P)}}switch(b){case N:case U:if(f+p+d+u+Z===0)switch(O){case D:case 39:case 34:case 64:case 126:case 62:case Y:case 43:case H:case z:case F:case G:case I:case M:case R:break;default:C>0&&(K=1)}f===H?f=0:q+_===0&&107!==i&&be.length>0&&(j=1,be+="\0"),ne*oe>0&&me(0,be,t,e,V,W,xe.length,i,a,i),W=1,V++;break;case I:case R:if(f+p+d+u===0){W++;break}default:switch(W++,ve=o.charAt(P),b){case 9:case $:if(p+u+f===0)switch(w){case G:case F:case 9:case $:ve="";break;default:b!==$&&(ve=" ")}break;case 0:ve="\\0";break;case 12:ve="\\f";break;case 11:ve="\\v";break;case 38:p+f+u===0&&q>0&&(te=1,j=1,ve="\f"+ve);break;case 108:if(p+f+u+B===0&&C>0)switch(P-C){case 2:112===w&&o.charCodeAt(P-3)===F&&(B=w);case 8:111===k&&(B=k)}break;case F:p+f+u===0&&(C=P);break;case G:f+d+p+u===0&&(j=1,ve+="\r");break;case 34:case 39:0===f&&(p=p===b?0:0===p?b:p);break;case 91:p+f+d===0&&u++;break;case 93:p+f+d===0&&u--;break;case D:p+f+u===0&&d--;break;case L:if(p+f+u===0){if(0===_)switch(2*w+3*k){case 533:break;default:E=0,_=1}d++}break;case 64:f+d+p+u+C+A===0&&(A=1);break;case Y:case H:if(p+u+d>0)break;switch(f){case 0:switch(2*b+3*o.charCodeAt(P+1)){case 235:f=H;break;case 220:re=P,f=Y}break;case Y:b===H&&w===Y&&re+2!==P&&(33===o.charCodeAt(re+2)&&(xe+=o.substring(re,P+1)),ve="",f=0)}}if(0===f){if(q+p+u+A===0&&107!==i&&b!==I)switch(b){case G:case 126:case 62:case 43:case D:case L:if(0===_){switch(w){case 9:case $:case U:case N:ve+="\0";break;default:ve="\0"+ve+(b===G?"":"\0")}j=1}else switch(b){case L:C+7===P&&108===w&&(C=0),_=++E;break;case D:0==(_=--E)&&(j=1,ve+="\0")}break;case 9:case $:switch(w){case 0:case M:case R:case I:case G:case 12:case 9:case $:case U:case N:break;default:0===_&&(j=1,ve+="\0")}}be+=ve,b!==$&&9!==b&&(O=b)}}k=w,w=b,P++}if(re=xe.length,Q>0&&0===re&&0===ke.length&&0===t[0].length==0&&(109!==i||1===t.length&&(q>0?ce:se)===t[0])&&(re=t.join(",").length+2),re>0){if(c=0===q&&107!==i?function(e){for(var t,n,o=0,i=e.length,a=Array(i);o<i;++o){for(var c=e[o].split(l),s="",u=0,f=0,d=0,p=0,h=c.length;u<h;++u)if(!(0===(f=(n=c[u]).length)&&h>1)){if(d=s.charCodeAt(s.length-1),p=n.charCodeAt(0),t="",0!==u)switch(d){case Y:case 126:case 62:case 43:case $:case L:break;default:t=" "}switch(p){case 38:n=t+ce;case 126:case 62:case 43:case $:case D:case L:break;case 91:n=t+n+ce;break;case F:switch(2*n.charCodeAt(1)+3*n.charCodeAt(2)){case 530:if(J>0){n=t+n.substring(8,f-1);break}default:(u<1||c[u-1].length<1)&&(n=t+ce+n)}break;case G:t="";default:n=f>1&&n.indexOf(":")>0?t+n.replace(x,"$1"+ce+"$2"):t+n+ce}s+=n}a[o]=s.replace(r,"").trim()}return a}(t):t,ne>0&&void 0!==(s=me(2,xe,c,e,V,W,re,i,a,i))&&0===(xe=s).length)return Se+xe+ke;if(xe=c.join(",")+"{"+xe+"}",X*B!=0){switch(2!==X||pe(xe,2)||(B=0),B){case 111:xe=xe.replace(y,":-moz-$1")+xe;break;case 112:xe=xe.replace(m,"::"+T+"input-$1")+xe.replace(m,"::-moz-$1")+xe.replace(m,":-ms-input-$1")+xe}B=0}}return Se+xe+ke}function ue(e,t,n){var r=t.trim().split(u),o=r,i=r.length,a=e.length;switch(a){case 0:case 1:for(var c=0,s=0===a?"":e[0]+" ";c<i;++c)o[c]=fe(s,o[c],n,a).trim();break;default:c=0;var l=0;for(o=[];c<i;++c)for(var f=0;f<a;++f)o[l++]=fe(e[f]+" ",r[c],n,a).trim()}return o}function fe(e,t,n,r){var o=t,i=o.charCodeAt(0);switch(i<33&&(i=(o=o.trim()).charCodeAt(0)),i){case 38:switch(q+r){case 0:case 1:if(0===e.trim().length)break;default:return o.replace(f,"$1"+e.trim())}break;case F:switch(o.charCodeAt(1)){case 103:if(J>0&&q>0)return o.replace(d,"$1").replace(f,"$1"+se);break;default:return e.trim()+o.replace(f,"$1"+e.trim())}default:if(n*q>0&&o.indexOf("\f")>0)return o.replace(f,(e.charCodeAt(0)===F?"":"$1")+e.trim())}return e+o}function de(e,t,n,r){var l,u=0,f=e+";",d=2*t+3*n+4*r;if(944===d)return function(e){var t=e.length,n=e.indexOf(":",9)+1,r=e.substring(0,n).trim(),o=e.substring(n,t-1).trim();switch(e.charCodeAt(9)*ie){case 0:break;case z:if(110!==e.charCodeAt(10))break;default:var i=o.split((o="",c)),a=0;for(n=0,t=i.length;a<t;n=0,++a){for(var l=i[a],u=l.split(s);l=u[n];){var f=l.charCodeAt(0);if(1===ie&&(f>64&&f<90||f>96&&f<123||95===f||f===z&&l.charCodeAt(1)!==z))switch(isNaN(parseFloat(l))+(-1!==l.indexOf("("))){case 1:switch(l){case"infinite":case"alternate":case"backwards":case"running":case"normal":case"forwards":case"both":case"none":case"linear":case"ease":case"ease-in":case"ease-out":case"ease-in-out":case"paused":case"reverse":case"alternate-reverse":case"inherit":case"initial":case"unset":case"step-start":case"step-end":break;default:l+=ae}}u[n++]=l}o+=(0===a?"":",")+u.join(" ")}}return o=r+o+";",1===X||2===X&&pe(o,1)?T+o+o:o}(f);if(0===X||2===X&&!pe(f,1))return f;switch(d){case 1015:return 97===f.charCodeAt(10)?T+f+f:f;case 951:return 116===f.charCodeAt(3)?T+f+f:f;case 963:return 110===f.charCodeAt(5)?T+f+f:f;case 1009:if(100!==f.charCodeAt(4))break;case 969:case 942:return T+f+f;case 978:return T+f+P+f+f;case 1019:case 983:return T+f+P+f+j+f+f;case 883:return f.charCodeAt(8)===z?T+f+f:f.indexOf("image-set(",11)>0?f.replace(C,"$1"+T+"$2")+f:f;case 932:if(f.charCodeAt(4)===z)switch(f.charCodeAt(5)){case 103:return T+"box-"+f.replace("-grow","")+T+f+j+f.replace("grow","positive")+f;case 115:return T+f+j+f.replace("shrink","negative")+f;case 98:return T+f+j+f.replace("basis","preferred-size")+f}return T+f+j+f+f;case 964:return T+f+j+"flex-"+f+f;case 1023:if(99!==f.charCodeAt(8))break;return l=f.substring(f.indexOf(":",15)).replace("flex-","").replace("space-between","justify"),T+"box-pack"+l+T+f+j+"flex-pack"+l+f;case 1005:return i.test(f)?f.replace(o,":"+T)+f.replace(o,":"+P)+f:f;case 1e3:switch(u=(l=f.substring(13).trim()).indexOf("-")+1,l.charCodeAt(0)+l.charCodeAt(u)){case 226:l=f.replace(k,"tb");break;case 232:l=f.replace(k,"tb-rl");break;case 220:l=f.replace(k,"lr");break;default:return f}return T+f+j+l+f;case 1017:if(-1===f.indexOf("sticky",9))return f;case 975:switch(u=(f=e).length-10,d=(l=(33===f.charCodeAt(u)?f.substring(0,u):f).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|l.charCodeAt(7))){case 203:if(l.charCodeAt(8)<111)break;case 115:f=f.replace(l,T+l)+";"+f;break;case 207:case 102:f=f.replace(l,T+(d>102?"inline-":"")+"box")+";"+f.replace(l,T+l)+";"+f.replace(l,j+l+"box")+";"+f}return f+";";case 938:if(f.charCodeAt(5)===z)switch(f.charCodeAt(6)){case 105:return l=f.replace("-items",""),T+f+T+"box-"+l+j+"flex-"+l+f;case 115:return T+f+j+"flex-item-"+f.replace(E,"")+f;default:return T+f+j+"flex-line-pack"+f.replace("align-content","").replace(E,"")+f}break;case 973:case 989:if(f.charCodeAt(3)!==z||122===f.charCodeAt(4))break;case 931:case 953:if(!0===A.test(e))return 115===(l=e.substring(e.indexOf(":")+1)).charCodeAt(0)?de(e.replace("stretch","fill-available"),t,n,r).replace(":fill-available",":stretch"):f.replace(l,T+l)+f.replace(l,P+l.replace("fill-",""))+f;break;case 962:if(f=T+f+(102===f.charCodeAt(5)?j+f:"")+f,n+r===211&&105===f.charCodeAt(13)&&f.indexOf("transform",10)>0)return f.substring(0,f.indexOf(";",27)+1).replace(a,"$1"+T+"$2")+f}return f}function pe(e,t){var n=e.indexOf(1===t?":":"{"),r=e.substring(0,3!==t?n:10),o=e.substring(n+1,e.length-1);return re(2!==t?r:r.replace(_,"$1"),o,t)}function he(e,t){var n=de(t,t.charCodeAt(0),t.charCodeAt(1),t.charCodeAt(2));return n!==t+";"?n.replace(O," or ($1)").substring(4):"("+t+")"}function me(e,t,n,r,o,i,a,c,s,l){for(var u,f=0,d=t;f<ne;++f)switch(u=te[f].call(ve,e,d,n,r,o,i,a,c,s,l)){case void 0:case!1:case!0:case null:break;default:d=u}if(d!==t)return d}function ye(e,t,n,r){for(var o=t+1;o<n;++o)switch(r.charCodeAt(o)){case H:if(e===Y&&r.charCodeAt(o-1)===Y&&t+2!==o)return o+1;break;case U:if(e===H)return o+1}return o}function ge(e){for(var t in e){var n=e[t];switch(t){case"keyframe":ie=0|n;break;case"global":J=0|n;break;case"cascade":q=0|n;break;case"compress":K=0|n;break;case"semicolon":Z=0|n;break;case"preserve":Q=0|n;break;case"prefix":re=null,n?"function"!=typeof n?X=1:(X=2,re=n):X=0}}return ge}function ve(t,n){if(void 0!==this&&this.constructor===ve)return e(t);var o=t,i=o.charCodeAt(0);i<33&&(i=(o=o.trim()).charCodeAt(0)),ie>0&&(ae=o.replace(p,91===i?"":"-")),i=1,1===q?se=o:ce=o;var a,c=[se];ne>0&&void 0!==(a=me(-1,n,c,c,V,W,0,0,0,0))&&"string"==typeof a&&(n=a);var s=le(ee,c,n,0,0);return ne>0&&void 0!==(a=me(-2,s,c,c,V,W,s.length,0,0,0))&&"string"!=typeof(s=a)&&(i=0),ae="",se="",ce="",B=0,V=1,W=1,K*i==0?s:s.replace(r,"").replace(g,"").replace(v,"$1").replace(b,"$1").replace(w," ")}return ve.use=function e(t){switch(t){case void 0:case null:ne=te.length=0;break;default:if("function"==typeof t)te[ne++]=t;else if("object"==typeof t)for(var n=0,r=t.length;n<r;++n)e(t[n]);else oe=0|!!t}return e},ve.set=ge,void 0!==t&&ge(t),ve}(null)},function(e,t,n){"use strict";e.exports=n(17)},function(e,t,n){"use strict";function r(e,t){if(e.length!==t.length)return!1;for(var n=0;n<e.length;n++)if(e[n]!==t[n])return!1;return!0}t.a=function(e,t){var n;void 0===t&&(t=r);var o,i=[],a=!1;return function(){for(var r=[],c=0;c<arguments.length;c++)r[c]=arguments[c];return a&&n===this&&t(r,i)||(o=e.apply(this,r),a=!0,n=this,i=r),o}}},function(e,t,n){"use strict";var r=this&&this.__makeTemplateObject||function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e};Object.defineProperty(t,"__esModule",{value:!0}),t.Card=t.Footer=t.Content=t.Header=t.ContentWrapper=t.Video=t.Media=void 0;var o,i,a,c,s,l,u,f,d,p,h,m,y,g,v=n(5),b=n(3),w=n(1),x=v.css(o||(o=r(["\n  height: 127px;\n"],["\n  height: 127px;\n"]))),k=v.css(i||(i=r(["\n  height: ",";\n"],["\n  height: ",";\n"])),(function(e){return e.isShownGraphic?"382px;":"auto"})),S=v.css(a||(a=r(["\n  flex: 0 0 125px;\n"],["\n  flex: 0 0 125px;\n"]))),O=v.css(s||(s=r(["\n  p {\n    -webkit-box-orient: vertical;\n    display: -webkit-box;\n    -webkit-line-clamp: ",";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: normal;\n  }\n  ",";\n"],["\n  p {\n    -webkit-box-orient: vertical;\n    display: -webkit-box;\n    -webkit-line-clamp: ",";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: normal;\n  }\n  ",";\n"])),(function(e){var t=e.maxLine;return t||2}),b.media.mobile(c||(c=r(["\n    > p {\n      \n  -webkit-line-clamp: ",";\n \n    }\n  "],["\n    > p {\n      \n  -webkit-line-clamp: ",";\n \n    }\n  "])),(function(e){var t=e.minLine;return t||1}))),E=v.css(u||(u=r(["\n  p {\n    -webkit-box-orient: vertical;\n    display: -webkit-box;\n    -webkit-line-clamp: ",";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: normal;\n  }\n  ",";\n"],["\n  p {\n    -webkit-box-orient: vertical;\n    display: -webkit-box;\n    -webkit-line-clamp: ",";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: normal;\n  }\n  ",";\n"])),(function(e){var t=e.maxLine;return t||2}),b.media.mobile(l||(l=r(["\n    > p {\n      -webkit-line-clamp: ",";\n    }\n  "],["\n    > p {\n      -webkit-line-clamp: ",";\n    }\n  "])),(function(e){var t=e.minLine;return t||1})));t.Media=v.default("div")(f||(f=r(["\n    display: block;\n    height: auto;\n    position: relative;\n    background: ",";\n    \n    flex: ","\n    overflow: hidden;\n    transition: flex-basis 0.25s ease-in-out 0s;\n"],["\n    display: block;\n    height: auto;\n    position: relative;\n    background: ",";\n    \n    flex: ","\n    overflow: hidden;\n    transition: flex-basis 0.25s ease-in-out 0s;\n"])),(function(e){var t=e.src,n=e.placeholderBg,r=e.type;return t?"url("+t+") center center / "+(r===w.ReactTinyLinkType.TYPE_AUDIO?"contain":"cover")+" no-repeat rgb(225, 232, 237)":n}),(function(e){var t=e.cardSize;return b.isLarge(t)?"1 1 0%;":"0 0 125px;"})),t.Media.defaultProps={placeholderBg:"rgb(225, 232, 235)"},t.Video=v.default("video")(d||(d=r(["\nwidth:100%;\ndisplay: block;\nheight: 100%;\n    position: relative;\n    flex: ","\n    overflow: hidden;\nobject-fit:cover\n"],["\nwidth:100%;\ndisplay: block;\nheight: 100%;\n    position: relative;\n    flex: ","\n    overflow: hidden;\nobject-fit:cover\n"])),(function(e){var t=e.cardSize;return b.isLarge(t)?"1 1 0%;":"0 0 125px;"})),t.ContentWrapper=v.default("div")(p||(p=r(["\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ",";\n"],["\n  display: flex;\n  justify-content: space-around;\n  flex-direction: column;\n  flex: 1;\n  padding: 10px 15px;\n  min-width: 0;\n  box-sizing: border-box;\n  ",";\n"])),(function(e){var t=e.cardSize;return b.isLarge(t)&&S})),t.Header=v.default("header")(h||(h=r(["\n  text-align: left;\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  flex-grow: 1.2;\n\n  ",";\n"],["\n  text-align: left;\n  font-size: 16px;\n  font-weight: bold;\n  margin: 0;\n  flex-grow: 1.2;\n\n  ",";\n"])),(function(e){var t=e.cardSize;return b.isLarge(t)?E:O})),t.Content=v.default("div")(m||(m=r(["\n  text-align: left;\n  font-size: 14px;\n  flex-grow: 1;\n  margin: auto 0;\n  line-height: 18px;\n\n  ",";\n"],["\n  text-align: left;\n  font-size: 14px;\n  flex-grow: 1;\n  margin: auto 0;\n  line-height: 18px;\n\n  ",";\n"])),(function(e){var t=e.cardSize;return b.isLarge(t)?E:O})),t.Footer=v.default("footer")(y||(y=r(["\n  text-align: left;\n  font-size: 12px;\n  margin: 0;\n  flex-grow: 0;\n"],["\n  text-align: left;\n  font-size: 12px;\n  margin: 0;\n  flex-grow: 0;\n"]))),t.Card=v.default("a")(g||(g=r(["\n  max-width: ",";\n  background-color: rgb(255, 255, 255);\n  color: rgb(24, 25, 25);\n  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  display: flex;\n  opacity: 1;\n  position: relative;\n  transition-duration: 0.35s;\n  transition-timing-function: ease-in-out;\n  flex-direction: ","\n    ",";\n\n  transition-property: background, border-color, height;\n  border-width: 1px;\n  border-style: solid;\n  border-color: rgb(225, 232, 237);\n  overflow: hidden;\n  text-decoration: none;\n  -webkit-tap-highlight-color: rgb(245, 248, 250);\n  cursor: pointer;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);\n  &:hover {\n    background: rgb(245, 248, 250);\n  }\n"],["\n  max-width: ",";\n  background-color: rgb(255, 255, 255);\n  color: rgb(24, 25, 25);\n  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  display: flex;\n  opacity: 1;\n  position: relative;\n  transition-duration: 0.35s;\n  transition-timing-function: ease-in-out;\n  flex-direction: ","\n    ",";\n\n  transition-property: background, border-color, height;\n  border-width: 1px;\n  border-style: solid;\n  border-color: rgb(225, 232, 237);\n  overflow: hidden;\n  text-decoration: none;\n  -webkit-tap-highlight-color: rgb(245, 248, 250);\n  cursor: pointer;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);\n  &:hover {\n    background: rgb(245, 248, 250);\n  }\n"])),(function(e){var t=e.width;return t||"100vw"}),(function(e){var t=e.cardSize;return b.isLarge(t)?"column":"row"}),(function(e){var t=e.cardSize;return b.isLarge(t)?k:x})),t.Card.defaultProps={rel:"noopener noreferrer",target:"_blank"}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0});var i=n(2),a=n(20),c=n(21),s=n(22),l=n(23),u=n(24),f=n(25),d=n(26),p=n(27),h=n(28);t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r,m,y,g;return o(this,(function(o){switch(o.label){case 0:return i.isEmpty(e)?[3,20]:[4,t];case 1:return r=o.sent(),m=r.headers.get("content-type"),[4,r.text()];case 2:return y=o.sent(),g=(new DOMParser).parseFromString(y,"text/html"),i.isVideo(m)?[4,a.default(e,n)]:[3,4];case 3:return[2,o.sent()];case 4:return i.isAudio(m)?[4,c.default(e,n)]:[3,6];case 5:return[2,o.sent()];case 6:return i.isImage(m)?[4,s.default(e,n)]:[3,8];case 7:return[2,o.sent()];case 8:return i.isInstagramUrl(e)?[4,d.default(e,y,n)]:[3,10];case 9:return[2,o.sent()];case 10:return i.isYoutubeUrl(e)?[4,l.default(e,g,n)]:[3,12];case 11:return[2,o.sent()];case 12:return i.isAmazonUrl(e)?[4,u.default(e,g,n)]:[3,14];case 13:return[2,o.sent()];case 14:return i.isBoardGameGeekUrl(e)?[4,p.default(e,g,n)]:[3,16];case 15:return[2,o.sent()];case 16:return i.isTwitterUrl(e)?[4,h.default(e,y,g,n)]:[3,18];case 17:return[2,o.sent()];case 18:return[4,f.default(e,g,n)];case 19:return[2,o.sent()];case 20:return[2]}}))}))}},function(e,t,n){e.exports=function(){"use strict";return function(e){function t(t){if(t)try{e(t+"}")}catch(e){}}return function(n,r,o,i,a,c,s,l,u,f){switch(n){case 1:if(0===u&&64===r.charCodeAt(0))return e(r+";"),"";break;case 2:if(0===l)return r+"/*|*/";break;case 3:switch(l){case 102:case 112:return e(o[0]+r),"";default:return r+(0===f?"/*|*/":"")}case-2:r.split("/*|*/}").forEach(t)}}}}()},function(e,t,n){"use strict";t.a={animationIterationCount:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,msGridRow:1,msGridRowSpan:1,msGridColumn:1,msGridColumnSpan:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1}},function(e,t,n){"use strict";var r=/^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/,o=function(e){var t={};return function(n){return void 0===t[n]&&(t[n]=e(n)),t[n]}}((function(e){return r.test(e)||111===e.charCodeAt(0)&&110===e.charCodeAt(1)&&e.charCodeAt(2)<91}));t.a=o},function(e,t,n){"use strict";function r(e){return Object.prototype.toString.call(e).slice(8,-1)}function o(e){return"Object"===r(e)&&(e.constructor===Object&&Object.getPrototypeOf(e)===Object.prototype)}function i(e){return"Array"===r(e)}function a(e){return"Symbol"===r(e)}
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -74149,7 +74149,7 @@ function c(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;v
  * LICENSE file in the root directory of this source tree.
  */var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol.for("react.portal"):60106,a=r?Symbol.for("react.fragment"):60107,c=r?Symbol.for("react.strict_mode"):60108,s=r?Symbol.for("react.profiler"):60114,l=r?Symbol.for("react.provider"):60109,u=r?Symbol.for("react.context"):60110,f=r?Symbol.for("react.async_mode"):60111,d=r?Symbol.for("react.concurrent_mode"):60111,p=r?Symbol.for("react.forward_ref"):60112,h=r?Symbol.for("react.suspense"):60113,m=r?Symbol.for("react.suspense_list"):60120,y=r?Symbol.for("react.memo"):60115,g=r?Symbol.for("react.lazy"):60116,v=r?Symbol.for("react.block"):60121,b=r?Symbol.for("react.fundamental"):60117,w=r?Symbol.for("react.responder"):60118,x=r?Symbol.for("react.scope"):60119;function k(e){if("object"==typeof e&&null!==e){var t=e.$$typeof;switch(t){case o:switch(e=e.type){case f:case d:case a:case s:case c:case h:return e;default:switch(e=e&&e.$$typeof){case u:case p:case g:case y:case l:return e;default:return t}}case i:return t}}}function S(e){return k(e)===d}t.AsyncMode=f,t.ConcurrentMode=d,t.ContextConsumer=u,t.ContextProvider=l,t.Element=o,t.ForwardRef=p,t.Fragment=a,t.Lazy=g,t.Memo=y,t.Portal=i,t.Profiler=s,t.StrictMode=c,t.Suspense=h,t.isAsyncMode=function(e){return S(e)||k(e)===f},t.isConcurrentMode=S,t.isContextConsumer=function(e){return k(e)===u},t.isContextProvider=function(e){return k(e)===l},t.isElement=function(e){return"object"==typeof e&&null!==e&&e.$$typeof===o},t.isForwardRef=function(e){return k(e)===p},t.isFragment=function(e){return k(e)===a},t.isLazy=function(e){return k(e)===g},t.isMemo=function(e){return k(e)===y},t.isPortal=function(e){return k(e)===i},t.isProfiler=function(e){return k(e)===s},t.isStrictMode=function(e){return k(e)===c},t.isSuspense=function(e){return k(e)===h},t.isValidElementType=function(e){return"string"==typeof e||"function"==typeof e||e===a||e===d||e===s||e===c||e===h||e===m||"object"==typeof e&&null!==e&&(e.$$typeof===g||e.$$typeof===y||e.$$typeof===l||e.$$typeof===u||e.$$typeof===p||e.$$typeof===b||e.$$typeof===w||e.$$typeof===x||e.$$typeof===v)},t.typeOf=k},function(e,n){e.exports=t},function(e,t,n){"use strict";var r=this&&this.__makeTemplateObject||function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},o=this&&this.__assign||function(){return(o=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var o in t=arguments[n])Object.prototype.hasOwnProperty.call(t,o)&&(e[o]=t[o]);return e}).apply(this,arguments)},i=this&&this.__rest||function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(null!=e&&"function"==typeof Object.getOwnPropertySymbols){var o=0;for(r=Object.getOwnPropertySymbols(e);o<r.length;o++)t.indexOf(r[o])<0&&Object.prototype.propertyIsEnumerable.call(e,r[o])&&(n[r[o]]=e[r[o]])}return n};Object.defineProperty(t,"__esModule",{value:!0}),t.Description=void 0;var a,c,s,l=n(0),u=n(5),f=u.keyframes(a||(a=r(["\n   0%{\n        background-position: 100% 80%;\n    }\n    100%{\n        background-position: 0 80%;\n    }\n"],["\n   0%{\n        background-position: 100% 80%;\n    }\n    100%{\n        background-position: 0 80%;\n    }\n"]))),d=u.css(c||(c=r(["\n  animation-duration: 1.4s;\n  animation-fill-mode: forwards;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n  animation-name: ",";\n  background: darkgray;\n  background: linear-gradient(90deg, #cacaca 25%, #e4e4e4 37%, #f7f6f6 63%);\n  background-size: 800px 100%;\n  color: transparent;\n  -webkit-line-clamp: 1;\n  border-radius: 10px;\n  width: ",";\n"],["\n  animation-duration: 1.4s;\n  animation-fill-mode: forwards;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n  animation-name: ",";\n  background: darkgray;\n  background: linear-gradient(90deg, #cacaca 25%, #e4e4e4 37%, #f7f6f6 63%);\n  background-size: 800px 100%;\n  color: transparent;\n  -webkit-line-clamp: 1;\n  border-radius: 10px;\n  width: ",";\n"])),f,(function(e){var t=e.loadingWidth;return t?100/t+"%":"100%"}));t.Description=u.default((function(e){e.loading,e.loadingWidth,e.maxLine,e.minLine;var t=e.className,n=i(e,["loading","loadingWidth","maxLine","minLine","className"]);return l.createElement("p",o({},n,{className:t}),n.children)}))(s||(s=r(["\n  &&& {\n    text-align: inherit;\n    font-weight: inherit;\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n    ","\n  }\n"],["\n  &&& {\n    text-align: inherit;\n    font-weight: inherit;\n    font-family: inherit;\n    color: inherit;\n    margin: 0;\n    ","\n  }\n"])),(function(e){return e.loading&&d})),t.default=t.Description},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0});var i=n(1),a=n(2);t.default=function(e,t){return r(void 0,void 0,void 0,(function(){return o(this,(function(n){return[2,{title:e.substring(e.lastIndexOf("/")+1),description:e,image:[],video:[e,t].filter((function(e){return!a.isEmpty(e)})),url:e,type:i.ReactTinyLinkType.TYPE_VIDEO}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0});var i=n(1),a=n(2);t.default=function(e,t){return r(void 0,void 0,void 0,(function(){return o(this,(function(n){return[2,{title:e.substring(e.lastIndexOf("/")+1),description:e.substring(e.lastIndexOf("/")+1),url:e,image:[t].filter((function(e){return!a.isEmpty(e)})),video:[],type:i.ReactTinyLinkType.TYPE_AUDIO}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0});var i=n(1),a=n(2);t.default=function(e,t){return r(void 0,void 0,void 0,(function(){return o(this,(function(n){return[2,{title:e.substring(e.lastIndexOf("/")+1),description:e.substring(e.lastIndexOf("/")+1),url:e,video:[],image:[e,t].filter((function(e){return!a.isEmpty(e)})),type:i.ReactTinyLinkType.TYPE_IMAGE}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}},i=this&&this.__spreadArrays||function(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=0;for(t=0;t<n;t++)for(var i=arguments[t],a=0,c=i.length;a<c;a++,o++)r[o]=i[a];return r};Object.defineProperty(t,"__esModule",{value:!0});var a=n(1),c=n(2),s=/"title":"(.+?)"/g;t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r,l;return o(this,(function(o){r=c.getYoutTubeVideoId(e),l=["https://img.youtube.com/vi/"+r+"/0.jpg","https://img.youtube.com/vi/"+r+"/1.jpg","https://img.youtube.com/vi/"+r+"/2.jpg","https://img.youtube.com/vi/"+r+"/3.jpg"];try{return[2,{title:JSON.parse("{"+t.querySelector("html").innerHTML.toString().match(s)[0]+"}").title,url:e,description:e,type:a.ReactTinyLinkType.TYPE_YOUTUBE,video:[],image:l.filter((function(e){return!c.isEmpty(e)}))}]}catch(r){return[2,{title:t.querySelector("title").innerText,url:e,description:e,type:a.ReactTinyLinkType.TYPE_YOUTUBE,video:[],image:n?i(l,[n]).filter((function(e){return!c.isEmpty(e)})):l.filter((function(e){return!c.isEmpty(e)}))}]}return[2]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}},i=this&&this.__spreadArrays||function(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=0;for(t=0;t<n;t++)for(var i=arguments[t],a=0,c=i.length;a<c;a++,o++)r[o]=i[a];return r};Object.defineProperty(t,"__esModule",{value:!0});var a=n(1),c=n(2);t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r,s;return o(this,(function(o){return r=c.getBaseUrl(t,e),s=[c.getAttrOfDocElement(t,".a-dynamic-image","data-old-hires"),c.getAttrOfDocElement(t,".a-dynamic-image","src")],[2,{title:c.getTitleOfDoc(t),content:c.getAttrOfDocElement(t,"meta[name='description']","content"),url:c.getAttrOfDocElement(t,"meta[property='og:url']","content"),image:n?i(s,[n]).filter((function(e){return!c.isEmpty(e)})):s.filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(r,e)})),description:c.getAttrOfDocElement(t,"meta[name='description']","content"),video:[],type:a.ReactTinyLinkType.TYPE_AMAZON,publisher:["Amazon"]}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}},i=this&&this.__spreadArrays||function(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=0;for(t=0;t<n;t++)for(var i=arguments[t],a=0,c=i.length;a<c;a++,o++)r[o]=i[a];return r};Object.defineProperty(t,"__esModule",{value:!0});var a=n(1),c=n(2);t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r,s;return o(this,(function(o){return r=c.getBaseUrl(t,e),s=[c.getAttrOfDocElement(t,'meta[property="og:logo"]',"content"),c.getAttrOfDocElement(t,'meta[itemprop="logo"]',"content"),c.getAttrOfDocElement(t,'img[itemprop="logo"]',"src"),c.getAttrOfDocElement(t,"meta[property='og:image']","content"),c.getAttrOfDocElement(t,'img[class*="logo" i]',"src"),c.getAttrOfDocElement(t,'img[src*="logo" i]',"src"),c.getAttrOfDocElement(t,'meta[property="og:image:secure_url"]',"content"),c.getAttrOfDocElement(t,'meta[property="og:image:url"]',"content"),c.getAttrOfDocElement(t,'meta[property="og:image"]',"content"),c.getAttrOfDocElement(t,'meta[name="twitter:image:src"]',"content"),c.getAttrOfDocElement(t,'meta[name="twitter:image"]',"content"),c.getAttrOfDocElement(t,'meta[itemprop="image"]',"content")].filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(r,e)})),[2,{title:c.getTitleOfDoc(t),content:c.getAttrOfDocElement(t,"meta[name='description']","content"),url:c.getAttrOfDocElement(t,"meta[property='og:url']","content"),description:c.getAttrOfDocElement(t,"meta[name='description']","content"),video:[],image:n?i(s,[n]).filter((function(e){return!c.isEmpty(e)})):s.filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(r,e)})),type:a.ReactTinyLinkType.TYPE_DEFAULT}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0});var i=n(1),a=n(2);t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r;return o(this,(function(o){return[2,{title:(r=JSON.parse(t)).graphql.shortcode_media.accessibility_caption,content:e,url:e,description:r.title,video:null,image:n?[r.graphql.shortcode_media.display_url,n].filter((function(e){return!a.isEmpty(e)})):[r.graphql.shortcode_media.display_url],type:i.ReactTinyLinkType.TYPE_IMAGE}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}},i=this&&this.__spreadArrays||function(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=0;for(t=0;t<n;t++)for(var i=arguments[t],a=0,c=i.length;a<c;a++,o++)r[o]=i[a];return r};Object.defineProperty(t,"__esModule",{value:!0});var a=n(1),c=n(2);t.default=function(e,t,n){return r(void 0,void 0,void 0,(function(){var r,s;return o(this,(function(o){return(r=c.getAttrOfDocElement(t,"base","href"))||(r=e),s=[c.getAttrOfDocElement(t,'meta[name="twitter:image:src"]',"content")],[2,{title:c.getTitleOfDoc(t),content:c.getAttrOfDocElement(t,"meta[name='description']","content"),url:c.getAttrOfDocElement(t,"meta[property='og:url']","content"),image:n?i(s,[n]).filter((function(e){return!c.isEmpty(e)})):s.filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(r,e)})),description:c.getAttrOfDocElement(t,"meta[name='description']","content"),video:[],type:a.ReactTinyLinkType.TYPE_BOARDGAMEGEEK,publisher:["BoardGameGeek"]}]}))}))}},function(e,t,n){"use strict";var r=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},o=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}},i=this&&this.__spreadArrays||function(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=0;for(t=0;t<n;t++)for(var i=arguments[t],a=0,c=i.length;a<c;a++,o++)r[o]=i[a];return r};Object.defineProperty(t,"__esModule",{value:!0});var a=n(1),c=n(2);t.default=function(e,t,n,s){return r(void 0,void 0,void 0,(function(){var r,l,u,f,d;return o(this,(function(o){return r=JSON.parse(t),(l=document.createElement("html")).innerHTML=r.html,u=c.getBaseUrl(n,e),f=[c.getAttrOfDocElement(n,"meta[property='og:image']","content"),c.getAttrOfDocElement(n,"meta[property='og:image:user_generated']","content"),"https://help.twitter.com/content/dam/help-twitter/twitter-logo.png"].filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(u,e)})),d=[c.getAttrOfDocElement(n,"meta[property='og:video:url']","content"),c.getAttrOfDocElement(n,"meta[property='og:video:secure_url']","content")].filter((function(e){return!c.isEmpty(e)})).map((function(e){return c.fixRelativeUrls(u,e)})),[2,{title:l.querySelector("p").textContent,description:r.author_name,url:c.getAttrOfDocElement(n,"meta[property='og:url']","content"),video:d,image:s?i(f,[s]).filter((function(e){return!c.isEmpty(e)})):f,type:a.ReactTinyLinkType.TYPE_TWITTER,publisher:["Twitter"]}]}))}))}},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(0),o=n(9),i=n(1),a=n(3),c=function(e){var t=e.data,n=e.secureImageUrl,o=e.loadSecureUrl;if(o&&!n)return null;var i=t.image&&(o&&n?n:t.image[0]);return i?r.createElement("img",{style:{display:"none"},src:i,onError:function(e){e.target.parentElement.style.filter=""},onLoad:function(e){e.target.parentElement.style.filter=""}}):null},s=function(e){var t=e.data,n=e.secureVideoUrl,i=e.loadSecureUrl,a=e.autoPlay;if(i&&!n)return null;var c=t.video&&(i&&n?n:t.video[0]);return c?r.createElement(o.Video,{muted:!0,onCanPlayThrough:function(e){var t=e.target;setTimeout((function(){t.pause()}),1e3)},autoPlay:a,controls:!0},r.createElement("source",{src:c+"#t=0.1"})):null};t.default=function(e){var t=e.data,n=e.cardSize,l=e.autoPlay,u=e.loadSecureUrl,f=t.image&&a.findFirstSecureUrl(t.image,a.isValidImageURL),d=t.video&&a.findFirstSecureUrl(t.video,a.isValidVideoURL);return r.createElement(r.Fragment,null,t.type!==i.ReactTinyLinkType.TYPE_VIDEO&&r.createElement(o.Media,{className:"react_tinylink_card_media",cardSize:n,src:t.image&&(f||t.image[0]),type:t.type,style:{WebkitFilter:"blur(10px)",filter:"blur(10px)"}},r.createElement(c,{data:t,secureImageUrl:f,loadSecureUrl:u})),t.type&&t.type===i.ReactTinyLinkType.TYPE_VIDEO&&r.createElement(o.Media,{className:"react_tinylink_card_media",cardSize:n,src:t.video&&(d||t.video[0]),type:t.type},r.createElement(s,{data:t,secureVideoUrl:d,autoPlay:l,loadSecureUrl:u})))}},function(e,t,n){"use strict";var r=this&&this.__assign||function(){return(r=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var o in t=arguments[n])Object.prototype.hasOwnProperty.call(t,o)&&(e[o]=t[o]);return e}).apply(this,arguments)},o=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(o,i){function a(e){try{s(r.next(e))}catch(e){i(e)}}function c(e){try{s(r.throw(e))}catch(e){i(e)}}function s(e){var t;e.done?o(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(a,c)}s((r=r.apply(e,t||[])).next())}))},i=this&&this.__generator||function(e,t){var n,r,o,i,a={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:c(0),throw:c(1),return:c(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function c(i){return function(c){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;a;)try{if(n=1,r&&(o=2&i[0]?r.return:i[0]?r.throw||((o=r.return)&&o.call(r),0):r.next)&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[2&i[0],o.value]),i[0]){case 0:case 1:o=i;break;case 4:return a.label++,{value:i[1],done:!1};case 5:a.label++,r=i[1],i=[0];continue;case 7:i=a.ops.pop(),a.trys.pop();continue;default:if(!(o=a.trys,(o=o.length>0&&o[o.length-1])||6!==i[0]&&2!==i[0])){a=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){a.label=i[1];break}if(6===i[0]&&a.label<o[1]){a.label=o[1],o=i;break}if(o&&a.label<o[2]){a.label=o[2],a.ops.push(i);break}o[2]&&a.ops.pop(),a.trys.pop();continue}i=t.call(e,a)}catch(e){i=[6,e],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,c])}}};Object.defineProperty(t,"__esModule",{value:!0}),t.useScraper=void 0;var a=n(0),c=n(10),s=n(3),l=n(2),u=new Map;t.useScraper=function(e){var t=this,n=e.url,f=e.proxyUrl,d=void 0===f?"https://cors-anywhere.herokuapp.com":f,p=e.defaultMedias,h=void 0===p?[]:p,m=e.defaultValue,y=e.noCache,g=e.onError,v=e.onSuccess,b=e.requestHeaders,w=a.useState({response:m,loading:!0,error:void 0}),x=w[0],k=w[1];return a.useEffect((function(){var e=!0,a=s.makeCancelable(o(t,void 0,void 0,(function(){var t,o,a,s,f,p,m;return i(this,(function(i){switch(i.label){case 0:t={loading:!1,error:void 0},o=b,i.label=1;case 1:return i.trys.push([1,5,6,7]),a=d?d+"/"+n:n,l.isInstagramUrl(n)?a=s=n+"?__a=1&max_id=endcursor":l.isTwitterUrl(n)&&(s="https://publish.twitter.com/oembed?url="+n,a=d?d+"/"+s:s),f=void 0,y||!u.has(a)?[3,2]:(f=u.get(a),[3,4]);case 2:return p=fetch(a,{headers:o}),[4,c.default(n,p,h)];case 3:f=i.sent(),u.set(a,f),i.label=4;case 4:return t.response=f,v&&e&&v(f),[2,f];case 5:return m=i.sent(),t.error=m,g&&e&&g(m),[2,m];case 6:return e&&k((function(e){return r(r({},e),t)})),[7];case 7:return[2]}}))})));return function(){e=!1,a.cancel()}}),[n,d,y]),[x.response,x.loading,x.error]}}])}));
 
-},{"prop-types":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/index.js","react":"react"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-tooltip/dist/index.js":[function(require,module,exports){
+},{"prop-types":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/index.js","react":"react"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-tooltip/dist/index.js":[function(require,module,exports){
 'use strict';
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
@@ -75928,7 +75928,7 @@ function (_React$Component) {
 module.exports = ReactTooltip;
 
 
-},{"prop-types":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/index.js","react":"react","uuid":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react/cjs/react.development.js":[function(require,module,exports){
+},{"prop-types":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/index.js","react":"react","uuid":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react/cjs/react.development.js":[function(require,module,exports){
 /** @license React v16.14.0
  * react.development.js
  *
@@ -77842,7 +77842,7 @@ exports.version = ReactVersion;
   })();
 }
 
-},{"object-assign":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js","prop-types/checkPropTypes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/prop-types/checkPropTypes.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react/cjs/react.production.min.js":[function(require,module,exports){
+},{"object-assign":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js","prop-types/checkPropTypes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/prop-types/checkPropTypes.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react/cjs/react.production.min.js":[function(require,module,exports){
 /** @license React v16.14.0
  * react.production.min.js
  *
@@ -77869,10 +77869,10 @@ key:d,ref:g,props:e,_owner:k}};exports.createContext=function(a,b){void 0===b&&(
 exports.lazy=function(a){return{$$typeof:A,_ctor:a,_status:-1,_result:null}};exports.memo=function(a,b){return{$$typeof:z,type:a,compare:void 0===b?null:b}};exports.useCallback=function(a,b){return Z().useCallback(a,b)};exports.useContext=function(a,b){return Z().useContext(a,b)};exports.useDebugValue=function(){};exports.useEffect=function(a,b){return Z().useEffect(a,b)};exports.useImperativeHandle=function(a,b,c){return Z().useImperativeHandle(a,b,c)};
 exports.useLayoutEffect=function(a,b){return Z().useLayoutEffect(a,b)};exports.useMemo=function(a,b){return Z().useMemo(a,b)};exports.useReducer=function(a,b,c){return Z().useReducer(a,b,c)};exports.useRef=function(a){return Z().useRef(a)};exports.useState=function(a){return Z().useState(a)};exports.version="16.14.0";
 
-},{"object-assign":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/object-assign/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/duplex-browser.js":[function(require,module,exports){
+},{"object-assign":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/object-assign/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/duplex-browser.js":[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js":[function(require,module,exports){
+},{"./lib/_stream_duplex.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -78004,7 +78004,7 @@ Duplex.prototype._destroy = function (err, cb) {
 
   pna.nextTick(cb, err);
 };
-},{"./_stream_readable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_readable.js","./_stream_writable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_writable.js","core-util-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process-nextick-args/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_passthrough.js":[function(require,module,exports){
+},{"./_stream_readable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_readable.js","./_stream_writable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_writable.js","core-util-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process-nextick-args/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_passthrough.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -78052,7 +78052,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_transform.js","core-util-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_readable.js":[function(require,module,exports){
+},{"./_stream_transform":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_transform.js","core-util-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_readable.js":[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -79074,7 +79074,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/BufferList":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/BufferList.js","./internal/streams/destroy":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","core-util-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js","events":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","isarray":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/isarray/index.js","process-nextick-args":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process-nextick-args/index.js","safe-buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/safe-buffer/index.js","string_decoder/":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/string_decoder/lib/string_decoder.js","util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_transform.js":[function(require,module,exports){
+},{"./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/BufferList":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/BufferList.js","./internal/streams/destroy":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","core-util-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js","events":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","isarray":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/isarray/index.js","process-nextick-args":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process-nextick-args/index.js","safe-buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/safe-buffer/index.js","string_decoder/":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/string_decoder/lib/string_decoder.js","util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_transform.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -79289,7 +79289,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","core-util-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_writable.js":[function(require,module,exports){
+},{"./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","core-util-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_writable.js":[function(require,module,exports){
 (function (process,global,setImmediate){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -79979,7 +79979,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/destroy":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","core-util-is":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process-nextick-args/index.js","safe-buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/safe-buffer/index.js","timers":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/timers-browserify/main.js","util-deprecate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util-deprecate/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/BufferList.js":[function(require,module,exports){
+},{"./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/destroy":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","core-util-is":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/core-util-is/lib/util.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process-nextick-args/index.js","safe-buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/safe-buffer/index.js","timers":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/timers-browserify/main.js","util-deprecate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util-deprecate/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/BufferList.js":[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -80059,7 +80059,7 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/safe-buffer/index.js","util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js":[function(require,module,exports){
+},{"safe-buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/safe-buffer/index.js","util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/destroy.js":[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -80134,13 +80134,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process-nextick-args/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js":[function(require,module,exports){
+},{"process-nextick-args":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process-nextick-args/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js":[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/passthrough.js":[function(require,module,exports){
+},{"events":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/passthrough.js":[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/readable-browser.js":[function(require,module,exports){
+},{"./readable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/readable-browser.js":[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -80149,13 +80149,13 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./lib/_stream_passthrough.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_passthrough.js","./lib/_stream_readable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_readable.js","./lib/_stream_transform.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_transform.js","./lib/_stream_writable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/transform.js":[function(require,module,exports){
+},{"./lib/_stream_duplex.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_duplex.js","./lib/_stream_passthrough.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_passthrough.js","./lib/_stream_readable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_readable.js","./lib/_stream_transform.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_transform.js","./lib/_stream_writable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/transform.js":[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/writable-browser.js":[function(require,module,exports){
+},{"./readable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/writable-browser.js":[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/regenerator-runtime/runtime.js":[function(require,module,exports){
+},{"./lib/_stream_writable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/regenerator-runtime/runtime.js":[function(require,module,exports){
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -80905,7 +80905,7 @@ try {
   Function("r", "regeneratorRuntime = r")(runtime);
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/safe-buffer/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/safe-buffer/index.js":[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -80969,7 +80969,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports){
+},{"buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports){
 /** @license React v0.19.1
  * scheduler-tracing.development.js
  *
@@ -81320,7 +81320,7 @@ exports.unstable_wrap = unstable_wrap;
   })();
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.production.min.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.production.min.js":[function(require,module,exports){
 /** @license React v0.19.1
  * scheduler-tracing.production.min.js
  *
@@ -81332,7 +81332,7 @@ exports.unstable_wrap = unstable_wrap;
 
 'use strict';var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unstable_clear=function(a){return a()};exports.unstable_getCurrent=function(){return null};exports.unstable_getThreadID=function(){return++b};exports.unstable_subscribe=function(){};exports.unstable_trace=function(a,d,c){return c()};exports.unstable_unsubscribe=function(){};exports.unstable_wrap=function(a){return a};
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports){
 /** @license React v0.19.1
  * scheduler.development.js
  *
@@ -82192,7 +82192,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
   })();
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler.production.min.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler.production.min.js":[function(require,module,exports){
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
@@ -82215,7 +82215,7 @@ exports.unstable_getCurrentPriorityLevel=function(){return R};exports.unstable_g
 exports.unstable_scheduleCallback=function(a,b,c){var d=exports.unstable_now();if("object"===typeof c&&null!==c){var e=c.delay;e="number"===typeof e&&0<e?d+e:d;c="number"===typeof c.timeout?c.timeout:Y(a)}else c=Y(a),e=d;c=e+c;a={id:P++,callback:b,priorityLevel:a,startTime:e,expirationTime:c,sortIndex:-1};e>d?(a.sortIndex=e,J(O,a),null===L(N)&&a===L(O)&&(U?h():U=!0,g(W,e-d))):(a.sortIndex=c,J(N,a),T||S||(T=!0,f(X)));return a};
 exports.unstable_shouldYield=function(){var a=exports.unstable_now();V(a);var b=L(N);return b!==Q&&null!==Q&&null!==b&&null!==b.callback&&b.startTime<=a&&b.expirationTime<Q.expirationTime||k()};exports.unstable_wrapCallback=function(a){var b=R;return function(){var c=R;R=b;try{return a.apply(this,arguments)}finally{R=c}}};
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/index.js":[function(require,module,exports){
 'use strict';
 
 if ("development" === 'production') {
@@ -82224,7 +82224,7 @@ if ("development" === 'production') {
   module.exports = require('./cjs/scheduler.development.js');
 }
 
-},{"./cjs/scheduler.development.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler.development.js","./cjs/scheduler.production.min.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler.production.min.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/tracing.js":[function(require,module,exports){
+},{"./cjs/scheduler.development.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler.development.js","./cjs/scheduler.production.min.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler.production.min.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/tracing.js":[function(require,module,exports){
 'use strict';
 
 if ("development" === 'production') {
@@ -82233,10 +82233,10 @@ if ("development" === 'production') {
   module.exports = require('./cjs/scheduler-tracing.development.js');
 }
 
-},{"./cjs/scheduler-tracing.development.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.development.js","./cjs/scheduler-tracing.production.min.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.production.min.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scrollmonitor/scrollMonitor.js":[function(require,module,exports){
+},{"./cjs/scheduler-tracing.development.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.development.js","./cjs/scheduler-tracing.production.min.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scheduler/cjs/scheduler-tracing.production.min.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scrollmonitor/scrollMonitor.js":[function(require,module,exports){
 !function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define("scrollMonitor",[],e):"object"==typeof exports?exports.scrollMonitor=e():t.scrollMonitor=e()}(this,function(){return function(t){function e(o){if(i[o])return i[o].exports;var s=i[o]={exports:{},id:o,loaded:!1};return t[o].call(s.exports,s,s.exports,e),s.loaded=!0,s.exports}var i={};return e.m=t,e.c=i,e.p="",e(0)}([function(t,e,i){"use strict";var o=i(1),s=o.isInBrowser,n=i(2),r=new n(s?document.body:null);r.setStateFromDOM(null),r.listenToDOM(),s&&(window.scrollMonitor=r),t.exports=r},function(t,e){"use strict";e.VISIBILITYCHANGE="visibilityChange",e.ENTERVIEWPORT="enterViewport",e.FULLYENTERVIEWPORT="fullyEnterViewport",e.EXITVIEWPORT="exitViewport",e.PARTIALLYEXITVIEWPORT="partiallyExitViewport",e.LOCATIONCHANGE="locationChange",e.STATECHANGE="stateChange",e.eventTypes=[e.VISIBILITYCHANGE,e.ENTERVIEWPORT,e.FULLYENTERVIEWPORT,e.EXITVIEWPORT,e.PARTIALLYEXITVIEWPORT,e.LOCATIONCHANGE,e.STATECHANGE],e.isOnServer="undefined"==typeof window,e.isInBrowser=!e.isOnServer,e.defaultOffsets={top:0,bottom:0}},function(t,e,i){"use strict";function o(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function s(t){return c?0:t===document.body?window.innerHeight||document.documentElement.clientHeight:t.clientHeight}function n(t){return c?0:t===document.body?Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.documentElement.clientHeight):t.scrollHeight}function r(t){return c?0:t===document.body?window.pageYOffset||document.documentElement&&document.documentElement.scrollTop||document.body.scrollTop:t.scrollTop}var h=i(1),c=h.isOnServer,a=h.isInBrowser,l=h.eventTypes,p=i(3),u=!1;if(a)try{var w=Object.defineProperty({},"passive",{get:function(){u=!0}});window.addEventListener("test",null,w)}catch(t){}var d=!!u&&{capture:!1,passive:!0},f=function(){function t(e,i){function h(){if(a.viewportTop=r(e),a.viewportBottom=a.viewportTop+a.viewportHeight,a.documentHeight=n(e),a.documentHeight!==p){for(u=a.watchers.length;u--;)a.watchers[u].recalculateLocation();p=a.documentHeight}}function c(){for(w=a.watchers.length;w--;)a.watchers[w].update();for(w=a.watchers.length;w--;)a.watchers[w].triggerCallbacks()}o(this,t);var a=this;this.item=e,this.watchers=[],this.viewportTop=null,this.viewportBottom=null,this.documentHeight=n(e),this.viewportHeight=s(e),this.DOMListener=function(){t.prototype.DOMListener.apply(a,arguments)},this.eventTypes=l,i&&(this.containerWatcher=i.create(e));var p,u,w;this.update=function(){h(),c()},this.recalculateLocations=function(){this.documentHeight=0,this.update()}}return t.prototype.listenToDOM=function(){a&&(window.addEventListener?(this.item===document.body?window.addEventListener("scroll",this.DOMListener,d):this.item.addEventListener("scroll",this.DOMListener,d),window.addEventListener("resize",this.DOMListener)):(this.item===document.body?window.attachEvent("onscroll",this.DOMListener):this.item.attachEvent("onscroll",this.DOMListener),window.attachEvent("onresize",this.DOMListener)),this.destroy=function(){window.addEventListener?(this.item===document.body?(window.removeEventListener("scroll",this.DOMListener,d),this.containerWatcher.destroy()):this.item.removeEventListener("scroll",this.DOMListener,d),window.removeEventListener("resize",this.DOMListener)):(this.item===document.body?(window.detachEvent("onscroll",this.DOMListener),this.containerWatcher.destroy()):this.item.detachEvent("onscroll",this.DOMListener),window.detachEvent("onresize",this.DOMListener))})},t.prototype.destroy=function(){},t.prototype.DOMListener=function(t){this.setStateFromDOM(t)},t.prototype.setStateFromDOM=function(t){var e=r(this.item),i=s(this.item),o=n(this.item);this.setState(e,i,o,t)},t.prototype.setState=function(t,e,i,o){var s=e!==this.viewportHeight||i!==this.contentHeight;if(this.latestEvent=o,this.viewportTop=t,this.viewportHeight=e,this.viewportBottom=t+e,this.contentHeight=i,s)for(var n=this.watchers.length;n--;)this.watchers[n].recalculateLocation();this.updateAndTriggerWatchers(o)},t.prototype.updateAndTriggerWatchers=function(t){for(var e=this.watchers.length;e--;)this.watchers[e].update();for(e=this.watchers.length;e--;)this.watchers[e].triggerCallbacks(t)},t.prototype.createCustomContainer=function(){return new t},t.prototype.createContainer=function(e){"string"==typeof e?e=document.querySelector(e):e&&e.length>0&&(e=e[0]);var i=new t(e,this);return i.setStateFromDOM(),i.listenToDOM(),i},t.prototype.create=function(t,e){"string"==typeof t?t=document.querySelector(t):t&&t.length>0&&(t=t[0]);var i=new p(this,t,e);return this.watchers.push(i),i},t.prototype.beget=function(t,e){return this.create(t,e)},t}();t.exports=f},function(t,e,i){"use strict";function o(t,e,i){function o(t,e){if(0!==t.length)for(E=t.length;E--;)y=t[E],y.callback.call(s,e,s),y.isOne&&t.splice(E,1)}var s=this;this.watchItem=e,this.container=t,i?i===+i?this.offsets={top:i,bottom:i}:this.offsets={top:i.top||w.top,bottom:i.bottom||w.bottom}:this.offsets=w,this.callbacks={};for(var d=0,f=u.length;d<f;d++)s.callbacks[u[d]]=[];this.locked=!1;var m,v,b,I,E,y;this.triggerCallbacks=function(t){switch(this.isInViewport&&!m&&o(this.callbacks[r],t),this.isFullyInViewport&&!v&&o(this.callbacks[h],t),this.isAboveViewport!==b&&this.isBelowViewport!==I&&(o(this.callbacks[n],t),v||this.isFullyInViewport||(o(this.callbacks[h],t),o(this.callbacks[a],t)),m||this.isInViewport||(o(this.callbacks[r],t),o(this.callbacks[c],t))),!this.isFullyInViewport&&v&&o(this.callbacks[a],t),!this.isInViewport&&m&&o(this.callbacks[c],t),this.isInViewport!==m&&o(this.callbacks[n],t),!0){case m!==this.isInViewport:case v!==this.isFullyInViewport:case b!==this.isAboveViewport:case I!==this.isBelowViewport:o(this.callbacks[p],t)}m=this.isInViewport,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.isBelowViewport},this.recalculateLocation=function(){if(!this.locked){var t=this.top,e=this.bottom;if(this.watchItem.nodeName){var i=this.watchItem.style.display;"none"===i&&(this.watchItem.style.display="");for(var s=0,n=this.container;n.containerWatcher;)s+=n.containerWatcher.top-n.containerWatcher.container.viewportTop,n=n.containerWatcher.container;var r=this.watchItem.getBoundingClientRect();this.top=r.top+this.container.viewportTop-s,this.bottom=r.bottom+this.container.viewportTop-s,"none"===i&&(this.watchItem.style.display=i)}else this.watchItem===+this.watchItem?this.watchItem>0?this.top=this.bottom=this.watchItem:this.top=this.bottom=this.container.documentHeight-this.watchItem:(this.top=this.watchItem.top,this.bottom=this.watchItem.bottom);this.top-=this.offsets.top,this.bottom+=this.offsets.bottom,this.height=this.bottom-this.top,void 0===t&&void 0===e||this.top===t&&this.bottom===e||o(this.callbacks[l],null)}},this.recalculateLocation(),this.update(),m=this.isInViewport,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.isBelowViewport}var s=i(1),n=s.VISIBILITYCHANGE,r=s.ENTERVIEWPORT,h=s.FULLYENTERVIEWPORT,c=s.EXITVIEWPORT,a=s.PARTIALLYEXITVIEWPORT,l=s.LOCATIONCHANGE,p=s.STATECHANGE,u=s.eventTypes,w=s.defaultOffsets;o.prototype={on:function(t,e,i){switch(!0){case t===n&&!this.isInViewport&&this.isAboveViewport:case t===r&&this.isInViewport:case t===h&&this.isFullyInViewport:case t===c&&this.isAboveViewport&&!this.isInViewport:case t===a&&this.isInViewport&&this.isAboveViewport:if(e.call(this,this.container.latestEvent,this),i)return}if(!this.callbacks[t])throw new Error("Tried to add a scroll monitor listener of type "+t+". Your options are: "+u.join(", "));this.callbacks[t].push({callback:e,isOne:i||!1})},off:function(t,e){if(!this.callbacks[t])throw new Error("Tried to remove a scroll monitor listener of type "+t+". Your options are: "+u.join(", "));for(var i,o=0;i=this.callbacks[t][o];o++)if(i.callback===e){this.callbacks[t].splice(o,1);break}},one:function(t,e){this.on(t,e,!0)},recalculateSize:function(){this.height=this.watchItem.offsetHeight+this.offsets.top+this.offsets.bottom,this.bottom=this.top+this.height},update:function(){this.isAboveViewport=this.top<this.container.viewportTop,this.isBelowViewport=this.bottom>this.container.viewportBottom,this.isInViewport=this.top<this.container.viewportBottom&&this.bottom>this.container.viewportTop,this.isFullyInViewport=this.top>=this.container.viewportTop&&this.bottom<=this.container.viewportBottom||this.isAboveViewport&&this.isBelowViewport},destroy:function(){var t=this.container.watchers.indexOf(this),e=this;this.container.watchers.splice(t,1);for(var i=0,o=u.length;i<o;i++)e.callbacks[u[i]].length=0},lock:function(){this.locked=!0},unlock:function(){this.locked=!1}};for(var d=function(t){return function(e,i){this.on.call(this,t,e,i)}},f=0,m=u.length;f<m;f++){var v=u[f];o.prototype[v]=d(v)}t.exports=o}])});
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/scrollparent/scrollparent.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/scrollparent/scrollparent.js":[function(require,module,exports){
 (function (root, factory) {
   if (typeof define === "function" && define.amd) {
     define([], factory);
@@ -82285,7 +82285,7 @@ if ("development" === 'production') {
   return scrollParent;
 }));
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/sentence-case/sentence-case.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/sentence-case/sentence-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 var upperCaseFirst = require('upper-case-first')
 
@@ -82300,10 +82300,10 @@ module.exports = function (value, locale) {
   return upperCaseFirst(noCase(value, locale), locale)
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js","upper-case-first":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/smartquotes/dist/smartquotes.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js","upper-case-first":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case-first/upper-case-first.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/smartquotes/dist/smartquotes.js":[function(require,module,exports){
 (function(a,b){'object'==typeof exports&&'object'==typeof module?module.exports=b():'function'==typeof define&&define.amd?define([],b):'object'==typeof exports?exports.smartquotes=b():a.smartquotes=b()})(this,function(){return function(a){function b(d){if(c[d])return c[d].exports;var e=c[d]={i:d,l:!1,exports:{}};return a[d].call(e.exports,e,e.exports,b),e.l=!0,e.exports}var c={};return b.m=a,b.c=c,b.d=function(a,c,d){b.o(a,c)||Object.defineProperty(a,c,{configurable:!1,enumerable:!0,get:d})},b.n=function(a){var c=a&&a.__esModule?function(){return a['default']}:function(){return a};return b.d(c,'a',c),c},b.o=function(a,b){return Object.prototype.hasOwnProperty.call(a,b)},b.p='',b(b.s=3)}([function(a,b,c){'use strict';var d=c(1);a.exports=function(a,b){return b=b||{},d.forEach(function(c){var d='function'==typeof c[1]?c[1](b.retainLength):c[1];a=a.replace(c[0],d)}),a}},function(a){'use strict';a.exports=[[/'''/g,function(a){return'\u2034'+(a?'\u2063\u2063':'')}],[/(\W|^)"(\w)/g,'$1\u201C$2'],[/(\u201c[^"]*)"([^"]*$|[^\u201c"]*\u201c)/g,'$1\u201D$2'],[/([^0-9])"/g,'$1\u201D'],[/''/g,function(a){return'\u2033'+(a?'\u2063':'')}],[/(\W|^)'(\S)/g,'$1\u2018$2'],[/([a-z0-9])'([a-z])/ig,'$1\u2019$2'],[/(\u2018)([0-9]{2}[^\u2019]*)(\u2018([^0-9]|$)|$|\u2019[a-z])/ig,'\u2019$2$3'],[/((\u2018[^']*)|[a-z])'([^0-9]|$)/ig,'$1\u2019$3'],[/(\B|^)\u2018(?=([^\u2018\u2019]*\u2019\b)*([^\u2018\u2019]*\B\W[\u2018\u2019]\b|[^\u2018\u2019]*$))/ig,'$1\u2019'],[/"/g,'\u2033'],[/'/g,'\u2032']]},function(a,b,c){'use strict';function d(a){if(-1===['CODE','PRE','SCRIPT','STYLE','NOSCRIPT'].indexOf(a.nodeName.toUpperCase())){var b,c,h,i='',j=a.childNodes,k=[];for(b=0;b<j.length;b++)c=j[b],c.nodeType===g||'#text'===c.nodeName?(k.push([c,i.length]),i+=c.nodeValue||c.value):c.childNodes&&c.childNodes.length&&(i+=d(c));for(b in i=f(i,{retainLength:!0}),k)h=k[b],h[0].nodeValue?h[0].nodeValue=e(i,h[0].nodeValue,h[1]):h[0].value&&(h[0].value=e(i,h[0].value,h[1]));return i}}function e(a,b,c){return a.substr(c,b.length).replace('\u2063','')}var f=c(0),g='undefined'!=typeof Element&&Element.TEXT_NODE||3;a.exports=function(a){return d(a),a}},function(a,b,c){'use strict';function d(a){return'undefined'!=typeof document&&'undefined'==typeof a?(g.runOnReady(function(){return f(document.body)}),d):'string'==typeof a?h(a):f(a)}var e=c(1),f=c(2),g=c(4),h=c(0);a.exports=d,a.exports.string=h,a.exports.element=f,a.exports.replacements=e,a.exports.listen=g},function(a,b,c){'use strict';function d(a){var b=new MutationObserver(function(a){a.forEach(function(a){var b,c=!0,d=!1;try{for(var f,g,h=a.addedNodes[Symbol.iterator]();!(c=(f=h.next()).done);c=!0)g=f.value,e(g)}catch(a){d=!0,b=a}finally{try{!c&&h.return&&h.return()}finally{if(d)throw b}}})});return d.runOnReady(function(){b.observe(a||document.body,{childList:!0,subtree:!0})}),b}var e=c(2),f=c(0);d.runOnReady=function(a){if('loading'!==document.readyState)a();else if(document.addEventListener)document.addEventListener('DOMContentLoaded',a,!1);else var b=setInterval(function(){'loading'!==document.readyState&&(clearInterval(b),a())},10)},a.exports=d}])});
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/snake-case/snake-case.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/snake-case/snake-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 
 /**
@@ -82317,7 +82317,7 @@ module.exports = function (value, locale) {
   return noCase(value, locale, '_')
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-browserify/index.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-browserify/index.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -82446,7 +82446,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream/duplex.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/duplex-browser.js","readable-stream/passthrough.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/passthrough.js","readable-stream/readable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/readable-browser.js","readable-stream/transform.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/transform.js","readable-stream/writable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/writable-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/index.js":[function(require,module,exports){
+},{"events":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream/duplex.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/duplex-browser.js","readable-stream/passthrough.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/passthrough.js","readable-stream/readable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/readable-browser.js","readable-stream/transform.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/transform.js","readable-stream/writable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/writable-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/index.js":[function(require,module,exports){
 (function (global){(function (){
 var ClientRequest = require('./lib/request')
 var response = require('./lib/response')
@@ -82534,7 +82534,7 @@ http.METHODS = [
 	'UNSUBSCRIBE'
 ]
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./lib/request":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/request.js","./lib/response":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/response.js","builtin-status-codes":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/builtin-status-codes/browser.js","url":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/url.js","xtend":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/xtend/immutable.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/capability.js":[function(require,module,exports){
+},{"./lib/request":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/request.js","./lib/response":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/response.js","builtin-status-codes":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/builtin-status-codes/browser.js","url":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/url.js","xtend":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/xtend/immutable.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/capability.js":[function(require,module,exports){
 (function (global){(function (){
 exports.fetch = isFunction(global.fetch) && isFunction(global.ReadableStream)
 
@@ -82597,7 +82597,7 @@ function isFunction (value) {
 xhr = null // Help gc
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/request.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/request.js":[function(require,module,exports){
 (function (process,global,Buffer){(function (){
 var capability = require('./capability')
 var inherits = require('inherits')
@@ -82915,7 +82915,7 @@ var unsafeHeaders = [
 ]
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"./capability":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/capability.js","./response":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/response.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/response.js":[function(require,module,exports){
+},{"./capability":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/capability.js","./response":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/response.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/response.js":[function(require,module,exports){
 (function (process,global,Buffer){(function (){
 var capability = require('./capability')
 var inherits = require('inherits')
@@ -83126,7 +83126,7 @@ IncomingMessage.prototype._onXHRProgress = function () {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"./capability":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/lib/capability.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js":[function(require,module,exports){
+},{"./capability":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/lib/capability.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","readable-stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js":[function(require,module,exports){
 'use strict';
 
 function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
@@ -83255,7 +83255,7 @@ createErrorType('ERR_UNKNOWN_ENCODING', function (arg) {
 createErrorType('ERR_STREAM_UNSHIFT_AFTER_END_EVENT', 'stream.unshift() after end event');
 module.exports.codes = codes;
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js":[function(require,module,exports){
 (function (process){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -83397,7 +83397,7 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
   }
 });
 }).call(this)}).call(this,require('_process'))
-},{"./_stream_readable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js","./_stream_writable":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_passthrough.js":[function(require,module,exports){
+},{"./_stream_readable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js","./_stream_writable":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_passthrough.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -83437,7 +83437,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js":[function(require,module,exports){
+},{"./_stream_transform":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js":[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -84564,7 +84564,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/async_iterator":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/async_iterator.js","./internal/streams/buffer_list":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/buffer_list.js","./internal/streams/destroy":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/from":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/from-browser.js","./internal/streams/state":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js","./internal/streams/stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","events":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","string_decoder/":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/string_decoder/lib/string_decoder.js","util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js":[function(require,module,exports){
+},{"../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/async_iterator":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/async_iterator.js","./internal/streams/buffer_list":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/buffer_list.js","./internal/streams/destroy":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/from":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/from-browser.js","./internal/streams/state":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js","./internal/streams/stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","events":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","string_decoder/":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/string_decoder/lib/string_decoder.js","util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -84766,7 +84766,7 @@ function done(stream, er, data) {
   if (stream._transformState.transforming) throw new ERR_TRANSFORM_ALREADY_TRANSFORMING();
   return stream.push(null);
 }
-},{"../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js":[function(require,module,exports){
+},{"../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js":[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -85466,7 +85466,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/destroy":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/state":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js","./internal/streams/stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/inherits/inherits_browser.js","util-deprecate":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util-deprecate/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/async_iterator.js":[function(require,module,exports){
+},{"../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./_stream_duplex":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/destroy":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js","./internal/streams/state":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js","./internal/streams/stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/inherits/inherits_browser.js","util-deprecate":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util-deprecate/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/async_iterator.js":[function(require,module,exports){
 (function (process){(function (){
 'use strict';
 
@@ -85676,7 +85676,7 @@ var createReadableStreamAsyncIterator = function createReadableStreamAsyncIterat
 
 module.exports = createReadableStreamAsyncIterator;
 }).call(this)}).call(this,require('_process'))
-},{"./end-of-stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/buffer_list.js":[function(require,module,exports){
+},{"./end-of-stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/buffer_list.js":[function(require,module,exports){
 'use strict';
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -85887,7 +85887,7 @@ function () {
 
   return BufferList;
 }();
-},{"buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js":[function(require,module,exports){
+},{"buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browser-resolve/empty.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/destroy.js":[function(require,module,exports){
 (function (process){(function (){
 'use strict'; // undocumented cb() API, needed for core, not for public API
 
@@ -85995,7 +85995,7 @@ module.exports = {
   errorOrDestroy: errorOrDestroy
 };
 }).call(this)}).call(this,require('_process'))
-},{"_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js":[function(require,module,exports){
+},{"_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js":[function(require,module,exports){
 // Ported from https://github.com/mafintosh/end-of-stream with
 // permission from the author, Mathias Buus (@mafintosh).
 'use strict';
@@ -86100,12 +86100,12 @@ function eos(stream, opts, callback) {
 }
 
 module.exports = eos;
-},{"../../../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/from-browser.js":[function(require,module,exports){
+},{"../../../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/from-browser.js":[function(require,module,exports){
 module.exports = function () {
   throw new Error('Readable.from is not available in the browser')
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/pipeline.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/pipeline.js":[function(require,module,exports){
 // Ported from https://github.com/mafintosh/pump with
 // permission from the author, Mathias Buus (@mafintosh).
 'use strict';
@@ -86203,7 +86203,7 @@ function pipeline() {
 }
 
 module.exports = pipeline;
-},{"../../../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./end-of-stream":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js":[function(require,module,exports){
+},{"../../../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js","./end-of-stream":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/state.js":[function(require,module,exports){
 'use strict';
 
 var ERR_INVALID_OPT_VALUE = require('../../../errors').codes.ERR_INVALID_OPT_VALUE;
@@ -86231,9 +86231,9 @@ function getHighWaterMark(state, options, duplexKey, isDuplex) {
 module.exports = {
   getHighWaterMark: getHighWaterMark
 };
-},{"../../../errors":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js":[function(require,module,exports){
-arguments[4]["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js"][0].apply(exports,arguments)
-},{"events":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/events/events.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js":[function(require,module,exports){
+},{"../../../errors":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/errors-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/stream-browser.js":[function(require,module,exports){
+arguments[4]["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/readable-stream/lib/internal/streams/stream-browser.js"][0].apply(exports,arguments)
+},{"events":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/events/events.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/readable-browser.js":[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -86244,7 +86244,7 @@ exports.PassThrough = require('./lib/_stream_passthrough.js');
 exports.finished = require('./lib/internal/streams/end-of-stream.js');
 exports.pipeline = require('./lib/internal/streams/pipeline.js');
 
-},{"./lib/_stream_duplex.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./lib/_stream_passthrough.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_passthrough.js","./lib/_stream_readable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js","./lib/_stream_transform.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js","./lib/_stream_writable.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js","./lib/internal/streams/end-of-stream.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js","./lib/internal/streams/pipeline.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/pipeline.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/string_decoder/lib/string_decoder.js":[function(require,module,exports){
+},{"./lib/_stream_duplex.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_duplex.js","./lib/_stream_passthrough.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_passthrough.js","./lib/_stream_readable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_readable.js","./lib/_stream_transform.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_transform.js","./lib/_stream_writable.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/_stream_writable.js","./lib/internal/streams/end-of-stream.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/end-of-stream.js","./lib/internal/streams/pipeline.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/node_modules/readable-stream/lib/internal/streams/pipeline.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/string_decoder/lib/string_decoder.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -86541,7 +86541,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/safe-buffer/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/strip-bom-string/index.js":[function(require,module,exports){
+},{"safe-buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/safe-buffer/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/strip-bom-string/index.js":[function(require,module,exports){
 /*!
  * strip-bom-string <https://github.com/jonschlinkert/strip-bom-string>
  *
@@ -86558,7 +86558,7 @@ module.exports = function(str) {
   return str;
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/swap-case/swap-case.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/swap-case/swap-case.js":[function(require,module,exports){
 var upperCase = require('upper-case')
 var lowerCase = require('lower-case')
 
@@ -86587,7 +86587,7 @@ module.exports = function (str, locale) {
   return result
 }
 
-},{"lower-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/lower-case/lower-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/timers-browserify/main.js":[function(require,module,exports){
+},{"lower-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/lower-case/lower-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/timers-browserify/main.js":[function(require,module,exports){
 (function (setImmediate,clearImmediate){(function (){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -86666,7 +86666,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this)}).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","timers":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/timers-browserify/main.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/title-case/title-case.js":[function(require,module,exports){
+},{"process/browser.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","timers":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/timers-browserify/main.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/title-case/title-case.js":[function(require,module,exports){
 var noCase = require('no-case')
 var upperCase = require('upper-case')
 
@@ -86683,7 +86683,7 @@ module.exports = function (value, locale) {
   })
 }
 
-},{"no-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case-first/upper-case-first.js":[function(require,module,exports){
+},{"no-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/no-case/no-case.js","upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case-first/upper-case-first.js":[function(require,module,exports){
 var upperCase = require('upper-case')
 
 /**
@@ -86702,7 +86702,7 @@ module.exports = function (str, locale) {
   return upperCase(str.charAt(0), locale) + str.substr(1)
 }
 
-},{"upper-case":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/upper-case/upper-case.js":[function(require,module,exports){
+},{"upper-case":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/upper-case/upper-case.js":[function(require,module,exports){
 /**
  * Special language-specific overrides.
  *
@@ -86754,7 +86754,7 @@ module.exports = function (str, locale) {
   return str.toUpperCase()
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uri-js/dist/es5/uri.all.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uri-js/dist/es5/uri.all.js":[function(require,module,exports){
 /** @license URI.js v4.4.1 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -88199,7 +88199,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 })));
 
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/url.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/url.js":[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -88933,7 +88933,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/util.js","punycode":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/punycode/punycode.js","querystring":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/querystring-es3/index.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/util.js":[function(require,module,exports){
+},{"./util":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/util.js","punycode":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/punycode/punycode.js","querystring":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/querystring-es3/index.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/util.js":[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -88951,7 +88951,7 @@ module.exports = {
   }
 };
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util-deprecate/browser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util-deprecate/browser.js":[function(require,module,exports){
 (function (global){(function (){
 
 /**
@@ -89022,7 +89022,7 @@ function config (name) {
 }
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/node_modules/inherits/inherits_browser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/node_modules/inherits/inherits_browser.js":[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -89047,14 +89047,14 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/support/isBufferBrowser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/support/isBufferBrowser.js":[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/util.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/util.js":[function(require,module,exports){
 (function (process,global){(function (){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -89644,7 +89644,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/support/isBufferBrowser.js","_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","inherits":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/util/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/bytesToUuid.js":[function(require,module,exports){
+},{"./support/isBuffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/support/isBufferBrowser.js","_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","inherits":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/util/node_modules/inherits/inherits_browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/bytesToUuid.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -89672,7 +89672,7 @@ function bytesToUuid(buf, offset) {
 var _default = bytesToUuid;
 exports.default = _default;
 module.exports = exports.default;
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/index.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/index.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -89712,7 +89712,7 @@ var _v3 = _interopRequireDefault(require("./v4.js"));
 var _v4 = _interopRequireDefault(require("./v5.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./v1.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v1.js","./v3.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v3.js","./v4.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v4.js","./v5.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v5.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/md5-browser.js":[function(require,module,exports){
+},{"./v1.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v1.js","./v3.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v3.js","./v4.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v4.js","./v5.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v5.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/md5-browser.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -89938,7 +89938,7 @@ function md5ii(a, b, c, d, x, s, t) {
 var _default = md5;
 exports.default = _default;
 module.exports = exports.default;
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/rng-browser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/rng-browser.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -89962,7 +89962,7 @@ function rng() {
 }
 
 module.exports = exports.default;
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/sha1-browser.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/sha1-browser.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90059,7 +90059,7 @@ function sha1(bytes) {
 var _default = sha1;
 exports.default = _default;
 module.exports = exports.default;
-},{}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v1.js":[function(require,module,exports){
+},{}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v1.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90168,7 +90168,7 @@ function v1(options, buf, offset) {
 var _default = v1;
 exports.default = _default;
 module.exports = exports.default;
-},{"./bytesToUuid.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/bytesToUuid.js","./rng.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/rng-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v3.js":[function(require,module,exports){
+},{"./bytesToUuid.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/bytesToUuid.js","./rng.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/rng-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v3.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90186,7 +90186,7 @@ const v3 = (0, _v.default)('v3', 0x30, _md.default);
 var _default = v3;
 exports.default = _default;
 module.exports = exports.default;
-},{"./md5.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/md5-browser.js","./v35.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v35.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v35.js":[function(require,module,exports){
+},{"./md5.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/md5-browser.js","./v35.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v35.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v35.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90256,7 +90256,7 @@ function _default(name, version, hashfunc) {
   generateUUID.URL = URL;
   return generateUUID;
 }
-},{"./bytesToUuid.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/bytesToUuid.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v4.js":[function(require,module,exports){
+},{"./bytesToUuid.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/bytesToUuid.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v4.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90298,7 +90298,7 @@ function v4(options, buf, offset) {
 var _default = v4;
 exports.default = _default;
 module.exports = exports.default;
-},{"./bytesToUuid.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/bytesToUuid.js","./rng.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/rng-browser.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v5.js":[function(require,module,exports){
+},{"./bytesToUuid.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/bytesToUuid.js","./rng.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/rng-browser.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v5.js":[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -90316,7 +90316,7 @@ const v5 = (0, _v.default)('v5', 0x50, _sha.default);
 var _default = v5;
 exports.default = _default;
 module.exports = exports.default;
-},{"./sha1.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/sha1-browser.js","./v35.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/uuid/dist/v35.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/xmlhttprequest/lib/XMLHttpRequest.js":[function(require,module,exports){
+},{"./sha1.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/sha1-browser.js","./v35.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/uuid/dist/v35.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/xmlhttprequest/lib/XMLHttpRequest.js":[function(require,module,exports){
 (function (process,Buffer){(function (){
 /**
  * Wrapper for built-in http.js to emulate the browser XMLHttpRequest object.
@@ -90940,7 +90940,7 @@ exports.XMLHttpRequest = function() {
 };
 
 }).call(this)}).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/buffer/index.js","child_process":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/browserify/lib/_empty.js","http":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/stream-http/index.js","https":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/https-browserify/index.js","url":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/url/url.js"}],"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/xtend/immutable.js":[function(require,module,exports){
+},{"_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/process/browser.js","buffer":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/buffer/index.js","child_process":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/browserify/lib/_empty.js","http":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/stream-http/index.js","https":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/https-browserify/index.js","url":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/url/url.js"}],"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/xtend/immutable.js":[function(require,module,exports){
 module.exports = extend
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -90970,24 +90970,24 @@ module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "
 'use strict';
 
 module.exports = {
-	'text-container': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js'),
-	'nav': require('/Users/jasenlo/Capstone_Final/posts/forex/components/nav.js'),
-	'header': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/header.js'),
-	'link': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/link.js'),
-	'annotation': require('/Users/jasenlo/Capstone_Final/posts/forex/components/annotation.js'),
-	'aside': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/aside.js'),
-	'h4': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h4.js'),
-	'h5': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h5.js'),
-	'preview': require('/Users/jasenlo/Capstone_Final/posts/forex/components/preview.js'),
-	'caption': require('/Users/jasenlo/Capstone_Final/posts/forex/components/caption.js'),
-	'display': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/display.js'),
-	'range': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/range.js'),
-	'select': require('/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/select.js'),
-	'd3-line-chart': require('/Users/jasenlo/Capstone_Final/posts/forex/components/d3LineChart.js'),
-	'next-article': require('/Users/jasenlo/Capstone_Final/posts/forex/components/next-article.js')
+	'text-container': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js'),
+	'nav': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/nav.js'),
+	'header': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/header.js'),
+	'link': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/link.js'),
+	'annotation': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/annotation.js'),
+	'aside': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/aside.js'),
+	'h4': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h4.js'),
+	'h5': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h5.js'),
+	'preview': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/preview.js'),
+	'caption': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/caption.js'),
+	'display': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/display.js'),
+	'range': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/range.js'),
+	'select': require('/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/select.js'),
+	'd3-line-chart': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/d3LineChart.js'),
+	'next-article': require('/Users/jasenlo/TrustTheProcess/posts/forex/components/next-article.js')
 };
 
-},{"/Users/jasenlo/Capstone_Final/posts/forex/components/annotation.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/annotation.js","/Users/jasenlo/Capstone_Final/posts/forex/components/caption.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/caption.js","/Users/jasenlo/Capstone_Final/posts/forex/components/d3LineChart.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/d3LineChart.js","/Users/jasenlo/Capstone_Final/posts/forex/components/nav.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/nav.js","/Users/jasenlo/Capstone_Final/posts/forex/components/next-article.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/next-article.js","/Users/jasenlo/Capstone_Final/posts/forex/components/preview.js":"/Users/jasenlo/Capstone_Final/posts/forex/components/preview.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/aside.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/aside.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/display.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/display.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h4.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h4.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h5.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/h5.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/header.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/header.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/link.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/link.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/range.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/range.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/select.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/select.js","/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
+},{"/Users/jasenlo/TrustTheProcess/posts/forex/components/annotation.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/annotation.js","/Users/jasenlo/TrustTheProcess/posts/forex/components/caption.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/caption.js","/Users/jasenlo/TrustTheProcess/posts/forex/components/d3LineChart.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/d3LineChart.js","/Users/jasenlo/TrustTheProcess/posts/forex/components/nav.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/nav.js","/Users/jasenlo/TrustTheProcess/posts/forex/components/next-article.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/next-article.js","/Users/jasenlo/TrustTheProcess/posts/forex/components/preview.js":"/Users/jasenlo/TrustTheProcess/posts/forex/components/preview.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/aside.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/aside.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/display.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/display.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h4.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h4.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h5.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/h5.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/header.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/header.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/link.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/link.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/range.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/range.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/select.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/select.js","/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll-components/dist/cjs/text-container.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
 
 module.exports = function () {
 
@@ -91049,7 +91049,7 @@ if ("development" === 'production') {
   module.exports = require('./cjs/react-dom.development.js');
 }
 
-},{"./cjs/react-dom.development.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom/cjs/react-dom.development.js","./cjs/react-dom.production.min.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react-dom/cjs/react-dom.production.min.js"}],"react":[function(require,module,exports){
+},{"./cjs/react-dom.development.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom/cjs/react-dom.development.js","./cjs/react-dom.production.min.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react-dom/cjs/react-dom.production.min.js"}],"react":[function(require,module,exports){
 'use strict';
 
 if ("development" === 'production') {
@@ -91058,4 +91058,4 @@ if ("development" === 'production') {
   module.exports = require('./cjs/react.development.js');
 }
 
-},{"./cjs/react.development.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react/cjs/react.development.js","./cjs/react.production.min.js":"/Users/jasenlo/Capstone_Final/posts/forex/node_modules/react/cjs/react.production.min.js"}]},{},["/Users/jasenlo/Capstone_Final/posts/forex/node_modules/idyll/src/client/build.js"]);
+},{"./cjs/react.development.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react/cjs/react.development.js","./cjs/react.production.min.js":"/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/react/cjs/react.production.min.js"}]},{},["/Users/jasenlo/TrustTheProcess/posts/forex/node_modules/idyll/src/client/build.js"]);

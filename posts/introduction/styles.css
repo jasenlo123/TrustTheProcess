@@ -356,8 +356,8 @@ input {
   color: purple;
   margin-left: calc((100vw - 1440px) / -2);
   margin-right: calc((100vw - 1440px) / -2);
-  padding-left: calc((100vw - 1440px) / 2);
-  padding-right: calc((100vw - 1440px) / 2);
+  padding-left: 1em;
+  padding-right: 1em;
   margin-top: 0;
   overflow-x: visible;
   z-index: 1;
